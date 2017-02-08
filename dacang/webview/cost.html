@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>交易费用</title>
+<meta charset="UTF-8"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="apple-mobile-web-app-title" content="同程旅游"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+<meta name="keywords" content=""/>
+<meta name="description" content=""/>
+<meta name="full-screen" content="yes"/>
+<meta name="browsermode" content="application"/>
+<meta name="x5-fullscreen" content="true"/>
+<meta name="x5-page-mode" content="app"/>
+<link rel="stylesheet" href="m/css/common.css"/>
+</head>
+
+<body>
+<div class="content">
+  <div class="m-title">
+    <h2 class="h2">申购费用</h2>
+  </div>
+  <div class="panel bg-white">
+    <table width="100%" border="0" cellpadding="0" cellspacing="0" class="m-table">
+      <thead>
+        <tr>
+          <td width="40%" class="tdl">申购金额</td>
+          <td width="33%">银行卡支付</td>
+          <td class="tdr">现金宝支付</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="tdl">0≤万元＜100</td>
+          <td><span class="c_blue">0.60%</span> <del class="del c_bfc2c6">1.50%</del></td>
+          <td class="tdr"><span class="c_red">免手续费</span></td>
+        </tr>
+        <tr>
+          <td class="tdl">100≤万元＜500</td>
+          <td><span class="c_blue">0.60%</span> <del class="del c_bfc2c6">1.00%</del></td>
+          <td class="tdr"><span class="c_red">免手续费</span></td>
+        </tr>
+        <tr>
+          <td class="tdl">500≤万元</td>
+          <td><span class="c_blue">100元</span></td>
+          <td class="tdr"><span class="c_red">免手续费</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="m-title">
+    <h2 class="h2">赎回费用</h2>
+  </div>
+  <div class="panel bg-white">
+    <table width="100%" border="0" cellpadding="0" cellspacing="0" class="m-table">
+      <thead>
+        <tr>
+          <td width="50%" class="tdl">持有时间</td>
+          <td class="tdr">费率</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="tdl">0≤日＜7</td>
+          <td class="tdr">1.50%</td>
+        </tr>
+        <tr>
+          <td class="tdl">7≤日＜30</td>
+          <td class="tdr">0.75%</td>
+        </tr>
+        <tr>
+          <td class="tdl">30≤日</td>
+          <td class="tdr">0.00%</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <!--如果交易费用为零显示样式--> 
+    <!-- <table width="100%" border="0" cellpadding="0" cellspacing="0" class="m-table">
+      <tbody>
+        <tr>
+          <td><span class="c_red">免手续费</span></td>
+        </tr>
+      </tbody>
+    </table>--> 
+  </div>
+  <div class="m-title">
+    <h2 class="h2">运作费用</h2>
+  </div>
+  <div class="panel bg-white" style="border-bottom:1px solid #ededed">
+    <table width="100%" border="0" cellpadding="0" cellspacing="0" class="m-table">
+      <thead>
+        <tr>
+          <td width="50%" class="tdl">项目</td>
+          <td class="tdr">费用/年</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="tdl">管理费</td>
+          <td class="tdr">1.50%</td>
+        </tr>
+        <tr>
+          <td class="tdl">托管费</td>
+          <td class="tdr">0.25%</td>
+        </tr>
+        <tr>
+          <td class="tdl">销售服务费</td>
+          <td class="tdr">0.00%</td>
+        </tr>
+        <tr>
+          <td class="tdl" colspan="2"><span class="c_red">以上费用每日从基金资产中计提，无需投资者另行支付</span></td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <!--如果交易费用下发为空样式--> 
+    <!-- <table width="100%" border="0" cellpadding="0" cellspacing="0" class="m-table">
+      <tbody>
+        <tr>
+          <td><span class="c_ccc">暂无数据</span></td>
+        </tr>
+      </tbody>
+    </table> --> 
+    
+  </div>
+  <div class="panel bg-white mt20">
+    <div class="cost-info">
+      <h2 class="fs30 c_535353">交易费用计算方法</h2>
+      <p>认购费用＝(认购金额+利息)/(1＋认购费率) ×认购费率</p>
+      <p>申购费用＝申购金额/(1＋申购费率) ×申购费率</p>
+      <p>后端申购费用＝赎回份额×申购日基金份额净值×后端申购费率</p>
+      <p>赎回费用＝赎回金额×赎回费率</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>

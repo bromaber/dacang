@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>邀请微信</title>
+    <meta charset="UTF-8"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-title" content="同程旅游"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta name="full-screen" content="yes"/>
+    <meta name="browsermode" content="application"/>
+    <meta name="x5-fullscreen" content="true"/>
+    <meta name="x5-page-mode" content="app"/>
+    <link rel="stylesheet" href="m/css/common.css"/>
+</head>
+
+<body>
+<style>
+    body, .content {
+        background: #9a1723;
+    }
+</style>
+<div class="content">
+    <div class="red-poster">
+        <span class="fs24">您的好友向您推荐他正在使用的理财平台</span>
+        <img src="/m/images/invite.jpg"/>
+    </div>
+    <div class="red-body">
+        <div class="red-title">
+            <h3 class="h-tit c_fff fs40 h3">新手红包</h3>
+
+            <p class="p-num c-yel"><span class="fs100">20</span>&nbsp;&nbsp;<span class="fs80">元</span></p>
+        </div>
+        <ul class="red-from">
+            <li><input class="r-input" placeholder="请输入手机号码"/></li>
+            <li><a href="javascript:;" class="r-btn btn-js">立即领取</a></li>
+        </ul>
+    </div>
+    <div class="red-foot"><h3 class="h3 fs24">关于基金汇</h3></div>
+    <div class="red-foot-space"></div>
+</div>
+<script src="m/js/jquery-1.9.1.min.js"></script>
+<script>
+    $(function () {
+        var $btn = $(".btn-js");
+        $btn.on("touchstart", function () {
+            $(this).addClass("btnbg")
+        });
+        $btn.on("touchend", function () {
+            $(this).removeClass("btnbg")
+        });
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,200 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>快速取现</title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="description" content=" " />
+<meta name="keywords" content=" " />
+<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+<link href="../css/base.css" rel="stylesheet"/>
+<link href="../css/trade.css" rel="stylesheet"/>
+<link href="../css/ui.css" rel="stylesheet"/>
+<script src="../js/jq/jquery-1.9.1.min.js"></script>
+<script src="../js/bs/bootstrap.js"></script>
+<script src="../js/base.js"></script>
+<script src="../js/jq/jquery.input.js"></script>
+<script src="../js/bs/icheck.js"></script>
+<script src="../js/common/inner-top.js"></script>
+<script src="../js/common/inner-bottom.js"></script>
+</head>
+<body>
+<!--头部开始-->
+<div id="top"></div>
+<!--头部结束-->
+<div class="wrap">
+  <div class="crumbnav"><em class="ico ico-crumb"></em><a href="../member/myaccounts.html" target="_blank" class="c-gray666">我的账户</a><i>&gt;</i><a href="../member/assets.html" target="_blank" class="c-gray666">资产明细</a><i>&gt;</i><b>快速取现</b></div>
+  <div class="mem-title">
+    <h2 class="h2">快速取现</h2>
+  </div>
+  <div class="m-cont clearfix">
+    <div class="w660 fl">
+      <h2 class="h2 cash-h2">基金信息</h2>
+      <div class="cash-padd1">
+        <div class="list-radio diy-fund fundul2">
+          <div class="title">
+            <dl>
+              <dt>&nbsp;</dt>
+              <dd>
+                <ul>
+                  <li class="one">基金名称</li>
+                  <li class="two text-right">可用余额</li>
+                  <li class="three text-right">未付收益</li>
+                  <li class="four">到账银行卡</li>
+                </ul>
+              </dd>
+            </dl>
+          </div>
+          <div class="cont">
+            <dl>
+              <dt>
+                <input type="radio" class="icheck" name="check-fund" id="input-div1" checked>
+              </dt>
+              <dd>
+                <label for="input-div1">
+                <ul>
+                  <li class="one">南方现金增利货币A</li>
+                  <li class="two text-right">3520.00</li>
+                  <li class="three text-right">231.00</li>
+                  <li class="four">农业银行（尾号0313）</li>
+                </ul>
+                </label>
+              </dd>
+            </dl>
+            <dl>
+              <dt>
+                <input type="radio" class="icheck" name="check-fund" id="input-div2" checked>
+              </dt>
+              <dd>
+                <label for="input-div2">
+                <ul>
+                  <li class="one">南方现金增利货币A</li>
+                  <li class="two text-right">3520.00</li>
+                  <li class="three text-right">231.00</li>
+                  <li class="four">农业银行（尾号0313）</li>
+                </ul>
+                </label>
+              </dd>
+            </dl>
+            <dl>
+              <dt>
+                <input type="radio" class="icheck" name="check-fund" id="input-div3" checked>
+              </dt>
+              <dd>
+                <label for="input-div3">
+                <ul>
+                  <li class="one">南方现金增利货币A</li>
+                  <li class="two text-right">3520.00</li>
+                  <li class="three text-right">231.00</li>
+                  <li class="four">农业银行（尾号0313）</li>
+                </ul>
+                </label>
+              </dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+      <h2 class="h2 cash-h2">取现信息</h2>
+      <div class="cash-table">
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <th>可用余额：</th>
+              <td><b class="c-orange ft-nums fs18">1234251.00</b> 元</td>
+            </tr>
+            <tr>
+              <th>取现金额：</th>
+              <td class="rel paytab-text"><input type="text" tabindex="9" class="text input_bor tw1" name="" autocomplete="off">
+                元
+                <div class="msg-tip tip-info"> <i class="ico"></i><b class="msg-txt">请输入您要取出的份额数</b> </div></td>
+            </tr>
+            <tr>
+              <th class="vit"></th>
+              <td class="vit"><div class="vital"><i class="ico ico-vital"></i>最低可取现1.0元</div></td>
+            </tr>
+            <tr>
+              <th>取现方式：</th>
+              <td class="icheck-box icheck-m12"><input type="radio" class="icheck" name="check-pay" id="inputA" checked>
+                <label for="inputA">快速取现<span class="c-red3">（T+0实时到账，需保留至少0.01元）</span></label></td>
+            </tr>
+            <tr>
+              <th></th>
+              <td class="icheck-box icheck-m12"><input type="radio" class="icheck" name="check-pay" id="inputB">
+                <label for="inputB">普通取现<span class="c-red3">（T+1日到账，可全部取现）</span></label></td>
+            </tr>
+            <tr>
+              <th>取现费用：</th>
+              <td><span class="ft-nums">0元</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+     
+        <div class="cash-form">
+          <div class="items-btn">
+            <div class="ui-form-btn"><a class="btn" href="javascript:;">下一步</a></div>
+          </div>
+        </div>
+      
+    </div>
+    <div class="w260 fr">
+      <div class="explain">
+        <div class="title">提示</div>
+        <h4 class="h4">关于赎回资金到账银行卡：</h4>
+        <p class="p">基金赎回时，资金只能划往购买时使用的银行卡，请确保该银行卡能正常收款。</p>
+        <h4 class="h4">多次购买的基金，赎回时先赎回哪部分份额？</h4>
+        <p class="p">赎回按“先进先出”原则，也就是先购买的份额先赎回。</p>
+        <h4 class="h4">赎回资金什么时候可以到账？</h4>
+        <p class="p">交易生效后，赎回资金一般会在3-7工作日到账（货币基金2-4个工作日到账），具体取决于银行的划款速度。</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--底部开始-->
+<div id="bottom"></div>
+<!--底部结束--> 
+<script>
+$(document).ready(function(){
+  $(".icheck").iCheck({
+    checkboxClass: 'icheckbox_square',
+    radioClass: 'iradio_square',
+    increaseArea: '30%' // optional
+  });
+});
+</script> 
+<script>
+/*$(function(){
+var divul=$(".list-radio dl");
+divul.hover(function(){
+$(this).addClass("on");	
+	},function(){
+$(this).removeClass("on");			
+});
+});*/
+
+</script> 
+<script>
+$(function(){
+var text =$(".text");
+text.focus(function(){
+var mytip=$(this).parent("td").find(".msg-tip");	
+mytip.show();
+mytip.removeClass("tip-succeed");
+mytip.removeClass("tip-error");
+//alert("adsf");
+});
+
+text.blur(function(){
+var txt=$(this).val();
+var mytip=$(this).parent("td").find(".msg-tip");	
+if(txt==""){
+mytip.addClass("tip-error");	
+}else{
+mytip.addClass("tip-succeed");		
+ }
+});
+});
+</script>
+</body>
+</html>

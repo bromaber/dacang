@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>申购信息确认</title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="description" content=" " />
+<meta name="keywords" content=" " />
+<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+<link href="../css/base.css" rel="stylesheet"/>
+<link href="../css/trade.css" rel="stylesheet"/>
+<script src="../js/jq/jquery-1.9.1.min.js"></script>
+<script src="../js/bs/bootstrap.js"></script>
+<script src="../js/jq/jquery.input.js"></script>
+</head>
+<body>
+<!--头部开始-->
+<div id="top"></div>
+<!--头部结束-->
+
+<div class="wrap">
+  <div class="crumbnav"><em class="ico ico-crumb"></em><a href="../member/myaccounts.html" target="_blank" class="c-gray666">我的账户</a><i>&gt;</i><a href="purchase.html" target="_blank" class="c-gray666">基金申购</a><i>&gt;</i><b>申购信息确认</b></div>
+  <div class="mem-title">
+    <h2 class="h2">确认信息</h2>
+  </div>
+  <div class="m-cont clearfix">
+    <div class="w660 fl">
+      <div class="okinfo-title">您即将购买 <b>广发聚祥保本混合</b> ,请认真核对！</div>
+      <div class="ok-padd">
+        <div class="okinfo-cont">
+          <div class="okinfo-table">
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+              <tbody>
+                
+                <tr>
+                  <th width="90px">申购金额：</th>
+                  <td>123122.21（壹万两千元整）</td>
+                </tr>
+                <tr>
+                  <th>申购费率：</th>
+                  <td>1.2%</td>
+                </tr>
+                <tr>
+                  <th>支付方式：</th>
+                  <td>农业银行(尾号2221)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+   
+        <div class="cash-form">
+          <div class="items items-vital">
+            <label class="label">交易密码：</label>
+            <input type="password" tabindex="9" class="text input_bor" name="" autocomplete="off" id="sureInputText">
+            <div class="msg-tip tip-info" id="sureMsgTip"><i class="ico"></i><b class="msg-txt lh18">您输入的密码错误，您还可以再输入4次。</b> </div>
+            <div class="vital"><i class="ico ico-vital"></i>请输入基金交易密码，非银行密码</div>
+          </div>
+          
+          <div class="items-btn">
+            <div class="ui-form-btn"><a class="btn" href="javascript:;" id="sureTradeA">确  认</a><a href="redeem.html" class="c-blue2 btn-txt">返回修改</a></div>
+          </div>
+        </div>
+     
+    </div>
+    <div class="w260 fr">
+      <div class="explain">
+        <div class="title">充值帮助</div>
+        <h4 class="h4">快捷支付是否安全？</h4>
+        <p class="p">绑定银行卡后，卡内资金只能用于购买基金，且基金赎回的款项只能划往您的银行卡，所以您的资金是绝对安全的，只需保管好交易密码即可。</p>
+        <h4 class="h4">已成功付款，仍显示未付款？</h4>
+        <p class="p">可能为网络延迟或者银行的数据没有即时传输给我们，请在成功付款10分钟后查询该笔交易的付款状态。</p>
+        <h4 class="h4">付款失败怎么办？</h4>
+        <p class="p">请确保卡内有足够余额后进行付款。付款失败后该笔交易无法重新付款，需重新提交申请。 </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--底部开始-->
+<div id="bottom"></div>
+<!--底部结束--> 
+<script>
+$(function(){
+var text =$(".text");
+$("#sureTradeA").click(function(){
+var txt=$("#sureInputText").val();
+var mytip=$("#sureMsgTip");
+mytip.show();
+if(txt==""){
+mytip.addClass("tip-error");
+mytip.find(".msg-txt").show();		
+}
+});
+
+text.blur(function(){
+var txt=$(this).val();
+var mytip=$(this).parent(".items").find(".msg-tip");	
+mytip.removeClass("tip-error");
+$(this).parent(".items").find(".msg-txt").hide();
+});
+
+text.focus(function(){
+var mytip=$(this).parent(".items").find(".msg-tip");	
+mytip.show();
+$(this).parent(".items").find(".msg-txt").hide();
+mytip.removeClass("tip-error");
+});
+
+});
+</script>
+
+</body>
+</html>

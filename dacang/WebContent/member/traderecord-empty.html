@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>交易记录</title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="description" content=" " />
+<meta name="keywords" content=" " />
+<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+<link href="../css/base.css" rel="stylesheet"/>
+<link href="../css/member.css" rel="stylesheet"/>
+<script src="../js/jq/jquery-1.9.1.min.js"></script>
+<script src="../js/bs/bootstrap.js"></script>
+<script src="../js/bs/stickUp.js"></script>
+<script src="../js/common/member-top.js"></script>
+<script src="../js/common/inner-bottom.js"></script>
+</head>
+<body>
+<!--头部开始-->
+<div id="top"></div>
+<!--头部结束-->
+<div class="wrap membox clearfix">
+  <div class="mem-nav fl">
+    <div class="portrait">
+      <div class="port-poto"><img src="../images/_del/men-photo.jpg"/></div>
+      <div class="port-name">散落风</div>
+    </div>
+    <div class="nav-list">
+      <ul>
+        <li><a href="myaccounts.html"><em class="abs abs-verline"></em><i class="ico ico-arrow"></i>我的账户</a></li>
+        <li><a href="supercash.html"><em class="abs abs-verline"></em><i class="ico ico-arrow"></i>超级现金宝</a></li>
+        <li><a href="generalfund.html"><em class="abs abs-verline"></em><i class="ico ico-arrow"></i>普通基金</a></li>
+        <li class="active"><a href="traderecord.html"><em class="abs abs-verline"></em><i class="ico ico-arrow"></i>交易记录</a></li>
+        <li><a href="redenvelope.html"><em class="abs abs-verline"></em><i class="ico ico-arrow"></i>我的红包</a></li>
+        <li><a href="mytask.html"><em class="abs abs-verline"></em><i class="ico ico-arrow"></i>我的任务</a></li>
+        <li><a href="invite.html"><em class="abs abs-verline"></em><i class="ico ico-arrow"></i>我的邀请</a></li>
+        <li><a href="bankcards.html"><em class="abs abs-verline"></em><i class="ico ico-arrow"></i>我的银行卡</a></li>
+        <li><a href="accountmanage.html"><em class="abs abs-verline"></em><i class="ico ico-arrow"></i>账户管理</a></li>
+      </ul>
+      <div class="text-center"><!--图片大小 宽179 高210--><img src="../images/_ad/memberAd.jpg"/></div>
+    </div>
+  </div>
+  <div class="mem-cont fr mr40">
+    <div class="mem-title">
+      <h2>交易记录</h2>
+    </div>
+    <div class="ui-select-list">
+      <ul class="clearfix select-js" id="uiTradeRecord">
+        <li class="active" style="width:96px;"> <a href="#selGouMai" data-toggle="tab"><span>交易记录</span><i class="ui-select-list-l-line">|</i></a> </li>
+        <li style="width:96px;"><a href="#selShuHui" data-toggle="tab"><span>基金分红</span><i class="ui-select-list-l-line">|</i></a> </li>
+        <li style="width:96px;"><a href="#selZhuanHuan" data-toggle="tab"><span>活动奖励</span></a> </li>
+      
+      </ul>
+      <div class="ui-select-list-line">
+        <div class="ui-select-list-l-orange" style="left:-1px;width:96px;"></div>
+      </div>
+    </div>
+    <div class="tab-content">
+      <div class="tab-pane fade in active" id="selGouMai">
+      <!--置空开始-->
+      <div class="empty-h2">
+        <div class="empty-default empty-bigtable">
+          <div class="emp-img"></div>
+          <div class="emp-txt">暂无数据，前往<a href="../market/buyfund.html" target="_blank" class="c-blue mlr">购买</a>？</div>
+        </div>
+      </div>
+      <!--置空结束--> 
+      </div>
+      <div class="tab-pane fade" id="selShuHui">
+      <!--置空开始-->
+      <div class="empty-h2">
+        <div class="empty-default empty-bigtable">
+          <div class="emp-img"></div>
+          <div class="emp-txt">暂无数据</div>
+        </div>
+      </div>
+      <!--置空结束--> 
+      </div>
+      <div class="tab-pane fade" id="selZhuanHuan">
+      <!--置空开始-->
+      <div class="empty-h2">
+        <div class="empty-default empty-bigtable">
+          <div class="emp-img"></div>
+          <div class="emp-txt">暂无数据</div>
+        </div>
+      </div>
+      <!--置空结束--> 
+      </div>
+    
+    </div>
+  </div>
+</div>
+<!--底部开始-->
+<div id="bottom"></div>
+<!--底部结束--> 
+<script type="text/javascript">
+jQuery(function($){$(document).ready(function(){$('.nav-list').stickUp();});});
+</script> 
+<script>
+$(function(){
+/*select list*/
+$('#uiTradeRecord a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+
+var listli=$(".select-js").find("li");
+listli.click(function(){
+var sl=$(this).position().left;
+$(this).parents(".ui-select-list").find(".ui-select-list-l-orange").animate({left:sl}, "fast");  
+});
+
+
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+.tw1{width:138px;}.fs18{font-size:18px;}
+.w660{width:660px;}.w260{width:260px;}
+.borbox{border:1px solid #ccc}
+.m-cont{border:0;}
+/*icon*/
+.ico-hot{width:29px;height:20px;right:0;top:7px;background-position:-371px -32px;}
+.ico-shezhi{width:14px;height:14px;left:0;top:14px;background-position:-38px -119px;}
+.ico-addbank{width:35px;height:35px;left:50%;top:56px;background-position:0 -138px;margin-left:-18px}
+.abs-arrowblue-l{left:0;top:8px;width:0;height:0;border-top:6px solid transparent;border-bottom:6px solid transparent;border-right:6px solid #1f8bd7;font-size:0;line-height:0;overflow:hidden;}
+/*cash*/
+.mem-title{height:40px;border-bottom:1px solid #e4e4e4;border-left:4px solid #177dcf;overflow:hidden;padding:0 17px 0 14px;background:#fff;}
+.mem-title .h2{float:left;display:block;font-size:16px;color:#177dcf;line-height:40px;}
+.explain{position:relative;border:1px dashed #ddd;padding:13px 19px 28px 19px;margin-top:29px;}
+.explain .title{position:absolute;z-index:1;height:28px;line-height:28px;background:#fff;padding:0 10px;top:0;left:19px;margin-top:-14px;font-size:16px;color:#666;}
+.explain .h4{display:block;line-height:18px;color:#1f8bd7;margin-top:15px;font-size:12px;clear:both;padding:5px 0;}
+.explain .p{line-height:20px;color:#666;text-indent:25px;font-size:12px;}.explain .no-ind{text-indent:0;}
+.cash-h2{display:block;height:40px;line-height:40px;background:#e6f5ff;padding:0 11px 0 9px;font-size:16px;margin-top:20px;}
+.cash-h2 span,.cash-h2 a{display:block}
+.cash-padd1{padding:17px 39px 0 40px;}
+.cash-h3{display:block;height:42px;font-weight:normal;font-size:14px;line-height:42px;}
+.cash-h3 em,.cash-h3 span{display:block;float:left;height:42px;line-height:42px;}
+.cash-h3 em{font-weight:normal;color:#666;}.cash-h3 span,.cash-h3 a{position:relative;}
+.cash-h3 span{padding:0 43px 0 3px;}.cash-h3 a.shezhi{padding-left:18px;}
+.cash-h3 a.shezhi:hover .ico-shezhi{background-position:-53px -119px;} 
+.select-fund{margin-bottom:12px;}
+.select-fund .title{height:48px;line-height:48px;border-bottom:1px solid #e4e4e4;position:relative;padding:0 0 0 13px;overflow:hidden}
+.select-fund .cont{height:39px;line-height:39px;padding-left:38px;overflow:hidden}
+.select-fund span,.select-fund em{display:block;float:left;font-style:normal}
+.select-fund .cont span{margin-right:13px;}
+.select-fund .cont em{width:146px;font-size:18px;font-weight:bold;overflow:hidden}
+.select-fund .title em{margin:12px 13px 0 0;height:25px;line-height:25px;color:#fff;padding:0 6px;background:#fd7651;border-radius:5px 0 5px 0}
+.select-fund .title .iradio_square{margin-top:17px;margin-right:6px;}.select-fund label{display:block;float:left;width:529px;cursor:pointer;}
+.turn-out{padding-bottom:14px;}
+.cash-table{border-bottom:1px dashed #ddd;padding-bottom:27px;}
+.cash-table th,.cash-table td{padding:0 5px;height:40px;line-height:40px;}
+.cash-table th{color:#666;font-weight:normal;width:114px;text-align:right;}
+.cash-table .jj-amount{height:40px;overflow:hidden;margin:0}
+.cash-table .jj-amount dt{float:left;font-size:16px;line-height:40px;}
+.cash-table .jj-amount dd{float:left;position:relative;border:1px solid #ccc;width:144px;height:38px;padding:0 7px;}
+.cash-table .jj-amount dd span,.cash-table .jj-amount dd a,.jj-amount dd b{display:block;}
+.cash-table .jj-amount dd a,.cash-table .jj-amount dd b{width:15px;height:15px;float:left;overflow:hidden;position:relative;line-height:15px;margin-top:12px;background-color:#1f8bd7;}
+.cash-table .jj-amount dd a.add,.cash-table .jj-amount dd b.add{float:right;}
+.cash-table .jj-amount dd a i{cursor:pointer;}
+.cash-table .jj-amount dd a:hover{background-color:#feab4a}
+.cash-table .jj-amount dd b{background-color:#ededed}
+.cash-table .jj-amount dd b i{background-color:#cccccc}
+.cash-table .jj-amount dd input{background:none;color:#333;float:left;font-size:16px;height:38px;ime-mode:disabled;line-height:38px;margin:0;outline:0 none;padding:0 4px 0 10px;width:74px;border:none;text-align:right;}
+.cash-table .jj-amount .unit{height:38px;line-height:38px;float:left;display:block;}
+.cash-table .vital{clear:both;height:32px;line-height:32px;padding-left:20px;position:relative;color:#666;font-size:14px;margin:0;}
+.cash-table th.vit,.cash-table td.vit{height:32px;line-height:32px;}
+.cash-form{padding:40px 0 45px 71px}
+.cash-form .text{width:188px;}
+.cash-form .items-btn .btn{width:230px;}
+.cash-form .msg-tip .ico{left:354px;}
+.cash-form .msg-tip .msg-txt{left:390px;}
+/*确认页面*/
+.ok-padd{padding:0 140px 40px 140px;border-bottom:1px dashed #ddd;}
+.okinfo-title{height:64px;line-height:64px;font-size:18px;color:#666;text-align:center;margin-top:22px;}.okinfo-title b{color:#ff8022;margin:0 2px;}
+.okinfo-cont{background:#ffead4;border:2px dashed #fff;padding:18px;border-radius:10px;}
+.okinfo-table{border:4px solid #fff;padding:11px 0;font-size:16px;}
+.okinfo-table td,.okinfo-table th{padding:9px 5px;line-height:20px;vertical-align:top;}
+.okinfo-table th{font-weight:normal;color:#666;text-align:right;}
+/*other*/
+.paytab-text .msg-tip .ico{left:161px;}
+.paytab-text .msg-tip .msg-txt{left:212px;}
+.jsqtab-text .msg-tip .ico{left:172px;}
+.jsqtab-text .msg-tip .msg-txt{left:195px;}
+.paytab-select .ui-selectmenu-button{float:left;display:block}
+.paytab-select .msg-tip .ico{left:191px;}
+.paytab-select .msg-tip .msg-txt{left:214px;}
+.cash-table h4{display:block;height:38px;line-height:38px;font-size:18px;padding-left:39px;}
+.small-table{padding:15px 0;}
+.small-table th,.small-table td{padding:10px 5px;}
+.small-table th{color:#666;font-weight:normal;text-align:right;}
+.nomar{margin:0;}.nobor{border-bottom:0;}
+/*申购 赎回*/
+.purpay-box{padding:6px 40px 11px 45px;}
+.pur-title{height:38px;line-height:38px;overflow:hidden;position:relative;}
+.pur-title label{float:left;display:block}.pur-title span{display:block;float:right}
+.pur-title .iradio_square{float:left;margin-top:11px;margin-right:9px;}
+.pur-cont{padding-left:25px;}
+.pur-line{border-bottom:1px dashed #ddd;}
+.red-cash{padding:0 19px 16px 19px;border-bottom:1px solid #ccc;}
+.red-cash h3,.red-cash span,.red-cash a,.red-cash em{display:block;}
+.red-cash h3{margin-top:2px;height:40px;line-height:40px;overflow:hidden;font-size:14px;}
+.red-cash h3 span{font-size:16px;}.red-cash p span{color:#666;}
+.red-cash .red-p{height:30px;padding:10px 0 10px 29px;line-height:30px;overflow:hidden;background:#fcf4ea;}
+.red-cash .red-p em{margin-left:10px;width:100px;font-style:normal}
+.red-time{height:29px;overflow:hidden;padding:10px 0 10px 18px;color:#666;}
+.red-time span{display:block;float:left;height:29px;line-height:29px;position:relative;padding-left:27px;margin-right:56px;}
+.red-time span .ico{left:0;top:6px;}
+.ico-dztime{width:15px;height:16px;background-position:-68px -119px;}
+.ico-sy{width:16px;height:16px;background-position:-85px -119px;}
+.ico-sy-dis{width:16px;height:16px;background-position:-102px -119px;}
+.red-info{border-top:1px dashed #e4e4e4;height:39px;line-height:39px;background:#fcfcfc;padding-left:18px;color:#666;font-size:12px;}
+.redeembox{padding-bottom:29px;}
+.redeembox .pur-cont{margin-bottom:7px;}
+.notbindbank{padding-bottom:8px;}
+.notbindbank a,.notbindbank span{display:block;}
+.notbindbank span{height:38px;line-height:38px;}
+.notbindbank a{width:314px;height:32px;position:relative;border:3px dashed #ccc;padding:91px 0 51px 0;text-align:center;color:#999;font-size:12px;line-height:32px;margin:20px auto; border-radius:5px;}
+.notbindbank a:hover{border-color:#1f8bd7;color:#1f8bd7;}
+.notbindbank a:hover .ico-addbank{background-position:-36px -138px;}
+.ul-on label{cursor:pointer;display:block;float:left;background:#123;height:38px;width:500px;overflow:hidden}
+/*radio list*/
+.list-radio dl{height:38px;overflow:hidden;color:#666;}
+.list-radio dt{width:29px;float:left;}.list-radio dd{width:537px;float:right}
+.list-radio dl label{display:block;width:100%;}
+.list-radio li{float:left;}
+.list-radio li{position:relative;height:38px;line-height:38px;padding-right:6px;}
+.list-radio label{cursor:pointer;display:block;width:100%;}
+.list-radio ul{width:100%;overflow:hidden}
+.pay-bank dl{border:1px solid #ccc;margin-bottom:10px;}
+.pay-bank li.one{width:30px;}
+.pay-bank li.two{width:auto;}
+.pay-bank li.two span{max-width:154px;overflow:hidden}
+.pay-bank li.three{float:right}
+.pbank-padd{padding:1px 39px 3px 40px;}
+.pay-h3{display:block;height:39px;overflow:hidden;line-height:39px;}
+.pay-h3 a,.pay-h3 span{display:block}
+.pay-bank span.payspan{display:block;float:left;margin-right:3px;}
+.pay-bank .pay-tip{float:left;position:relative;padding-left:4px;margin-top:5px;}
+.pay-bank .pay-tip .h5{display:block;float:left;padding:0 7px;color:#fff;font-size:12px;height:28px;line-height:28px;background:#1f8bd7;}
+.pay-bank .iradio_square{margin:11px 0 0 13px;}
+.diy-fund{padding-bottom:11px}
+.diy-fund dl{height:34px;overflow:hidden;}
+.diy-fund ul{height:34px;overflow:hidden;}
+.diy-fund li{height:34px;line-height:34px;}
+.diy-fund li.one{width:200px;}
+.diy-fund li.two{width:60px;}
+.diy-fund li.three{width:70px;}
+.diy-fund li.four{width:90px;text-align:right}
+.diy-fund li.five{width:79px;text-align:right}
+.diy-fund .iradio_square{margin:10px 0 0 13px;}
+.diy-fund .title dl{background:#ecf7ff;border:1px solid #ccc;border-bottom:0;cursor:default;width:100%; box-sizing:border-box;overflow:hidden;}
+.diy-fund .cont dl{border-bottom:1px dashed #ddd;border-left:1px solid #ccc;border-right:1px solid #ccc;}
+.diy-fund .cont dl:last-child{border-bottom:1px solid #ddd;}
+.redeembox .pur-title label{position:relative;padding-right:35px;}
+.fundul2{padding-top:14px;}
+.fundul2 li.one{width:170px;}
+.fundul2 li.two{width:87px;}
+.fundul2 li.three{width:90px;}
+.fundul2 li.four{width:162px;}
+.list-radio dl.on{border:1px solid #1f8bd7;}
+.pay-cash li.one{float:right}
+.pay-cash li.two{width:auto;float:right}
+.pay-cash li.three{width:220px;float:left;}
+/*pop*/
+.defaul-cash{height:48px;line-height:48px;text-align:center;color:#999;border:1px dashed #c8c8c8;}
+.dc-tool{height:28px;line-height:28px;padding:13px 0 8px 0;}
+.dc-tool span{display:block;}
+.dc-table{text-align:center;}.dc-table tbody tr{cursor:pointer;}
+.dc-table td{height:40px;line-height:40px;overflow:hidden;text-overflow:ellipsis;}
+.dc-table thead td,.dc-table thead tr{background:#ecf7ff;color:#666}
+.dc-table tbody td{border-bottom:1px dashed #edf1f4;}
+.dc-table tbody tr.on{background:#eff8fe}
+.dc-table tbody tr.active{background:#79beef;}
+.ui-form-tip{position:relative;height:38px;line-height:38px;padding-left:26px;float:left;}
+
+.cash-table .icheck-box label{width:480px;}
+
+
+

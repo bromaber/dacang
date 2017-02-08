@@ -1,0 +1,1239 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>基金选购--智能筛选</title>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="description" content=" " />
+		<meta name="keywords" content=" " />
+		<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+		<link href="../css/base.css" rel="stylesheet" />
+		<link href="../css/market.css" rel="stylesheet" />
+		<link href="../css/ui.css" rel="stylesheet" />
+		<script src="../js/jq/jquery-1.9.1.min.js"></script>
+		<script src="../js/bs/bootstrap.js"></script>
+		<script src="../js/jq/jquery.input.js"></script>
+		<script src="../js/bs/icheck.js"></script>
+		<script src="../js/base.js"></script>
+		<script src="../js/smartfilter.js"></script>
+		<script src="../js/rc/RongIMClient-0.9.10.min.js"></script>
+		<script src="../js/rc/Embedded.js"></script>
+		<script src="../js/common/inner-top.js"></script>
+        <script src="../js/common/inner-bottom.js"></script>
+	</head>
+
+	<body>
+		<!--头部开始-->
+		<div id="top"></div>
+		<div class="head-tab">
+			<div class="wrap clearfix">
+				<ul class="mar-tab">
+					<li><a href="buyfund.html">基金选购</a></li>
+					<li class="active"><a href="smartfilter.html">智能筛选</a></li>
+					<li><a href="newfund.html">新发基金</a></li>
+				</ul>
+				<div class="head-search">
+					<ul>
+						<li class="dropdown">
+							<a aria-expanded="true" role="button" aria-haspopup="true" data-toggle="dropdown" class="dropdown-toggle search-drop c-gray666" href="#" id="drop1"> <span class="abs abs-arrow-d"></span> <span class="dropdown-text">基金</span> </a>
+							<ul aria-labelledby="drop1" role="menu" class="dropdown-menu">
+								<li role="presentation"><a href="javascript:;">基金</a></li>
+								<li role="presentation"><a href="javascript:;">经理</a></li>
+								<li role="presentation"><a href="javascript:;">资讯</a></li>
+							</ul>
+						</li>
+						<li class="top-text top-s-js"> <i class="ico ico-search"></i>
+							<input type="text" name="" class="stxt-js input_ph" value="请输入基金代码／简称／拼音" placeholder="" tabindex="-1">
+							<div id="searchData" class="sbox sbox-js" style="display:none">
+								<table id="auto1">
+									<tbody>
+										<tr>
+											<td width="29px" class="rel"><i class="abs abs-rank abs-top">1</i></td>
+											<td width="55px">76<span>2</span>001</td>
+											<td>国金通用国鑫发起</td>
+										</tr>
+										<tr>
+											<td class="rel"><i class="abs abs-rank abs-top">2</i></td>
+											<td>75000<span>2</span></td>
+											<td>安信目标收益债券A</td>
+										</tr>
+										<tr>
+											<td class="rel"><i class="abs abs-rank abs-top">3</i></td>
+											<td>74060<span>2</span></td>
+											<td>长安货币B</td>
+										</tr>
+										<tr>
+											<td class="rel"><i class="abs abs-rank">4</i></td>
+											<td>73000<span>2</span></td>
+											<td>方正富邦红利精选股票方正富邦红利精选股票</td>
+										</tr>
+										<tr>
+											<td class="rel"><i class="abs abs-rank">5</i></td>
+											<td>7<span>2</span>0003</td>
+											<td>财通保本混合发起式</td>
+										</tr>
+										<tr>
+											<td class="rel"><i class="abs abs-rank">6</i></td>
+											<td>7<span>2</span>000<span>2</span></td>
+											<td>财通多策略稳健增长债券</td>
+										</tr>
+										<tr>
+											<td class="rel"><i class="abs abs-rank">7</i></td>
+											<td>7<span>2</span>0001</td>
+											<td>财通价值动量混合</td>
+										</tr>
+										<tr>
+											<td class="rel"><i class="abs abs-rank">8</i></td>
+											<td>71050<span>2</span></td>
+											<td>富安达现金通货币B</td>
+										</tr>
+										<tr>
+											<td class="rel"><i class="abs abs-rank">9</i></td>
+											<td>71050<span>2</span></td>
+											<td>富安达现金通货币B</td>
+										</tr>
+										<tr>
+											<td class="rel"><i class="abs abs-rank">10</i></td>
+											<td>71050<span>2</span></td>
+											<td>富安达现金通货币B</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--头部结束-->
+		<div class="wrap">
+			<div class="m-cont nopad mt20">
+				<div class="filter-box">
+					<div class="select-items clearfix" id="OneFilter">
+						<dl>
+							<dt>基金类型：</dt>
+							<dd class="sel-any dd-js on"> <a href="javascript:;">不限</a> </dd>
+						</dl>
+						<dl class="f-fundtype">
+							<dd class="selmenu-js"><a href="javascript:;">股票型</a> </dd>
+							<dd class="selmenu-js"> <a href="javascript:;">指数型</a> </dd>
+							<dd class="selmenu-js"> <a href="javascript:;">混合型</a> </dd>
+							<dd class="selmenu-js"> <a href="javascript:;">债券型</a> </dd>
+							<dd class="selmenu-js"> <a href="javascript:;">QDII</a> </dd>
+							<dd class="selmenu-js"> <a href="javascript:;">货币型</a> </dd>
+							<dd class="selmenu-js"> <a href="javascript:;">理财型</a> </dd>
+							<dd class="selmenu-js"> <a href="javascript:;">新发基金</a> </dd>
+						</dl>
+					</div>
+					<div class="select-items clearfix" id="TwoFilter">
+						<dl>
+							<dt>基金业绩：</dt>
+							<dd class="sel-any on"> <a href="javascript:;">不限</a> </dd>
+						</dl>
+						<dl class="f-fundresult f-twolist">
+							<dd class="onemenu"> <i class="ico-line"></i><a href="javascript:;">今年来<b></b><i class="ico-dd"></i></a></dd>
+							<dd class="onemenu"> <i class="ico-line"></i><a href="javascript:;">近一周<b></b><i class="ico-dd"></i></a> </dd>
+							<dd class="onemenu"> <i class="ico-line"></i><a href="javascript:;">近一月<b></b><i class="ico-dd"></i></a> </dd>
+							<dd class="onemenu"> <i class="ico-line"></i><a href="javascript:;">近三月<b></b><i class="ico-dd"></i></a> </dd>
+							<dd class="onemenu"> <i class="ico-line"></i><a href="javascript:;">近六月<b></b><i class="ico-dd"></i></a> </dd>
+							<dd class="onemenu"> <i class="ico-line"></i><a href="javascript:;">近一年<b></b><i class="ico-dd"></i></a> </dd>
+							<dd class="onemenu"> <i class="ico-line"></i><a href="javascript:;">近两年<b></b><i class="ico-dd"></i></a> </dd>
+							<dd class="onemenu"> <i class="ico-line"></i><a href="javascript:;">近三年<b></b><i class="ico-dd"></i></a> </dd>
+						</dl>
+						<div class="select-child">
+							<ul class="clearfix hide">
+								<li class="twomenu-js sel-all on"><a href="javascript:;">不限</a></li>
+								<li class="twomenu-js"><a href="javascript:;">前10</a></li>
+								<li class="twomenu-js"><a href="javascript:;">前20</a></li>
+								<li class="twomenu-js"><a href="javascript:;">前50</a></li>
+								<li class="twomenu-js"><a href="javascript:;">前100</a></li>
+							</ul>
+							<ul class="clearfix hide">
+								<li class="twomenu-js sel-all on"><a href="javascript:;">不限</a></li>
+								<li class="twomenu-js"><a href="javascript:;">前10</a></li>
+								<li class="twomenu-js"><a href="javascript:;">前20</a></li>
+								<li class="twomenu-js"><a href="javascript:;">前50</a></li>
+								<li class="twomenu-js"><a href="javascript:;">前100</a></li>
+							</ul>
+							<ul class="clearfix hide">
+								<li class="twomenu-js sel-all on"><a href="javascript:;">不限</a></li>
+								<li class="twomenu-js"><a href="javascript:;">前10</a></li>
+								<li class="twomenu-js"><a href="javascript:;">前20</a></li>
+								<li class="twomenu-js"><a href="javascript:;">前50</a></li>
+								<li class="twomenu-js"><a href="javascript:;">前100</a></li>
+							</ul>
+							<ul class="clearfix hide">
+								<li class="twomenu-js sel-all on"><a href="javascript:;">不限</a></li>
+								<li class="twomenu-js"><a href="javascript:;">前10</a></li>
+								<li class="twomenu-js"><a href="javascript:;">前20</a></li>
+								<li class="twomenu-js"><a href="javascript:;">前50</a></li>
+								<li class="twomenu-js"><a href="javascript:;">前100</a></li>
+							</ul>
+							<ul class="clearfix hide">
+								<li class="twomenu-js sel-all on"><a href="javascript:;">不限</a></li>
+								<li class="twomenu-js"><a href="javascript:;">前10</a></li>
+								<li class="twomenu-js"><a href="javascript:;">前20</a></li>
+								<li class="twomenu-js"><a href="javascript:;">前50</a></li>
+								<li class="twomenu-js"><a href="javascript:;">前100</a></li>
+							</ul>
+							<ul class="clearfix hide">
+								<li class="twomenu-js sel-all on"><a href="javascript:;">不限</a></li>
+								<li class="twomenu-js"><a href="javascript:;">前10</a></li>
+								<li class="twomenu-js"><a href="javascript:;">前20</a></li>
+								<li class="twomenu-js"><a href="javascript:;">前50</a></li>
+								<li class="twomenu-js"><a href="javascript:;">前100</a></li>
+							</ul>
+							<ul class="clearfix hide">
+								<li class="twomenu-js sel-all on"><a href="javascript:;">不限</a></li>
+								<li class="twomenu-js"><a href="javascript:;">前10</a></li>
+								<li class="twomenu-js"><a href="javascript:;">前20</a></li>
+								<li class="twomenu-js"><a href="javascript:;">前50</a></li>
+								<li class="twomenu-js"><a href="javascript:;">前100</a></li>
+							</ul>
+							<ul class="clearfix hide">
+								<li class="twomenu-js sel-all on"><a href="javascript:;">不限</a></li>
+								<li class="twomenu-js"><a href="javascript:;">前10</a></li>
+								<li class="twomenu-js"><a href="javascript:;">前20</a></li>
+								<li class="twomenu-js"><a href="javascript:;">前50</a></li>
+								<li class="twomenu-js"><a href="javascript:;">前100</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="select-items clearfix" id="ThreeFilter">
+						<dl>
+							<dt>基金公司：</dt>
+							<dd class="sel-any on"> <a href="javascript:;">不限</a> </dd>
+						</dl>
+						
+						<dl class="f-fundcompany f-twolist">
+							<dd class="onemenu"> <i class="ico-line"></i><a href="javascript:;">A<b></b></a> </dd>
+							<dd class="onemenu"> <i class="ico-line"></i><a href="javascript:;">B<b></b></a> </dd>
+							<dd class="onemenu"> <i class="ico-line"></i><a href="javascript:;">C<b></b></a> </dd>
+							<dd class="onemenu"> <i class="ico-line"></i><a href="javascript:;">D<b></b></a> </dd>
+							<dd class="onemenu"> <i class="ico-line"></i><a href="javascript:;">F<b></b></a> </dd>
+							<dd class="onemenu"> <i class="ico-line"></i><a href="javascript:;">G<b></b></a> </dd>
+							<dd class="onemenu"> <i class="ico-line"></i><a href="javascript:;">H<b></b></a> </dd>
+							<dd class="onemenu"> <i class="ico-line"></i><a href="javascript:;">J<b></b></a> </dd>
+							<dd class="onemenu"> <i class="ico-line"></i><a href="javascript:;">M<b></b></a> </dd>
+							<dd class="onemenu"> <i class="ico-line"></i><a href="javascript:;">N<b></b></a> </dd>
+							<dd class="onemenu"> <i class="ico-line"></i><a href="javascript:;">P<b></b></a> </dd>
+							<dd class="onemenu"> <i class="ico-line"></i><a href="javascript:;">Q<b></b></a> </dd>
+							<dd class="onemenu"> <i class="ico-line"></i><a href="javascript:;">R<b></b></a> </dd>
+							<dd class="onemenu"> <i class="ico-line"></i><a href="javascript:;">S<b></b></a> </dd>
+							<dd class="onemenu"> <i class="ico-line"></i><a href="javascript:;">T<b></b></a> </dd>
+							<dd class="onemenu"> <i class="ico-line"></i><a href="javascript:;">W<b></b></a> </dd>
+							<dd class="onemenu"> <i class="ico-line"></i><a href="javascript:;">X<b></b></a> </dd>
+							<dd class="onemenu"> <i class="ico-line"></i><a href="javascript:;">Y<b></b></a> </dd>
+							<dd class="onemenu"> <i class="ico-line"></i><a href="javascript:;">Z<b></b></a> </dd>
+						</dl>
+						<div class="select-child">
+							<ul class="clearfix hide">
+								<li class="twomenu-js"><a href="javascript:;">博时基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">北信瑞丰基金北信瑞丰基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">北信瑞丰基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">北信瑞丰基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">北信瑞丰基金</a></li>
+								
+							</ul>
+							<ul class="clearfix hide">
+								<li class="twomenu-js"><a href="javascript:;">博时</a></li>
+								<li class="twomenu-js"><a href="javascript:;">北信瑞丰</a></li>
+								<li class="twomenu-js"><a href="javascript:;">宝盈</a></li>
+								<li class="twomenu-js"><a href="javascript:;">光大保德信基金</a></li>
+							</ul>
+							<ul class="clearfix hide">
+								<li class="twomenu-js"><a href="javascript:;">财通基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">财通基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">财通基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">财通基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">财通基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">财通基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">财通基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">财通基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">财通基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">财通基金</a></li>
+							</ul>
+							<ul class="clearfix hide">
+								<li class="twomenu-js"><a href="javascript:;">长安基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">长安基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">长安基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">长安基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">长安基金</a></li>
+							</ul>
+							<ul class="clearfix hide">
+								<li class="twomenu-js"><a href="javascript:;">中加基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">中加基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">中加基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">中加基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">中加基金</a></li>
+							</ul>
+							<ul class="clearfix hide">
+								<li class="twomenu-js"><a href="javascript:;">东方基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">东方基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">东方基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">东方基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">东方基金</a></li>
+							</ul>
+							<ul class="clearfix hide">
+								<li class="twomenu-js"><a href="javascript:;">东吴基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">东吴基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">东吴基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">东吴基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">东吴基金</a></li>
+							</ul>
+							<ul class="clearfix hide">
+								<li class="twomenu-js"><a href="javascript:;">德邦基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">德邦基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">德邦基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">德邦基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">德邦基金</a></li>
+							</ul>
+							<ul class="clearfix hide">
+								<li class="twomenu-js"><a href="javascript:;">国开泰富基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">国开泰富基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">国开泰富基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">国开泰富基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">国开泰富基金</a></li>
+							</ul>
+							<ul class="clearfix hide">
+								<li class="twomenu-js"><a href="javascript:;">浦银安盛基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">浦银安盛基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">浦银安盛基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">浦银安盛基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">浦银安盛基金</a></li>
+							</ul>
+							<ul class="clearfix hide">
+								<li class="twomenu-js"><a href="javascript:;">光大保德信基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">光大保德信基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">光大保德信基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">光大保德信基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">光大保德信基金</a></li>
+							</ul>
+							<ul class="clearfix hide">
+								<li class="twomenu-js"><a href="javascript:;">工银瑞信基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">工银瑞信基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">工银瑞信基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">工银瑞信基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">工银瑞信基金</a></li>
+							</ul>
+							<ul class="clearfix hide">
+								<li class="twomenu-js"><a href="javascript:;">西部利得基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">西部利得基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">西部利得基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">西部利得基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">西部利得基金</a></li>
+							</ul>
+							<ul class="clearfix hide">
+								<li class="twomenu-js"><a href="javascript:;">兴业基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">兴业基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">兴业基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">兴业基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">兴业基金</a></li>
+							</ul>
+							<ul class="clearfix hide">
+								<li class="twomenu-js"><a href="javascript:;">银华基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">银华基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">银华基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">银华基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">银华基金</a></li>
+							</ul>
+							<ul class="clearfix hide">
+								<li class="twomenu-js"><a href="javascript:;">鑫元基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">鑫元基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">鑫元基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">鑫元基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">鑫元基金</a></li>
+							</ul>
+							<ul class="clearfix hide">
+								<li class="twomenu-js"><a href="javascript:;">信达澳银基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">信达澳银基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">信达澳银基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">信达澳银基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">信达澳银基金</a></li>
+							</ul>
+							<ul class="clearfix hide">
+								<li class="twomenu-js"><a href="javascript:;">中邮创业基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">中邮创业基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">中邮创业基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">中邮创业基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">中邮创业基金</a></li>
+							</ul>
+							<ul class="clearfix hide">
+								<li class="twomenu-js"><a href="javascript:;">鑫元基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">鑫元基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">鑫元基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">鑫元基金</a></li>
+								<li class="twomenu-js"><a href="javascript:;">鑫元基金</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="select-items clearfix" id="FourFilter">
+						<div class="filter-tool"><a href="javascript:;" class="zhankai-a"><i class="ico ico-ud"></i><span>展开</span></a></div>
+						<dl>
+							<dt>基金主题：</dt>
+							<dd class="sel-any on"> <a href="javascript:;">不限</a> </dd>
+						</dl>
+						<dl class="f-fundtheme" id="FundThemeId">
+							<dd class="selmenu-js"> <a href="javascript:;">银行</a> </dd>
+							<dd class="selmenu-js"> <a href="javascript:;">非银金融</a> </dd>
+							<dd class="selmenu-js"> <a href="javascript:;">食品饮料</a> </dd>
+							<dd class="selmenu-js"> <a href="javascript:;">家用电器</a> </dd>
+							<dd class="selmenu-js"> <a href="javascript:;">医药生物</a> </dd>
+							<dd class="selmenu-js"> <a href="javascript:;">休闲服务</a> </dd>
+							<dd class="selmenu-js"> <a href="javascript:;">传媒</a> </dd>
+							<dd class="selmenu-js"> <a href="javascript:;">汽车</a> </dd>
+							<dd class="selmenu-js"> <a href="javascript:;">钢铁</a> </dd>
+							<dd class="selmenu-js"> <a href="javascript:;">轻工制造</a> </dd>
+							<dd class="selmenu-js"> <a href="javascript:;">计算机</a> </dd>
+							<dd class="selmenu-js"> <a href="javascript:;">交通运输</a> </dd>
+							<dd class="selmenu-js"> <a href="javascript:;">电子</a> </dd>
+							<dd class="selmenu-js"> <a href="javascript:;">房地产</a> </dd>
+							<dd class="selmenu-js"> <a href="javascript:;">通信</a> </dd>
+							<dd class="selmenu-js"> <a href="javascript:;">化工</a> </dd>
+							<dd class="selmenu-js"> <a href="javascript:;">综合</a> </dd>
+							<dd class="selmenu-js"> <a href="javascript:;">环保概念</a> </dd>
+							<dd class="selmenu-js"> <a href="javascript:;">电气设备</a> </dd>
+							<dd class="selmenu-js"> <a href="javascript:;">建筑装饰</a> </dd>
+							<dd class="selmenu-js"> <a href="javascript:;">采掘</a> </dd>
+							<dd class="selmenu-js"> <a href="javascript:;">机械设备</a> </dd>
+							<dd class="selmenu-js"> <a href="javascript:;">公用事业</a> </dd>
+							<dd class="selmenu-js"> <a href="javascript:;">纺织服装</a> </dd>
+							<dd class="selmenu-js"> <a href="javascript:;">建筑材料</a> </dd>
+							<dd class="selmenu-js"> <a href="javascript:;">高端装备制造</a> </dd>
+							<dd class="selmenu-js"> <a href="javascript:;">移动互联网</a> </dd>
+							<dd class="selmenu-js"> <a href="javascript:;">美丽中国</a> </dd>
+							<dd class="selmenu-js"> <a href="javascript:;">国资改革</a> </dd>
+							<dd class="selmenu-js"> <a href="javascript:;">一带一路</a> </dd>
+							<dd class="selmenu-js"> <a href="javascript:;">电子信息</a> </dd>
+							<dd class="selmenu-js"> <a href="javascript:;">国防军工</a> </dd>
+							<dd class="selmenu-js"> <a href="javascript:;">航天军工</a> </dd>
+							<dd class="selmenu-js"> <a href="javascript:;">环保概念</a> </dd>
+							<dd class="selmenu-js"> <a href="javascript:;">电气设备</a> </dd>
+							<dd class="selmenu-js"> <a href="javascript:;">建筑装饰</a> </dd>
+							<dd class="selmenu-js"> <a href="javascript:;">采掘</a> </dd>
+							<dd class="selmenu-js"> <a href="javascript:;">机械设备</a> </dd>
+							<dd class="selmenu-js"> <a href="javascript:;">公用事业</a> </dd>
+							<dd class="selmenu-js"> <a href="javascript:;">纺织服装</a> </dd>
+							<dd class="selmenu-js"> <a href="javascript:;">建筑材料</a> </dd>
+							<dd class="selmenu-js"> <a href="javascript:;">高端装备制造</a> </dd>
+							<dd class="selmenu-js"> <a href="javascript:;">移动互联网</a> </dd>
+							<dd class="selmenu-js"> <a href="javascript:;">美丽中国</a> </dd>
+							<dd class="selmenu-js"> <a href="javascript:;">国资改革</a> </dd>
+							<dd class="selmenu-js"> <a href="javascript:;">一带一路</a> </dd>
+							<dd class="selmenu-js"> <a href="javascript:;">电子信息</a> </dd>
+							<dd class="selmenu-js"> <a href="javascript:;">国防军工</a> </dd>
+							<dd class="selmenu-js"> <a href="javascript:;">航天军工</a> </dd>
+						</dl>
+					</div>
+					<div class="select-items clearfix" id="FireFilter">
+						<dl>
+							<dt>基金规模：</dt>
+							<dd class="sel-any on"> <a href="javascript:;">不限</a> </dd>
+						</dl>
+						<dl class="f-fundscale">
+							<dd class="selmenu-js"> <a href="javascript:;">&gt;2亿</a> </dd>
+							<dd class="selmenu-js"> <a href="javascript:;">&gt;5亿</a> </dd>
+							<dd class="selmenu-js"> <a href="javascript:;">&gt;10亿</a> </dd>
+						</dl>
+					</div>
+					<div class="select-items clearfix" id="SixFilter">
+						<dl>
+							<dt>成立年限：</dt>
+							<dd class="sel-any on"> <a href="javascript:;">不限</a> </dd>
+						</dl>
+						<dl class="f-fundtime">
+							<dd class="selmenu-js"> <a href="javascript:;">&gt;1年</a> </dd>
+							<dd class="selmenu-js"> <a href="javascript:;">&gt;2年</a> </dd>
+							<dd class="selmenu-js"> <a href="javascript:;">&gt;3年</a> </dd>
+							<dd class="selmenu-js"> <a href="javascript:;">&gt;5年</a> </dd>
+							<dd class="selmenu-js"> <a href="javascript:;">&gt;7年</a> </dd>
+						</dl>
+					</div>
+					<div class="select-items seled-filter clearfix">
+						<div class="filter-tool"><a href="javascript:;" id="RemoveSeled">清空已选</a></div>
+						<dl>
+							<dt>已选条件：</dt>
+						</dl>
+						<dl>
+							<dd class="c-gray999 hide" id="NoSelectId">您尚未设定筛选条件!</dd>
+						</dl>
+						<ul class="seled-list" id="SeledListId">
+							<li><a href="javascript:;"><i class="ico ico-remsel"></i>类型：股票型</a></li>
+							<li><a href="javascript:;"><i class="ico ico-remsel"></i>业绩：今年来前100</a></li>
+							<li><a href="javascript:;"><i class="ico ico-remsel"></i>规模：>10亿</a></li>
+							<li><a href="javascript:;"><i class="ico ico-remsel"></i>年限：>7年</a></li>
+							<li><a href="javascript:;" title="摩根士丹利华鑫基金"><i class="ico ico-remsel"></i>公司：摩根士丹利华鑫基金</a></li>
+							<li><a href="javascript:;"><i class="ico ico-remsel"></i>主题：高端装备制造</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="filter-btn"><a href="javascript:;" class="arrow-u"><i class="ico ico-arrowud"></i></a></div>
+			<div class="m-cont org-bor nopad mt12">
+				<div class="smart-title">
+					<h3 class="h3 fl fs16 c-gray666">根据您的筛选，找到<span class="c-orange"> 365 </span>只基金</h3>
+					<div class="icheck-box">
+						<input type="checkbox" class="icheck" name="iCheck" id="input-3">
+						<label for="input-3">仅显示可购买</label>
+					</div>
+				</div>
+				<div class="main-box">
+					<table width="100%" border="0" cellpadding="0" cellspacing="0" class="main-thead">
+						<thead>
+							<tr class="tab-seq-js">
+								<th style="width: 62px;"><a href="javascript:;" class="">基金代码<i class="ico ico-down"></i></a></th>
+								<th style="width: 144px;"><a href="javascript:;" class="">基金名称<i class="ico ico-down"></i></a></th>
+								<th style="width: 53px;"><a href="javascript:;" class="">更新<br>
+              日期<i class="ico ico-down"></i></a></th>
+								<th style="width: 58px;"><a href="javascript:;" class="">净值<i class="ico ico-down"></i></a></th>
+								<th style="width: 58px;"><a href="javascript:;" class="">日涨幅<i class="ico ico-down"></i></a></th>
+								<th style="width: 58px;"><a href="javascript:;" class="">近一周<i class="ico ico-down"></i></a></th>
+								<th style="width: 58px;"><a href="javascript:;" class="">近一月<i class="ico ico-down"></i></a></th>
+								<th style="width: 58px;"><a href="javascript:;" class="sequence">近三月<i class="ico ico-down"></i></a></th>
+								<th style="width: 58px;"><a href="javascript:;" class="">近六月<i class="ico ico-down"></i></a></th>
+								<th style="width: 58px;"><a href="javascript:;" class="">近一年<i class="ico ico-down"></i></a></th>
+								<th style="width: 58px;"><a href="javascript:;" class="">近两年<i class="ico ico-down"></i></a></th>
+								<th style="width: 58px;"><a href="javascript:;" class="">今年来<i class="ico ico-down"></i></a></th>
+								<th style="width: 49px;">手续费</th>
+								<th style="width: 62px;">起购点</th>
+								<th style="">操作</th>
+							</tr>
+						</thead>
+					</table>
+				</div>
+				<table width="100%" border="0" cellpadding="0" cellspacing="0" class="main-table">
+					<tbody>
+						<tr>
+							<td style="width: 62px;">648592</td>
+							<td style="width: 144px;">
+								<div class="mt-name"><a href="../gp.html" target="_blank" class="c-gray333">汇添富移动互联网股票</a></div>
+							</td>
+							<td style="width: 53px;">04-12</td>
+							<td style="width: 58px;"><span class="c-red">2.25</span></td>
+							<td style="width: 58px;"><span class="c-red">1.87%</span></td>
+							<td style="width: 58px;"><span class="c-red">3.00%</span></td>
+							<td style="width: 58px;"><span class="c-green">-8.00%</span></td>
+							<td style="width: 58px;"><span class="c-red">9.00%</span></td>
+							<td style="width: 58px;"><span class="c-red">15.50%</span></td>
+							<td style="width: 58px;"><span class="c-red">40.00%</span></td>
+							<td style="width: 58px;"><span class="c-red">66.00%</span></td>
+							<td style="width: 58px;"><span class="c-red">12.00%</span></td>
+							<td style="width: 49px;">10%</td>
+							<td style="width: 62px;">1000元</td>
+							<td style="">
+								<div class="mt-operating"><a href="javascript:;" class="btnbor">购买</a><a href="javascript:;" class="addzx-js">自选</a><a href="javascript:;" class="delzx-js delzx-a" style="display:none">已自选</a></div>
+							</td>
+						</tr>
+						<tr>
+							<td>648592</td>
+							<td>
+								<div class="mt-name"><a href="../gp.html" target="_blank" class="c-gray333">汇添富移动互联网股票</a></div>
+							</td>
+							<td>04-12</td>
+							<td><span class="c-red">2.25</span></td>
+							<td><span class="c-red">1.87%</span></td>
+							<td><span class="c-red">3.00%</span></td>
+							<td><span class="c-green">-8.00%</span></td>
+							<td><span class="c-red">9.00%</span></td>
+							<td><span class="c-red">15.50%</span></td>
+							<td><span class="c-red">40.00%</span></td>
+							<td><span class="c-red">66.00%</span></td>
+							<td><span class="c-red">12.00%</span></td>
+							<td>10%</td>
+							<td>1000元</td>
+							<td>
+								<div class="mt-operating"><a href="javascript:;" class="btnbor">购买</a><a href="javascript:;" class="addzx-js" style="display:none">自选</a><a href="javascript:;" class="delzx-js delzx-a">已自选</a></div>
+							</td>
+						</tr>
+						<tr>
+							<td>648592</td>
+							<td>
+								<div class="mt-name"><a href="../gp.html" target="_blank" class="c-gray333">汇添富移动互联网股票</a></div>
+							</td>
+							<td>04-12</td>
+							<td><span class="c-red">2.25</span></td>
+							<td><span class="c-red">1.87%</span></td>
+							<td><span class="c-red">3.00%</span></td>
+							<td><span class="c-green">-8.00%</span></td>
+							<td><span class="c-red">9.00%</span></td>
+							<td><span class="c-red">15.50%</span></td>
+							<td><span class="c-red">40.00%</span></td>
+							<td><span class="c-red">66.00%</span></td>
+							<td><span class="c-red">12.00%</span></td>
+							<td>10%</td>
+							<td>1000元</td>
+							<td>
+								<div class="mt-operating"><a href="javascript:;" class="btnbor">购买</a><a href="javascript:;" class="addzx-js">自选</a><a href="javascript:;" class="delzx-js delzx-a" style="display:none">已自选</a></div>
+							</td>
+						</tr>
+						<tr>
+							<td>648592</td>
+							<td>
+								<div class="mt-name"><a href="../gp.html" target="_blank" class="c-gray333">汇添富移动互联网股票</a></div>
+							</td>
+							<td>04-12</td>
+							<td><span class="c-red">2.25</span></td>
+							<td><span class="c-red">1.87%</span></td>
+							<td><span class="c-red">3.00%</span></td>
+							<td><span class="c-green">-8.00%</span></td>
+							<td><span class="c-red">9.00%</span></td>
+							<td><span class="c-red">15.50%</span></td>
+							<td><span class="c-red">40.00%</span></td>
+							<td><span class="c-red">66.00%</span></td>
+							<td><span class="c-red">12.00%</span></td>
+							<td>10%</td>
+							<td>1000元</td>
+							<td>
+								<div class="mt-operating"><a href="javascript:;" class="btnbor">购买</a><a href="javascript:;" class="addzx-js">自选</a><a href="javascript:;" class="delzx-js delzx-a" style="display:none">已自选</a></div>
+							</td>
+						</tr>
+						<tr>
+							<td>648592</td>
+							<td>
+								<div class="mt-name"><a href="../gp.html" target="_blank" class="c-gray333">汇添富移动互联网股票</a></div>
+							</td>
+							<td>04-12</td>
+							<td><span class="c-red">2.25</span></td>
+							<td><span class="c-red">1.87%</span></td>
+							<td><span class="c-red">3.00%</span></td>
+							<td><span class="c-green">-8.00%</span></td>
+							<td><span class="c-red">9.00%</span></td>
+							<td><span class="c-red">15.50%</span></td>
+							<td><span class="c-red">40.00%</span></td>
+							<td><span class="c-red">66.00%</span></td>
+							<td><span class="c-red">12.00%</span></td>
+							<td>10%</td>
+							<td>1000元</td>
+							<td>
+								<div class="mt-operating"><a href="javascript:;" class="btnbor">购买</a><a href="javascript:;" class="addzx-js">自选</a><a href="javascript:;" class="delzx-js delzx-a" style="display:none">已自选</a></div>
+							</td>
+						</tr>
+						<tr>
+							<td>648592</td>
+							<td>
+								<div class="mt-name"><a href="../gp.html" target="_blank" class="c-gray333">汇添富移动互联网股票</a></div>
+							</td>
+							<td>04-12</td>
+							<td><span class="c-red">2.25</span></td>
+							<td><span class="c-red">1.87%</span></td>
+							<td><span class="c-red">3.00%</span></td>
+							<td><span class="c-green">-8.00%</span></td>
+							<td><span class="c-red">9.00%</span></td>
+							<td><span class="c-red">15.50%</span></td>
+							<td><span class="c-red">40.00%</span></td>
+							<td><span class="c-red">66.00%</span></td>
+							<td><span class="c-red">12.00%</span></td>
+							<td>10%</td>
+							<td>1000元</td>
+							<td>
+								<div class="mt-operating"><a href="javascript:;" class="btnbor">购买</a><a href="javascript:;">+自选</a></div>
+							</td>
+						</tr>
+						<tr>
+							<td>648592</td>
+							<td>
+								<div class="mt-name"><a href="../gp.html" target="_blank" class="c-gray333">汇添富移动互联网股票</a></div>
+							</td>
+							<td>04-12</td>
+							<td><span class="c-red">2.25</span></td>
+							<td><span class="c-red">1.87%</span></td>
+							<td><span class="c-red">3.00%</span></td>
+							<td><span class="c-green">-8.00%</span></td>
+							<td><span class="c-red">9.00%</span></td>
+							<td><span class="c-red">15.50%</span></td>
+							<td><span class="c-red">40.00%</span></td>
+							<td><span class="c-red">66.00%</span></td>
+							<td><span class="c-red">12.00%</span></td>
+							<td>10%</td>
+							<td>1000元</td>
+							<td>
+								<div class="mt-operating"><a href="javascript:;" class="btnbor">购买</a><a href="javascript:;">+自选</a></div>
+							</td>
+						</tr>
+						<tr>
+							<td>648592</td>
+							<td>
+								<div class="mt-name"><a href="../gp.html" target="_blank" class="c-gray333">汇添富移动互联网股票</a></div>
+							</td>
+							<td>04-12</td>
+							<td><span class="c-red">2.25</span></td>
+							<td><span class="c-red">1.87%</span></td>
+							<td><span class="c-red">3.00%</span></td>
+							<td><span class="c-green">-8.00%</span></td>
+							<td><span class="c-red">9.00%</span></td>
+							<td><span class="c-red">15.50%</span></td>
+							<td><span class="c-red">40.00%</span></td>
+							<td><span class="c-red">66.00%</span></td>
+							<td><span class="c-red">12.00%</span></td>
+							<td>10%</td>
+							<td>1000元</td>
+							<td>
+								<div class="mt-operating"><a href="javascript:;" class="btnbor">购买</a><a href="javascript:;">+自选</a></div>
+							</td>
+						</tr>
+						<tr>
+							<td>648592</td>
+							<td>
+								<div class="mt-name"><a href="../gp.html" target="_blank" class="c-gray333">汇添富移动互联网股票</a></div>
+							</td>
+							<td>04-12</td>
+							<td><span class="c-red">2.25</span></td>
+							<td><span class="c-red">1.87%</span></td>
+							<td><span class="c-red">3.00%</span></td>
+							<td><span class="c-green">-8.00%</span></td>
+							<td><span class="c-red">9.00%</span></td>
+							<td><span class="c-red">15.50%</span></td>
+							<td><span class="c-red">40.00%</span></td>
+							<td><span class="c-red">66.00%</span></td>
+							<td><span class="c-red">12.00%</span></td>
+							<td>10%</td>
+							<td>1000元</td>
+							<td>
+								<div class="mt-operating"><a href="javascript:;" class="btnbor">购买</a><a href="javascript:;">+自选</a></div>
+							</td>
+						</tr>
+						<tr>
+							<td>648592</td>
+							<td>
+								<div class="mt-name"><a href="../gp.html" target="_blank" class="c-gray333">汇添富移动互联网股票</a></div>
+							</td>
+							<td>04-12</td>
+							<td><span class="c-red">2.25</span></td>
+							<td><span class="c-red">1.87%</span></td>
+							<td><span class="c-red">3.00%</span></td>
+							<td><span class="c-green">-8.00%</span></td>
+							<td><span class="c-red">9.00%</span></td>
+							<td><span class="c-red">15.50%</span></td>
+							<td><span class="c-red">40.00%</span></td>
+							<td><span class="c-red">66.00%</span></td>
+							<td><span class="c-red">12.00%</span></td>
+							<td>10%</td>
+							<td>1000元</td>
+							<td>
+								<div class="mt-operating"><a href="javascript:;" class="btnbor">购买</a><a href="javascript:;">+自选</a></div>
+							</td>
+						</tr>
+						<tr>
+							<td>648592</td>
+							<td>
+								<div class="mt-name"><a href="../gp.html" target="_blank" class="c-gray333">汇添富移动互联网股票</a></div>
+							</td>
+							<td>04-12</td>
+							<td><span class="c-red">2.25</span></td>
+							<td><span class="c-red">1.87%</span></td>
+							<td><span class="c-red">3.00%</span></td>
+							<td><span class="c-green">-8.00%</span></td>
+							<td><span class="c-red">9.00%</span></td>
+							<td><span class="c-red">15.50%</span></td>
+							<td><span class="c-red">40.00%</span></td>
+							<td><span class="c-red">66.00%</span></td>
+							<td><span class="c-red">12.00%</span></td>
+							<td>10%</td>
+							<td>1000元</td>
+							<td>
+								<div class="mt-operating"><a href="javascript:;" class="btnbor">购买</a><a href="javascript:;">+自选</a></div>
+							</td>
+						</tr>
+						<tr>
+							<td>648592</td>
+							<td>
+								<div class="mt-name"><a href="../gp.html" target="_blank" class="c-gray333">汇添富移动互联网股票</a></div>
+							</td>
+							<td>04-12</td>
+							<td><span class="c-red">2.25</span></td>
+							<td><span class="c-red">1.87%</span></td>
+							<td><span class="c-red">3.00%</span></td>
+							<td><span class="c-green">-8.00%</span></td>
+							<td><span class="c-red">9.00%</span></td>
+							<td><span class="c-red">15.50%</span></td>
+							<td><span class="c-red">40.00%</span></td>
+							<td><span class="c-red">66.00%</span></td>
+							<td><span class="c-red">12.00%</span></td>
+							<td>10%</td>
+							<td>1000元</td>
+							<td>
+								<div class="mt-operating"><a href="javascript:;" class="btnbor">购买</a><a href="javascript:;">+自选</a></div>
+							</td>
+						</tr>
+						<tr>
+							<td>648592</td>
+							<td>
+								<div class="mt-name"><a href="../gp.html" target="_blank" class="c-gray333">汇添富移动互联网股票</a></div>
+							</td>
+							<td>04-12</td>
+							<td><span class="c-red">2.25</span></td>
+							<td><span class="c-red">1.87%</span></td>
+							<td><span class="c-red">3.00%</span></td>
+							<td><span class="c-green">-8.00%</span></td>
+							<td><span class="c-red">9.00%</span></td>
+							<td><span class="c-red">15.50%</span></td>
+							<td><span class="c-red">40.00%</span></td>
+							<td><span class="c-red">66.00%</span></td>
+							<td><span class="c-red">12.00%</span></td>
+							<td>10%</td>
+							<td>1000元</td>
+							<td>
+								<div class="mt-operating"><a href="javascript:;" class="btnbor">购买</a><a href="javascript:;">+自选</a></div>
+							</td>
+						</tr>
+						<tr>
+							<td>648592</td>
+							<td>
+								<div class="mt-name"><a href="../gp.html" target="_blank" class="c-gray333">汇添富移动互联网股票</a></div>
+							</td>
+							<td>04-12</td>
+							<td><span class="c-red">2.25</span></td>
+							<td><span class="c-red">1.87%</span></td>
+							<td><span class="c-red">3.00%</span></td>
+							<td><span class="c-green">-8.00%</span></td>
+							<td><span class="c-red">9.00%</span></td>
+							<td><span class="c-red">15.50%</span></td>
+							<td><span class="c-red">40.00%</span></td>
+							<td><span class="c-red">66.00%</span></td>
+							<td><span class="c-red">12.00%</span></td>
+							<td>10%</td>
+							<td>1000元</td>
+							<td>
+								<div class="mt-operating"><a href="javascript:;" class="btnbor">购买</a><a href="javascript:;">+自选</a></div>
+							</td>
+						</tr>
+						<tr>
+							<td>648592</td>
+							<td>
+								<div class="mt-name"><a href="../gp.html" target="_blank" class="c-gray333">汇添富移动互联网股票</a></div>
+							</td>
+							<td>04-12</td>
+							<td><span class="c-red">2.25</span></td>
+							<td><span class="c-red">1.87%</span></td>
+							<td><span class="c-red">3.00%</span></td>
+							<td><span class="c-green">-8.00%</span></td>
+							<td><span class="c-red">9.00%</span></td>
+							<td><span class="c-red">15.50%</span></td>
+							<td><span class="c-red">40.00%</span></td>
+							<td><span class="c-red">66.00%</span></td>
+							<td><span class="c-red">12.00%</span></td>
+							<td>10%</td>
+							<td>1000元</td>
+							<td>
+								<div class="mt-operating"><a href="javascript:;" class="btnbor">购买</a><a href="javascript:;">+自选</a></div>
+							</td>
+						</tr>
+						<tr>
+							<td>648592</td>
+							<td>
+								<div class="mt-name"><a href="../gp.html" target="_blank" class="c-gray333">汇添富移动互联网股票</a></div>
+							</td>
+							<td>04-12</td>
+							<td><span class="c-red">2.25</span></td>
+							<td><span class="c-red">1.87%</span></td>
+							<td><span class="c-red">3.00%</span></td>
+							<td><span class="c-green">-8.00%</span></td>
+							<td><span class="c-red">9.00%</span></td>
+							<td><span class="c-red">15.50%</span></td>
+							<td><span class="c-red">40.00%</span></td>
+							<td><span class="c-red">66.00%</span></td>
+							<td><span class="c-red">12.00%</span></td>
+							<td>10%</td>
+							<td>1000元</td>
+							<td>
+								<div class="mt-operating"><a href="javascript:;" class="btnbor">购买</a><a href="javascript:;">+自选</a></div>
+							</td>
+						</tr>
+						<tr>
+							<td>648592</td>
+							<td>
+								<div class="mt-name"><a href="../gp.html" target="_blank" class="c-gray333">汇添富移动互联网股票</a></div>
+							</td>
+							<td>04-12</td>
+							<td><span class="c-red">2.25</span></td>
+							<td><span class="c-red">1.87%</span></td>
+							<td><span class="c-red">3.00%</span></td>
+							<td><span class="c-green">-8.00%</span></td>
+							<td><span class="c-red">9.00%</span></td>
+							<td><span class="c-red">15.50%</span></td>
+							<td><span class="c-red">40.00%</span></td>
+							<td><span class="c-red">66.00%</span></td>
+							<td><span class="c-red">12.00%</span></td>
+							<td>10%</td>
+							<td>1000元</td>
+							<td>
+								<div class="mt-operating"><a href="javascript:;" class="btnbor">购买</a><a href="javascript:;">+自选</a></div>
+							</td>
+						</tr>
+						<tr>
+							<td>648592</td>
+							<td>
+								<div class="mt-name"><a href="../gp.html" target="_blank" class="c-gray333">汇添富移动互联网股票</a></div>
+							</td>
+							<td>04-12</td>
+							<td><span class="c-red">2.25</span></td>
+							<td><span class="c-red">1.87%</span></td>
+							<td><span class="c-red">3.00%</span></td>
+							<td><span class="c-green">-8.00%</span></td>
+							<td><span class="c-red">9.00%</span></td>
+							<td><span class="c-red">15.50%</span></td>
+							<td><span class="c-red">40.00%</span></td>
+							<td><span class="c-red">66.00%</span></td>
+							<td><span class="c-red">12.00%</span></td>
+							<td>10%</td>
+							<td>1000元</td>
+							<td>
+								<div class="mt-operating"><a href="javascript:;" class="btnbor">购买</a><a href="javascript:;">+自选</a></div>
+							</td>
+						</tr>
+						<tr>
+							<td>648592</td>
+							<td>
+								<div class="mt-name"><a href="../gp.html" target="_blank" class="c-gray333">汇添富移动互联网股票</a></div>
+							</td>
+							<td>04-12</td>
+							<td><span class="c-red">2.25</span></td>
+							<td><span class="c-red">1.87%</span></td>
+							<td><span class="c-red">3.00%</span></td>
+							<td><span class="c-green">-8.00%</span></td>
+							<td><span class="c-red">9.00%</span></td>
+							<td><span class="c-red">15.50%</span></td>
+							<td><span class="c-red">40.00%</span></td>
+							<td><span class="c-red">66.00%</span></td>
+							<td><span class="c-red">12.00%</span></td>
+							<td>10%</td>
+							<td>1000元</td>
+							<td>
+								<div class="mt-operating"><a href="javascript:;" class="btnbor">购买</a><a href="javascript:;">+自选</a></div>
+							</td>
+						</tr>
+						<tr>
+							<td>648592</td>
+							<td>
+								<div class="mt-name"><a href="../gp.html" target="_blank" class="c-gray333">汇添富移动互联网股票</a></div>
+							</td>
+							<td>04-12</td>
+							<td><span class="c-red">2.25</span></td>
+							<td><span class="c-red">1.87%</span></td>
+							<td><span class="c-red">3.00%</span></td>
+							<td><span class="c-green">-8.00%</span></td>
+							<td><span class="c-red">9.00%</span></td>
+							<td><span class="c-red">15.50%</span></td>
+							<td><span class="c-red">40.00%</span></td>
+							<td><span class="c-red">66.00%</span></td>
+							<td><span class="c-red">12.00%</span></td>
+							<td>10%</td>
+							<td>1000元</td>
+							<td>
+								<div class="mt-operating"><a href="javascript:;" class="btnbor">购买</a><a href="javascript:;">+自选</a></div>
+							</td>
+						</tr>
+						<tr>
+							<td>648592</td>
+							<td>
+								<div class="mt-name"><a href="../gp.html" target="_blank" class="c-gray333">汇添富移动互联网股票</a></div>
+							</td>
+							<td>04-12</td>
+							<td><span class="c-red">2.25</span></td>
+							<td><span class="c-red">1.87%</span></td>
+							<td><span class="c-red">3.00%</span></td>
+							<td><span class="c-green">-8.00%</span></td>
+							<td><span class="c-red">9.00%</span></td>
+							<td><span class="c-red">15.50%</span></td>
+							<td><span class="c-red">40.00%</span></td>
+							<td><span class="c-red">66.00%</span></td>
+							<td><span class="c-red">12.00%</span></td>
+							<td>10%</td>
+							<td>1000元</td>
+							<td>
+								<div class="mt-operating"><a href="javascript:;" class="btnbor">购买</a><a href="javascript:;">+自选</a></div>
+							</td>
+						</tr>
+						<tr>
+							<td>648592</td>
+							<td>
+								<div class="mt-name"><a href="../gp.html" target="_blank" class="c-gray333">汇添富移动互联网股票</a></div>
+							</td>
+							<td>04-12</td>
+							<td><span class="c-red">2.25</span></td>
+							<td><span class="c-red">1.87%</span></td>
+							<td><span class="c-red">3.00%</span></td>
+							<td><span class="c-green">-8.00%</span></td>
+							<td><span class="c-red">9.00%</span></td>
+							<td><span class="c-red">15.50%</span></td>
+							<td><span class="c-red">40.00%</span></td>
+							<td><span class="c-red">66.00%</span></td>
+							<td><span class="c-red">12.00%</span></td>
+							<td>10%</td>
+							<td>1000元</td>
+							<td>
+								<div class="mt-operating"><a href="javascript:;" class="btnbor">购买</a><a href="javascript:;">+自选</a></div>
+							</td>
+						</tr>
+						<tr>
+							<td>648592</td>
+							<td>
+								<div class="mt-name"><a href="../gp.html" target="_blank" class="c-gray333">汇添富移动互联网股票</a></div>
+							</td>
+							<td>04-12</td>
+							<td><span class="c-red">2.25</span></td>
+							<td><span class="c-red">1.87%</span></td>
+							<td><span class="c-red">3.00%</span></td>
+							<td><span class="c-green">-8.00%</span></td>
+							<td><span class="c-red">9.00%</span></td>
+							<td><span class="c-red">15.50%</span></td>
+							<td><span class="c-red">40.00%</span></td>
+							<td><span class="c-red">66.00%</span></td>
+							<td><span class="c-red">12.00%</span></td>
+							<td>10%</td>
+							<td>1000元</td>
+							<td>
+								<div class="mt-operating"><a href="javascript:;" class="btnbor">购买</a><a href="javascript:;">+自选</a></div>
+							</td>
+						</tr>
+						<tr>
+							<td>648592</td>
+							<td>
+								<div class="mt-name"><a href="../gp.html" target="_blank" class="c-gray333">汇添富移动互联网股票</a></div>
+							</td>
+							<td>04-12</td>
+							<td><span class="c-red">2.25</span></td>
+							<td><span class="c-red">1.87%</span></td>
+							<td><span class="c-red">3.00%</span></td>
+							<td><span class="c-green">-8.00%</span></td>
+							<td><span class="c-red">9.00%</span></td>
+							<td><span class="c-red">15.50%</span></td>
+							<td><span class="c-red">40.00%</span></td>
+							<td><span class="c-red">66.00%</span></td>
+							<td><span class="c-red">12.00%</span></td>
+							<td>10%</td>
+							<td>1000元</td>
+							<td>
+								<div class="mt-operating"><a href="javascript:;" class="btnbor">购买</a><a href="javascript:;">+自选</a></div>
+							</td>
+						</tr>
+						<tr>
+							<td>648592</td>
+							<td>
+								<div class="mt-name"><a href="../gp.html" target="_blank" class="c-gray333">汇添富移动互联网股票</a></div>
+							</td>
+							<td>04-12</td>
+							<td><span class="c-red">2.25</span></td>
+							<td><span class="c-red">1.87%</span></td>
+							<td><span class="c-red">3.00%</span></td>
+							<td><span class="c-green">-8.00%</span></td>
+							<td><span class="c-red">9.00%</span></td>
+							<td><span class="c-red">15.50%</span></td>
+							<td><span class="c-red">40.00%</span></td>
+							<td><span class="c-red">66.00%</span></td>
+							<td><span class="c-red">12.00%</span></td>
+							<td>10%</td>
+							<td>1000元</td>
+							<td>
+								<div class="mt-operating"><a href="javascript:;" class="btnbor">购买</a><a href="javascript:;">+自选</a></div>
+							</td>
+						</tr>
+						<tr>
+							<td>648592</td>
+							<td>
+								<div class="mt-name"><a href="../gp.html" target="_blank" class="c-gray333">汇添富移动互联网股票</a></div>
+							</td>
+							<td>04-12</td>
+							<td><span class="c-red">2.25</span></td>
+							<td><span class="c-red">1.87%</span></td>
+							<td><span class="c-red">3.00%</span></td>
+							<td><span class="c-green">-8.00%</span></td>
+							<td><span class="c-red">9.00%</span></td>
+							<td><span class="c-red">15.50%</span></td>
+							<td><span class="c-red">40.00%</span></td>
+							<td><span class="c-red">66.00%</span></td>
+							<td><span class="c-red">12.00%</span></td>
+							<td>10%</td>
+							<td>1000元</td>
+							<td>
+								<div class="mt-operating"><a href="javascript:;" class="btnbor">购买</a><a href="javascript:;">+自选</a></div>
+							</td>
+						</tr>
+						<tr>
+							<td>648592</td>
+							<td>
+								<div class="mt-name"><a href="../gp.html" target="_blank" class="c-gray333">汇添富移动互联网股票</a></div>
+							</td>
+							<td>04-12</td>
+							<td><span class="c-red">2.25</span></td>
+							<td><span class="c-red">1.87%</span></td>
+							<td><span class="c-red">3.00%</span></td>
+							<td><span class="c-green">-8.00%</span></td>
+							<td><span class="c-red">9.00%</span></td>
+							<td><span class="c-red">15.50%</span></td>
+							<td><span class="c-red">40.00%</span></td>
+							<td><span class="c-red">66.00%</span></td>
+							<td><span class="c-red">12.00%</span></td>
+							<td>10%</td>
+							<td>1000元</td>
+							<td>
+								<div class="mt-operating"><a href="javascript:;" class="btnbor">购买</a><a href="javascript:;">+自选</a></div>
+							</td>
+						</tr>
+						<tr>
+							<td>648592</td>
+							<td>
+								<div class="mt-name"><a href="../gp.html" target="_blank" class="c-gray333">汇添富移动互联网股票</a></div>
+							</td>
+							<td>04-12</td>
+							<td><span class="c-red">2.25</span></td>
+							<td><span class="c-red">1.87%</span></td>
+							<td><span class="c-red">3.00%</span></td>
+							<td><span class="c-green">-8.00%</span></td>
+							<td><span class="c-red">9.00%</span></td>
+							<td><span class="c-red">15.50%</span></td>
+							<td><span class="c-red">40.00%</span></td>
+							<td><span class="c-red">66.00%</span></td>
+							<td><span class="c-red">12.00%</span></td>
+							<td>10%</td>
+							<td>1000元</td>
+							<td>
+								<div class="mt-operating"><a href="javascript:;" class="btnbor">购买</a><a href="javascript:;">+自选</a></div>
+							</td>
+						</tr>
+						<tr>
+							<td>648592</td>
+							<td>
+								<div class="mt-name"><a href="../gp.html" target="_blank" class="c-gray333">汇添富移动互联网股票</a></div>
+							</td>
+							<td>04-12</td>
+							<td><span class="c-red">2.25</span></td>
+							<td><span class="c-red">1.87%</span></td>
+							<td><span class="c-red">3.00%</span></td>
+							<td><span class="c-green">-8.00%</span></td>
+							<td><span class="c-red">9.00%</span></td>
+							<td><span class="c-red">15.50%</span></td>
+							<td><span class="c-red">40.00%</span></td>
+							<td><span class="c-red">66.00%</span></td>
+							<td><span class="c-red">12.00%</span></td>
+							<td>10%</td>
+							<td>1000元</td>
+							<td>
+								<div class="mt-operating"><a href="javascript:;" class="btnbor">购买</a><a href="javascript:;">+自选</a></div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<!--表格数据为空时显示-->
+				<!-- <div class="empty-box"><span class="empty-txt">暂无数据</span></div>-->
+			</div>
+		</div>
+		<!--底部开始-->
+		<div id="bottom"></div>
+		<!--底部结束-->
+
+		<!--客服开始-->
+		<div class="kefu-box">
+			<div class="kf-sidebar"><a class="its choice rotate kefa-js" href="../zixuan.html" target="_blank" id="btn-zx"><span>自选(0)</span></a> <a class="its kefu rotate" id="btn-kefu" href="javascript:;"><span>在线客服</span></a> <a class="its hottel rotate kefa-js" href="../us/index.html?type=3"
+				target="_blank"><span>客服热线</span></a> <a class="its ewm rotate kefa-js" href="javascript:;"><span>二维码</span></a> <a class="its yijian rotate" href="../help/feedback.html" target="_blank"><span>意见反馈</span></a> <a class="its gotop rotate" style="visibility:hidden;"
+				href="javascript:;"><span>返回顶部</span></a></div>
+			<div class="kf-pop zixuan-box" style="display:none">
+				<div class="nofund" style="display:none"><i class="ico ico-empty"></i> <span class="nofund">您尚未登录，暂不能使用自选<br>
+立即 <a href="login.html" target="_blank" class="c-blue">登录</a></span> </div>
+				<div class="list">
+					<ul>
+						<li>
+							<a href="javascript:;" class="ico ico-remove"></a>
+							<a href="../gp.html" class="c-blue" target="_blank">
+								<h4 class="h4">天音控股股票</h4>
+							</a>
+							<p><span class="c-gray666">日增长率</span><em class="c-rise">1.35%</em><a href="javascript:;" class="zxbuy c-blue2 a-disabled">购买</a></p>
+						</li>
+						<li>
+							<a href="javascript:;" class="ico ico-remove"></a>
+							<a href="../gp.html" class="c-blue" target="_blank">
+								<h4 class="h4">上投摩根转型动力混合</h4>
+							</a>
+							<p><span class="c-gray666">日增长率</span><em class="c-rise">1.35%</em><a href="javascript:;" class="zxbuy c-blue2">购买</a></p>
+						</li>
+						<li>
+							<a href="javascript:;" class="ico ico-remove"></a>
+							<a href="../gp.html" class="c-blue" target="_blank">
+								<h4 class="h4">广发纯债债券C</h4>
+							</a>
+							<p><span class="c-gray666">日增长率</span><em class="c-rise">1.35%</em><a href="javascript:;" class="zxbuy c-blue2">购买</a></p>
+						</li>
+						<li>
+							<a href="javascript:;" class="ico ico-remove"></a>
+							<a href="../gp.html" class="c-blue" target="_blank">
+								<h4 class="h4">海富通阿尔法对冲混合</h4>
+							</a>
+							<p><span class="c-gray666">日增长率</span><em class="c-rise">1.35%</em><a href="javascript:;" class="zxbuy c-blue2">购买</a></p>
+						</li>
+						<li>
+							<a href="javascript:;" class="ico ico-remove"></a>
+							<a href="../gp.html" class="c-blue" target="_blank">
+								<h4 class="h4">天音控股股票天音控股股票天音控股股票</h4>
+							</a>
+							<p><span class="c-gray666">日增长率</span><em class="c-rise">1.35%</em><a href="javascript:;" class="zxbuy c-blue2">购买</a></p>
+						</li>
+					</ul>
+				</div>
+				<a href="javascript:;" class="zxbtn">查看全部》</a> </div>
+			<div class="kf-pop hottel-box" style="display:none">
+				<h3 class="h3">客服热线</h3>
+				<i class="fs18 ft-nums">4000-383-111</i><span class="fs12 c-gray666">服务时间 9:00-19:00</span> </div>
+			<div class="kf-pop ewm-box" style="display:none">
+				<h3 class="h3">APP客户端下载</h3>
+				<p><img src="../images/2wm/pop_app.jpg" /></p>
+				<a class="c-blue uline fs12" href="javascript:;">手机APP下载</a>
+				<h3 class="h3">扫描关注<br>
+      微信公众号</h3>
+				<p><img src="../images/2wm/pop_weixin.jpg" /></p>
+			</div>
+		</div>
+		<script src="../js/kf-sidebar.js"></script>
+		<!--客服结束-->
+		<!--RongCloud开始-->
+		<script>
+			window.RongCloudWebSDK.instantce({
+				'style': {
+					'headerColor': 'rgba(36, 150, 230, 1)', //标题背景色
+					'boxColor': '#2496e6', //消息盒子背景色
+					'bodyColor': '#e2edf7', //对话框背景色
+					'kefuMsgColor': '#fff', //客服消息背景色
+					'cusMsgColor': '#2496e6', //客服消息背景色
+					'sendBtnColor': '#54adeb', //发送按钮背景色
+					'expressionImg': 'images/rc/expression.png', //表情图
+					'cursorcolor': '#177dcf' //滚动条色
+				},
+				'appKey': 'pvxdm17jx8tkr',
+				'token': 'Lhq4vJZumjItS4ZvS+QpTJAV8KUbDpBD1Ff52NtHB+XO1eyoKR+OmFZkEflzCQaL9pNiC0DqLlbeqVoaHA7kweJC51/BDz1a6a5I3PAgv9JkTixOHJ0JUPYtGpFITbZe',
+				'targetId': 'KEFU1433216719825'
+			});
+		</script>
+		<!--RongCloud结束-->
+		<script>
+			$(document).ready(function() {
+				$(".icheck").iCheck({
+					checkboxClass: 'icheckbox_square',
+					radioClass: 'iradio_square',
+					increaseArea: '30%' // optional
+				});
+
+
+
+			});
+		</script>
+		<script>
+			$(function() {
+				/*表格排序*/
+				var tq = $(".tab-seq-js"),
+					tqspan = $(".tab-seq-js").find("a");
+				tqspan.click(function() {
+					var tqclass = $(this).attr("class");
+					if (tqclass == "") {
+						tqspan.removeClass("sequence");
+						$(this).addClass("sequence");
+					} else if (tqclass == "sequence") {
+						$(this).addClass("seq-up");
+					} else {
+						$(this).removeClass("seq-up");
+					}
+				})
+			})
+		</script>
+	</body>
+
+</html>

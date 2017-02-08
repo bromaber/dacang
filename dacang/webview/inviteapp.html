@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>邀请App</title>
+    <meta charset="UTF-8"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-title" content="同程旅游"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta name="full-screen" content="yes"/>
+    <meta name="browsermode" content="application"/>
+    <meta name="x5-fullscreen" content="true"/>
+    <meta name="x5-page-mode" content="app"/>
+    <link rel="stylesheet" href="m/css/common.css"/>
+</head>
+
+<body>
+<style>
+    body, .content {
+        background: #f4d865;
+    }
+</style>
+<div class="content">
+    <div class="invite-poster">
+        <img src="/m/images/yhy.jpg"/>
+    </div>
+    <div class="invite-body">
+        <ul class="i-info">
+            <li class="line">
+            </li>
+            <li class="one">
+                <h3 class="h3 fs30">成功邀请</h3>
+
+                <p><span class="fs46">12</span>&nbsp;&nbsp;&nbsp;<span class="fs24">人</span></p>
+            </li>
+
+            <li class="two">
+                <h3 class="h3">获得红包</h3>
+
+                <p><span class="fs46">240</span>&nbsp;&nbsp;&nbsp;<span class="fs24">元</span></p>
+            </li>
+        </ul>
+        <div class="hj-btnbox">
+            <a class="hj-btn btn-js" href="javascript:;">奖励记录&nbsp;&nbsp;<i class="ico"></i></a>
+        </div>
+        <div class="invi-title clearfix">
+            <i class="ico invi-l"></i>
+
+            <h3 class="h3 fs28 c_fff">邀请玩法</h3>
+            <span class="ico invi-r"></span>
+        </div>
+        <div class="wf-box">
+            <img src="/m/images/fx.png"/>
+        </div>
+        <div class="invi-title clearfix">
+            <i class="ico invi-l"></i>
+
+            <h3 class="h3 fs28 c_fff">活动细则</h3>
+            <span class="ico invi-r"></span>
+        </div>
+        <div class="hdxz">
+            <p class="clearfix"><span class="dhxz-num">1. </span>
+                <span class="dhxz-txt">每成功邀请一个好友，您将获得20元红包，可直接兑换为货币基金份额</span>
+            </p>
+
+            <p class="clearfix"><span class="dhxz-num">2. </span>
+                <span class="dhxz-txt">被邀请人须在您分享的页面上完成注册，并完成一笔买入交易（现金宝充值、基金申购、基金认购），否则将不计入您的邀请记录</span>
+            </p>
+
+            <p class="clearfix"><span class="dhxz-num">3. </span>
+                <span class="dhxz-txt">基金交易需一个工作日确认，现金红包会在交易确认当日到账</span>
+            </p>
+        </div>
+    </div>
+    <div class="explanation">* 本活动最终解释权归上海慧点投资管理有限公司所有</div>
+</div>
+<div class="invite-btnbox">
+    <a class="invite-btn btn-js" href="javascript:;">召集小伙伴</a>
+</div>
+<script src="m/js/jquery-1.9.1.min.js"></script>
+<script>
+    $(function () {
+        var $btn = $(".btn-js");
+        $btn.on("touchstart",function(){
+            $(this).addClass("btnbg")
+        });
+        $btn.on("touchend",function(){
+            $(this).removeClass("btnbg")
+        });
+    })
+</script>
+</body>
+</html>

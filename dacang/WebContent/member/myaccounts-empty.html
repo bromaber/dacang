@@ -1,0 +1,230 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>我的账户</title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="description" content=" " />
+<meta name="keywords" content=" " />
+<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+<link href="../css/base.css" rel="stylesheet"/>
+<link href="../css/member.css" rel="stylesheet"/>
+<script src="../js/jq/jquery-1.9.1.min.js"></script>
+<script src="../js/bs/bootstrap.js"></script>
+<script src="../js/bs/stickUp.js"></script>
+<script src="../js/common/member-top.js"></script>
+<script src="../js/common/inner-bottom.js"></script>
+</head>
+<body>
+
+<!--头部开始-->
+<div id="top"></div>
+<!--头部结束-->
+
+<div class="wrap membox clearfix">
+  <div class="mem-nav fl">
+    <div class="portrait">
+      <div class="port-poto"><img src="../images/_del/men-photo.jpg"/></div>
+      <div class="port-name">散落风</div>
+    </div>
+    <div class="nav-list">
+      <ul>
+        <li class="active"><a href="myaccounts.html"><em class="abs abs-verline"></em><i class="ico ico-arrow"></i>我的账户</a></li>
+        <li><a href="supercash.html"><em class="abs abs-verline"></em><i class="ico ico-arrow"></i>超级现金宝</a></li>
+        <li><a href="generalfund.html"><em class="abs abs-verline"></em><i class="ico ico-arrow"></i>普通基金</a></li>
+        <li><a href="traderecord.html"><em class="abs abs-verline"></em><i class="ico ico-arrow"></i>交易记录</a></li>
+        <li><a href="redenvelope.html"><em class="abs abs-verline"></em><i class="ico ico-arrow"></i>我的红包</a></li>
+        <li><a href="mytask.html"><em class="abs abs-verline"></em><i class="ico ico-arrow"></i>我的任务</a></li>
+        <li><a href="invite.html"><em class="abs abs-verline"></em><i class="ico ico-arrow"></i>我的邀请</a></li>
+        <li><a href="bankcards.html"><em class="abs abs-verline"></em><i class="ico ico-arrow"></i>我的银行卡</a></li>
+        <li><a href="accountmanage.html"><em class="abs abs-verline"></em><i class="ico ico-arrow"></i>账户管理</a></li>
+      </ul>
+      <div class="text-center"><!--图片大小 宽179 高210--><img src="../images/_ad/memberAd.jpg"/></div>
+    </div>
+  </div>
+  <div class="welcome fr">
+    <ul>
+      <li class="name">
+        <p>下午好，散落风！</p>
+        <p class="fs12">上次登录：2015/05/12  18:24</p>
+      </li>
+      <li class="line"></li>
+      <li class="integral text-center">
+        <p>可用红包</p>
+        <p class="fs16 c-lightorange">1240元</p>
+      </li>
+      <li class="line"></li>
+      <li class="assess text-center">
+        <p>风险评估</p>
+        <p class="c-lightorange">保守型</p>
+      </li>
+      <li class="line"></li>
+      <li class="app fs12"><i class="ico ico-app"></i>APP已绑定</li>
+      <!--<li class="app fs12 disabled"><i class="ico ico-app"></i><a href="javascript:;" class="c-blue2">APP未绑定</a></li>-->
+      <li class="line"></li>
+      <li class="weixin fs12"><i class="ico ico-weixin"></i>微信已绑定</li>
+      <!-- <li class="weixin fs12 disabled"><i class="ico ico-weixin"></i><a href="javascript:;" class="c-blue2">微信未绑定</a></li>-->
+    </ul>
+  </div>
+  <div class="mem-cont fr mr40">
+    <div class="mem-title">
+      <h2>我的资产</h2>
+    </div>
+    <div class="myassets"> 
+      <!--数字大于为千万时，字体大小改为32-->
+      <ul>
+        <li class="txt">
+          <h3>总资产<span class="c-gray999 fs12">（元）</span></h3>
+          <p class="ft-nums">0.00</p>
+        </li>
+        <li class="line"></li>
+        <li>
+          <h3>总收益<span class="c-gray999 fs12">（元）</span></h3>
+          <p class="ft-nums">0.00</p>
+        </li>
+        <li class="line"></li>
+        <li class="last">
+          <h3>昨日收益<span class="c-gray999 fs12">（元）</span></h3>
+          <p class="ft-nums">0.00</p>
+        </li>
+      </ul>
+    </div>
+    <div class="horline mem-line"></div>
+    <div class="peizhi">
+      <div class="pz-l-box">
+        <div class="mem-title">
+          <h2>资产配置</h2>
+        </div>
+        <!--大小为宽397px 高265px--> 
+        <!--刚注册，登录进来未交易时显示 pie.png 这张图--> 
+        <img src="../images/pie.png"/> </div>
+      <div class="pz-l-line"></div>
+      <div class="pz-r-box">
+        <div class="pz-list pz-line">
+          <h3>超级现金宝</h3>
+          <div class="pz-info clearfix">
+            <div class="pz-kyye">
+              <h4>可用余额<span class="c-gray999 fs12">（元）</span></h4>
+              <p class="ft-nums">0.00</p>
+            </div>
+            <div class="pz-ljsf">
+              <h4>累计收益<span class="c-gray999 fs12">（元）</span></h4>
+              <!--数字大于或等于为百万时，报面两位小数省略-->
+              <p class="ft-nums">0.00</p>
+            </div>
+          </div>
+          <div class="pz-btn"><a href="../trade/cash.html" class="btn btn-small fl">充 值</a><a href="supercash.html" class="btnbor btnbor-small fr">进入详情</a></div>
+        </div>
+        <div class="pz-list">
+          <h3>普通基金</h3>
+          <div class="pz-info clearfix">
+            <div class="pz-kyye">
+              <h4>可用余额<span class="c-gray999 fs12">（元）</span></h4>
+              <!--数字大于或等于为百万时，报面两位小数省略-->
+              <p class="ft-nums">0.00</p>
+            </div>
+            <div class="pz-ljsf">
+              <h4>累计收益<span class="c-gray999 fs12">（元）</span></h4>
+              <!--数字大于或等于为百万时，报面两位小数省略-->
+              <p class="ft-nums">0.00</p>
+            </div>
+          </div>
+          <div class="pz-btn"><a href="../buy.html" class="btn btn-small fl">基金选购</a><a href="generalfund.html" class="btnbor btnbor-small fr">持仓明细</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="horline mem-line"></div>
+    <div class="mem-title">
+      <h2>单日收益</h2>
+    </div>
+    <div class="charts-cont"> 
+      <!--置空开始-->
+      <div class="empty-h1">
+        <div class="empty-default empty-income">
+          <div class="emp-img"></div>
+          <div class="emp-txt">当前暂无收益，前往<a href="../market/buyfund.html" target="_blank" class="c-blue mlr">购买</a>第一只基金？</div>
+        </div>
+      </div>
+      <!--置空结束--> 
+    </div>
+    <div class="horline mem-line"></div>
+    <div class="mem-title">
+      <h2>收益明细</h2>
+    </div>
+    <div class="ui-select-list samll-width-sellist"> <a href="javascript:;" class="afaq fr c-blue3 "><i class="ico ico-afaq"></i>日收益怎么算</a>
+      <ul class="clearfix select-js" id="uiSouYiTab">
+        <li class="active"> <a href="#selGeneralFund" data-toggle="tab"><span>普通基金</span><i class="ui-select-list-l-line">|</i></a> </li>
+        <li><a href="#selSuperCash" data-toggle="tab"><span>超级现金宝</span></a></li>
+      </ul>
+      <div class="ui-select-list-line">
+        <div class="ui-select-list-l-orange" style="left: -1px; width: 94px;"></div>
+      </div>
+    </div>
+    <div class="tab-content">
+      <div class="tab-pane fade in active" id="selGeneralFund"> 
+        
+        <!--置空开始-->
+        <div class="empty-h2">
+          <div class="empty-default empty-bigtable">
+            <div class="emp-img"></div>
+            <div class="emp-txt">您还未购买任何基金，前往<a href="../market/buyfund.html" target="_blank" class="c-blue mlr">购买</a>？</div>
+          </div>
+        </div>
+        <!--置空结束--> 
+        
+      </div>
+      <div class="tab-pane fade" id="selSuperCash"> 
+        
+        <!--置空开始-->
+        <div class="empty-h2">
+          <div class="empty-default empty-bigtable">
+            <div class="emp-img"></div>
+            <div class="emp-txt">您还未充值，前往<a href="../trade/cash.html" target="_blank" class="c-blue mlr">充值</a>？</div>
+          </div>
+        </div>
+        <!--置空结束--> 
+        
+      </div>
+    </div>
+    <div class="horline mem-line"></div>
+    <div class="mt40"><img src="../images/_ad/mem1.jpg"/></div>
+  </div>
+</div>
+<!--底部开始-->
+<div id="bottom"></div>
+<!--底部结束--> 
+<script type="text/javascript">
+jQuery(function($){$(document).ready(function(){$('.nav-list').stickUp();});});
+</script> 
+<script>
+$(function(){
+/*select list*/
+$('#uiMainTab a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+var listli=$(".select-js").find("li");
+listli.click(function(){
+var sl=$(this).position().left;
+$(this).parents(".ui-select-list").find(".ui-select-list-l-orange").animate({left:sl}, "fast");  
+});
+
+/*展开 收取*/
+var shouqi=$(".shouqi-a");
+shouqi.click(function(){
+var sclass=$(this).attr("class");	
+if(sclass=="shouqi-a"){
+$(this).addClass("zhankai-a");
+$(this).find("span").text("展开");
+$("#tradeTable").find("tbody").hide();
+}else{
+$(this).removeClass("zhankai-a");
+$(this).find("span").text("收起");
+$("#tradeTable").find("tbody").show();
+}	
+});
+
+});
+</script>
+</body>
+</html>

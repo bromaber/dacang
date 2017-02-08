@@ -1,0 +1,209 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>汇基金-注册</title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="description" content=" " />
+<meta name="keywords" content=" " />
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+<link href="css/base.css" rel="stylesheet"/>
+<link href="css/login.css" rel="stylesheet"/>
+<link href="css/ui.css" rel="stylesheet"/>
+<script src="js/jq/jquery-1.9.1.min.js"></script>
+<script src="js/bs/bootstrap.js"></script>
+<script src="js/jq/jquery.input.js"></script>
+<script src="js/bs/icheck.js"></script>
+<script src="js/base.js"></script>
+<style type="text/css">
+  .head{height:142px;}
+  .head .logo{margin-top:45px;}
+  .v-line{float:left;height:37px;width:1px;background-color:#8c939a;margin:57px 0 0 37px;}
+  .head .slogan{font-size:22px;color:#8c939a;margin-top:42px;padding-left:32px;background-image:none;letter-spacing: 3px;}
+  .abs-user-root {background: #2e3134;color: #fff;bottom:0;white-space:nowrap;font-size:10px;background:url("images/icon-bottom-bg.png") center left repeat-x;}
+  .abs-user-root span{  padding:0 25px;font-size:12px;background: #2e3134;}
+  .user-copy {color: #fff;}
+  .user-root {border:none;width:1000px;margin:0 auto;overflow: hidden;}
+  .footer {padding-top:0px;}
+  .user-box{margin-top:50px;border-radius:6px;box-shadow: 0px 1px 8px 0px rgba(164, 173, 175, 0.75);}
+  .have-dl{padding-top: 85px;}
+  .c-blue2 {color: #dd2017;}
+  .form-cont{
+   padding:33px 40px 90px 200px;
+  }
+  .user-title{
+    border-bottom:1px solid #e1e1e7;
+  }
+  .abs-line3px{
+    background:#dddde6;
+    width: 50px;
+    height:3px;
+    bottom:-1px;
+  }
+  .h2{
+    margin-left:-160px;
+    margin-top:10px;
+  }
+  .c-blue2{color:#098cdf;}a.c-blue2:hover{color:#098cdf;}
+</style>
+</head>
+<body>
+<!--头部开始-->
+<div class="head">
+  <div class="wrap clearfix">
+    <div class="logo">
+      <a href="default.html"><img src="images/b-logo.png"/></a>
+    </div>
+    <div class="v-line"></div>
+    <div class="slogan">
+      <div class="wel">欢迎</div>
+      <div class="dl">注册</div>
+    </div>
+    <div class="have-dl fr">
+    <span class="uiform-info">已有账号 </span><a href="login.html" target="_blank" class="c-blue2 btn-txt">请登录</a>
+    </div>
+  </div>
+</div>
+<!--头部结束-->
+<div class="user-box">
+  <div class="form-cont">
+    <ul class="user-title clearfix">
+      <li><i class="abs abs-line3px"></i>
+        <h2 class="h2">注册大仓会员</h2>
+      </li>
+    </ul>
+    <div class="reg-from"> 
+      <!--提示   tip-info 
+          成功   tip-succeed
+          出错   tip-error -->
+      <div class="items">
+        <label class="label">手机号：</label>
+        <input type="text" tabindex="9" class="text input_bor" name="username" autocomplete="off" placeholder="请输入手机号">
+        <div class="msg-tip tip-info"> <i class="ico"></i><b class="msg-txt">请使用手机注册</b> </div>
+      </div>
+      <div class="items items-vital">
+        <label class="label">登录密码：</label>
+        <input type="password" tabindex="9" class="text input_bor" name="password"  autocomplete="off" placeholder="请输入密码">
+        <div class="vital"><i class="ico ico-vital"></i>用于交易及登录的唯一凭证！请妥善保管</div>
+        <div class="msg-tip tip-info"> <i class="ico"></i><b class="msg-txt">6-12位字符，数字、字母、标点至少包含两种</b> </div>
+      </div>
+      <!-- 默认   pw-defule
+        密码强度弱  pw-weak
+        密码强度中  pw-medium
+        密码强度高  pw-high-->
+      <div class="items items-pw">
+        <label class="label"></label>
+        <div class="pwbox"><span class="pw-weak"><!--密码强度弱--></span> </div>
+      </div>
+      <div class="items">
+        <label class="label">确认密码：</label>
+        <input type="password" tabindex="9" class="text input_bor" name="password-once"  autocomplete="off"  placeholder="请确认密码">
+        <div class="msg-tip tip-info"> <i class="ico"></i><b class="msg-txt">请再次输入密码</b> </div>
+      </div>
+      <div class="items items-checkcode">
+        <label class="label">验证码：</label>
+        <input type="text" tabindex="9" class="text tw1 input_bor" name=" " id=" " autocomplete="off" >
+        <button class="btn btn-checkcode btn-disabled">获取验证码</button>
+        <div class="msg-tip tip-info"> <i class="ico"></i><b class="msg-txt">请输入短信验证码</b> </div>
+      </div>
+      <div class="items-btn">
+        <div class="ui-form-check">
+          <div class="icheck-box">
+            <input type="checkbox" class="icheck" name="iCheck" id="input-3" checked>
+            <label for="input-3">我已认真阅读并同意</label><a href="investorright.html" class="c-blue2" target="_blank">《 投资者权益须知 》</a>及<a href="openaccount.html" class="c-blue2" target="_blank">《 开户协议 》</a>
+          </div>
+        </div>
+        <div class="ui-form-btn"><a class="btn" href="registerok.html" id="rebBoxA">立  即  注  册</a></div>
+        <!-- <div class="ui-form-info rel"></div>--> 
+      </div>
+    </div>
+  </div>
+</div>
+<!--底部开始-->
+<div class="wrap" style="margin-top:85px;width:100%">
+  <div class="footer mt40">
+  <div class="user-root"><span class="abs-user-root"><span>基金投资需谨慎</span></span></div>
+  <div class="user-copy">Copyright &copy; 2015 上海慧点投资管理有限公司 版权所有 沪ICP备15029296号</div>
+</div>
+<!--底部结束--> 
+<script>
+$(document).ready(function(){
+  $(".icheck").iCheck({
+    checkboxClass: 'icheckbox_square',
+    radioClass: 'iradio_square',
+    increaseArea: '30%' // optional
+  });  
+});
+</script> 
+<script>
+$(function(){
+var text =$(".text");
+text.focus(function(){
+var mytip=$(this).parent(".items").find(".msg-tip");	
+mytip.show();
+mytip.removeClass("tip-succeed");
+mytip.removeClass("tip-error");
+});
+
+text.blur(function(){
+var txt=$(this).val();
+var mytip=$(this).parent(".items").find(".msg-tip");
+  if($(this).attr('name')=='username'){
+    if(txt==""||!txt.match(/^(((13[0-9]{1})|(15[0-3]{1})|(15[5-9]{1})|177|170|176|178|145|147|(18[0-9]{1}))+\d{8})$/)){
+      mytip.addClass("tip-error");
+      $('.btn-checkcode').addClass('btn-disabled');
+    }else{
+      mytip.addClass("tip-succeed");
+      $('.btn-checkcode').removeClass('btn-disabled');
+    }
+  }if($(this).attr('name')=='password'){
+    if(txt==""||txt.length<6||txt.length>12){
+      mytip.addClass("tip-error");
+    }else{
+      mytip.addClass("tip-succeed");
+    }
+  }if($(this).attr('name')=='password-once'){
+    var word=$('input[name=password]').val();
+    if(txt==""||txt!=word){
+      console.log(txt+'aaa'+word);
+      mytip.addClass("tip-error");
+    }else{
+      mytip.addClass("tip-succeed");
+    }
+  }
+});
+  //验证码倒计时
+  var count = 89;
+  $('.btn-checkcode').on('click',function(){
+    if(!$(this).hasClass('btn-disabled')){
+      $('.btn-checkcode').text(  "90 秒");
+      var countdown = setInterval(CountDown, 1000);
+    }
+  })
+  function CountDown() {
+    $('.btn-checkcode').text(  count + " 秒");
+    if (count == 0) {
+      $('.btn-checkcode').text("重新获取");
+      count=89;
+      clearInterval(countdown);
+    }
+    count--;
+  }
+  //判断是否选中注册协议
+$("#input-3").click(function(){
+var checkbox = document.getElementById('input-3');
+//alert(checkbox.checked);
+  if(checkbox.checked){
+    //选中了
+$("#rebBoxA").removeClass("btn-disabled");
+$("#rebBoxA").attr("disabled","");	
+  }else{
+     //没选中
+	 $("#rebBoxA").addClass("btn-disabled");
+	 $("#rebBoxA").attr("disabled","disabled");	
+  }
+});
+});
+</script>
+</body>
+</html>

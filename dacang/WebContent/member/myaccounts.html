@@ -1,0 +1,545 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>我的账户</title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="description" content=" " />
+<meta name="keywords" content=" " />
+<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+<link href="../css/base.css" rel="stylesheet"/>
+<link href="../css/member.css" rel="stylesheet"/>
+<script src="../js/jq/jquery-1.9.1.min.js"></script>
+<script src="../js/bs/bootstrap.js"></script>
+<script src="../js/bs/stickUp.js"></script>
+<script src="../js/common/member-top.js"></script>
+<script src="../js/common/inner-bottom.js"></script>
+</head>
+<body>
+
+<!--头部开始-->
+<div id="top"></div>
+<!--头部结束-->
+
+<div class="wrap membox clearfix">
+  <div class="mem-nav fl">
+    <div class="portrait">
+      <div class="port-poto"><img src="../images/_del/men-photo.jpg"/></div>
+      <div class="port-name">散落风</div>
+    </div>
+    <div class="nav-list">
+      <ul>
+        <li class="active"><a href="myaccounts.html"><em class="abs abs-verline"></em><i class="ico ico-arrow"></i>我的账户</a></li>
+        <li><a href="supercash.html"><em class="abs abs-verline"></em><i class="ico ico-arrow"></i>超级现金宝</a></li>
+        <li><a href="generalfund.html"><em class="abs abs-verline"></em><i class="ico ico-arrow"></i>普通基金</a></li>
+        <li><a href="traderecord.html"><em class="abs abs-verline"></em><i class="ico ico-arrow"></i>交易记录</a></li>
+        <li><a href="redenvelope.html"><em class="abs abs-verline"></em><i class="ico ico-arrow"></i>我的红包</a></li>
+        <li><a href="mytask.html"><em class="abs abs-verline"></em><i class="ico ico-arrow"></i>我的任务</a></li>
+        <li><a href="invite.html"><em class="abs abs-verline"></em><i class="ico ico-arrow"></i>我的邀请</a></li>
+        <li><a href="bankcards.html"><em class="abs abs-verline"></em><i class="ico ico-arrow"></i>我的银行卡</a></li>
+        <li><a href="accountmanage.html"><em class="abs abs-verline"></em><i class="ico ico-arrow"></i>账户管理</a></li>
+      </ul>
+      <div class="text-center"><!--图片大小 宽179 高210--><img src="../images/_ad/memberAd.jpg"/></div>
+    </div>
+  </div>
+  <div class="welcome fr">
+    <ul>
+      <li class="name">
+        <p id="p_username">你好，156****3880&nbsp;&nbsp;<a class="c-blue" href="../bindingbank.html">实名认证</a></p>
+        <p id="lastlogindate" class="fs12">上次登录: 2015-08-20 11:28:26</p>
+      </li>
+      <li class="line"></li>
+      <li class="integral text-center">
+        <p>可用红包</p>
+        <p><a class="fs16 c-lightorange" href="redenvelope.html">0</a> <span class="fs12">元</span></p>
+      </li>
+      <li class="line"></li>
+      <li class="assess text-center">
+        <p>风险评估</p>
+        <p><span class="c-lightorange">保守型</span>&nbsp;&nbsp;<a href="risktest.html" target="_blank" class="c-blue">测试</a></p>
+      </li>
+      <li class="line"></li>
+      <li class="bank-card text-center">
+        <p>已绑定银行卡</p>
+        <p><a class="fs16 c-lightorange" href="bankcards.html">0</a> <span class="fs12">张</span></p>
+      </li>
+      <li class="line"></li>
+      <li id="AppId" class="app fs12 pop-tip-js"><i class="abs abs-vhbor"></i><i class="ico ico-app"></i>APP</li>
+      <li class="line"></li>
+      <li id="WeixinId" class="weixin fs12 pop-tip-js"><i class="abs abs-vhbor"></i><i class="ico ico-weixin"></i>微信</li>
+    </ul>
+  </div>
+  <div class="mem-cont fr mr40">
+    <div class="mem-title">
+      <h2>我的资产</h2>
+    </div>
+    <div class="myassets"> 
+      <!--数字大于为千万时，字体大小改为32-->
+      <ul>
+        <li class="txt">
+          <h3>总资产<span class="c-gray999 fs12">（元）</span></h3>
+          <p class="ft-nums"><span class="show-numb">51001.00</span></p>
+        </li>
+        <li class="line"></li>
+        <li>
+          <h3>总收益<span class="c-gray999 fs12">（元）</span></h3>
+          <p class="ft-nums c-red"><span>0.00</span> <!--为0时不添加show-numb样式--></p>
+        </li>
+        <li class="line"></li>
+        <li class="last">
+          <h3>昨日收益<span class="c-gray999 fs12">（元）</span></h3>
+          <p class="ft-nums c-green"><span class="show-numb">-21.00</span></p>
+        </li>
+      </ul>
+    </div>
+    <div class="horline mem-line"></div>
+    <div class="peizhi">
+      <div class="pz-l-box">
+        <div class="mem-title">
+          <h2>资产配置</h2>
+        </div>
+        <!--大小为宽397px 高265px--> 
+        <!--刚注册，登录进来未交易时显示 pie.png 这张图--> 
+        <img src="../images/pie.png"/> </div>
+      <div class="pz-l-line"></div>
+      <div class="pz-r-box">
+        <div class="pz-list pz-line">
+          <h3>超级现金宝</h3>
+          <div class="pz-info clearfix">
+            <div class="pz-kyye">
+              <h4>可用余额<span class="c-gray999 fs12">（元）</span></h4>
+              <p class="ft-nums">5345001.00</p>
+            </div>
+            <div class="pz-ljsf">
+              <h4>累计收益<span class="c-gray999 fs12">（元）</span></h4>
+              <!--数字大于或等于为百万时，报面两位小数省略-->
+              <p class="ft-nums c-red">1126.02</p>
+            </div>
+          </div>
+          <div class="pz-btn"><a href="../trade/cash.html" class="btn btn-small fl">充 值</a><a href="supercash.html" class="btnbor btnbor-small fr">进入详情</a></div>
+        </div>
+        <div class="pz-list">
+          <h3>普通基金</h3>
+          <div class="pz-info clearfix">
+            <div class="pz-kyye">
+              <h4>可用余额<span class="c-gray999 fs12">（元）</span></h4>
+              <!--数字大于或等于为百万时，报面两位小数省略-->
+              <p class="ft-nums">5345001.00</p>
+            </div>
+            <div class="pz-ljsf">
+              <h4>累计收益<span class="c-gray999 fs12">（元）</span></h4>
+              <!--数字大于或等于为百万时，报面两位小数省略-->
+              <p class="ft-nums c-red">12.00</p>
+            </div>
+          </div>
+          <div class="pz-btn"><a href="../buy.html" class="btn btn-small fl">基金选购</a><a href="generalfund.html" class="btnbor btnbor-small fr">持仓明细</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="horline mem-line"></div>
+    <div class="mem-title">
+      <h2>交易中</h2>
+      <a href="javascript:;" class="shouqi-a"><i class="ico ico-ud"></i><span>收起</span></a> </div>
+    <div class="fanwei-cont" style="overflow:hidden;">
+      <div class="fanwei-txt">
+        <div class="m-table">
+          <table width="100%" border="0" cellpadding="0" cellspacing="0" id="tradeTable">
+            <colgroup>
+            <col width="4%">
+            <col width="13%">
+            <col width="24%">
+            <col width="14%">
+            <col width="15%">
+            <col width="3%">
+            <col width="14%">
+            <col>
+            </colgroup>
+            <thead>
+              <tr>
+                <td>&nbsp;</td>
+                <td><div class="tdl">交易时间</div></td>
+                <td><div class="tdl">基金名称</div></td>
+                <td>交易类型</td>
+                <td><div class="tdr">金额/份额</div></td>
+                <td>&nbsp;</td>
+                <td>交易状态</td>
+                <td>操作</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>&nbsp;</td>
+                <td><div class="tdl">2015-05-15<br>
+                    <span class="c-gray999 fs12">24:12</span></div></td>
+                <td><div class="tdl">
+                    <h3 class="one-way"><a class="c-gray333" href="#">金元惠理金元宝货币金元惠理金元宝货币金元惠理金元宝货币金元惠理金元宝货币</a></h3>
+                    <p class="one-way"><span class="c-gray999 fs12">590008</span></p>
+                  </div></td>
+                <td>基金申购</td>
+                <td><div class="tdr"><b class="c-orange">1000000.00元</b></div></td>
+                <td>&nbsp;</td>
+                <td><b class="c-wait">等待确认</b></td>
+                <td><a href="buydetail.html" class="c-blue3">详情</a></td>
+              </tr>
+              <tr class="bg">
+                <td>&nbsp;</td>
+                <td><div class="tdl">2015-05-15<br>
+                    <span class="c-gray999 fs12">24:12</span></div></td>
+                <td><div class="tdl"><a class="c-gray333" href="#">金元惠理金元宝货币</a><br>
+                    <span class="c-gray999 fs12">590008</span></div></td>
+                <td>基金申购</td>
+                <td><div class="tdr"><b class="c-orange">500.05份</b></div></td>
+                <td>&nbsp;</td>
+                <td><b class="c-wait">等待确认</b></td>
+                <td><a href="buydetail.html" class="c-blue3">详情</a></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td><div class="tdl">2015-05-15<br>
+                    <span class="c-gray999 fs12">24:12</span></div></td>
+                <td><div class="tdl"><a class="c-gray333" href="#">金元惠理金元宝货币</a><br>
+                    <span class="c-gray999 fs12">590008</span></div></td>
+                <td>基金申购</td>
+                <td><div class="tdr"><b class="c-orange">1000000.00元</b></div></td>
+                <td></td>
+                <td><b class="c-wait">等待确认</b></td>
+                <td><a href="buydetail.html" class="c-blue3">详情</a></td>
+              </tr>
+              <tr class="bg">
+                <td></td>
+                <td><div class="tdl">2015-05-15<br>
+                    <span class="c-gray999 fs12">24:12</span></div></td>
+                <td><div class="tdl"><a class="c-gray333" href="#">金元惠理金元宝货币</a><br>
+                    <span class="c-gray999 fs12">590008</span></div></td>
+                <td>基金申购</td>
+                <td><div class="tdr"><b class="c-orange">500.05份</b></div></td>
+                <td></td>
+                <td><b class="c-wait">等待确认</b></td>
+                <td><a href="buydetail.html" class="c-blue3">详情</a></td>
+              </tr>
+            </tbody>
+          </table>
+          <!--表格数据为空时显示--> 
+        </div>
+      </div>
+    </div>
+    <div class="horline mem-line"></div>
+    <div class="mem-title">
+      <h2>单日收益</h2>
+    </div>
+    
+    <div class="sy-type clearfix"><a class="active">今年来</a><a href="javascript:;">10天</a><a href="javascript:;">1个月</a></div>
+    
+    
+    <div class="charts-cont"><!--大小为宽720px 高277px--> 
+      <img src="../images/_men-graph/g2.jpg"/></div>
+    <div class="horline mem-line"></div>
+    <div class="mem-title">
+      <h2>收益明细</h2>
+    </div>
+    <div class="ui-select-list samll-width-sellist"> <a href="javascript:;" class="afaq fr c-blue3 "><i class="ico ico-afaq"></i>日收益怎么算</a>
+      <ul class="clearfix select-js" id="uiSouYiTab">
+        <li class="active"> <a href="#selGeneralFund" data-toggle="tab"><span>普通基金</span><i class="ui-select-list-l-line">|</i></a> </li>
+        <li><a href="#selSuperCash" data-toggle="tab"><span>超级现金宝</span></a></li>
+      </ul>
+      <div class="ui-select-list-line">
+        <div class="ui-select-list-l-orange" style="left: -1px; width: 94px;"></div>
+      </div>
+    </div>
+    <div class="tab-content">
+      <div class="tab-pane fade in active" id="selGeneralFund">
+        <div class="m-table">
+          <table width="100%" border="0" cellpadding="0" cellspacing="0">
+            <colgroup>
+            <col width="17%">
+            <col width="29%">
+            <col width="24%">
+            <col width="14%">
+            <col width="">
+            </colgroup>
+            <thead>
+              <tr>
+                <td>日期</td>
+                <td><div class="tdl">基金名称</div></td>
+                <td><div class="tdl">基金净值 <span class="c-gray999 fs12">|</span> 涨幅</div></td>
+                <td><div class="tdr">当日盈亏</div></td>
+                <td>操作</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2015-05-20</td>
+                <td><div class="tdl"><a href="javascript:;" class="c-gray333">汇添富移动互联网</a> <span class="c-gray999 fs12">590008</span></div></td>
+                <td><div class="tdl">1.455％ <span class="c-gray999 fs12">|</span> <span class="c-red">1.05%</span></div></td>
+                <td><div class="tdr"><b class="c-red">185.01元</b></div></td>
+                <td><a href="assetsdetail.html" class="c-blue3">更多</a></td>
+              </tr>
+              <tr class="bg">
+                <td>2015-05-20</td>
+                <td><div class="tdl"><a href="javascript:;" class="c-gray333">信诚新鑫混合</a> <span class="c-gray999 fs12">590009</span></div></td>
+                <td><div class="tdl">11.455％ <span class="c-gray999 fs12">|</span> <span class="c-green">-100.05%</span></div></td>
+                <td><div class="tdr"><b class="c-green">-50.01元</b></div></td>
+                <td><a href="assetsdetail.html" class="c-blue3">更多</a></td>
+              </tr>
+              <tr>
+                <td>2015-05-20</td>
+                <td><div class="tdl"><a href="javascript:;" class="c-gray333">汇添富移动互联网</a> <span class="c-gray999 fs12">590008</span></div></td>
+                <td><div class="tdl">1.455％ <span class="c-gray999 fs12">|</span> <span class="c-red">1.05%</span></div></td>
+                <td><div class="tdr"><b class="c-red">185.01元</b></div></td>
+                <td><a href="assetsdetail.html" class="c-blue3">更多</a></td>
+              </tr>
+              <tr class="bg">
+                <td>2015-05-20</td>
+                <td><div class="tdl"><a href="javascript:;" class="c-gray333">信诚新鑫混合</a> <span class="c-gray999 fs12">590009</span></div></td>
+                <td><div class="tdl">11.455％ <span class="c-gray999 fs12">|</span> <span class="c-green">-100.05%</span></div></td>
+                <td><div class="tdr"><b class="c-green">-50.01元</b></div></td>
+                <td><a href="assetsdetail.html" class="c-blue3">更多</a></td>
+              </tr>
+              <tr>
+                <td>2015-05-20</td>
+                <td><div class="tdl"><a href="javascript:;" class="c-gray333">汇添富移动互联网</a> <span class="c-gray999 fs12">590008</span></div></td>
+                <td><div class="tdl">1.455％ <span class="c-gray999 fs12">|</span> <span class="c-red">1.05%</span></div></td>
+                <td><div class="tdr"><b class="c-red">185.01元</b></div></td>
+                <td><a href="assetsdetail.html" class="c-blue3">更多</a></td>
+              </tr>
+              <tr class="bg">
+                <td>2015-05-20</td>
+                <td><div class="tdl"><a href="javascript:;" class="c-gray333">信诚新鑫混合</a> <span class="c-gray999 fs12">590009</span></div></td>
+                <td><div class="tdl">11.455％ <span class="c-gray999 fs12">|</span> <span class="c-green">-100.05%</span></div></td>
+                <td><div class="tdr"><b class="c-green">-50.01元</b></div></td>
+                <td><a href="assetsdetail.html" class="c-blue3">更多</a></td>
+              </tr>
+              <tr>
+                <td>2015-05-20</td>
+                <td><div class="tdl"><a href="javascript:;" class="c-gray333">汇添富移动互联网</a> <span class="c-gray999 fs12">590008</span></div></td>
+                <td><div class="tdl">1.455％ <span class="c-gray999 fs12">|</span> <span class="c-red">1.05%</span></div></td>
+                <td><div class="tdr"><b class="c-red">185.01元</b></div></td>
+                <td><a href="assetsdetail.html" class="c-blue3">更多</a></td>
+              </tr>
+              <tr class="bg">
+                <td>2015-05-20</td>
+                <td><div class="tdl"><a href="javascript:;" class="c-gray333">信诚新鑫混合</a> <span class="c-gray999 fs12">590009</span></div></td>
+                <td><div class="tdl">11.455％ <span class="c-gray999 fs12">|</span> <span class="c-green">-100.05%</span></div></td>
+                <td><div class="tdr"><b class="c-green">-50.01元</b></div></td>
+                <td><a href="assetsdetail.html" class="c-blue3">更多</a></td>
+              </tr>
+              <tr>
+                <td>2015-05-20</td>
+                <td><div class="tdl"><a href="javascript:;" class="c-gray333">汇添富移动互联网</a> <span class="c-gray999 fs12">590008</span></div></td>
+                <td><div class="tdl">1.455％ <span class="c-gray999 fs12">|</span> <span class="c-red">1.05%</span></div></td>
+                <td><div class="tdr"><b class="c-red">185.01元</b></div></td>
+                <td><a href="assetsdetail.html" class="c-blue3">更多</a></td>
+              </tr>
+              <tr class="bg">
+                <td>2015-05-20</td>
+                <td><div class="tdl"><a href="javascript:;" class="c-gray333">信诚新鑫混合</a> <span class="c-gray999 fs12">590009</span></div></td>
+                <td><div class="tdl">11.455％ <span class="c-gray999 fs12">|</span> <span class="c-green">-100.05%</span></div></td>
+                <td><div class="tdr"><b class="c-green">-50.01元</b></div></td>
+                <td><a href="assetsdetail.html" class="c-blue3">更多</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="selSuperCash">
+        <div class="m-table">
+          <table width="100%" border="0" cellpadding="0" cellspacing="0">
+            <colgroup>
+            <col width="17%">
+            <col width="5%">
+            <col width="27%">
+            <col width="22%">
+            <col width="14%">
+            <col width="">
+            </colgroup>
+            <thead>
+              <tr>
+                <td>日期</td>
+                <td></td>
+                <td><div class="tdl">基金名称</div></td>
+                <td><div class="tdr">七日年化收益率</div></td>
+                <td><div class="tdr">当日盈亏</div></td>
+                <td>操作</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2015-05-30</td>
+                <td></td>
+                <td><div class="tdl"><a href="javascript:;" class="c-gray333" title="汇添富移动互联网">汇添富移动互联网</a> <span class="c-gray999 fs12">590008</span></div></td>
+                <td><div class="tdr"><span class="c-red">4.4430%</span></div></td>
+                <td><div class="tdr"><span class="c-red">185.01元</span></div></td>
+                <td><a href="assetscashdetail.html" class="c-blue3">更多</a></td>
+              </tr>
+              <tr class="bg">
+                <td>2015-05-30</td>
+                <td></td>
+                <td><div class="tdl"><a href="javascript:;" class="c-gray333" title="汇添富移动互联网">汇添富移动互联网</a> <span class="c-gray999 fs12">590008</span></div></td>
+                <td><div class="tdr"><span class="c-red">4.4430%</span></div></td>
+                <td><div class="tdr"><span class="c-red">185.01元</span></div></td>
+                <td><a href="assetscashdetail.html" class="c-blue3">更多</a></td>
+              </tr>
+              <tr>
+                <td>2015-05-30</td>
+                <td></td>
+                <td><div class="tdl"><a href="javascript:;" class="c-gray333" title="汇添富移动互联网">汇添富移动互联网</a> <span class="c-gray999 fs12">590008</span></div></td>
+                <td><div class="tdr"><span class="c-red">4.4430%</span></div></td>
+                <td><div class="tdr"><span class="c-red">185.01元</span></div></td>
+                <td><a href="assetscashdetail.html" class="c-blue3">更多</a></td>
+              </tr>
+              <tr class="bg">
+                <td>2015-05-30</td>
+                <td></td>
+                <td><div class="tdl"><a href="javascript:;" class="c-gray333" title="汇添富移动互联网">汇添富移动互联网</a> <span class="c-gray999 fs12">590008</span></div></td>
+                <td><div class="tdr"><span class="c-red">4.4430%</span></div></td>
+                <td><div class="tdr"><span class="c-red">185.01元</span></div></td>
+                <td><a href="assetscashdetail.html" class="c-blue3">更多</a></td>
+              </tr>
+              <tr>
+                <td>2015-05-30</td>
+                <td></td>
+                <td><div class="tdl"><a href="javascript:;" class="c-gray333" title="汇添富移动互联网">汇添富移动互联网</a> <span class="c-gray999 fs12">590008</span></div></td>
+                <td><div class="tdr"><span class="c-red">4.4430%</span></div></td>
+                <td><div class="tdr"><span class="c-red">185.01元</span></div></td>
+                <td><a href="assetscashdetail.html" class="c-blue3">更多</a></td>
+              </tr>
+              <tr class="bg">
+                <td>2015-05-30</td>
+                <td></td>
+                <td><div class="tdl"><a href="javascript:;" class="c-gray333" title="汇添富移动互联网">汇添富移动互联网</a> <span class="c-gray999 fs12">590008</span></div></td>
+                <td><div class="tdr"><span class="c-red">4.4430%</span></div></td>
+                <td><div class="tdr"><span class="c-red">185.01元</span></div></td>
+                <td><a href="assetscashdetail.html" class="c-blue3">更多</a></td>
+              </tr>
+              <tr>
+                <td>2015-05-30</td>
+                <td></td>
+                <td><div class="tdl"><a href="javascript:;" class="c-gray333" title="汇添富移动互联网">汇添富移动互联网</a> <span class="c-gray999 fs12">590008</span></div></td>
+                <td><div class="tdr"><span class="c-red">4.4430%</span></div></td>
+                <td><div class="tdr"><span class="c-red">185.01元</span></div></td>
+                <td><a href="assetscashdetail.html" class="c-blue3">更多</a></td>
+              </tr>
+              <tr class="bg">
+                <td>2015-05-30</td>
+                <td></td>
+                <td><div class="tdl"><a href="javascript:;" class="c-gray333" title="汇添富移动互联网">汇添富移动互联网</a> <span class="c-gray999 fs12">590008</span></div></td>
+                <td><div class="tdr"><span class="c-red">4.4430%</span></div></td>
+                <td><div class="tdr"><span class="c-red">185.01元</span></div></td>
+                <td><a href="assetscashdetail.html" class="c-blue3">更多</a></td>
+              </tr>
+              <tr>
+                <td>2015-05-30</td>
+                <td></td>
+                <td><div class="tdl"><a href="javascript:;" class="c-gray333" title="汇添富移动互联网">汇添富移动互联网</a> <span class="c-gray999 fs12">590008</span></div></td>
+                <td><div class="tdr"><span class="c-red">4.4430%</span></div></td>
+                <td><div class="tdr"><span class="c-red">185.01元</span></div></td>
+                <td><a href="assetscashdetail.html" class="c-blue3">更多</a></td>
+              </tr>
+              <tr class="bg">
+                <td>2015-05-30</td>
+                <td></td>
+                <td><div class="tdl"><a href="javascript:;" class="c-gray333" title="汇添富移动互联网">汇添富移动互联网</a> <span class="c-gray999 fs12">590008</span></div></td>
+                <td><div class="tdr"><span class="c-red">4.4430%</span></div></td>
+                <td><div class="tdr"><span class="c-red">185.01元</span></div></td>
+                <td><a href="assetscashdetail.html" class="c-blue3">更多</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="horline mem-line"></div>
+    <div class="mt40"><img src="../images/_ad/mem1.jpg"/></div>
+  </div>
+</div>
+<!--底部开始-->
+<div id="bottom"></div>
+<!--底部结束--> 
+<!--app weixin 提示开始-->
+<div class="pop-box" id="PopboxApp">
+  <div class="rel poptip" style="margin:-2px 0 0 -1px">
+    <div class="ptip-top left"></div>
+    <div class="ptip-box"> <img src="../images/2wm/mem_app.jpg" class="ewm"/>
+      <p><span class=" c-gray666">扫一扫</span><br>
+        下载 “基金汇” APP<br>
+        随时随地掌上理财</p>
+    </div>
+  </div>
+</div>
+<div class="pop-box" id="PopboxWeixin">
+  <div class="rel poptip" style="margin:-2px -1px 0 0">
+    <div class="ptip-top right"></div>
+    <div class="ptip-box"> <img src="../images/2wm/mem_weixin.jpg" class="ewm"/>
+      <p><span class=" c-gray666">扫一扫</span><br>
+        关注 “基金汇” 公众号<br>
+        随时掌握新鲜资讯</p>
+    </div>
+  </div>
+</div>
+<!--app weixin 提示结束--> 
+<script type="text/javascript">
+jQuery(function($){$(document).ready(function(){$('.nav-list').stickUp();});});
+</script> 
+<script src="../js/countUp.js"></script> 
+<script src="../js/countDiv.js"></script> 
+<script src="../js/jq/jquery-ui.js"></script> 
+<script>
+$(function(){
+/*app weixin*/
+var $li=$(".pop-tip-js"),
+    $box=$(".pop-box");
+/*position*/
+	function position() {
+      $( "#PopboxApp" ).position({
+        of: $("#AppId" ),
+        my: "left" + " " + "top",
+        at: "left" + " " + "bottom",
+        collision:  "flip" + " " + "flip"
+      });
+	  $( "#PopboxWeixin" ).position({
+        of: $("#WeixinId" ),
+        my: "right" + " " + "top",
+        at: "right" + " " + "bottom",
+        collision:  "flip" + " " + "flip"
+      });
+    }
+position();
+    $li.hover(function(){
+	   var num1=$li.index(this);
+	   $li.removeClass("on");
+	   $(this).addClass("on");	
+	   $box.hide();
+	   $box.eq(num1).show();
+	},function(){
+	   $box.hide();
+	   $li.removeClass("on");
+	});
+/*select list*/
+$('#uiMainTab a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+var listli=$(".select-js").find("li");
+listli.click(function(){
+var sl=$(this).position().left;
+$(this).parents(".ui-select-list").find(".ui-select-list-l-orange").animate({left:sl}, "fast");  
+});
+/*展开 收起*/
+var ashouqi=$(".shouqi-a");
+ashouqi.click(function(){
+var aclass=$(this).attr("class");
+if(aclass=="shouqi-a"){
+$(this).find("span").text("展开");
+$(this).addClass("zhankai-a");
+$(".fanwei-cont").animate({height:41},500);
+}else{
+$(this).find("span").text("收起");
+$(this).removeClass("zhankai-a");
+var fw_h=$(".fanwei-txt").css("height");
+$(".fanwei-cont").animate({height:fw_h},500);
+}
+});
+});
+</script>
+</body>
+</html>

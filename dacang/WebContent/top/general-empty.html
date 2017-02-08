@@ -1,0 +1,464 @@
+﻿<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>基金排行--普通基金</title>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="description" content=" " />
+		<meta name="keywords" content=" " />
+		<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+		<link href="../css/base.css" rel="stylesheet" />
+		<link href="../css/top.css" rel="stylesheet" />
+		<link href="../css/ui.css" rel="stylesheet" />
+		<link href="../css/datepicker.css" rel="stylesheet" />
+		<script src="../js/jq/jquery-1.9.1.min.js"></script>
+		<script src="../js/bs/bootstrap.js"></script>
+		<script src="../js/jq/jquery.input.js"></script>
+		<script src="../js/jq/jquery-ui.js"></script>
+		<script src="../js/bs/icheck.js"></script>
+		<script src="../js/bs/stickUp.js"></script>
+		<script src="../js/bs/datepicker.js"></script>
+		<script src="../js/base.js"></script>
+		<script src="../js/common/inner-top.js"></script>
+        <script src="../js/common/inner-bottom.js"></script>
+	</head>
+
+	<body>
+		<!--头部开始-->
+		<div id="top"></div>
+		<div class="head-tab">
+			<div class="wrap clearfix">
+				<div class="new-notice"> <span class="notice-tit"><i class="ico ico-notice"></i><div class="anc" style="margin-left:20px;height:35px;">最新公告</div></span>
+					<ul id="NewsScrollId">
+						<li><a href="javascript:;" class="c-gray666">震荡市现布局良机 基金看好港股机会！</a></li>
+						<li><a href="javascript:;" class="c-gray666">三类基金锁定收益。</a></li>
+						<li><a href="javascript:;" class="c-gray666">利好停不下来，4000点成政策铁底</a></li>
+						<li><a href="javascript:;" class="c-gray666">市场震荡，买打新基金！</a></li>
+						<li><a href="javascript:;" class="c-gray666">中央汇金疑出手：怒砸100亿购四大ETF 震荡市买基策略！</a></li>
+					</ul>
+				</div>
+				<div class="head-search">
+					<ul>
+						<li class="dropdown">
+							<a aria-expanded="true" role="button" aria-haspopup="true" data-toggle="dropdown" class="dropdown-toggle search-drop c-gray666" href="#" id="drop1"> <span class="abs abs-arrow-d"></span> <span class="dropdown-text">基金</span> </a>
+							<ul aria-labelledby="drop1" role="menu" class="dropdown-menu">
+								<li role="presentation"><a href="javascript:;">基金</a></li>
+								<li role="presentation"><a href="javascript:;">经理</a></li>
+								<li role="presentation"><a href="javascript:;">资讯</a></li>
+							</ul>
+						</li>
+						<li class="top-text top-s-js"> <i class="ico ico-search"></i>
+							<input type="text" name="" class="stxt-js input_ph" value="请输入基金代码／简称／拼音" placeholder="" tabindex="-1">
+							<div id="searchData" class="sbox sbox-js" style="display:none">
+								<table id="auto1">
+									<tbody>
+										<tr>
+											<td width="29px" class="rel"><i class="abs abs-rank abs-top">1</i></td>
+											<td width="55px">76<span>2</span>001</td>
+											<td>国金通用国鑫发起</td>
+										</tr>
+										<tr>
+											<td class="rel"><i class="abs abs-rank abs-top">2</i></td>
+											<td>75000<span>2</span></td>
+											<td>安信目标收益债券A</td>
+										</tr>
+										<tr>
+											<td class="rel"><i class="abs abs-rank abs-top">3</i></td>
+											<td>74060<span>2</span></td>
+											<td>长安货币B</td>
+										</tr>
+										<tr>
+											<td class="rel"><i class="abs abs-rank">4</i></td>
+											<td>73000<span>2</span></td>
+											<td>方正富邦红利精选股票方正富邦红利精选股票</td>
+										</tr>
+										<tr>
+											<td class="rel"><i class="abs abs-rank">5</i></td>
+											<td>7<span>2</span>0003</td>
+											<td>财通保本混合发起式</td>
+										</tr>
+										<tr>
+											<td class="rel"><i class="abs abs-rank">6</i></td>
+											<td>7<span>2</span>000<span>2</span></td>
+											<td>财通多策略稳健增长债券</td>
+										</tr>
+										<tr>
+											<td class="rel"><i class="abs abs-rank">7</i></td>
+											<td>7<span>2</span>0001</td>
+											<td>财通价值动量混合</td>
+										</tr>
+										<tr>
+											<td class="rel"><i class="abs abs-rank">8</i></td>
+											<td>71050<span>2</span></td>
+											<td>富安达现金通货币B</td>
+										</tr>
+										<tr>
+											<td class="rel"><i class="abs abs-rank">9</i></td>
+											<td>71050<span>2</span></td>
+											<td>富安达现金通货币B</td>
+										</tr>
+										<tr>
+											<td class="rel"><i class="abs abs-rank">10</i></td>
+											<td>71050<span>2</span></td>
+											<td>富安达现金通货币B</td>
+										</tr>
+										<tr>
+											<td class="rel"><i class="abs abs-rank">8</i></td>
+											<td>71050<span>2</span></td>
+											<td>富安达现金通货币B</td>
+										</tr>
+										<tr>
+											<td class="rel"><i class="abs abs-rank">9</i></td>
+											<td>71050<span>2</span></td>
+											<td>富安达现金通货币B</td>
+										</tr>
+										<tr>
+											<td class="rel"><i class="abs abs-rank">10</i></td>
+											<td>71050<span>2</span></td>
+											<td>富安达现金通货币B</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--头部结束-->
+		<div class="wrap">
+			<div class="ad"><img src="../images/_ad/buyfundAd.jpg" /></div>
+			<div class="m-tab clearfix mt30">
+				<ul>
+					<li class="active"><a href="javascript:;">普通基金</a></li>
+					<li><a href="money.html">货币基金</a></li>
+					<li class="line"></li>
+					<li><a href="finance.html">理财基金</a></li>
+					<li class="line"></li>
+					<li><a href="thecustom.html">自定义排行</a></li>
+				</ul>
+				<div class="select-box" id="PoPSelComId"><i class="ico ico-select"></i><span>基金公司：</span>
+					<input class="sel-company" type="text" value="全部基金公司">
+				</div>
+			</div>
+			<div class="m-cont">
+				<div class="pop-sel-com" id="PoPSelComCont">
+					<h3 class="h3 title">请选择基金公司</h3>
+					<h4 class="h4 all-company">全部基金公司</h4>
+					<dl class="pop-dl">
+						<h4 class="sel-letter">A B C D F G </h4>
+						<ul class="sel-cont">
+							<li> <em>A</em>
+								<div class="fund-a"> <a href="javascript:;" class="c-blue3">安信基金</a> </div>
+							</li>
+							<li> <em>B</em>
+								<div class="fund-a"> <a href="javascript:;" class="c-blue3">博时基金</a> <a href="javascript:;" class="c-blue3">宝盈基金</a> <a href="javascript:;" class="c-blue3">北信瑞丰基金</a> </div>
+							</li>
+							<li> <em>C</em>
+								<div class="fund-a"> <a href="javascript:;" class="c-blue3">长城基金</a> <a href="javascript:;" class="c-blue3">长盛基金</a> <a href="javascript:;" class="c-blue3">长信基金</a> <a href="javascript:;" class="c-blue3">财通基金</a> <a href="javascript:;" class="c-blue3">长安基金</a> </div>
+							</li>
+							<li> <em>D</em>
+								<div class="fund-a"> <a href="javascript:;" class="c-blue3">大成基金</a> <a href="javascript:;" class="c-blue3">东方基金</a> <a href="javascript:;" class="c-blue3">东吴基金</a> <a href="javascript:;" class="c-blue3">东证资产管理</a> <a href="javascript:;" class="c-blue3">德邦基金</a>
+									<a href="javascript:;" class="c-blue3">东海基金</a>
+								</div>
+							</li>
+							<li> <em>F</em>
+								<div class="fund-a"> <a href="javascript:;" class="c-blue3">富国基金</a> <a href="javascript:;" class="c-blue3">富安达基金</a> <a href="javascript:;" class="c-blue3">方正富邦基金</a> </div>
+							</li>
+							<li> <em>G</em>
+								<div class="fund-a"> <a href="javascript:;" class="c-blue3">国投瑞银基金</a> <a href="javascript:;" class="c-blue3">广发基金</a> <a href="javascript:;" class="c-blue3">光大保德信基金</a> <a href="javascript:;" class="c-blue3">工银瑞信基金</a> <a href="javascript:;" class="c-blue3">国联安基金</a>									<a href="javascript:;" class="c-blue3">国泰基金</a> <a href="javascript:;" class="c-blue3">国海富兰克林基金</a> <a href="javascript:;" class="c-blue3">国金通用基金</a> <a href="javascript:;" class="c-blue3">国开泰富基金</a> <a href="javascript:;" class="c-blue3">国寿安保基金</a>									</div>
+							</li>
+						</ul>
+					</dl>
+					<dl class="pop-dl">
+						<h4 class="sel-letter">H J M N P Q </h4>
+						<ul class="sel-cont hide">
+							<li> <em>H</em>
+								<div class="fund-a"> <a href="javascript:;" class="c-blue3">华安基金</a> <a href="javascript:;" class="c-blue3">海富通基金</a> <a href="javascript:;" class="c-blue3">华夏基金</a> <a href="javascript:;" class="c-blue3">华富基金</a> <a href="javascript:;" class="c-blue3">华泰柏瑞基金</a>									<a href="javascript:;" class="c-blue3">汇丰晋信基金</a> <a href="javascript:;" class="c-blue3">华融证券</a> <a href="javascript:;" class="c-blue3">华商基金</a> <a href="javascript:;" class="c-blue3">华宝兴业基金</a> <a href="javascript:;" class="c-blue3">汇添富基金</a>									<a href="javascript:;" class="c-blue3">华宸未来基金</a> <a href="javascript:;" class="c-blue3">红塔基金</a> <a href="javascript:;" class="c-blue3">华润元大基金</a> <a href="javascript:;" class="c-blue3">华福基金</a> <a href="javascript:;" class="c-blue3">泓德基金</a>									</div>
+							</li>
+							<li> <em>J</em>
+								<div class="fund-a"> <a href="javascript:;" class="c-blue3">嘉实基金</a> <a href="javascript:;" class="c-blue3">金元顺安</a> <a href="javascript:;" class="c-blue3">建信基金</a> <a href="javascript:;" class="c-blue3">景顺长城基金</a> <a href="javascript:;" class="c-blue3">交银施罗德基金</a>									<a href="javascript:;" class="c-blue3">金鹰基金</a> <a href="javascript:;" class="c-blue3">江信基金</a> <a href="javascript:;" class="c-blue3">嘉合基金</a> </div>
+							</li>
+							<li> <em>M</em>
+								<div class="fund-a"> <a href="javascript:;" class="c-blue3">摩根士丹利华鑫基金</a> <a href="javascript:;" class="c-blue3">民生加银基金</a> </div>
+							</li>
+							<li> <em>N</em>
+								<div class="fund-a"> <a href="javascript:;" class="c-blue3">诺安基金</a> <a href="javascript:;" class="c-blue3">诺德基金</a> <a href="javascript:;" class="c-blue3">南方基金</a> <a href="javascript:;" class="c-blue3">农银汇理基金</a> </div>
+							</li>
+							<li> <em>P</em>
+								<div class="fund-a"> <a href="javascript:;" class="c-blue3">浦银安盛基金</a> <a href="javascript:;" class="c-blue3">鹏华基金</a> <a href="javascript:;" class="c-blue3">平安大华基金</a> </div>
+							</li>
+							<li> <em>Q</em>
+								<div class="fund-a"> <a href="javascript:;" class="c-blue3">前海开源基金</a> </div>
+							</li>
+						</ul>
+					</dl>
+					<dl class="pop-dl">
+						<h4 class="sel-letter">R S T W X Y </h4>
+						<ul class="sel-cont hide">
+							<li> <em>R</em>
+								<div class="fund-a"> <a href="javascript:;" class="c-blue3">融通基金</a> </div>
+							</li>
+							<li> <em>S</em>
+								<div class="fund-a"> <a href="javascript:;" class="c-blue3">上投摩根基金</a> <a href="javascript:;" class="c-blue3">申万菱信基金</a> <a href="javascript:;" class="c-blue3">上银基金</a> </div>
+							</li>
+							<li> <em>T</em>
+								<div class="fund-a"> <a href="javascript:;" class="c-blue3">泰达宏利基金</a> <a href="javascript:;" class="c-blue3">泰信基金</a> <a href="javascript:;" class="c-blue3">天治基金</a> <a href="javascript:;" class="c-blue3">天弘基金</a> </div>
+							</li>
+							<li> <em>W</em>
+								<div class="fund-a"> <a href="javascript:;" class="c-blue3">万家基金</a> </div>
+							</li>
+							<li> <em>X</em>
+								<div class="fund-a"> <a href="javascript:;" class="c-blue3">信诚基金</a> <a href="javascript:;" class="c-blue3">信达澳银基金</a> <a href="javascript:;" class="c-blue3">新华基金</a> <a href="javascript:;" class="c-blue3">西部利得基金</a> <a href="javascript:;" class="c-blue3">兴业基金</a>									<a href="javascript:;" class="c-blue3">鑫元基金</a> <a href="javascript:;" class="c-blue3">兴业全球基金</a> </div>
+							</li>
+							<li> <em>Y</em>
+								<div class="fund-a"> <a href="javascript:;" class="c-blue3">银华基金</a> <a href="javascript:;" class="c-blue3">易方达基金</a> <a href="javascript:;" class="c-blue3">益民基金</a> <a href="javascript:;" class="c-blue3">英大基金</a> <a href="javascript:;" class="c-blue3">永赢基金</a>
+									<a href="javascript:;" class="c-blue3">圆信永丰基金</a> <a href="javascript:;" class="c-blue3">银河基金</a> </div>
+							</li>
+						</ul>
+					</dl>
+					<dl class="pop-dl">
+						<h4 class="sel-letter">Z </h4>
+						<ul class="sel-cont hide">
+							<li> <em>Z</em>
+								<div class="fund-a"> <a href="javascript:;" class="c-blue3">中邮创业基金</a> <a href="javascript:;" class="c-blue3">中欧基金</a> <a href="javascript:;" class="c-blue3">招商基金</a> <a href="javascript:;" class="c-blue3">中银基金</a> <a href="javascript:;" class="c-blue3">中海基金</a>
+									<a href="javascript:;" class="c-blue3">浙商基金</a> <a href="javascript:;" class="c-blue3">中融基金</a> <a href="javascript:;" class="c-blue3">中加基金</a> <a href="javascript:;" class="c-blue3">中原英石基金</a> <a href="javascript:;" class="c-blue3">中信建投基金</a>									<a href="javascript:;" class="c-blue3">中金基金</a> </div>
+							</li>
+						</ul>
+					</dl>
+				</div>
+				<div class="today-zhishu">
+					<ul>
+						<li class="one"><span class="c-gray666">行情日期：</span><span class="ft-nums">2015-15-15</span></li>
+						<li class="two"><span class="c-gray666">上证指数：</span><span class="ft-nums c-red mr20">4051.88</span><span class="ft-nums c-red">1.22%</span></li>
+						<li class="three"><span class="c-gray666">深证指数：</span><span class="ft-nums c-green mr20">13566.27</span><span class="ft-nums c-green">-5.78%</span></li>
+					</ul>
+				</div>
+				<div class="ui-select-list">
+					<ul class="clearfix select-js">
+						<li class="active act-js"><a href="javascript:;"><span>全部</span><i class="ui-select-list-l-line">|</i></a></li>
+						<li class="act-js"><a href="javascript:;"><span>股票型</span><i class="ui-select-list-l-line">|</i></a></li>
+						<li class="act-js"><a href="javascript:;"><span>混合型</span><i class="ui-select-list-l-line">|</i></a></li>
+						<li class="act-js"><a href="javascript:;"><span>债券型</span><i class="ui-select-list-l-line">|</i></a></li>
+						<li class="act-js"><a href="javascript:;"><span>指数型</span><i class="ui-select-list-l-line">|</i></a></li>
+						<li class="act-js"><a href="javascript:;"><span>QDII</span><i class="ui-select-list-l-line">|</i></a></li>
+						<li class="act-js"><a href="javascript:;"><span>ETF</span><i class="ui-select-list-l-line">|</i></a></li>
+						<li class="act-js"><a href="javascript:;"><span>LOF</span></a></li>
+						<li class="check">
+							<div class="icheck-box">
+								<input type="checkbox" class="icheck" name="iCheck" id="input-3">
+								<label for="input-3">仅显示可购买</label>
+							</div>
+						</li>
+						<li class="txt">基金共 <span class=" ft-nums c-red">4368</span> 只<i class="ui-select-list-l-line">|</i></li>
+					</ul>
+					<div class="ui-select-list-line">
+						<div class="ui-select-list-l-orange" style="left: -2px; width: 67px;"></div>
+					</div>
+				</div>
+				<div class="main-box">
+					<div class="calendar-trip"><span class="fl">2014-07-21</span><span class="fl">至</span><span class="fl">2015-07-21</span>
+						<a href="javascript:;" class="fr calendar-close"></a>
+					</div>
+					<div class="pop-calendar" id="popCalendarBox">
+						<div class="top-table-from">
+							<a class="bindbank" href="javascript:;"> <i class="ico ico-close"></i></a>
+							<table cellpadding="0" cellspacing="0" border="0">
+								<tr>
+									<td width="30px">从：</td>
+									<td width="149px">
+										<input id="dpdate1" value="2015-04-25" type="text" class="text calendar-small input_bor input_ph" readonly>
+									</td>
+									<td width="24px">至</td>
+									<td width="149px">
+										<input id="dpdate2" value="2015-05-25" type="text" class="text calendar-small input_bor input_ph" readonly>
+									</td>
+									<td width="109px"><a href="javascript:;" class="btn" id="chaxunId">查 询</a></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<table width="100%" border="0" cellpadding="0" cellspacing="0" class="main-thead">
+						<thead class="main-thead-js">
+							<tr class="tab-seq-js">
+								<th style="width: 35px;">排名</th>
+								<th style="width: 51px;"><a href="javascript:;" class="">基金<br>
+              代码<i class="ico ico-down"></i></a></th>
+								<th style="width: 126px;"><a href="javascript:;" class="">基金名称<i class="ico ico-down"></i></a></th>
+								<th style="width: 56px;"><a href="javascript:;" class="">更新<br>
+              日期<i class="ico ico-down"></i></a></th>
+								<th style="width: 56px;"><a href="javascript:;" class="">净值<i class="ico ico-down"></i></a></th>
+								<th style="width: 58px;"><a href="javascript:;" class="">日涨幅<i class="ico ico-down"></i></a></th>
+								<th style="width: 58px;"><a href="javascript:;" class="">近一周<i class="ico ico-down"></i></a></th>
+								<th style="width: 58px;"><a href="javascript:;" class="">近一月<i class="ico ico-down"></i></a></th>
+								<th style="width: 58px;"><a href="javascript:;" class="sequence">近三月<i class="ico ico-down"></i></a></th>
+								<th style="width: 58px;"><a href="javascript:;" class="">近六月<i class="ico ico-down"></i></a></th>
+								<th style="width: 58px;"><a href="javascript:;" class="">近一年<i class="ico ico-down"></i></a></th>
+								<th style="width: 58px;"><a href="javascript:;" class="">近两年<i class="ico ico-down"></i></a></th>
+								<th style="width: 58px;"><a href="javascript:;" class="">今年来<i class="ico ico-down"></i></a></th>
+								<th style="width: 70px;" id="calendarTd">
+									<div class="mt-calendar">
+										<i class="ico ico-calendar"></i><a href="javascript:;" class="">自定义<i class="ico ico-down"></i></a>
+									</div>
+								</th>
+								<th style="width: 87px;">操作</th>
+							</tr>
+						</thead>
+					</table>
+				</div>
+				<!--置空开始-->
+				<div class="empty-h5">
+					<div class="empty-default empty-bigtable">
+						<div class="emp-img"></div>
+						<div class="emp-txt">未能发现符合条件的基金</div>
+					</div>
+				</div>
+				<!--置空结束-->
+			</div>
+		</div>
+		<!--底部开始-->
+		<div id="bottom"></div>
+		<!--底部结束-->
+		<!-- 自选基金 显示最多不超过5支-->
+		<div class="zixuan-title"><a href="javascript:;"><i class="abs abs-round"></i><i class="abs abs-lr"></i> <b>我的自选基金</b> <span class="abs"> (
+  <label>5</label>
+  ) </span></a></div>
+		<div class="zixuan-cont">
+			<div class="nofund" style="display:none"><i class="ico ico-empty"></i> <i class="abs abs-nofund">您当前还没有添加自选基金</i> </div>
+			<div class="list">
+				<ul>
+					<li>
+						<a href="javascript:;" class="ico ico-remove"></a>
+						<h3 class="c-gray666 h3">天音控股股票</h3>
+						<p><span class="c-gray666">日增长率</span><em class="c-rise">1.35%</em><a href="javascript:;" class="zxbuy c-blue2">购买</a></p>
+					</li>
+					<li>
+						<a href="javascript:;" class="ico ico-remove"></a>
+						<h3 class="c-gray666 h3">天音控股股票</h3>
+						<p><span class="c-gray666">日增长率</span><em class="c-rise">1.35%</em><a href="javascript:;" class="zxbuy c-blue2">购买</a></p>
+					</li>
+					<li>
+						<a href="javascript:;" class="ico ico-remove"></a>
+						<h3 class="c-gray666 h3">天音控股股票</h3>
+						<p><span class="c-gray666">日增长率</span><em class="c-rise">1.35%</em><a href="javascript:;" class="zxbuy c-blue2">购买</a></p>
+					</li>
+					<li>
+						<a href="javascript:;" class="ico ico-remove"></a>
+						<h3 class="c-gray666 h3">天音控股股票</h3>
+						<p><span class="c-gray666">日增长率</span><em class="c-rise">1.35%</em><a href="javascript:;" class="zxbuy c-blue2">购买</a></p>
+					</li>
+					<li>
+						<a href="javascript:;" class="ico ico-remove"></a>
+						<h3 class="c-gray666 h3">天音控股股票</h3>
+						<p><span class="c-gray666">日增长率</span><em class="c-rise">1.35%</em><a href="javascript:;" class="zxbuy c-blue2">购买</a></p>
+					</li>
+				</ul>
+			</div>
+			<a href="javascript:;" class="zxbtn">查看全部》</a> </div>
+		<!-- 自选基金-->
+		<script src="../js/bs/bstime.js"></script>
+		<script type="text/javascript">
+			jQuery(function($) {
+				$(document).ready(function() {
+					$('.main-box').stickUp();
+				});
+			});
+		</script>
+		<script>
+			$(document).ready(function() {
+				$(".icheck").iCheck({
+					checkboxClass: 'icheckbox_square',
+					radioClass: 'iradio_square',
+					increaseArea: '30%' // optional
+				});
+			});
+		</script>
+		<script>
+			$(function() {
+				/*时间提示*/
+				$("#calendarTd a").mouseover(function() {
+					$(".calendar-trip").show();
+				});
+				$(".calendar-close").click(function() {
+					$(".calendar-trip").hide();
+				});
+				/*基金公司搜索*/
+				$("#PoPSelComId").click(function() {
+					$("#PoPSelComCont").show();
+					return false;
+				});
+				$("body").click(function() {
+					$("#PoPSelComCont").hide();
+				});
+				$("#PoPSelComCont").click(function() {
+					$("#PoPSelComCont").show();
+					return false;
+				});
+				var dllet = $("#PoPSelComCont").find(".sel-letter");
+				var dlcont = $("#PoPSelComCont").find(".sel-cont");
+				dllet.click(function() {
+					dlcont.hide();
+					$(this).next("ul").show();
+				});
+				/*时间搜索*/
+				var closea = $(".ico-close");
+				closea.hover(function() {
+					$(this).addClass("ico-close-on");
+				}, function() {
+					$(this).removeClass("ico-close-on");
+				});
+				$(".ico-calendar").click(function() {
+					$("#popCalendarBox").show();
+				});
+				closea.click(function() {
+					$("#popCalendarBox").hide();
+				});
+				/*表格排序*/
+				var tq = $(".tab-seq-js");
+				var tqspan = $(".tab-seq-js").find("a");
+				tqspan.click(function() {
+						var tqclass = $(this).attr("class");
+						if (tqclass == "") {
+							tqspan.removeClass("sequence");
+							$(this).addClass("sequence");
+						} else if (tqclass == "sequence") {
+							$(this).addClass("seq-up");
+						} else {
+							$(this).removeClass("seq-up");
+						}
+					})
+					/*新闻滚动*/
+				var scroll_area = $("#NewsScrollId");
+				var timespan = 4000;
+				var timeID;
+				scroll_area.hover(function() {
+					clearInterval(timeID);
+				}, function() {
+					timeID = setInterval(function() {
+						var moveline = scroll_area.find('li:first');
+						var lineheight = moveline.height();
+						moveline.animate({
+							marginTop: -lineheight + 'px'
+						}, 500, function() {
+							moveline.css('marginTop', 0).appendTo(scroll_area);
+						});
+					}, timespan);
+				}).trigger('mouseleave');
+				/*tab*/
+				var listli = $(".select-js").find(".act-js");
+				listli.click(function() {
+					listli.removeClass("active");
+					$(this).addClass("active");
+					var sl = $(this).position().left - 2;
+					var w = $(this).width() + 41;
+					$(this).parents(".ui-select-list").find(".ui-select-list-l-orange").animate({
+						left: sl
+					}, "fast");
+					$(this).parents(".ui-select-list").find(".ui-select-list-l-orange").width(w);
+				});
+			})
+		</script>
+	</body>
+
+</html>

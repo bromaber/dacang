@@ -1,0 +1,433 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>股票基金详细页</title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="description" content=" " />
+<meta name="keywords" content=" " />
+<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+<link href="../css/base.css" rel="stylesheet"/>
+<link href="../css/trade.css" rel="stylesheet"/>
+<link href="../css/ui.css" rel="stylesheet"/>
+<script src="../js/jq/jquery-1.9.1.min.js"></script>
+<script src="../js/bs/bootstrap.js"></script>
+<script src="../js/base.js"></script>
+<script src="../js/jq/jquery.input.js"></script>
+<script src="../js/bs/icheck.js"></script>
+<script src="../js/jq/jquery-ui.js"></script>
+<script src="../js/common/inner-top.js"></script>
+<script src="../js/common/inner-bottom.js"></script>
+</head>
+<body>
+<!--头部开始-->
+<div id="top"></div>
+<!--头部结束-->
+<div class="wrap">
+  <div class="crumbnav"><em class="ico ico-crumb"></em><a href="../member/myaccounts.html" target="_blank" class="c-gray666">我的账户</a><i>&gt;</i><a href="../member/supercash.html" target="_blank" class="c-gray666">超级现金宝</a><i>&gt;</i><b>充值</b></div>
+  <div class="mem-title">
+    <h2 class="h2">超级现金宝充值</h2>
+  </div>
+  <div class="m-cont clearfix">
+    <div class="w660 fl">
+      <h2 class="h2 cash-h2">充值方式</h2>
+      <div class="cash-padd1">
+        <h3 class="cash-h3 clearfix"><em>方式一：</em><span><i class="ico ico-hot"></i>智能选基</span></h3>
+        <div class="select-fund borbox">
+          <div class="title icheck-box">
+            <input type="radio" class="icheck" name="check-fund" id="input-1" checked>
+            <label for="input-1"><em>今日智选</em><span>易方达天天理财货币 A（000009）</span></label>
+          </div>
+          <div class="cont"><span class="c-gray666">七日年化（05-12）</span><em class="c-red3 ft-nums">5.01%</em><span class="c-gray666">万份收益</span><em class="c-red3 ft-nums">12.1201</em></div>
+        </div>
+        <h3 class="cash-h3 clearfix"><em>方式二：</em><span>默认充值基金</span><a href="javascript:;" id="mrczjjID" class="c-blue2 fr shezhi"><i class="ico ico-shezhi"></i>设置</a></h3>
+        <div class="select-fund borbox"> 
+          <!--  <div class="title icheck-box">
+            <input type="radio" class="icheck" name="check-fund" id="input-2">
+            <label for="input-2"><span>易方达天天理财货币 A（000009）</span></label>
+          </div>
+          <div class="cont"><span class="c-gray666">七日年化（05-12）</span><em class="c-red3 ft-nums">5.01%</em><span class="c-gray666">万份收益</span><em class="c-red3 ft-nums">12.1201</em></div>-->
+          
+          <div class="cont">
+            <div class="text-center c-gray999" style="margin-right:38px;">当前未设置默认充值基金</div>
+          </div>
+        </div>
+        <h3 class="cash-h3 clearfix"><em>方式三：</em><span>自定义选基</span><a href="javascript:;" class="c-blue2 fr">更多货币基金 <b class="ft-songti b">&gt;&gt;</b></a></h3>
+        <div class="list-radio diy-fund">
+          <div class="title">
+            <dl>
+              <dt>&nbsp;</dt>
+              <dd>
+                <ul>
+                  <li class="one">基金名称 （代码）</li>
+                  <li class="two">日期</li>
+                  <li class="three">万份收益</li>
+                  <li class="four">七日年化收益</li>
+                  <li class="five">起购金额</li>
+                </ul>
+              </dd>
+            </dl>
+          </div>
+          <div class="cont">
+            <dl>
+              <dt>
+                <input type="radio" class="icheck" name="check-fund" id="input-div1" checked>
+              </dt>
+              <dd>
+                <label for="input-div1">
+                <ul>
+                  <li class="one">南方现金增利货币A（000212）</li>
+                  <li class="two">05-07</li>
+                  <li class="three">10.6603</li>
+                  <li class="four">14.2300%</li>
+                  <li class="five">10000元</li>
+                </ul>
+                </label>
+              </dd>
+            </dl>
+            <dl>
+              <dt>
+                <input type="radio" class="icheck" name="check-fund" id="input-div2" checked>
+              </dt>
+              <dd>
+                <label for="input-div2">
+                <ul>
+                  <li class="one">南方现金增利货币A（000212）</li>
+                  <li class="two">05-07</li>
+                  <li class="three">10.6603</li>
+                  <li class="four">14.2300%</li>
+                  <li class="five">10000元</li>
+                </ul>
+                </label>
+              </dd>
+            </dl>
+            <dl>
+              <dt>
+                <input type="radio" class="icheck" name="check-fund" id="input-div3" checked>
+              </dt>
+              <dd>
+                <label for="input-div3">
+                <ul>
+                  <li class="one">南方现金增利货币A（000212）</li>
+                  <li class="two">05-07</li>
+                  <li class="three">10.6603</li>
+                  <li class="four">14.2300%</li>
+                  <li class="five">10000元</li>
+                </ul>
+                </label>
+              </dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+      <h2 class="h2 cash-h2">支付信息</h2>
+      <div class="pbank-padd" > 
+        <!--已绑定银行卡开始-->
+        <div class="bindbank list-radio pay-bank">
+          <h3 class="h3 pay-h3"><a href="../bindingbank.html" target="_blank" class="c-blue2 fr">＋ 添加银行卡</a></h3>
+          <dl>
+            <dt>
+              <input type="radio" class="icheck" name="check-pay" id="input-pay1" checked>
+            </dt>
+            <dd>
+              <label for="input-pay1" >
+              <ul>
+                <li class="one"><img src="../images/bank/b3.jpg"/></li>
+                <li class="two"><span class="payspan">中国民生银行（汇付）</span>
+                  <div class="pay-tip"><i class="abs abs-arrowblue-l"></i>
+                    <h5 class="h5">尾号 6859</h5>
+                  </div>
+                </li>
+                <li class="three"><span class="payspan must-big">*</span>&nbsp;单笔限额 1w，每日限额 20w</li>
+              </ul>
+              </label>
+            </dd>
+          </dl>
+          <dl>
+            <dt>
+              <input type="radio" class="icheck" name="check-pay" id="input-pay2">
+            </dt>
+            <dd >
+              <label for="input-pay2">
+              <ul>
+                <li class="one"><img src="../images/bank/b2.jpg"/></li>
+                <li class="two"><span class="payspan">中信银行（汇付）</span>
+                  <div class="pay-tip"><i class="abs abs-arrowblue-l"></i>
+                    <h5 class="h5">尾号 6858</h5>
+                  </div>
+                </li>
+                <li class="three"><span class="payspan must-big">*</span>&nbsp;单笔限额 1w，每日限额 20w</li>
+              </ul>
+              </label>
+            </dd>
+          </dl>
+          <dl>
+            <dt>
+              <input type="radio" class="icheck" name="check-pay" id="input-pay3">
+            </dt>
+            <dd >
+              <label for="input-pay3">
+              <ul>
+                <li class="one"><img src="../images/bank/b1.jpg"/></li>
+                <li class="two"><span class="payspan">中国工商银行（汇付）</span>
+                  <div class="pay-tip"><i class="abs abs-arrowblue-l"></i>
+                    <h5 class="h5">尾号 6856</h5>
+                  </div>
+                </li>
+                <li class="three"><span class="payspan must-big">*</span>&nbsp;单笔限额1000w，每日限额 200w</li>
+              </ul>
+              </label>
+            </dd>
+          </dl>
+        </div>
+        <!--已绑定银行卡结束--> 
+        
+        <!-- 未绑定银行卡开始-->
+        <div class="notbindbank" style="display:none"><span class="c-gray999">您还未绑定银行卡，请绑定银行卡以完成购买。</span><a href="../bindingbank.html" target="_blank"><i class="ico ico-addbank"></i>添加银行卡</a></div>
+        
+        <!-- 未绑定银行卡结束--> 
+        
+      </div>
+      <h2 class="h2 cash-h2">购买信息</h2>
+      <div class="cash-table mt20">
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <th>申购金额：</th>
+              <td><dl class="jj-amount">
+                  <dd><b class="less" hidefocus="" href="javascript:;"><i class="abs abs-hor"></i></b>
+                    <input type="text" title="请输入购买金额" maxlength="8" value="5,000,000">
+                    <span class="unit">元</span> <a class="add" hidefocus="" href="javascript:;"><i class="abs abs-hor"></i><i class="abs abs-ver"></i></a></dd>
+                </dl></td>
+            </tr>
+            <tr>
+              <th class="vit"></th>
+              <td class="vit"><div class="vital"><i class="ico ico-vital"></i>最低充值金额 1000.00元</div></td>
+            </tr>
+            <tr>
+              <th>大写金额：</th>
+              <td>壹千元整</td>
+            </tr>
+            <tr>
+              <th>申购费用：</th>
+              <td><span class="c-orange ft-nums">0元</span></td>
+            </tr>
+            <tr>
+              <th>确认时间：</th>
+              <td>05月19日  16:00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="cash-form">
+        <div class="items items-vital">
+          <label class="label">交易密码：</label>
+          <input type="password" tabindex="9" class="text input_bor" name="" autocomplete="off">
+          <div class="vital"><i class="ico ico-vital"></i>请输入基金交易密码，非银行密码</div>
+        </div>
+        <div class="items-btn">
+          <div class="ui-form-btn"><a class="btn" href="supercash.html">确  认</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="w260 fr">
+      <div class="explain">
+        <div class="title">充值帮助</div>
+        <h4 class="h4">充值时间</h4>
+        <p class="p">您在交易日15:00前对现金宝充值，下一个交易日确认成功（一般为该日16:00之后），并可查询；交易日15:00后充值，确认成功和可查询时间相应顺延一个交易日。并且可以节省手续费。</p>
+        <h4 class="h4">充值金额</h4>
+        <p class="p">现金宝的最低充值金额取决于您要充值的基金，一般首次充值最低500元，首次充值成功后每次充值最低100元。不同基金会有不同的金额要求，具体请见交易时的系统提示。</p>
+        <h4 class="h4">手续费</h4>
+        <p class="p">充值0手续费</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--底部开始-->
+<div id="bottom"></div>
+<!--底部结束-->
+
+<div id="mrczjjCont" class="modal big-pop fade hide">
+  <div class="pop-title"><span>设置默认充值基金</span><a href="javascript:;" class="ico ico-popclose">关闭</a></div>
+  <div class="pop-mid-cont rel">
+    <div class="defaul-cash">当前设置的默认充值基金为：<span class="c-blue2">汇添富移动互联网（590008）</span></div>
+    <div class="dc-tool"><span class="fl">请选择默认充值基金</span>
+      <div class="fr small-select">
+        <select tabindex="10" class="select" style="width:120px;">
+          <option value="-1">默认排序</option>
+          <option value="1">按七日年化收益</option>
+          <option value="2">按万份收益</option>
+        </select>
+      </div>
+    </div>
+    <div class="dc-table">
+      <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <thead>
+          <tr>
+            <td width="3%"></td>
+            <td width="33%" class="tdl">基金名称（代码）</td>
+            <td width="13.3%">日期</td>
+            <td width="11%" class="tdr">万份收益</td>
+            <td width="16%" class="tdr">七日年化收益</td>
+            <td width="15%" class="tdr">起购金额</td>
+            <td></td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td class="tdl">富安达优势成长股票（590008）</td>
+            <td>05-07</td>
+            <td class="tdr"><span class="c-red">10.6603</span></td>
+            <td class="tdr"><span class="c-red">14.23%</span></td>
+            <td class="tdr">1000元</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td class="tdl">天治可转债增强债券C（590008）</td>
+            <td>05-07</td>
+            <td class="tdr"><span class="c-red">10.6603</span></td>
+            <td class="tdr"><span class="c-red">14.23%</span></td>
+            <td class="tdr">1000元</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td class="tdl">申万菱信收益宝货币B（590008）</td>
+            <td>05-07</td>
+            <td class="tdr"><span class="c-red">10.6603</span></td>
+            <td class="tdr"><span class="c-red">14.23%</span></td>
+            <td class="tdr">1000元</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td class="tdl">广发生物科技指数(QDII)（590008）</td>
+            <td>05-07</td>
+            <td class="tdr"><span class="c-red">10.6603</span></td>
+            <td class="tdr"><span class="c-red">14.23%</span></td>
+            <td class="tdr">1000元</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td class="tdl">汇添富移动互联网（590008）</td>
+            <td>05-07</td>
+            <td class="tdr"><span class="c-red">1012.66</span></td>
+            <td class="tdr"><span class="c-red">14.23%</span></td>
+            <td class="tdr">100,000元</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td class="tdl">汇添富移动互联网（590008）</td>
+            <td>05-07</td>
+            <td class="tdr"><span class="c-red">10.6603</span></td>
+            <td class="tdr"><span class="c-red">14.23%</span></td>
+            <td class="tdr">1000元</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td class="tdl">汇添富移动互联网（590008）</td>
+            <td>05-07</td>
+            <td class="tdr"><span class="c-red">10.6603</span></td>
+            <td class="tdr"><span class="c-red">14.23%</span></td>
+            <td class="tdr">1000元</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td class="tdl">汇添富移动互联网（590008）</td>
+            <td>05-07</td>
+            <td class="tdr"><span class="c-red">10.6603</span></td>
+            <td class="tdr"><span class="c-red">14.23%</span></td>
+            <td class="tdr">1000元</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td class="tdl">汇添富移动互联网（590008）</td>
+            <td>05-07</td>
+            <td class="tdr"><span class="c-red">10.6603</span></td>
+            <td class="tdr"><span class="c-red">14.23%</span></td>
+            <td class="tdr">1000元</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td class="tdl">汇添富移动互联网（590008）</td>
+            <td>05-07</td>
+            <td class="tdr"><span class="c-red">10.6603</span></td>
+            <td class="tdr"><span class="c-red">14.23%</span></td>
+            <td class="tdr">1000元</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="jj-page">
+      <ul>
+        <li class="prev disabled"><a href="javascript:;"><i class="ico ico-prev"></i>上一页</a></li>
+        <li> <a href="javascript:;">1</a></li>
+        <li class="active"><a href="javascript:;">2</a></li>
+        <li><a href="javascript:;">3</a></li>
+        <li><a href="javascript:;">4</a></li>
+        <li><a href="javascript:;">5</a></li>
+        <li class="dot">...</li>
+        <li><a href="javascript:;">11</a></li>
+        <li><a href="javascript:;">12</a></li>
+        <li class="next"><a href="javascript:;"><i class="ico ico-next"></i>下一页</a></li>
+      </ul>
+      <div class="form"><span class="txt">第</span>
+        <input type="number" aria-label="页码输入框" max="100" min="1" value="1" class="input">
+        <span class="txt">页</span> <a href="javascript:;" class="btn">跳转</a> </div>
+    </div>
+  </div>
+</div>
+<script>
+$(document).ready(function(){
+  $(".icheck").iCheck({
+    checkboxClass: 'icheckbox_square',
+    radioClass: 'iradio_square',
+    increaseArea: '30%' // optional
+  });
+  /*pop box*/
+$("#mrczjjID").click(function(){
+  $("#mrczjjCont").modal("show");
+})
+$(".ico-popclose").click(function(){
+	$(".modal").modal("hide");
+});
+
+$(".select").selectmenu();  
+/*默认基金*/ 
+var dctr=$(".dc-table tbody tr");
+
+dctr.click(function(){
+dctr.removeClass("active");
+$(this).addClass("active");
+});
+
+dctr.hover(function(){
+$(this).addClass("on");	
+	},function(){
+$(this).removeClass("on");		
+}); 
+  
+});
+</script> 
+<script>
+/*$(function(){
+var divul=$(".list-radio dl");
+divul.hover(function(){
+$(this).addClass("on");	
+	},function(){
+$(this).removeClass("on");			
+});
+});*/
+</script>
+</body>
+</html>

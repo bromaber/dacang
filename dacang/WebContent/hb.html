@@ -1,0 +1,2112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>货币基金详细页</title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="description" content=" " />
+<meta name="keywords" content=" " />
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+<link href="css/base.css" rel="stylesheet"/>
+<link href="css/modal.css" rel="stylesheet"/>
+<link href="css/buy.css" rel="stylesheet"/>
+<link href="css/icheck.css" rel="stylesheet"/>
+<link href="css/ui.css" rel="stylesheet"/>
+<link href="css/datepicker.css" rel="stylesheet"/>
+<script src="js/jq/jquery-1.9.1.min.js"></script>
+<script src="js/bs/bootstrap.js"></script>
+<script src="js/jq/jquery.input.js"></script>
+<script src="js/jq/jquery-ui.js"></script>
+<script src="js/bs/datepicker.js"></script>
+<script src="js/base.js"></script>
+<script src="js/common/top.js"></script>
+<script src="js/common/bottom.js"></script>
+</head>
+<body>
+<!--头部开始-->
+<div id="top"></div>
+<div class="head-tab ht-nobg">
+  <div class="wrap clearfix">
+    <div class="new-notice"><span class="notice-tit"><i class="ico ico-notice"></i><div class="anc" style="margin-left:20px;height:35px;">最新公告</div></span>
+      <ul id="NewsScrollId">
+        <li><a href="javascript:;" class="c-gray666">震荡市现布局良机 基金看好港股机会！</a></li>
+        <li><a href="javascript:;" class="c-gray666">三类基金锁定收益。</a></li>
+        <li><a href="javascript:;" class="c-gray666">利好停不下来，4000点成政策铁底</a></li>
+        <li><a href="javascript:;" class="c-gray666">市场震荡，买打新基金！</a></li>
+        <li><a href="javascript:;" class="c-gray666">中央汇金疑出手：怒砸100亿购四大ETF 震荡市买基策略！</a></li>
+      </ul>
+    </div>
+    <div class="head-search">
+      <ul>
+        <li class="dropdown"> <a aria-expanded="true" role="button" aria-haspopup="true" data-toggle="dropdown" class="dropdown-toggle search-drop c-gray666" href="#" id="drop1"> <span class="abs abs-arrow-d"></span> <span class="dropdown-text">基金</span> </a>
+          <ul aria-labelledby="drop1" role="menu" class="dropdown-menu">
+            <li role="presentation"><a href="javascript:;">基金</a></li>
+            <li role="presentation"><a href="javascript:;">经理</a></li>
+            <li role="presentation"><a href="javascript:;">资讯</a></li>
+          </ul>
+        </li>
+        <li class="top-text top-s-js"> <i class="ico ico-search"></i>
+          <input type="text" name="" class="stxt-js input_ph" value="请输入基金代码／简称／拼音" placeholder="" tabindex="-1">
+          <div id="searchData" class="sbox sbox-js" style="display:none">
+            <table id="auto1">
+              <tbody>
+                <tr>
+                  <td width="29px" class="rel"><i class="abs abs-rank abs-top">1</i></td>
+                  <td width="55px">76<span>2</span>001</td>
+                  <td>国金通用国鑫发起</td>
+                </tr>
+                <tr>
+                  <td class="rel"><i class="abs abs-rank abs-top">2</i></td>
+                  <td>75000<span>2</span></td>
+                  <td>安信目标收益债券A</td>
+                </tr>
+                <tr>
+                  <td class="rel"><i class="abs abs-rank abs-top">3</i></td>
+                  <td>74060<span>2</span></td>
+                  <td>长安货币B</td>
+                </tr>
+                <tr>
+                  <td class="rel"><i class="abs abs-rank">4</i></td>
+                  <td>73000<span>2</span></td>
+                  <td>方正富邦红利精选股票方正富邦红利精选股票</td>
+                </tr>
+                <tr>
+                  <td class="rel"><i class="abs abs-rank">5</i></td>
+                  <td>7<span>2</span>0003</td>
+                  <td>财通保本混合发起式</td>
+                </tr>
+                <tr>
+                  <td class="rel"><i class="abs abs-rank">6</i></td>
+                  <td>7<span>2</span>000<span>2</span></td>
+                  <td>财通多策略稳健增长债券</td>
+                </tr>
+                <tr>
+                  <td class="rel"><i class="abs abs-rank">7</i></td>
+                  <td>7<span>2</span>0001</td>
+                  <td>财通价值动量混合</td>
+                </tr>
+                <tr>
+                  <td class="rel"><i class="abs abs-rank">8</i></td>
+                  <td>71050<span>2</span></td>
+                  <td>富安达现金通货币B</td>
+                </tr>
+                <tr>
+                  <td class="rel"><i class="abs abs-rank">9</i></td>
+                  <td>71050<span>2</span></td>
+                  <td>富安达现金通货币B</td>
+                </tr>
+                <tr>
+                  <td class="rel"><i class="abs abs-rank">10</i></td>
+                  <td>71050<span>2</span></td>
+                  <td>富安达现金通货币B</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!--头部结束-->
+<div class="wrap">
+  <div class="ad"><!-- 图像大小 宽1000 高125--><a href="javascript:;"><img src="images/_ad/gp-ad1.jpg"/></a></div>
+  <div class="crumbnav"><em class="ico ico-crumb"></em><a href="javascript:;" target="_blank" class="c-gray666">首页</a><i>&gt;</i><a href="javascript:;" target="_blank" class="c-gray666">基金选购</a><i>&gt;</i><b>中邮货币A(000576)</b><span class="span"><b>最近浏览：</b><a href="javascript:;" class="c-red2" target="_blank">长信内需成长股票 </a><a href="javascript:;" class="c-red2" target="_blank">宝盈资源优选股票 </a><a href="javascript:;" class="c-red2" target="_blank">富国低碳环保股票 </a><a href="javascript:;" class="c-red2"target="_blank">汇添富移动互联股票</a></span></div>
+  <div class="fund-base clearfix">
+    <div class="w640 fl">
+      <div class="fbd-title clearfix">
+        <h1 class="h1 fl"><strong class="fl">中邮货币A</strong><span class="fs18 fl c-gray666">(000697)</span></h1>
+        <div class="fr"><a id="addZX" class="zixuan" jjdm="161024" href="javascript:;">＋ 自选</a> </div>
+        <div class="fr hide"><a id="DelZx" class="zixuan-del" jjdm="161024" href="javascript:;">已自选</a></div>
+        <div class="fr"><a class="jisuanqi" href="javascript:;" id="jsqID"><i class="ico ico-jisuanqi"></i>收益计算器</a></div>
+      </div>
+      <ul class="detail-attr">
+        <li>货币型</li>
+        <li>低风险</li>
+        <li>管理人: <a href="javascript:;" class="c-gray333">中邮货币</a></li>
+        <li>基金经理: <a href="javascript:;" class="c-gray333">欧阳青</a> <a href="javascript:;" class="c-gray333">黄药师</a> <a href="javascript:;" class="c-gray333">洪七公</a></li>
+        <li>成立日: 2014-05-15</li>
+        <li>最新规模: 2.36亿</li>
+      </ul>
+      <div class="shouyi-num">
+        <dl>
+          <span>七日年化(04-10)</span>
+          <h2 class="h2 bg-red"><em class="ft-nums fl">2.4012</em><i class="ico-jzdown fl"></i></h2>
+          <p><em class="ft-nums fl c-red">2.15%</em> <em class="ft-nums fl c-red ml30">1.2456</em></p>
+        </dl>
+        <dl>
+          <span>万份收益</span>
+          <h2 class="h2 bg-green"><em class="ft-nums fl">-93.73%</em></h2>
+          <p><b class="b fl">同类排名:</b><em class="ft-nums fl">10/300</em> </p>
+        </dl>
+        <dl class="last">
+          <span>近一年收益</span>
+          <h2 class="h2 bg-red"><em class="ft-nums fl">193.73%</em></h2>
+          <p><b class="b fl">同类排名:</b><em class="ft-nums fl">8/300</em> </p>
+        </dl>
+      </div>
+      <ul class="shouyi-txt">
+        <li><i class="ico ico-qian"></i><span>近一月：</span><em class="ft-nums em c-red">126.89%</em></li>
+        <li><i class="ico ico-qian"></i><span>近半年：</span><em class="ft-nums em c-green">166.04%</em></li>
+        <li class="last"><i class="ico ico-qian"></i><span>成立以来：</span><em class="ft-nums em c-red">185.20%</em></li>
+      </ul>
+    </div>
+    <div class="w290 fr">
+      <div class="jj-box">
+        <dl class="jj-amount">
+          <dt class="c-gray666">购买金额：</dt>
+          <dd><b class="less" hidefocus="" href="javascript:;"><i class="abs abs-hor"></i></b>
+            <input type="tel" title="请输入购买金额" maxlength="8" value="3000">
+            <span class="unit">元</span> <a class="add" hidefocus="" href="javascript:;"><i class="abs abs-hor"></i><i class="abs abs-ver"></i></a></dd>
+        </dl>
+        <div class="jj-import">
+          <ul>
+            <li><i class="ico ico-i"></i><b class="b c-gray666">优惠费率：</b><em class="em">0.6%</em><span>（<del class="del">1.5%</del>）</span> </li>
+            <li><i class="ico ico-i"></i><b class="b c-gray666">赎回到期：</b><em class="em">2天</em><span>全网最快</span></li>
+          </ul>
+        </div>
+        <div class="jj-det-btn"><a class="btn fl" href="javascript:;">立即购买</a><a class="btnbor fr" href="javascript:;">快速注册</a></div>
+        <div class="jj-feature">
+          <ul>
+            <li><i class="ico ico-zy"></i><a href="javascript:;" class="c-gray999">专业：证监会首批的销售机构</a></li>
+            <li><i class="ico ico-aq"></i><a href="javascript:;" class="c-gray999">安全：银行级加密，保障安全</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <ul class="detail-nav mt30" id="detMainTab">
+    <li class="active"><a href="#gaikuang" data-toggle="tab">概括</a></li>
+    <li><a href="#lishi" data-toggle="tab">历史净值</a></li>
+    <li><a href="#jianjie" data-toggle="tab">简介</a></li>
+    <li><a href="#feilv" data-toggle="tab">费率</a></li>
+    <li><a href="#zixun" data-toggle="tab">资讯</a></li>
+    <li><a href="#gonggao" data-toggle="tab">公告</a></li>
+    <li><a href="#caibao" data-toggle="tab">财报</a></li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane fade in active" id="gaikuang">
+      <div class="m-cont clearfix m-bg mt17">
+        <div class="w570 fl rel">
+          <ul class="tab-title" id="shouyiTab">
+            <li class="active"><a href="#sy-Zoushi" data-toggle="tab">7日年化走势图</a></li>
+            <li class="dividing">|</li>
+            <li><a href="#sy-Tonglei" data-toggle="tab">万份收益走势图 </a></li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane fade in active" id="sy-Zoushi">
+              <div class="sy-type clearfix hb-sytype"><a href="javascript:;">3个月</a><a href="javascript:;">1个月</a><a class="active">7天</a></div>
+              <div class="charts-cont charts-h2"><img src="images/graph/gj-graph13.jpg"/></div>
+            </div>
+            <div class="tab-pane fade" id="sy-Tonglei">
+              <div class="sy-type clearfix hb-sytype"><a href="javascript:;">3个月</a><a href="javascript:;">1个月</a><a class="active">7天</a></div>
+              <div class="charts-cont charts-h2"><img src="images/graph/gj-graph12.jpg"/></div>
+            </div>
+          </div>
+        </div>
+        <div class="w350 fr rel">
+          <ul class="tab-title" id="zhangfuTab">
+            <li class="active"><a href="#zf-Jieduan" data-toggle="tab"> 阶段涨幅 </a></li>
+            <li class="dividing">|</li>
+            <li><a href="#zf-Lishi" data-toggle="tab"> 历史净值 </a></li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane fade in active" id="zf-Jieduan">
+              <div class="data-as-of fs12">（数据日期2014-05-16）</div>
+              <div class="subdet-table sub-tab-gao">
+                <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <td width="18%">时间</td>
+                      <td width="20%">本基金</td>
+                      <td width="20%">同类平均</td>
+                      <td width="20%">沪深300</td>
+                      <td>同类排名</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>近1周</td>
+                      <td><span class="c-red">99.30%</span></td>
+                      <td><span class="c-red">99.30%</span></td>
+                      <td><span class="c-red">99.30%</span></td>
+                      <td><span class="c-red">30/300</span></td>
+                    </tr>
+                    <tr>
+                      <td>近12周</td>
+                      <td><span class="c-green">-8.30%</span></td>
+                      <td><span class="c-red">99.30%</span></td>
+                      <td><span class="c-red">99.30%</span></td>
+                      <td><span class="c-red">30/300</span></td>
+                    </tr>
+                    <tr>
+                      <td>近3周</td>
+                      <td><span class="c-red">99.30%</span></td>
+                      <td><span class="c-red">99.30%</span></td>
+                      <td><span class="c-green">-3.30%</span></td>
+                      <td><span class="c-red">30/300</span></td>
+                    </tr>
+                    <tr>
+                      <td>近1月</td>
+                      <td><span class="c-red">99.30%</span></td>
+                      <td><span class="c-red">99.30%</span></td>
+                      <td><span class="c-red">99.30%</span></td>
+                      <td><span class="c-red">30/300</span></td>
+                    </tr>
+                    <tr>
+                      <td>近2月</td>
+                      <td><span class="c-red">99.30%</span></td>
+                      <td><span class="c-red">99.30%</span></td>
+                      <td><span class="c-green">-10.30%</span></td>
+                      <td><span class="c-red">30/300</span></td>
+                    </tr>
+                    <tr>
+                      <td>近3月</td>
+                      <td><span class="c-red">99.30%</span></td>
+                      <td><span class="c-red">99.30%</span></td>
+                      <td><span class="c-red">99.30%</span></td>
+                      <td><span class="c-red">30/300</span></td>
+                    </tr>
+                    <tr>
+                      <td>近1年</td>
+                      <td><span class="c-red">99.30%</span></td>
+                      <td><span class="c-red">99.30%</span></td>
+                      <td><span class="c-red">99.30%</span></td>
+                      <td><span class="c-red">30/300</span></td>
+                    </tr>
+                    <tr>
+                      <td>近2年</td>
+                      <td><span class="c-red">99.30%</span></td>
+                      <td><span class="c-red">99.30%</span></td>
+                      <td><span class="c-red">99.30%</span></td>
+                      <td><span class="c-red">30/300</span></td>
+                    </tr>
+                    <tr>
+                      <td>近3年</td>
+                      <td><span class="c-red">99.30%</span></td>
+                      <td><span class="c-red">99.30%</span></td>
+                      <td><span class="c-red">99.30%</span></td>
+                      <td><span class="c-red">30/300</span></td>
+                    </tr>
+                    <tr>
+                      <td>近4年</td>
+                      <td><span class="c-red">99.30%</span></td>
+                      <td><span class="c-red">99.30%</span></td>
+                      <td><span class="c-red">99.30%</span></td>
+                      <td><span class="c-red">30/300</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="zf-Lishi">
+              <div class="data-as-of fs12">
+                <div class="det-more"> <a class="c-blue1" href="javascript:;"><i class="ico ico-more"></i>更多历史净值</a> </div>
+              </div>
+              <div class="subdet-table sub-tab-gao">
+                <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                  <thead>
+                    <tr>
+                      <td width="33%">日期</td>
+                      <td width="30%">万份收益</td>
+                      <td>七日年化</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>2014-03-31</td>
+                      <td><span class="c-red">1.3500</span></td>
+                      <td><span class="c-red">5.24%</span></td>
+                    </tr>
+                    <tr>
+                      <td>2014-03-31</td>
+                      <td><span class="c-red">1.3500</span></td>
+                      <td><span class="c-red">5.24%</span></td>
+                    </tr>
+                    <tr>
+                      <td>2014-03-31</td>
+                      <td><span class="c-red">1.3500</span></td>
+                      <td><span class="c-red">5.24%</span></td>
+                    </tr>
+                    <tr>
+                      <td>2014-03-31</td>
+                      <td><span class="c-red">1.3500</span></td>
+                      <td><span class="c-red">5.24%</span></td>
+                    </tr>
+                    <tr>
+                      <td>2014-03-31</td>
+                      <td><span class="c-red">1.3500</span></td>
+                      <td><span class="c-red">5.24%</span></td>
+                    </tr>
+                    <tr>
+                      <td>2014-03-31</td>
+                      <td><span class="c-red">1.3500</span></td>
+                      <td><span class="c-red">5.24%</span></td>
+                    </tr>
+                    <tr>
+                      <td>2014-03-31</td>
+                      <td><span class="c-red">1.3500</span></td>
+                      <td><span class="c-red">5.24%</span></td>
+                    </tr>
+                    <tr>
+                      <td>2014-03-31</td>
+                      <td><span class="c-red">1.3500</span></td>
+                      <td><span class="c-red">5.24%</span></td>
+                    </tr>
+                    <tr>
+                      <td>2014-03-31</td>
+                      <td><span class="c-red">1.3500</span></td>
+                      <td><span class="c-red">5.24%</span></td>
+                    </tr>
+                    <tr>
+                      <td>2014-03-31</td>
+                      <td><span class="c-red">1.3500</span></td>
+                      <td><span class="c-red">5.24%</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="m-cont clearfix m-bg mt17">
+        <div class="w570 fl rel">
+          <ul class="tab-title" id="zichanTab">
+            <li class="active"><a href="javascript:;">资产配置</a></li>
+          </ul>
+          <div class="charts-cont charts-h3"><img src="images/graph/gj-graph14.jpg"/></div>
+        </div>
+        <div class="w350 fr rel">
+          <ul class="tab-title" id="zhongcangTab">
+            <li class="active"><a href="javascript:;" data-toggle="tab"> 同类热销 </a></li>
+          </ul>
+          <div class="subdet-table sub-tab-gao">
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+              <thead>
+                <tr>
+                  <td width="8%"></td>
+                  <td width="30%"><div class="table-left">基金简称</div></td>
+                  <td width="30%">7日年化</td>
+                  <td>万份收益</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td></td>
+                  <td><div class="table-left"><a href="javascript:;" class="c-blue" target="_blank">信达澳银慧管</a></div></td>
+                  <td><span class="c-red">10.00</span></a></td>
+                  <td>1.7564</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><div class="table-left"><a href="javascript:;" class="c-blue" target="_blank">信达澳银慧管A</a></div></td>
+                  <td><span class="c-red">10.00</span></a></td>
+                  <td>1.7564</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><div class="table-left"><a href="javascript:;" class="c-blue" target="_blank">信达澳银慧管A</a></div></td>
+                  <td><span class="c-red">10.00</span></a></td>
+                  <td>1.7564</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><div class="table-left"><a href="javascript:;" class="c-blue" target="_blank">信达澳银慧管A</a></div></td>
+                  <td><span class="c-red">10.00</span></a></td>
+                  <td>1.7564</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><div class="table-left"><a href="javascript:;" class="c-blue" target="_blank">信达澳银慧管A</a></div></td>
+                  <td><span class="c-red">10.00</span></a></td>
+                  <td>1.7564</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><div class="table-left"><a href="javascript:;" class="c-blue" target="_blank">信达澳银慧管A</a></div></td>
+                  <td><span class="c-red">10.00</span></a></td>
+                  <td>1.7564</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><div class="table-left"><a href="javascript:;" class="c-blue" target="_blank">信达澳银慧管A</a></div></td>
+                  <td><span class="c-red">10.00</span></a></td>
+                  <td>1.7564</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><div class="table-left"><a href="javascript:;" class="c-blue" target="_blank">信达澳银慧管A</a></div></td>
+                  <td><span class="c-red">10.00</span></a></td>
+                  <td>1.7564</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><div class="table-left"><a href="javascript:;" class="c-blue" target="_blank">信达澳银慧管A</a></div></td>
+                  <td><span class="c-red">10.00</span></a></td>
+                  <td>1.7564</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><div class="table-left"><a href="javascript:;" class="c-blue" target="_blank">信达澳银慧管A</a></div></td>
+                  <td><span class="c-red">10.00</span></a></td>
+                  <td>1.7564</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="m-cont m-bg mt17">
+        <ul class="tab-title abs abs-tabtit" id="jingziTab">
+          <li class="active"><a href="#jz-Jingzi" data-toggle="tab">净资产规模变动</a></li>
+          <li class="dividing">|</li>
+          <li><a href="#jz-Fene" data-toggle="tab">份额规模变动</a></li>
+          <li class="dividing">|</li>
+          <li><a href="#jz-Chiyouren" data-toggle="tab">持有人结构</a></li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane fade in active clearfix" id="jz-Jingzi">
+            <div class="w570 fl rel">
+              <div class="space58"></div>
+              <div class="charts-cont charts-h3"><img src="images/graph/gj-graph4.jpg"/></div>
+            </div>
+            <div class="w350 fr rel">
+              <ul class="tab-title">
+                <li class="active"><a href="javascript:;"> 净资产规模变动详情 </a></li>
+                <li class="unit">（单位：亿元）</li>
+              </ul>
+              <div class="subdet-table sub-tab-gao">
+                <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <td width="33%">日期</td>
+                      <td width="30%">净资产</td>
+                      <td>变动率</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>2014-03-31</td>
+                      <td><span class="c-red">5.19</span></td>
+                      <td><span class="c-red">99.30%</span></td>
+                    </tr>
+                    <tr>
+                      <td>2014-03-31</td>
+                      <td><span class="c-red">5.19</span></td>
+                      <td><span class="c-red">99.30%</span></td>
+                    </tr>
+                    <tr>
+                      <td>2014-03-31</td>
+                      <td><span class="c-red">5.19</span></td>
+                      <td><span class="c-red">99.30%</span></td>
+                    </tr>
+                    <tr>
+                      <td>2014-03-31</td>
+                      <td><span class="c-red">5.19</span></td>
+                      <td><span class="c-red">99.30%</span></td>
+                    </tr>
+                    <tr>
+                      <td>2014-03-31</td>
+                      <td><span class="c-red">5.19</span></td>
+                      <td><span class="c-red">99.30%</span></td>
+                    </tr>
+                    <tr>
+                      <td>2014-03-31</td>
+                      <td><span class="c-red">5.19</span></td>
+                      <td><span class="c-red">99.30%</span></td>
+                    </tr>
+                    <tr>
+                      <td>2014-03-31</td>
+                      <td><span class="c-red">5.19</span></td>
+                      <td><span class="c-red">99.30%</span></td>
+                    </tr>
+                    <tr>
+                      <td>2014-03-31</td>
+                      <td><span class="c-red">5.19</span></td>
+                      <td><span class="c-red">99.30%</span></td>
+                    </tr>
+                    <tr>
+                      <td>2014-03-31</td>
+                      <td><span class="c-red">5.19</span></td>
+                      <td><span class="c-red">99.30%</span></td>
+                    </tr>
+                    <tr>
+                      <td>2014-03-31</td>
+                      <td><span class="c-red">5.19</span></td>
+                      <td><span class="c-red">99.30%</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade clearfix" id="jz-Fene">
+            <div class="w570 fl rel">
+              <div class="space58"></div>
+              <div class="charts-cont charts-h3"><img src="images/graph/gj-graph10.jpg"/></div>
+            </div>
+            <div class="w350 fr rel">
+              <ul class="tab-title">
+                <li class="active"><a href="javascript:;"> 份额规模变动详情 </a></li>
+                <li class="unit">（单位：亿份）</li>
+              </ul>
+              <div class="subdet-table sub-tab-gao">
+                <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <td width="25%">日期</td>
+                      <td width="16%">申购</td>
+                      <td width="16%">赎回</td>
+                      <td width="22%">期末总份额</td>
+                      <td>变动率</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>2014-03-31</td>
+                      <td><span class="c-red">5.19</span></td>
+                      <td><span class="c-red">2.51</span></td>
+                      <td><span class="c-red">5.62</span></td>
+                      <td><span class="c-red">90.91%</span></td>
+                    </tr>
+                    <tr>
+                      <td>2014-03-31</td>
+                      <td><span class="c-red">12.19</span></td>
+                      <td><span class="c-red">21.51</span></td>
+                      <td><span class="c-red">51.62</span></td>
+                      <td><span class="c-green">-90.91%</span></td>
+                    </tr>
+                    <tr>
+                      <td>2014-03-31</td>
+                      <td><span class="c-red">5.19</span></td>
+                      <td><span class="c-red">2.51</span></td>
+                      <td><span class="c-red">5.62</span></td>
+                      <td><span class="c-red">90.91%</span></td>
+                    </tr>
+                    <tr>
+                      <td>2014-03-31</td>
+                      <td><span class="c-red">5.19</span></td>
+                      <td><span class="c-red">2.51</span></td>
+                      <td><span class="c-red">5.62</span></td>
+                      <td><span class="c-red">90.91%</span></td>
+                    </tr>
+                    <tr>
+                      <td>2014-03-31</td>
+                      <td><span class="c-red">5.19</span></td>
+                      <td><span class="c-red">2.51</span></td>
+                      <td><span class="c-red">5.62</span></td>
+                      <td><span class="c-red">90.91%</span></td>
+                    </tr>
+                    <tr>
+                      <td>2014-03-31</td>
+                      <td><span class="c-red">5.19</span></td>
+                      <td><span class="c-red">2.51</span></td>
+                      <td><span class="c-red">5.62</span></td>
+                      <td><span class="c-red">90.91%</span></td>
+                    </tr>
+                    <tr>
+                      <td>2014-03-31</td>
+                      <td><span class="c-red">5.19</span></td>
+                      <td><span class="c-red">2.51</span></td>
+                      <td><span class="c-red">5.62</span></td>
+                      <td><span class="c-red">90.91%</span></td>
+                    </tr>
+                    <tr>
+                      <td>2014-03-31</td>
+                      <td><span class="c-red">5.19</span></td>
+                      <td><span class="c-red">2.51</span></td>
+                      <td><span class="c-red">5.62</span></td>
+                      <td><span class="c-red">90.91%</span></td>
+                    </tr>
+                    <tr>
+                      <td>2014-03-31</td>
+                      <td><span class="c-red">5.19</span></td>
+                      <td><span class="c-red">2.51</span></td>
+                      <td><span class="c-red">5.62</span></td>
+                      <td><span class="c-red">90.91%</span></td>
+                    </tr>
+                    <tr>
+                      <td>2014-03-31</td>
+                      <td><span class="c-red">5.19</span></td>
+                      <td><span class="c-red">2.51</span></td>
+                      <td><span class="c-red">5.62</span></td>
+                      <td><span class="c-red">90.91%</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade clearfix" id="jz-Chiyouren">
+            <div class="w570 fl rel">
+              <div class="space58"></div>
+              <div class="charts-cont charts-h3"><img src="images/graph/gj-graph11.jpg"/></div>
+            </div>
+            <div class="w350 fr rel">
+              <ul class="tab-title">
+                <li class="active"><a href="javascript:;"> 规模变动详情 </a></li>
+                <li class="unit">（单位：亿份）</li>
+              </ul>
+              <div class="subdet-table sub-tab-gao">
+                <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <td width="29%">日期</td>
+                      <td width="17%">机构</td>
+                      <td width="17%">个人</td>
+                      <td width="17%">内部</td>
+                      <td>总份额</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>2014-03-31</td>
+                      <td><span class="c-red">90.91%</span></td>
+                      <td><span class="c-red">90.91%</span></td>
+                      <td><span class="c-red">90.91%</span></td>
+                      <td><span class="c-red">5.62</span></td>
+                    </tr>
+                    <tr>
+                      <td>2014-03-31</td>
+                      <td><span class="c-red">90.91%</span></td>
+                      <td><span class="c-red">90.91%</span></td>
+                      <td><span class="c-red">90.91%</span></td>
+                      <td><span class="c-red">5.62</span></td>
+                    </tr>
+                    <tr>
+                      <td>2014-03-31</td>
+                      <td><span class="c-red">90.91%</span></td>
+                      <td><span class="c-red">90.91%</span></td>
+                      <td><span class="c-red">90.91%</span></td>
+                      <td><span class="c-red">5.62</span></td>
+                    </tr>
+                    <tr>
+                      <td>2014-03-31</td>
+                      <td><span class="c-red">90.91%</span></td>
+                      <td><span class="c-red">90.91%</span></td>
+                      <td><span class="c-red">90.91%</span></td>
+                      <td><span class="c-red">5.62</span></td>
+                    </tr>
+                    <tr>
+                      <td>2014-03-31</td>
+                      <td><span class="c-red">90.91%</span></td>
+                      <td><span class="c-red">90.91%</span></td>
+                      <td><span class="c-red">90.91%</span></td>
+                      <td><span class="c-red">5.62</span></td>
+                    </tr>
+                    <tr>
+                      <td>2014-03-31</td>
+                      <td><span class="c-red">90.91%</span></td>
+                      <td><span class="c-red">90.91%</span></td>
+                      <td><span class="c-red">90.91%</span></td>
+                      <td><span class="c-red">5.62</span></td>
+                    </tr>
+                    <tr>
+                      <td>2014-03-31</td>
+                      <td><span class="c-red">90.91%</span></td>
+                      <td><span class="c-red">90.91%</span></td>
+                      <td><span class="c-red">90.91%</span></td>
+                      <td><span class="c-red">5.62</span></td>
+                    </tr>
+                    <tr>
+                      <td>2014-03-31</td>
+                      <td><span class="c-red">90.91%</span></td>
+                      <td><span class="c-red">90.91%</span></td>
+                      <td><span class="c-red">90.91%</span></td>
+                      <td><span class="c-red">5.62</span></td>
+                    </tr>
+                    <tr>
+                      <td>2014-03-31</td>
+                      <td><span class="c-red">90.91%</span></td>
+                      <td><span class="c-red">90.91%</span></td>
+                      <td><span class="c-red">90.91%</span></td>
+                      <td><span class="c-red">5.62</span></td>
+                    </tr>
+                    <tr>
+                      <td>2014-03-31</td>
+                      <td><span class="c-red">90.91%</span></td>
+                      <td><span class="c-red">90.91%</span></td>
+                      <td><span class="c-red">90.91%</span></td>
+                      <td><span class="c-red">5.62</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="lishi">
+      <div class="m-cont clearfix mt17">
+        <ul class="tab-title">
+          <li class="active"><a href="javascript:;">历史净值</a></li>
+        </ul>
+        <div class="subdet-table2 clearfix">
+          <table width="100%"  border="0" cellpadding="0" cellspacing="0">
+            <thead>
+              <tr>
+                <td width="16%">日期</td>
+                <td width="12%">万份收益（元）</td>
+                <td width="19%">七日年化</td>
+                <td width="3%" class="liner"></td>
+                <td width="4%"></td>
+                <td width="14%"><div class="table-left">当日最高收益货基</div></td>
+                <td width="19%">万份收益（元）</td>
+                <td width="10%">七日年化</td>
+                <td></td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2014-03-31</td>
+                <td><span class="c-red">1.4525</span></td>
+                <td><span class="c-green">-6.30%</span></td>
+                <td class="liner"></td>
+                <td></td>
+                <td><div class="table-left"><a href="javascript:;" class="c-blue1">汇添富移动互联网</a></div></td>
+                <td><span class="c-red">5.19%</span></td>
+                <td><span class="c-green">-128.22%</span></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>2014-03-31</td>
+                <td><span class="c-red">1.4525</span></td>
+                <td><span class="c-red">6.30%</span></td>
+                <td class="liner"></td>
+                <td></td>
+                <td><div class="table-left"><a href="javascript:;" class="c-blue1">汇添富移动互联网</a></div></td>
+                <td><span class="c-red">5.19%</span></td>
+                <td><span class="c-red">128.22%</span></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>2014-03-31</td>
+                <td><span class="c-red">1.4525</span></td>
+                <td><span class="c-red">6.30%</span></td>
+                <td class="liner"></td>
+                <td></td>
+                <td><div class="table-left"><a href="javascript:;" class="c-blue1">汇添富移动互联网</a></div></td>
+                <td><span class="c-red">5.19%</span></td>
+                <td><span class="c-red">128.22%</span></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>2014-03-31</td>
+                <td><span class="c-red">1.4525</span></td>
+                <td><span class="c-red">6.30%</span></td>
+                <td class="liner"></td>
+                <td></td>
+                <td><div class="table-left"><a href="javascript:;" class="c-blue1">汇添富移动互联网</a></div></td>
+                <td><span class="c-red">5.19%</span></td>
+                <td><span class="c-red">128.22%</span></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>2014-03-31</td>
+                <td><span class="c-red">1.4525</span></td>
+                <td><span class="c-red">6.30%</span></td>
+                <td class="liner"></td>
+                <td></td>
+                <td><div class="table-left"><a href="javascript:;" class="c-blue1">汇添富移动互联网</a></div></td>
+                <td><span class="c-red">5.19%</span></td>
+                <td><span class="c-red">128.22%</span></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>2014-03-31</td>
+                <td><span class="c-red">1.4525</span></td>
+                <td><span class="c-red">6.30%</span></td>
+                <td class="liner"></td>
+                <td></td>
+                <td><div class="table-left"><a href="javascript:;" class="c-blue1">汇添富移动互联网</a></div></td>
+                <td><span class="c-red">5.19%</span></td>
+                <td><span class="c-red">128.22%</span></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>2014-03-31</td>
+                <td><span class="c-red">1.4525</span></td>
+                <td><span class="c-red">6.30%</span></td>
+                <td class="liner"></td>
+                <td></td>
+                <td><div class="table-left"><a href="javascript:;" class="c-blue1">汇添富移动互联网</a></div></td>
+                <td><span class="c-red">5.19%</span></td>
+                <td><span class="c-red">128.22%</span></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>2014-03-31</td>
+                <td><span class="c-red">1.4525</span></td>
+                <td><span class="c-red">6.30%</span></td>
+                <td class="liner"></td>
+                <td></td>
+                <td><div class="table-left"><a href="javascript:;" class="c-blue1">汇添富移动互联网</a></div></td>
+                <td><span class="c-red">5.19%</span></td>
+                <td><span class="c-red">128.22%</span></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>2014-03-31</td>
+                <td><span class="c-red">1.4525</span></td>
+                <td><span class="c-red">6.30%</span></td>
+                <td class="liner"></td>
+                <td></td>
+                <td><div class="table-left"><a href="javascript:;" class="c-blue1">汇添富移动互联网</a></div></td>
+                <td><span class="c-red">5.19%</span></td>
+                <td><span class="c-red">128.22%</span></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>2014-03-31</td>
+                <td><span class="c-red">1.4525</span></td>
+                <td><span class="c-red">6.30%</span></td>
+                <td class="liner"></td>
+                <td></td>
+                <td><div class="table-left"><a href="javascript:;" class="c-blue1">汇添富移动互联网</a></div></td>
+                <td><span class="c-red">5.19%</span></td>
+                <td><span class="c-red">128.22%</span></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="jj-page">
+          <ul>
+            <li class="prev disabled"><a href="javascript:;"><i class="ico ico-prev"></i>上一页</a></li>
+            <li> <a href="javascript:;">1</a></li>
+            <li class="active"><a href="javascript:;">2</a></li>
+            <li><a href="javascript:;">3</a></li>
+            <li><a href="javascript:;">4</a></li>
+            <li><a href="javascript:;">5</a></li>
+            <li class="dot">...</li>
+            <li><a href="javascript:;">11</a></li>
+            <li><a href="javascript:;">12</a></li>
+            <li class="next"><a href="javascript:;"><i class="ico ico-next"></i>下一页</a></li>
+          </ul>
+          <div class="form"><span class="txt">第</span>
+            <input type="number" aria-label="页码输入框" max="100" min="1" value="1" class="input">
+            <span class="txt">页</span> <a href="javascript:;" class="btn">跳转</a> </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="jianjie">
+      <div class="m-cont nopad mt17">
+        <ul class="tab-title">
+          <li class="active"><a href="javascript:;">基金简介</a></li>
+        </ul>
+        <div class="sub-table1">
+          <table width="100%" border="0" cellpadding="0" cellspacing="0">
+            <tbody>
+              <tr>
+                <th width="14%">基金全称</th>
+                <td width="35%">长信内需成长股票型证券投资基金</td>
+                <th width="14%">基金简称</th>
+                <td>长信内需成长</td>
+              </tr>
+              <tr>
+                <th>基金代码</th>
+                <td>519979（前端）</td>
+                <th>基金类型</th>
+                <td>股票型</td>
+              </tr>
+              <tr>
+                <th>发行日期</th>
+                <td>2011年09月05日</td>
+                <th>成立日期/规模</th>
+                <td>2011年10月20日 / 3.554亿份</td>
+              </tr>
+              <tr>
+                <th>资产规模</th>
+                <td>21.47亿元（截止至：2015年03月31日）</td>
+                <th>份额规模</th>
+                <td>13.6527亿份（截止至：2015年03月31日）</td>
+              </tr>
+              <tr>
+                <th>基金托管人</th>
+                <td>农业银行</td>
+                <th>成立来分红</th>
+                <td>每份累计0.45元（2次）</td>
+              </tr>
+              <tr>
+                <th>业绩比较基准</th>
+                <td>沪深300指数收益率*80%+中证综合债券指数收益率*20%沪深300指数收益率*80%+中证综合债券指数收益率*20%</td>
+                <th>跟踪标的</th>
+                <td>该基金无跟踪标的</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="m-cont clearfix mt17">
+        <div class="abs-det-more">
+          <div class="det-more"> <a href="javascript:;" class="c-blue"><i class="ico ico-more"></i>查看详情</a> </div>
+        </div>
+        <ul class="tab-title">
+          <li class="active"><a href="javascript:;">基金经理</a></li>
+        </ul>
+        <div class="gm-list">
+          <div class="w590 fl">
+            <div class="photo-box">
+              <div class="photo-img"><img src="images/manager-man.png"/></div>
+              <div class="photo-cont">
+                <h2 class="h2"><a href="javascript:;" class="c-blue fl"><span>欧阳峰</span></a><b class="fl"><em class="em">9.98</em><i>分</i></b> </h2>
+                <ul class="fund-text">
+                  <li class="one first"><span>从业年均回报</span>
+                    <h3 class="ft-nums c-red">98.33%</h3>
+                  </li>
+                  <li class="line"></li>
+                  <li class="two"><span>从业时间</span>
+                    <h3>12 年 245 天</h3>
+                  </li>
+                  <li class="line"></li>
+                  <li class="three"><span>最擅长类型</span>
+                    <h3>股票型</h3>
+                  </li>
+                  <li class="line"></li>
+                  <li class="four"><span>当前管理基金</span>
+                    <h3>2 只</h3>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="fund-manager">
+              <div class="fm-cont"> <a href="javascript:;" class="c-blue fm-more" target="_blank">详情 <span class="ft-songti">&gt;&gt;</span></a> <span class="c-gray333">欧阳锋经理：</span>北京大学工商管理硕士，多年证券从业经历。曾任国信证券股份有限公司经济研究所分析师。2012年2月加入民生加银基金管理有限公司，曾任行业研究员、基金经理助理。自2014年7月担任民生加银红利回报灵活配置混合型证券投资基金、民生加银策略精选灵活配置混合型证券投资... </div>
+            </div>
+          </div>
+          <div class="w350 fr">
+            <div class="charts-cont charts-h5"><img src="images/graph/gj-graph6.jpg"/></div>
+          </div>
+        </div>
+        <div class="gm-list">
+          <div class="w590 fl">
+            <div class="photo-box">
+              <div class="photo-img"><img src="images/manager-man.png"/></div>
+              <div class="photo-cont">
+                <h2 class="h2"><a href="javascript:;" class="c-blue3 fl"><span>黄药师</span></a><b class="fl"><em class="em">9.6</em><i>分</i></b> </h2>
+                <ul class="fund-text">
+                  <li class="one first"><span>从业年均回报</span>
+                    <h3 class="ft-nums c-red">58.33%</h3>
+                  </li>
+                  <li class="line"></li>
+                  <li class="two"><span>从业时间</span>
+                    <h3>2 年 245 天</h3>
+                  </li>
+                  <li class="line"></li>
+                  <li class="three"><span>最擅长类型</span>
+                    <h3>股票型</h3>
+                  </li>
+                  <li class="line"></li>
+                  <li class="four"><span>当前管理基金</span>
+                    <h3>1 只</h3>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="fund-manager">
+              <div class="fm-cont"> <a href="javascript:;" class="c-blue fm-more" target="_blank">详情 <span class="ft-songti">&gt;&gt;</span></a> <span class="c-gray333">欧阳锋经理：</span>北京大学工商管理硕士，多年证券从业经历。曾任国信证券股份有限公司经济研究所分析师。2012年2月加入民生加银基金管理有限公司，曾任行业研究员、基金经理助理。自2014年7月担任民生加银红利回报灵活配置混合型证券投资基金、民生加银策略精选灵活配置混合型证券投资北京大学工商管理硕士，多年证券从业经历。曾任国信证券股份有限公司经济研究所分析师。2012年2月加入民生加银基金管理有限公司，曾任行业研究员、基金经理助理。自2014年7月担任民生加银红利回报灵活配置混合型证券投资基金、民生加银策略精选灵活配置混合型证券投资 </div>
+            </div>
+          </div>
+          <div class="w350 fr">
+            <div class="charts-cont charts-h5"><img src="images/graph/gj-graph6.jpg"/></div>
+          </div>
+        </div>
+        <!--最后一个添加 gm-list-last-->
+        <div class="gm-list gm-list-last">
+          <div class="w590 fl">
+            <div class="photo-box">
+              <div class="photo-img"><img src="images/manager-man.png"/></div>
+              <div class="photo-cont">
+                <h2 class="h2"><a href="javascript:;" class="c-blue3 fl"><span>洪七公</span></a><b class="fl"><em class="em">9.72</em><i>分</i></b> </h2>
+                <ul class="fund-text">
+                  <li class="one first"><span>从业年均回报</span>
+                    <h3 class="ft-nums c-red">298.33%</h3>
+                  </li>
+                  <li class="line"></li>
+                  <li class="two"><span>从业时间</span>
+                    <h3>10 年 10 天</h3>
+                  </li>
+                  <li class="line"></li>
+                  <li class="three"><span>最擅长类型</span>
+                    <h3>股票型</h3>
+                  </li>
+                  <li class="line"></li>
+                  <li class="four"><span>当前管理基金</span>
+                    <h3>1 只</h3>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="fund-manager">
+              <div class="fm-cont"> <a href="javascript:;" class="c-blue fm-more" target="_blank">详情 <span class="ft-songti">&gt;&gt;</span></a> <span class="c-gray333">欧阳锋经理：</span>北京大学工商管理硕士，多年证券从业经历。曾任国信证券股份有限公司经济研究所分析师。北京大学工商管理硕士，多年证券从业经历。曾任国信证券股份有限公司经济研究所分析师。 </div>
+            </div>
+          </div>
+          <div class="w350 fr">
+            <div class="charts-cont charts-h5"><img src="images/graph/gj-graph6.jpg"/></div>
+          </div>
+        </div>
+      </div>
+      <div class="m-cont clearfix mt17">
+        <div class="abs-det-more">
+          <div class="det-more"> <a href="javascript:;" class="c-blue"><i class="ico ico-more"></i>查看详情</a> </div>
+        </div>
+        <ul class="tab-title">
+          <li class="active"><a href="javascript:;">基金公司</a></li>
+        </ul>
+        <div class="w590 fl">
+          <div class="photo-box">
+            <div class="photo-img"><img src="images/_del/photo2.jpg"/></div>
+            <div class="photo-cont">
+              <h2 class="h2"><a href="javascript:;" class="c-blue fl"><span>汇添富基金管理股份有限公司</span></a></h2>
+              <ul class="fund-text">
+                <li class="one first"><span>当前规模</span>
+                  <h3>1571.24 亿</h3>
+                </li>
+                <li class="line"></li>
+                <li class="two"><span>旗下基金</span>
+                  <h3>77 只</h3>
+                </li>
+                <li class="line"></li>
+                <li class="three"><span>旗下经理</span>
+                  <h3>22 人</h3>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="fund-info">
+            <ul>
+              <li><i class="abs abs-pont2"></i><span>经理平均任职时间:</span>3年又75天</li>
+              <li><i class="abs abs-pont2"></i><span>经理最高任职时间:</span>17年又175天</li>
+            </ul>
+          </div>
+        </div>
+        <div class="w350 fr">
+          <div class="charts-cont"><img src="images/graph/gj-graph7.jpg"/></div>
+        </div>
+      </div>
+      <div class="m-cont mt17">
+        <ul class="tab-title">
+          <li class="active"><a href="javascript:;">投资目标</a></li>
+        </ul>
+        <div class="detail"> 本基金主要投资于受益于内需增长且具有较好成长潜力的上市公司，力争在有效控制投资组合风险的前提下实现基金资产的长期增值。</div>
+      </div>
+      <div class="m-cont mt17">
+        <ul class="tab-title">
+          <li class="active"><a href="javascript:;">投资理念</a></li>
+        </ul>
+        <div class="detail"> 中国经济结构转型势将带来内需加速增长的投资机会。 成长在未来相当长的时期仍将是中国股市的投资主调。2222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222</div>
+      </div>
+      <div class="m-cont mt17">
+        <ul class="tab-title">
+          <li class="active"><a href="javascript:;">投资范围</a></li>
+        </ul>
+        <div class="detail"> 本基金的投资范围为具有良好流动性的金融工具，包括国内依法发行上市的股票（包括中小板和创业板及其他中国证监会核准上市的股票）、债券、货币市场工具、权证、资产支持证券以及法律法规或中国证监会允许基金投资的其他金融工具（但须符合证监会的相关规定）。 如法律法规或监管机构以后允许基金投资其他品种，本基金管理人在履行适当程序后，可以将其纳入投资范围。 </div>
+      </div>
+      <div class="m-cont mt17">
+        <ul class="tab-title" id="touZiCeLve">
+          <li class="active"><a href="javascript:;">投资策略</a></li>
+        </ul>
+        <div class="detail fanwei-cont fanwei-gao"> <a href="#touZiCeLve" class="fw-zhankai"> + 展开</a> 1、资产配置和类属资产配置策略 <br>
+          本基金80%以上的基金资产投资于固定收益类金融工具，并在严格控制风险的基础上，通过对全球经济形势、中国经济发展（包括宏观经济运行周期、财政及货币政策、资金供需情况）、证券市场估值水平等的研判，适度参与权益类资产配置，适度把握市场时机力争为基金资产获取稳健回报。 <br>
+          类属资产配置由本基金管理人根据宏观经济分析、债券基准收益率研究、不同类属债券利差水平研究，判断不同类属债券的相对投资价值，并确定不同债券类属在组合资产中的配置比例。 <br>
+          2、可转换债券投资策略 <br>
+          基于行业分析、企业基本面分析和可转换债券估值模型分析，并结合市场环境情况等，本基金在一、二级市场投资可转换债券，以达到在严格控制风险的基础上，实现基金资产稳健增值的目的。 <br>
+          1）行业分析策略 <br>
+          可转换债券不同于普通债券，其自身含有的期权价值与公司股票价格走势、波动率、分红率、市场的基准利率等因素密切相关。本基金将采用“自上而下”的分析方法，综合考虑各种因素，特别是宏观和行业因素，以实现最优的行业配置。 <br>
+          本基金将根据宏观经济走势、经济周期，以及阶段性市场投资主题的变化，综合考虑宏观调控目标、产业结构调整等因素，精选成长前景明确或受益政策扶持的行业内公司发行的可转换债券进行投资布局。另外，由于宏观经济所处的时期和市场发展的阶段不同，不同行业的可转换债券也将表现出不同的风险收益特征。在经济复苏的初期，持有周期类行业的可转换债券将获得良好的投资收益；而在经济衰退时期，持有防御类非周期行业的可转换债券，将获得更加稳定的收益。 <br>
+          2）个券选择策略 <br>
+          本基金将运用企业基本面分析和理论价值分析策略，在严格控制风险的前提上，精选个券，力争实现较高的投资收益。 <br>
+          企业基本面分析策略是指本基金将采取定性分析（经济周期、行业地位、竞争优势、治理结构等）与定量分析（P/B、P/E、P/S、PEG等）相结合的方式，对可转换债券对应的标的股票进行深入研究，精选具有良好成长性且估值相对合理的标的股票，达到分享正股上涨收益的目的。 <br>
+          理论价值分析策略是指本基金将结合可转换债券的条款，根据其标的股票股价的波动率水平、分红率、市场的基准利率、可转换债券的剩余期限、当前股价水平等因素，运用BS模型以及蒙特卡洛模型等，计算期权价值，从而确定可转换债券的理论价值。 <br>
+          可转换债券的理论价值分为纯债价值和期权价值。其中纯债价值由当期贴现利率水平、债券的信用评级、剩余期限等因素决定，其中关键因素是当期贴现利率水平。当期贴现利率水平与宏观经济走势、债券市场供求关系、市场资金面情况、物价水平预期紧密相关；期权价值主要与发债主体的行业发展前景、公司基本面、公司股价历史波动率、分红率、市场基准利率和可转换债券的剩余期限相关。一般而言，股价波动率越高、分红率越高、剩余期限越长，可转换债券的期权价值就越高。 <br>
+          3）转股策略 <br>
+          在转股期内，当本基金所持有可转换债券市场交易价格显著低于转股平价时，即转股溢价率明显为负时，本基金将通过转股并卖出股票以实现收益；当可转换债券流动性不能满足组合需求时，本基金将通过转股来保障基金财产的流动性；当正股价格上涨且满足提前赎回触发条件时，本基金将首先通过转股来锁定已有收益，并进一步分析正股未来的价格走势，做出继续持有正股或立即卖出的决定。 <br>
+          3、可分离交易可转债投资策略 <br>
+          可分离交易可转债是指认股权证和债券分离交易的可转换公司债券，即是一种附认股权证的公司债，上市后可分离为纯债和认股权证两部分。可分离交易可转债是债券和股票的混合融资品种，它与传统可转换债券的本质区别在于上市后债券与期权可分离交易。但是，不论是认股权证还是标的股票，与传统可转换债券内含的期权之间都具有很强的相关性。因此，分离交易后的纯债和认股权证组合在一起仍然具有传统可转换债券的部分特征，甚至也可以构造出类可转换债券品种。 <br>
+          可分离交易可转债的投资策略与传统可转换债券的投资策略类似。本基金将综合分析纯债部分的收益性、流动性，以及发债公司基本面等情况，以此为基础判断纯债部分的投资价值。此外，本基金将通过调整纯债和认股权证或标的股票之间的比例，来组合成不同风险收益特征的类可转换债券产品，并根据不同的市场环境适时进行动态调整。 <br>
+          4、中小企业私募债券投资策略 <br>
+          中小企业私募债券是在中国境内以非公开方式发行和转让，约定在一定期限还本付息的公司债券。由于其非公开性及条款可协商性，普遍具有较高收益。本基金将深入研究发行人资信及公司运营情况，与中小企业私募债券承销券商紧密合作，合理合规合格地进行中小企业私募债券投资。本基金主要采用买入并持有策略，在投资过程中密切监控债券信用等级或发行人信用等级变化情况，力求规避可能存在的债券违约，并获取超额收益。 <br>
+          5、资产支持证券投资策略 <br>
+          资产支持证券包括资产抵押贷款支持证券（ABS）、住房抵押贷款支持证券（MBS）等，其定价受多种因素影响，包括市场利率、发行条款、支持资产的构成及质量、提前偿还率等。 <br>
+          本基金将在基本面分析和债券市场宏观分析的基础上，结合蒙特卡洛模拟等数量化方法，对资产支持证券进行定价，评 </div>
+      </div>
+      <div class="m-cont mt17">
+        <ul class="tab-title">
+          <li class="active"><a href="javascript:;">分红政策</a></li>
+        </ul>
+        <div class="detail"> 1、本基金的每份基金份额享有同等分配权；<br>
+          2、在符合有关基金分红条件的前提下，本基金每年收益分配次数最多为6次，每份基金份额每次分配比例不得低于收益分配基准日每份基金份额可供分配利润的30%；若基金合同生效不满3个月，可不进行收益分配；<br>
+          3、基金收益分配基准日的基金份额净值减去每单位基金份额收益分配金额后不能低于面值；<br>
+          4、分红权益登记日申请申购的基金份额不享受当次分红，分红权益登记日申请赎回的基金份额享受当次分红；<br>
+          5、基金红利发放日距离收益分配基准日的时间不得超过15个工作日；<br>
+          6、本基金收益分配方式分为两种：现金分红与红利再投资，基金份额持有人可选择现金红利或将现金红利自动转为基金份额进行再投资；若基金份额持有人不选择，本基金默认的收益分配方式是现金分红；<br>
+          7、法律法规或监管机构另有规定的从其规定。 </div>
+      </div>
+      <div class="m-cont mt17">
+        <ul class="tab-title">
+          <li class="active"><a href="javascript:;">业绩比较基准</a></li>
+        </ul>
+        <div class="detail">沪深300指数收益率*80%+中证综合债券指数收益率*20% </div>
+      </div>
+      <div class="m-cont mt17">
+        <ul class="tab-title">
+          <li class="active"><a href="javascript:;">风险收益特征</a></li>
+        </ul>
+        <div class="detail"> 本基金为股票型基金，其预期收益和预期风险高于混合型基金、债券型基金和货币型基金，属于较高预期收益和较高预期风险的基金品种。</div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="feilv">
+      <div class="m-cont mt17">
+        <ul class="tab-title">
+          <li class="active"><a href="javascript:;">认购相关费用</a></li>
+        </ul>
+        <h3 class="h3-title">前端认购费率</h3>
+        <div class="sub-table2">
+          <table width="100%" border="0" cellpadding="0" cellspacing="0">
+            <tbody>
+              <tr>
+                <td class="not">暂无此收费方式</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <h3 class="h3-title">后端申购费率</h3>
+        <div class="sub-table2">
+          <table width="100%" border="0" cellpadding="0" cellspacing="0">
+            <tbody>
+              <tr>
+                <td class="not">暂无此收费方式</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="m-cont mt17">
+        <ul class="tab-title">
+          <li class="active"><a href="javascript:;">申购相关费用</a></li>
+        </ul>
+        <h3 class="h3-title">前端申购费率</h3>
+        <div class="sub-table2">
+          <table width="100%" border="0" cellpadding="0" cellspacing="0">
+            <tbody>
+              <tr>
+                <th width="26%">申请金额（万元）</th>
+                <td>0.0≤万元</td>
+              </tr>
+              <tr>
+                <th>申购费率</th>
+                <td>0.00%</td>
+              </tr>
+              <tr>
+                <th>汇基金优惠费率</th>
+                <td>0.00%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <h3 class="h3-title">后端申购费率</h3>
+        <div class="sub-table2">
+          <table width="100%" border="0" cellpadding="0" cellspacing="0">
+            <tbody>
+              <tr>
+                <td class="not">暂无此收费方式</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <h3 class="h3-title">申购限制</h3>
+        <div class="sub-table2">
+          <table width="100%" border="0" cellpadding="0" cellspacing="0">
+            <tbody>
+              <tr>
+                <th width="12%">申购起点</th>
+                <td width="14%">1000元</td>
+                <th width="12%">定投起点</th>
+                <td width="12%">--</td>
+                <th width="14%">日累计申购限额</th>
+                <td>--</td>
+              </tr>
+              <tr>
+                <th>首次购买</th>
+                <td>1000元</td>
+                <th>追加购买</th>
+                <td>0元</td>
+                <th> </th>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="m-cont mt17">
+        <ul class="tab-title">
+          <li class="active"><a href="javascript:;">赎回相关费用</a></li>
+        </ul>
+        <h3 class="h3-title">前端赎回费率</h3>
+        <div class="sub-table2">
+          <table width="100%" border="0" cellpadding="0" cellspacing="0">
+            <tbody>
+              <tr>
+                <th width="30%">持有年限</th>
+                <td width="34%">0≤日＜59</td>
+                <td>60≤日</td>
+              </tr>
+              <tr>
+                <th>赎回费率</th>
+                <td>0.10%</td>
+                <td>0.00%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <h3 class="h3-title">后端赎回费率</h3>
+        <div class="sub-table2">
+          <table width="100%" border="0" cellpadding="0" cellspacing="0">
+            <tbody>
+              <tr>
+                <td class="not">暂无此收费方式</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <h3 class="h3-title">赎回限制</h3>
+        <div class="sub-table2">
+          <table width="100%" border="0" cellpadding="0" cellspacing="0">
+            <tbody>
+              <tr>
+                <th width="20%">单笔最小赎回金额</th>
+                <td>100份</td>
+              </tr>
+              <tr>
+                <th>账户最低保留份额</th>
+                <td>10份</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="m-cont mt17">
+        <ul class="tab-title">
+          <li class="active"><a href="javascript:;">其他费用</a></li>
+        </ul>
+        <div class="sub-table2">
+          <table width="100%" border="0" cellpadding="0" cellspacing="0">
+            <tbody>
+              <tr>
+                <th width="30%">销售服务费率</th>
+                <td>0.25%</td>
+              </tr>
+              <tr>
+                <th>基金管理费率</th>
+                <td>0.33%</td>
+              </tr>
+              <tr>
+                <th>基金托管费率</th>
+                <td>0.20%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="zixun">
+      <div class="m-cont clearfix mt17">
+        <ul class="tab-title">
+          <li class="active"><a href="javascript:;">基金资讯</a></li>
+        </ul>
+        <div class="det-news-list">
+          <ul>
+            <li><a href="javascript:;" class="c-blue2">天治天得利货币市场基金2015年第1季度报告</a><span class="time">2015-05-12</span></li>
+            <li><a href="javascript:;" class="c-blue2">天治天得利货币市场基金“春节”假期前暂停申购、定期定额投资、转换转入业务的公告</a><span class="time">2015-05-12</span></li>
+            <li><a href="javascript:;" class="c-blue2">天治基金管理有限公司旗下部分基金增加唐鼎耀华为代销机构并开通定期定额投资业务、基金转换业务的公告</a><span class="time">2015-5-12</span></li>
+            <li><a href="javascript:;" class="c-blue2">天治天得利货币市场基金2015年第1季度报告</a><span class="time">2015-05-2</span></li>
+            <li><a href="javascript:;" class="c-blue2">天治天得利货币市场基金2015年第1季度报告</a><span class="time">2015-05-12</span></li>
+            <li><a href="javascript:;" class="c-blue2">天治天得利货币市场基金2015年第1季度报告</a><span class="time">2015-05-12</span></li>
+            <li><a href="javascript:;" class="c-blue2">天治天得利货币市场基金2015年第1季度报告</a><span class="time">2015-05-12</span></li>
+            <li><a href="javascript:;" class="c-blue2">天治天得利货币市场基金2015年第1季度报告</a><span class="time">2015-05-12</span></li>
+            <li><a href="javascript:;" class="c-blue2">天治天得利货币市场基金2015年第1季度报告</a><span class="time">2015-05-12</span></li>
+            <li><a href="javascript:;" class="c-blue2">天治天得利货币市场基金2015年第1季度报告</a><span class="time">2015-05-12</span></li>
+          </ul>
+        </div>
+        <div class="jj-page">
+          <ul>
+            <li class="prev disabled"><a href="javascript:;"><i class="ico ico-prev"></i>上一页</a></li>
+            <li> <a href="javascript:;">1</a></li>
+            <li class="active"><a href="javascript:;">2</a></li>
+            <li><a href="javascript:;">3</a></li>
+            <li><a href="javascript:;">4</a></li>
+            <li><a href="javascript:;">5</a></li>
+            <li class="dot">...</li>
+            <li><a href="javascript:;">11</a></li>
+            <li><a href="javascript:;">12</a></li>
+            <li class="next"><a href="javascript:;"><i class="ico ico-next"></i>下一页</a></li>
+          </ul>
+          <div class="form"><span class="txt">第</span>
+            <input type="number" aria-label="页码输入框" max="100" min="1" value="1" class="input">
+            <span class="txt">页</span> <a href="javascript:;" class="btn">跳转</a> </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="gonggao">
+      <div class="m-cont clearfix mt17">
+        <ul class="tab-title" id="gonggaoTab">
+          <li class="active"><a href="#gG-Recently" data-toggle="tab">最近公告</a></li>
+          <li class="dividing">|</li>
+          <li><a href="#gG-Regular" data-toggle="tab">定期报告</a></li>
+          <li class="dividing">|</li>
+          <li><a href="#gG-Instructions" data-toggle="tab">招募说明书</a></li>
+        </ul>
+        <div  class="tab-content">
+          <div class="tab-pane fade in active" id="gG-Recently">
+            <div class="det-news-list">
+              <ul>
+                <li><b class="type">［最新公告］</b><a href="javascript:;" class="c-blue2">天治天得利货币市场基金2015年第1季度报告</a><span class="time">2015-05-12</span></li>
+                <li><b class="type">［最新公告］</b><a href="javascript:;" class="c-blue2">天治天得利货币市场基金“春节”假期前暂停申购、定期定额投资、转换转入业务的公告</a><span class="time">2015-05-12</span></li>
+                <li><b class="type">［最新公告］</b><a href="javascript:;" class="c-blue2">天治基金管理有限公司旗下部分基金增加唐鼎耀华为代销机构并开通定期定额投资业务、基金转换业务的公告</a><span class="time">2015-5-12</span></li>
+                <li><b class="type">［最新公告］</b><a href="javascript:;" class="c-blue2">天治天得利货币市场基金2015年第1季度报告</a><span class="time">2015-05-2</span></li>
+                <li><b class="type">［最新公告］</b><a href="javascript:;" class="c-blue2">天治天得利货币市场基金2015年第1季度报告</a><span class="time">2015-05-12</span></li>
+                <li><b class="type">［最新公告］</b><a href="javascript:;" class="c-blue2">天治天得利货币市场基金2015年第1季度报告</a><span class="time">2015-05-12</span></li>
+                <li><b class="type">［最新公告］</b><a href="javascript:;" class="c-blue2">天治天得利货币市场基金2015年第1季度报告</a><span class="time">2015-05-12</span></li>
+                <li><b class="type">［最新公告］</b><a href="javascript:;" class="c-blue2">天治天得利货币市场基金2015年第1季度报告</a><span class="time">2015-05-12</span></li>
+                <li><b class="type">［最新公告］</b><a href="javascript:;" class="c-blue2">天治天得利货币市场基金2015年第1季度报告</a><span class="time">2015-05-12</span></li>
+                <li><b class="type">［最新公告］</b><a href="javascript:;" class="c-blue2">天治天得利货币市场基金2015年第1季度报告</a><span class="time">2015-05-12</span></li>
+              </ul>
+            </div>
+            <div class="jj-page">
+              <ul>
+                <li class="prev disabled"><a href="javascript:;"><i class="ico ico-prev"></i>上一页</a></li>
+                <li> <a href="javascript:;">1</a></li>
+                <li class="active"><a href="javascript:;">2</a></li>
+                <li><a href="javascript:;">3</a></li>
+                <li><a href="javascript:;">4</a></li>
+                <li><a href="javascript:;">5</a></li>
+                <li class="dot">...</li>
+                <li><a href="javascript:;">11</a></li>
+                <li><a href="javascript:;">12</a></li>
+                <li class="next"><a href="javascript:;"><i class="ico ico-next"></i>下一页</a></li>
+              </ul>
+              <div class="form"><span class="txt">第</span>
+                <input type="number" aria-label="页码输入框" max="100" min="1" value="1" class="input">
+                <span class="txt">页</span> <a href="javascript:;" class="btn">跳转</a> </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="gG-Regular">
+            <div class="det-news-list">
+              <ul>
+                <li><b class="type">［定期报告］</b><a href="javascript:;" class="c-blue2">天治天得利货币市场基金2015年第1季度报告</a><span class="time">2015-05-12</span></li>
+                <li><b class="type">［定期报告］</b><a href="javascript:;" class="c-blue2">天治天得利货币市场基金“春节”假期前暂停申购、定期定额投资、转换转入业务的公告</a><span class="time">2015-05-12</span></li>
+                <li><b class="type">［定期报告］</b><a href="javascript:;" class="c-blue2">天治基金管理有限公司旗下部分基金增加唐鼎耀华为代销机构并开通定期定额投资业务、基金转换业务的公告</a><span class="time">2015-5-12</span></li>
+                <li><b class="type">［定期报告］</b><a href="javascript:;" class="c-blue2">天治天得利货币市场基金2015年第1季度报告</a><span class="time">2015-05-2</span></li>
+                <li><b class="type">［定期报告］</b><a href="javascript:;" class="c-blue2">天治天得利货币市场基金2015年第1季度报告</a><span class="time">2015-05-12</span></li>
+                <li><b class="type">［定期报告］</b><a href="javascript:;" class="c-blue2">天治天得利货币市场基金2015年第1季度报告</a><span class="time">2015-05-12</span></li>
+                <li><b class="type">［定期报告］</b><a href="javascript:;" class="c-blue2">天治天得利货币市场基金2015年第1季度报告</a><span class="time">2015-05-12</span></li>
+                <li><b class="type">［定期报告］</b><a href="javascript:;" class="c-blue2">天治天得利货币市场基金2015年第1季度报告</a><span class="time">2015-05-12</span></li>
+                <li><b class="type">［定期报告］</b><a href="javascript:;" class="c-blue2">天治天得利货币市场基金2015年第1季度报告</a><span class="time">2015-05-12</span></li>
+                <li><b class="type">［定期报告］</b><a href="javascript:;" class="c-blue2">天治天得利货币市场基金2015年第1季度报告</a><span class="time">2015-05-12</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="gG-Instructions">
+            <div class="det-news-list">
+              <ul>
+                <li><b class="type">［招募说明书］</b><a href="javascript:;" class="c-blue2">天治天得利货币市场基金2015年第1季度报告</a><span class="time">2015-05-12</span></li>
+                <li><b class="type">［招募说明书］</b><a href="javascript:;" class="c-blue2">天治天得利货币市场基金“春节”假期前暂停申购、定期定额投资、转换转入业务的公告</a><span class="time">2015-05-12</span></li>
+                <li><b class="type">［招募说明书］</b><a href="javascript:;" class="c-blue2">天治基金管理有限公司旗下部分基金增加唐鼎耀华为代销机构并开通定期定额投资业务、基金转换业务的公告</a><span class="time">2015-5-12</span></li>
+                <li><b class="type">［招募说明书］</b><a href="javascript:;" class="c-blue2">天治天得利货币市场基金2015年第1季度报告</a><span class="time">2015-05-2</span></li>
+                <li><b class="type">［招募说明书］</b><a href="javascript:;" class="c-blue2">天治天得利货币市场基金2015年第1季度报告</a><span class="time">2015-05-12</span></li>
+                <li><b class="type">［招募说明书］</b><a href="javascript:;" class="c-blue2">天治天得利货币市场基金2015年第1季度报告</a><span class="time">2015-05-12</span></li>
+                <li><b class="type">［招募说明书］</b><a href="javascript:;" class="c-blue2">天治天得利货币市场基金2015年第1季度报告</a><span class="time">2015-05-12</span></li>
+                <li><b class="type">［招募说明书］</b><a href="javascript:;" class="c-blue2">天治天得利货币市场基金2015年第1季度报告</a><span class="time">2015-05-12</span></li>
+                <li><b class="type">［招募说明书］</b><a href="javascript:;" class="c-blue2">天治天得利货币市场基金2015年第1季度报告</a><span class="time">2015-05-12</span></li>
+                <li><b class="type">［招募说明书］</b><a href="javascript:;" class="c-blue2">天治天得利货币市场基金2015年第1季度报告</a><span class="time">2015-05-12</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="caibao">
+      <div class="m-cont mt17">
+        <ul class="tab-title" id="caiBaoTab">
+          <li class="active"><a href="#caiBao-zhibiao" data-toggle="tab">财报指标</a></li>
+          <li class="dividing">|</li>
+          <li><a href="#caiBao-zichan" data-toggle="tab">资产和负债</a></li>
+          <li class="dividing">|</li>
+          <li><a href="#caiBao-lirun" data-toggle="tab">利润分配</a></li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane fade in active" id="caiBao-zhibiao">
+            <div class="cb-table-tit clearfix">
+              <div class="fr small-select">
+                <select tabindex="10" class="select" style="width:100px;">
+                  <option value="-1">2015年度</option>
+                  <option value="1">2014年度</option>
+                  <option value="2">2013年度</option>
+                  <option value="2">2012年度</option>
+                </select>
+              </div>
+              <b class="txt">单位：元 数据截止</b> </div>
+            <div class="sub-table2">
+              <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tbody>
+                  <tr>
+                    <td width="28%"><div class="col-f c-gray666"><b>项目</b> <em>每份分红时间</em></div></td>
+                    <td width="18%" class="bg c-gray666">2014-12-31</td>
+                    <td width="18%" class="bg c-gray666">2014-09-30</td>
+                    <td width="18%" class="bg c-gray666">2014-06-30</td>
+                    <td class="bg c-gray666">2014-03-31</td>
+                  </tr>
+                  <tr>
+                    <td class="tdl bg c-gray666">本期已实现收益（元）</td>
+                    <td class="tdr">118537255.22</td>
+                    <td class="tdr">39376248.94</td>
+                    <td class="tdr">5454.94</td>
+                    <td class="tdr">987987.94</td>
+                  </tr>
+                  <tr>
+                    <td class="tdl bg c-gray666">本期利润（元）</td>
+                    <td class="tdr">2134.94</td>
+                    <td class="tdr">43252345.94</td>
+                    <td class="tdr">6666.94</td>
+                    <td class="tdr">432345245.94</td>
+                  </tr>
+                  <tr>
+                    <td class="tdl bg c-gray666">加权平均基金份额本期利润（元）</td>
+                    <td class="tdr">0.777</td>
+                    <td class="tdr">0.054500</td>
+                    <td class="tdr">0.34</td>
+                    <td class="tdr">0.555</td>
+                  </tr>
+                  <tr>
+                    <td class="tdl bg c-gray666">本期加权平均净值利润率（%）</td>
+                    <td class="tdr">--</td>
+                    <td class="tdr">--</td>
+                    <td class="tdr">--</td>
+                    <td class="tdr">--</td>
+                  </tr>
+                  <tr>
+                    <td class="tdl bg c-gray666">本期基金份额净值增长率（%）</td>
+                    <td class="tdr">--</td>
+                    <td class="tdr">--</td>
+                    <td class="tdr">--</td>
+                    <td class="tdr">--</td>
+                  </tr>
+                  <tr>
+                    <td class="tdl bg c-gray666">期末可供分配利润（元）</td>
+                    <td class="tdr">--</td>
+                    <td class="tdr">--</td>
+                    <td class="tdr">--</td>
+                    <td class="tdr">--</td>
+                  </tr>
+                  <tr>
+                    <td class="tdl bg c-gray666">期末可供分配基金份额利润（元）</td>
+                    <td class="tdr">--</td>
+                    <td class="tdr">--</td>
+                    <td class="tdr">--</td>
+                    <td class="tdr">--</td>
+                  </tr>
+                  <tr>
+                    <td class="tdl bg c-gray666">期末基金资产净值（元）</td>
+                    <td class="tdr">679415335.45</td>
+                    <td class="tdr">134134.45</td>
+                    <td class="tdr">12341234134.45</td>
+                    <td class="tdr">2314.45</td>
+                  </tr>
+                  <tr>
+                    <td class="tdl bg c-gray666">期末基金份额净值（元）</td>
+                    <td class="tdr">1.20900</td>
+                    <td class="tdr">1.30900</td>
+                    <td class="tdr">1.40900</td>
+                    <td class="tdr">1.50900</td>
+                  </tr>
+                  <tr>
+                    <td class="tdl bg c-gray666">基金份额累计净值增长率（%）</td>
+                    <td class="tdr">--</td>
+                    <td class="tdr">--</td>
+                    <td class="tdr">--</td>
+                    <td class="tdr">--</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="caiBao-zichan">
+            <div class="cb-table-tit clearfix">
+              <div class="fr small-select">
+                <select tabindex="10" class="select" style="width:100px;">
+                  <option value="-1">2015年度</option>
+                  <option value="1">2014年度</option>
+                  <option value="2">2013年度</option>
+                  <option value="2">2012年度</option>
+                </select>
+              </div>
+              <b class="txt">单位：元 数据截止</b> </div>
+            <div class="sub-table2">
+              <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tbody>
+                  <tr>
+                    <td width="35%"><div class="col-f c-gray666"><b>项目</b> <em>数据截止日期</em></div></td>
+                    <td width="32%" class="bg c-gray666">2014-12-31</td>
+                    <td class="bg c-gray666">2014-09-30</td>
+                  </tr>
+                  <tr>
+                    <td class="tdl bg c-gray666">资产：</td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td class="tdl c-gray666">银行存款</td>
+                    <td class="tdr">35171637.64</td>
+                    <td class="tdr">41085600.84</td>
+                  </tr>
+                  <tr>
+                    <td class="tdl c-gray666">结算备付金</td>
+                    <td class="tdr">35171637.64</td>
+                    <td class="tdr">41085600.84</td>
+                  </tr>
+                  <tr>
+                    <td class="tdl c-gray666">存出保证金</td>
+                    <td class="tdr">35171637.64</td>
+                    <td class="tdr">41085600.84</td>
+                  </tr>
+                  <tr>
+                    <td class="tdl c-gray666">交易性金融资产</td>
+                    <td class="tdr">35171637.64</td>
+                    <td class="tdr">41085600.84</td>
+                  </tr>
+                  <tr>
+                    <td class="tdl c-gray666">其中：股票投资</td>
+                    <td class="tdr">35171637.64</td>
+                    <td class="tdr">41085600.84</td>
+                  </tr>
+                  <tr>
+                    <td class="tdl c-gray666"><span class="space">债券投资</span></td>
+                    <td class="tdr">--</td>
+                    <td class="tdr">0.00</td>
+                  </tr>
+                  <tr>
+                    <td class="tdl c-gray666"><span class="space">资产支持证券投资</span></td>
+                    <td class="tdr">--</td>
+                    <td class="tdr">0.00</td>
+                  </tr>
+                  <tr>
+                    <td class="tdl c-gray666"><span class="space">基金投资&lt;适用QDII&gt;</span></td>
+                    <td class="tdr">--</td>
+                    <td class="tdr">0.00</td>
+                  </tr>
+                  <tr>
+                    <td class="tdl c-gray666">衍生金融资产</td>
+                    <td class="tdr">--</td>
+                    <td class="tdr">0.00</td>
+                  </tr>
+                  <tr>
+                    <td class="tdl c-gray666">买入返售金融资产</td>
+                    <td class="tdr">--</td>
+                    <td class="tdr">0.00</td>
+                  </tr>
+                  <tr>
+                    <td class="tdl c-gray666">应收证券清算款</td>
+                    <td class="tdr">35171637.64</td>
+                    <td class="tdr">41085600.84</td>
+                  </tr>
+                  <tr>
+                    <td class="tdl c-gray666">应收利息</td>
+                    <td class="tdr">351637.64</td>
+                    <td class="tdr">485600.84</td>
+                  </tr>
+                  <tr>
+                    <td class="tdl c-gray666">应收股利</td>
+                    <td class="tdr">--</td>
+                    <td class="tdr">2.84</td>
+                  </tr>
+                  <tr>
+                    <td class="tdl c-gray666">银行存款</td>
+                    <td class="tdr">35171637.64</td>
+                    <td class="tdr">41085600.84</td>
+                  </tr>
+                  <tr>
+                    <td class="tdl c-gray666">应收申购款</td>
+                    <td class="tdr">31637.64</td>
+                    <td class="tdr">4560.84</td>
+                  </tr>
+                </tbody>
+                <tr>
+                  <td class="tdl bg c-gray666">负债：</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td class="tdl c-gray666">短期借款</td>
+                  <td class="tdr">--</td>
+                  <td class="tdr">0.00</td>
+                </tr>
+                <tr>
+                  <td class="tdl c-gray666">交易性金融资产</td>
+                  <td class="tdr">--</td>
+                  <td class="tdr">0.00</td>
+                </tr>
+                <tr>
+                  <td class="tdl c-gray666">衍生金融负债</td>
+                  <td class="tdr">--</td>
+                  <td class="tdr">0.00</td>
+                </tr>
+                <tr>
+                  <td class="tdl c-gray666">卖出回购金融资产款</td>
+                  <td class="tdr">--</td>
+                  <td class="tdr">0.00</td>
+                </tr>
+                <tr>
+                  <td class="tdl c-gray666">应付证券清算款</td>
+                  <td class="tdr">2478809.61</td>
+                  <td class="tdr">0.00</td>
+                </tr>
+                <tr>
+                  <td class="tdl c-gray666">应付赎回款</td>
+                  <td class="tdr">28809.61</td>
+                  <td class="tdr">28809.61</td>
+                </tr>
+                <tr>
+                  <td class="tdl c-gray666">应付管理人报酬</td>
+                  <td class="tdr">2478809.61</td>
+                  <td class="tdr">2478809.61</td>
+                </tr>
+                <tr>
+                  <td class="tdl c-gray666">应付托管费</td>
+                  <td class="tdr">2478809.61</td>
+                  <td class="tdr">2478809.610</td>
+                </tr>
+                <tr>
+                  <td class="tdl c-gray666">应付销售服务费</td>
+                  <td class="tdr">--</td>
+                  <td class="tdr">0.00</td>
+                </tr>
+                <tr>
+                  <td class="tdl c-gray666">应付交易费用</td>
+                  <td class="tdr">1133565.08</td>
+                  <td class="tdr">1133565.08</td>
+                </tr>
+                <tr>
+                  <td class="tdl c-gray666">应交税费</td>
+                  <td class="tdr">--</td>
+                  <td class="tdr">0.00</td>
+                </tr>
+                <tr>
+                  <td class="tdl c-gray666">应付利息</td>
+                  <td class="tdr">--</td>
+                  <td class="tdr">0.00</td>
+                </tr>
+                <tr>
+                  <td class="tdl c-gray666">应付利润</td>
+                  <td class="tdr">--</td>
+                  <td class="tdr">0.00</td>
+                </tr>
+                <tr>
+                  <td class="tdl c-gray666">其他负债</td>
+                  <td class="tdr">1892032.82</td>
+                  <td class="tdr">1892032.82</td>
+                </tr>
+                <tr>
+                  <td class="tdl c-gray666">负债合计</td>
+                  <td class="tdr">1892032.82</td>
+                  <td class="tdr">1892032.82</td>
+                </tr>
+                <tr>
+                  <td class="tdl bg c-gray666">所有者权益：</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td class="tdl c-gray666">实收基金</td>
+                  <td class="tdr">730776491.89</td>
+                  <td class="tdr">730776491.89</td>
+                </tr>
+                <tr>
+                  <td class="tdl c-gray666">未分配利润</td>
+                  <td class="tdr">-730776491.89</td>
+                  <td class="tdr">-730776491.89</td>
+                </tr>
+                <tr>
+                  <td class="tdl c-gray666">所有者权益合计</td>
+                  <td class="tdr">730776491.89</td>
+                  <td class="tdr">730776491.89</td>
+                </tr>
+                <tr>
+                  <td class="tdl c-gray666">负债和所有者权益总计</td>
+                  <td class="tdr">730776491.89</td>
+                  <td class="tdr">730776491.89</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="caiBao-lirun">
+            <div class="cb-table-tit clearfix">
+              <div class="fr small-select">
+                <select tabindex="10" class="select" style="width:100px;">
+                  <option value="-1">2015年度</option>
+                  <option value="1">2014年度</option>
+                  <option value="2">2013年度</option>
+                  <option value="2">2012年度</option>
+                </select>
+              </div>
+              <b class="txt">单位：元 数据截止</b></div>
+            <div class="sub-table2">
+              <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tbody>
+                  <tr>
+                    <td width="35%"><div class="col-f c-gray666"><b>项目</b> <em>数据截止日期</em></div></td>
+                    <td width="32%" class="bg c-gray666">2014-12-31</td>
+                    <td  class="bg c-gray666">2014-09-30</td>
+                  </tr>
+                  <tr>
+                    <td class="tdl bg c-gray666">收入：</td>
+                    <td class="tdr">42303219.65</td>
+                    <td class="tdr">36762621.66</td>
+                  </tr>
+                  <tr>
+                    <td class="tdl c-gray666">利息收入</td>
+                    <td class="tdr">35171637.64</td>
+                    <td class="tdr">41085600.84</td>
+                  </tr>
+                  <tr>
+                    <td class="tdl c-gray666">其中：存款利息收入</td>
+                    <td class="tdr">35171637.64</td>
+                    <td class="tdr">41085600.84</td>
+                  </tr>
+                  <tr>
+                    <td class="tdl c-gray666"><span class="space">债券利息收入</span></td>
+                    <td class="tdr">35171637.64</td>
+                    <td class="tdr">41085600.84</td>
+                  </tr>
+                  <tr>
+                    <td class="tdl c-gray666"><span class="space">资产支持证券利息收入</span></td>
+                    <td class="tdr">--</td>
+                    <td class="tdr">--</td>
+                  </tr>
+                  <tr>
+                    <td class="tdl c-gray666"><span class="space">买入返售金融资产收入</span></td>
+                    <td class="tdr">35171637.64</td>
+                    <td class="tdr">41085600.84</td>
+                  </tr>
+                  <tr>
+                    <td class="tdl c-gray666">投资收益</td>
+                    <td class="tdr">35171637.64</td>
+                    <td class="tdr">41085600.84</td>
+                  </tr>
+                  <tr>
+                    <td class="tdl c-gray666">其中：股票投资收益</td>
+                    <td class="tdr">35171637.64</td>
+                    <td class="tdr">41085600.84</td>
+                  </tr>
+                  <tr>
+                    <td class="tdl c-gray666"><span class="space">债券投资收益</span></td>
+                    <td class="tdr">35171637.64</td>
+                    <td class="tdr">41085600.84</td>
+                  </tr>
+                  <tr>
+                    <td class="tdl c-gray666"><span class="space">资产支持证券投资收益</span></td>
+                    <td class="tdr">--</td>
+                    <td class="tdr">--</td>
+                  </tr>
+                  <tr>
+                    <td class="tdl c-gray666"><span class="space">基金投资收益&lt;适用于QDII基金&gt;</span></td>
+                    <td class="tdr">--</td>
+                    <td class="tdr">--</td>
+                  </tr>
+                  <tr>
+                    <td class="tdl c-gray666"><span class="space">衍生工具使用</span></td>
+                    <td class="tdr">--</td>
+                    <td class="tdr">--</td>
+                  </tr>
+                  <tr>
+                    <td class="tdl c-gray666"><span class="space">股利收益</span></td>
+                    <td class="tdr">35171637.64</td>
+                    <td class="tdr">41085600.84</td>
+                  </tr>
+                  <tr>
+                    <td class="tdl c-gray666"><span class="space">公允价值变动收益</span></td>
+                    <td class="tdr">35171637.64</td>
+                    <td class="tdr">41085600.84</td>
+                  </tr>
+                  <tr>
+                    <td class="tdl c-gray666"><span class="space">汇兑收益</span></td>
+                    <td class="tdr">--</td>
+                    <td class="tdr">--</td>
+                  </tr>
+                  <tr>
+                    <td class="tdl c-gray666">其他收入</td>
+                    <td class="tdr">35171637.64</td>
+                    <td class="tdr">41085600.84</td>
+                  </tr>
+                  <tr>
+                    <td class="tdl bg c-gray666">费用：</td>
+                    <td class="tdr">16069107.34</td>
+                    <td class="tdr">36762621.66</td>
+                  </tr>
+                  <tr>
+                    <td class="tdl c-gray666">管理人报酬</td>
+                    <td class="tdr">8280145.34</td>
+                    <td class="tdr">41085600.84</td>
+                  </tr>
+                  <tr>
+                    <td class="tdl c-gray666">托管费</td>
+                    <td class="tdr">35171637.64</td>
+                    <td class="tdr">41085600.84</td>
+                  </tr>
+                  <tr>
+                    <td class="tdl c-gray666">销售服务费</td>
+                    <td class="tdr">--</td>
+                    <td class="tdr">--</td>
+                  </tr>
+                  <tr>
+                    <td class="tdl c-gray666">交易费用</td>
+                    <td class="tdr">35171637.64</td>
+                    <td class="tdr">41085600.84</td>
+                  </tr>
+                  <tr>
+                    <td class="tdl c-gray666">利息支出</td>
+                    <td class="tdr">--</td>
+                    <td class="tdr">--</td>
+                  </tr>
+                  <tr>
+                    <td class="tdl c-gray666">其中：卖出回购金融资产支出</td>
+                    <td class="tdr">--</td>
+                    <td class="tdr">--</td>
+                  </tr>
+                  <tr>
+                    <td class="tdl c-gray666"><span class="space">财务费用&lt;适用于QDII基金&gt;</span></td>
+                    <td class="tdr">--</td>
+                    <td class="tdr">--</td>
+                  </tr>
+                  <tr>
+                    <td class="tdl c-gray666">其他费用</td>
+                    <td class="tdr">35171637.64</td>
+                    <td class="tdr">41085600.84</td>
+                  </tr>
+                  <tr>
+                    <td class="tdl bg c-gray666">利润总额：</td>
+                    <td class="tdr">16069107.34</td>
+                    <td class="tdr">36762621.66</td>
+                  </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="rel-box mt30">
+    <ul class="tab-title" id="relFundTab">
+      <li class="active"><a href="#rm-Found" data-toggle="tab">热门基金</a></li>
+      <li class="dividing">|</li>
+      <li><a href="#tl-Found" data-toggle="tab">同类基金</a></li>
+      <li class="dividing">|</li>
+      <li><a href="#tgs-Found" data-toggle="tab">同公司基金</a></li>
+      <li class="dividing">|</li>
+      <li><a href="#gz-Found" data-toggle="tab">关注本基金的还看过</a></li>
+      <div class="fr mt10"><a href="javascript:;" class="refresh-a"><i class="ico ico-refresh"></i>换一批</a> </div>
+    </ul>
+    <div class="tab-content">
+      <div class="tab-pane fade in active" id="rm-Found">
+        <div class="rel-cont addon"> 
+          <!--.btn-disabled 按钮禁用状态-->
+          <ul>
+            <li>
+              <div class="rel-items">
+                <h3><a href="javascript:;" class="c-blue">申万证券行业指数分级</a></h3>
+                <p><span class="fs12 fl">近一年收益</span><b class="fs20 ft-nums c-red fr">170.02%</b></p>
+              </div>
+              <a href="javascript:;" class="rel-btn">立即购买</a></li>
+            <li>
+              <div class="rel-items">
+                <h3><a href="javascript:;" class="c-blue">国投瑞银美丽中国混合</a></h3>
+                <p><span class="fs12 fl">近一年收益</span><b class="fs20 ft-nums c-red fr">170.02%</b></p>
+              </div>
+              <a href="javascript:;" class="rel-btn btn-disabled">立即购买</a></li>
+            <li>
+              <div class="rel-items">
+                <h3><a href="javascript:;" class="c-blue">益民服务领先混合</a></h3>
+                <p><span class="fs12 fl">近一年收益</span><b class="fs20 ft-nums c-red fr">170.02%</b></p>
+              </div>
+              <a href="javascript:;" class="rel-btn">立即购买</a></li>
+            <li>
+              <div class="rel-items">
+                <h3><a href="javascript:;" class="c-blue">新华行业轮换灵活配置混合</a></h3>
+                <p><span class="fs12 fl">近一年收益</span><b class="fs20 ft-nums c-red fr">170.02%</b></p>
+              </div>
+              <a href="javascript:;" class="rel-btn">立即购买</a></li>
+            <li>
+              <div class="rel-items">
+                <h3><a href="javascript:;" class="c-blue">长盛电子信息主题混合</a></h3>
+                <p><span class="fs12 fl">近一年收益</span><b class="fs20 ft-nums c-red fr">170.02%</b></p>
+              </div>
+              <a href="javascript:;" class="rel-btn">立即购买</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="tl-Found">
+        <div class="rel-cont addon">
+          <ul>
+            <li>
+              <div class="rel-items">
+                <h3><a href="javascript:;" class="c-blue">浦银安盛新兴产业混合</a></h3>
+                <p><span class="fs12 fl">近一年收益</span><b class="fs20 ft-nums c-red fr">170.02%</b></p>
+              </div>
+              <a href="javascript:;" class="rel-btn btn-disabled">立即购买</a></li>
+            <li>
+              <div class="rel-items">
+                <h3><a href="javascript:;" class="c-blue">华商红利优选混合</a></h3>
+                <p><span class="fs12 fl">近一年收益</span><b class="fs20 ft-nums c-red fr">170.02%</b></p>
+              </div>
+              <a href="javascript:;" class="rel-btn">立即购买</a></li>
+            <li>
+              <div class="rel-items">
+                <h3><a href="javascript:;" class="c-blue">富国低碳环保股票</a></h3>
+                <p><span class="fs12 fl">近一年收益</span><b class="fs20 ft-nums c-red fr">170.02%</b></p>
+              </div>
+              <a href="javascript:;" class="rel-btn">立即购买</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="tgs-Found">
+        <div class="rel-cont addon">
+          <div class="not-fund"></div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="gz-Found">
+        <div class="rel-cont addon">
+          <ul>
+            <li>
+              <div class="rel-items">
+                <h3><a href="javascript:;" class="c-blue">国泰中小板300成长ETF联接</a></h3>
+                <p><span class="fs12 fl">近一年收益</span><b class="fs20 ft-nums c-red fr">170.02%</b></p>
+              </div>
+              <a href="javascript:;" class="rel-btn">立即购买</a></li>
+            <li>
+              <div class="rel-items">
+                <h3><a href="javascript:;" class="c-blue">新华中小市值优选股票</a></h3>
+                <p><span class="fs12 fl">近一年收益</span><b class="fs20 ft-nums c-red fr">170.02%</b></p>
+              </div>
+              <a href="javascript:;" class="rel-btn">立即购买</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mt30"><!-- 图像大小 宽1000 高90--><a href="javascript:;"><img src="images/_ad/gp-ad2.jpg"></a></div>
+  <ul class="qualification mt30">
+    <li><i class="abs abs-qua"></i>
+      <h3 class="h3"><a href="javascript:;" target="_blank" class="c-gray666">基金销售资格</a></h3>
+      <a href="javascript:;" target="_blank"><span class="span qua1"></span></a></li>
+    <li><i class="abs abs-qua"></i>
+      <h3 class="h3"><a href="javascript:;" target="_blank" class="c-gray666">监督机构</a></h3>
+      <a href="javascript:;" target="_blank"><span class="span qua2"></span></a></li>
+    <li><i class="abs abs-qua"></i>
+      <h3 class="h3"><a href="javascript:;" target="_blank" class="c-gray666">资金监管银行</a></h3>
+      <a href="javascript:;" target="_blank"><span class="span qua3"></span></a></li>
+    <li>
+      <h3 class="h3"><a href="javascript:;" target="_blank" class="c-gray666">自律组织</a></h3>
+      <a href="javascript:;" target="_blank"><span class="span qua4"></span></a></li>
+  </ul>
+</div>
+<!--底部开始-->
+<div id="bottom"></div>
+<!--底部结束--> 
+<!-- 自选基金 显示最多不超过5支-->
+<!-- <div class="zixuan-title"><a href="javascript:;" ><i class="abs abs-round"></i><i class="abs abs-lr"></i> <b>我的自选基金</b> <span class="abs"> (
+  <label>25</label>
+  ) </span></a></div>
+<div class="zixuan-cont">
+  <div class="nofund" style="display:none"><i class="ico ico-empty"></i> <i class="abs abs-nofund">您当前还没有添加自选基金</i> </div>
+  <div class="list">
+    <ul>
+      <li><a href="javascript:;" class="ico ico-remove"></a>
+        <h3 class="c-gray666 h3">天音控股股票</h3>
+        <p><span class="c-gray666">日增长率</span><em class="c-rise">1.35%</em><a href="javascript:;" class="zxbuy c-blue2">购买</a></p>
+      </li>
+      <li><a href="javascript:;" class="ico ico-remove"></a>
+        <h3 class="c-gray666 h3">天音控股股票</h3>
+        <p><span class="c-gray666">日增长率</span><em class="c-rise">1.35%</em><a href="javascript:;" class="zxbuy c-blue2">购买</a></p>
+      </li>
+      <li><a href="javascript:;" class="ico ico-remove"></a>
+        <h3 class="c-gray666 h3">天音控股股票</h3>
+        <p><span class="c-gray666">日增长率</span><em class="c-rise">1.35%</em><a href="javascript:;" class="zxbuy c-blue2">购买</a></p>
+      </li>
+      <li><a href="javascript:;" class="ico ico-remove"></a>
+        <h3 class="c-gray666 h3">天音控股股票</h3>
+        <p><span class="c-gray666">日增长率</span><em class="c-rise">1.35%</em><a href="javascript:;" class="zxbuy c-blue2">购买</a></p>
+      </li>
+      <li><a href="javascript:;" class="ico ico-remove"></a>
+        <h3 class="c-gray666 h3">天音控股股票</h3>
+        <p><span class="c-gray666">日增长率</span><em class="c-rise">1.35%</em><a href="javascript:;" class="zxbuy c-blue2">购买</a></p>
+      </li>
+    </ul>
+  </div>
+  <a href="javascript:;" class="zxbtn">查看全部》</a> </div>-->
+<!-- 自选基金-->
+<div id="JSQCont" class="modal big-pop fade hide">
+  <div class="pop-title"><span>收益计算器</span><a href="javascript:;" class="ico ico-popclose">关闭</a></div>
+  <div class="pop-cont clearfix">
+    <div class="jsq-box">
+      <div class="jsq-table">
+        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td width="36%" class="text-right c-gray666">基金名称：</td>
+            <td>汇添富移动互联网股票</td>
+          </tr>
+          <tr>
+            <td class="text-right c-gray666">开始持有日期：</td>
+            <td><input type="text" id="dpdate1" value="2015-04-25" class="text calendar input_bor input_ph"></td>
+          </tr>
+          <tr>
+            <td class="text-right c-gray666">结束持有日期：</td>
+            <td><input type="text" id="dpdate2" value="2015-05-25" class="text calendar input_bor input_ph"></td>
+          </tr>
+          <tr>
+            <td class="text-right c-gray666">申购金额：</td>
+            <td><input type="text" value="10,000" class="text money input_bor input_ph"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="jsq-btn rel"><a href="javascript:;" class="ico ico-jsqbtn">计算</a></div>
+    <div class="jsq-answer">
+      <div class="jsq-table">
+        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td width="46%" class="text-right c-gray666">持有时间：</td>
+            <td><span>30</span>天</td>
+          </tr>
+          <tr>
+            <td class="text-right c-gray666">期间总收益：</td>
+            <td><span>748.00</span>元</td>
+          </tr>
+          <tr>
+            <td class="text-right c-gray666">期间收益率：</td>
+            <td><span>5.98%</span></td>
+          </tr>
+          <tr>
+            <td class="text-right c-gray666">年化收益率：</td>
+            <td><span>19.3%</span></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="pop-tips"><b class="must">*</b>注：计算结果仅供参考，基金以往业绩不代表其未来表现。</div>
+</div>
+<script src="js/bs/bstime.js"></script> 
+<script>
+$(document).ready(function(){
+$(".select").selectmenu();   
+});
+</script> 
+<script>
+$(function(){
+$(".input_ph").inputPlaceholder();
+$(".input_bor").inputFocus();
+})
+</script> 
+<script src="js/detail.js"></script>
+</body>
+</html>

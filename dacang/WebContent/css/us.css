@@ -1,0 +1,37 @@
+
+.horline{font-size:0;overflow:hidden;background-image:url(../images/line.gif);background-repeat:repeat-x;background-position:0 0;}
+.mem-line{height:8px;margin-top:35px;background-position:0 0;}
+.us-banner{height:320px;text-align:center;background:#df2a42 url(../images/us/us-banner.jpg) no-repeat center top;margin-top:-1px;}
+.taba-title{border:1px solid #ddd;background:#f7f7f7;}
+.taba-title li{width:140px;float:left;height:59px;position:relative;}
+.taba-title li a{display:block;width:140px;text-align:center;height:59px;line-height:59px;float:left;color:#666;font-size:16px;} 
+.taba-title li a:hover{color:#dd2017;text-decoration:none;}
+.taba-title li.line{width:1px;font-size:0;overflow:hidden;margin-top:21px;height:24px;line-height:24px;background:#e5e5e5;} 
+.taba-title li.active a{margin:-1px 0 0 -1px;border-left:1px solid #ddd;border-right:1px solid #ddd;position:absolute;left:0;top:0;height:52px;line-height:52px;padding:3px 0 1px 0;border-top:5px solid #c91b13;color:#c91b13;background:#fff;}
+.us-cont{border:1px solid #ddd;border-top:0;padding:20px 39px;background:#fff;}
+.us-cont .us-h2{display:block;height:58px;line-height:58px;font-size:18px;}
+.us-cont .p{line-height:26px;color:#666;margin-bottom:20px;}
+.us-cont .notmar{margin:0;}
+.us-cont .s-en{margin-left:5px;font-family:Arial;}
+.link-map{width:100%;overflow:hidden;}
+.lm-items{width:24.9%;float:left;margin-top:30px;}
+.lm-items .h3{display:block;height:39px;line-height:39px;font-size:16px;}
+.lm-items li{height:28px;line-height:28px;font-size:16px;}
+.us-h3{display:block;height:40px;line-height:40px;margin-top:35px;background:#edf5fb;padding-left:16px;overflow:hidden;border-left:5px solid #c91b13;font-size:16px;}
+.us-h4{display:block;height:36px;line-height:36px;margin-top:10px;font-size:14px;color:#666;}
+.mainbox{min-height:500px;}
+.nomar{margin:0;}
+.us-img{margin:20px;}
+.us-img li{width:25%;float:left;margin:10px 0;text-align:center;}
+.us-img li img{border:1px solid #ddd;}
+.conact-box{margin-top:30px;height:54px;overflow:hidden}
+.conact-box li{float:left;height:54px;padding-left:65px;position:relative;}
+.conact-box li.one{width:178px;}
+.conact-box li.two{width:190px;}
+.conact-box li.three{width:356px;float:right}
+.conact-box li i{display:block;position:absolute;left:0;top:0;width:54px;height:54px; z-index:3;}
+.conact-box li h3{margin-top:3px;height:24px;line-height:24px;color:#666;}
+.conact-box li p{height:22px;line-height:22px;font-size:16px;}
+.conact-box li i.ico-htel{background:url(../images/us/tel.png) no-repeat 0 0;}
+.conact-box li i.ico-business{background:url(../images/us/business.png) no-repeat 0 0;}
+.conact-box li i.ico-map{background:url(../images/us/map.png) no-repeat 0 0;}

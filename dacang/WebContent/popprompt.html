@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>弹出层提示</title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="description" content=" " />
+<meta name="keywords" content=" " />
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+<link href="css/base.css" rel="stylesheet"/>
+<link href="css/ui.css" rel="stylesheet"/>
+<script src="js/jq/jquery-1.9.1.min.js"></script>
+<script src="js/bs/bootstrap.js"></script>
+</head>
+<body style="padding:50px;">
+<style>
+</style>
+<a href="javascript:;" data-target="#successCont" data-toggle="modal">成功</a><br>
+<a href="javascript:;" id="errorId">失败</a><br>
+<a href="javascript:;" id="warningId">警告</a><br>
+<a href="javascript:;" id="infoId">提示</a><br>
+<a href="javascript:;" id="infoInputId">带输入框的提示</a><br>
+<a href="javascript:;" id="VerifyBankCardA">银行卡验证(多行文字，左右结构)</a><br>
+
+<!--
+data-target="#VerifyBankCardCont" data-toggle="modal" data-backdrop="static" 
+找回密码  findpwresetok.html
+绑定银行卡 bindingbank.html
+
+红包转换  member / redenvelopetrade.html
+我的银行卡 member / bankcards.html
+账号信息  member / accountmanage.html
+
+交易中的
+申购确认 trade / purchaseok.html
+赎回确认 trade / redeemok.html
+转换确认 trade / changeok.html
+修改分红方式 trade / editordividend.html
+基金申购  trade / purchase.html
+充值   trade / cash.html
+这些面页要用到这个
+--> 
+
+<!--成功 pop-success
+失败 pop-error
+警告 pop-warning
+提示 pop-info-->
+
+<div id="VerifyBankCardCont" class="modal fade hide">
+  <div class="pop-title"><span>银行卡验证</span><a href="javascript:;" class="ico ico-popclose btnclose-js" id="VerifyBankCardClose">关闭</a></div>
+  <div class="pop-cont">
+    <div id="VerifyBankCardFirst" class="step-js">
+      <div class="pop-pmpt multi-pmpt">
+        <div class="pop-wait"> <i class="abs abs-ring"></i> <i class="ico ico-prompt"></i>
+          <h4 class="h4">请您在新打开的银行页面上验证银行卡！</h4>
+          <div class="verify-bank-txt">
+            <p>验证银行卡完成前请不要关闭此窗口，<br>
+              完成后根据您的情况点击下面的按钮。 </p>
+          </div>
+          <div class="pp-btn items-btn"> <a class="btn fl" href="javascript:;" id="VerifyBankCardId">验证成功</a> <a class="btnbor fl" href="javascript:;">验证失败</a> </div>
+        </div>
+      </div>
+    </div>
+    <div id="VerifyBankCardSecond" class="step-js hide">
+      <div class="pop-pmpt multi-pmpt">
+        <div class="pop-error"> <i class="abs abs-ring"></i> <i class="ico ico-prompt"></i>
+          <h4 class="h4">您还未完成银行卡验证或验证失败<br>
+            请在新打开的窗口完成银行卡验证</h4>
+          <div class="verify-bank-txt">
+            <h5 class="h5">您也可以选择以下操作？</h5>
+            <p> 证件或银行卡信息有误？<a href="javascript:;" class="c-blue3 return-modified-js">返回修改</a>或<a href="javascript:;" class="c-blue3" target="_blank">换一张卡</a><br>
+              网银页面无法打开？<a href="javascript:;" class="c-blue3" target="_blank">查看帮助</a><br>
+              更多帮助请拨：：4000-383-111<br>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="successCont" class="modal fade hide">
+  <div class="pop-title"><span>XXX成功</span><a href="javascript:;" class="ico ico-popclose">关闭</a></div>
+  <div class="pop-cont"> 
+    <!--成功开始-->
+    <div class="pop-prompt pop-success"> <i class="abs abs-ring"></i> <i class="ico ico-prompt"></i>
+      <h4 class="h4">密码重置成功！</h4>
+      <div class="pp-btn"><a class="btn btn-single" href="javascript:;">确 认</a></div>
+    </div>
+    <!--成功结束--> 
+  </div>
+</div>
+<div id="errorCont" class="modal fade hide">
+  <div class="pop-title"><span>XXX失败</span><a href="javascript:;" class="ico ico-popclose">关闭</a></div>
+  <div class="pop-cont"> 
+    <!--失败开始-->
+    <div class="pop-prompt pop-error"> <i class="abs abs-ring"></i> <i class="ico ico-prompt"></i>
+      <h4 class="h4">密码重置失败！</h4>
+      <div class="pp-btn"><a class="btn btn-single" href="javascript:;">确 认</a></div>
+    </div>
+    <!--失败结束--> 
+  </div>
+</div>
+<div id="warningCont" class="modal fade hide">
+  <div class="pop-title"><span>XXX警告</span><a href="javascript:;" class="ico ico-popclose">关闭</a></div>
+  <div class="pop-cont"> 
+    <!--警告开始-->
+    <div class="pop-prompt pop-warning"> <i class="abs abs-ring"></i> <i class="ico ico-prompt"></i>
+      <h4 class="h4">您没有该权限！您没有该权限！您没有该权限！您没有该权限！</h4>
+      <div class="pp-btn"><a class="btn btn-single" href="javascript:;">确 认</a></div>
+    </div>
+    <!--警告结束--> 
+  </div>
+</div>
+<div id="infoCont" class="modal fade hide">
+  <div class="pop-title"><span>XXX提示</span><a href="javascript:;" class="ico ico-popclose">关闭</a></div>
+  <div class="pop-cont"> 
+    <!--提示开始-->
+    <div class="pop-prompt pop-info"> <i class="abs abs-ring"></i> <i class="ico ico-prompt"></i>
+      <h4 class="h4">绑定银行卡</h4>
+      <div class="pp-btn"><a class="btn fl" href="javascript:;">绑定成功</a><a class="btnbor fr" href="javascript:;">出现问题</a></div>
+    </div>
+    <!--提示开始--> 
+  </div>
+</div>
+<div id="infoInputCont" class="modal fade hide">
+  <div class="pop-title"><span>提示</span><a href="javascript:;" class="ico ico-popclose btnclose-js" id="infoInputIdClose">关闭</a></div>
+  <div class="pop-cont">
+    <div class="pop-pmpt multi-pmpt">
+      <div class="pop-info"> <i class="abs abs-ring"></i> <i class="ico ico-prompt"></i>
+      
+          <ul class="items-pmpt">
+            <li class="txt fs16">请输入交易密码</li>
+            <li>
+              <input type="password" id="sureInputText" autocomplete="off" name="" class="text input_bor" tabindex="9">
+              <div id="sureMsgTip" class="msg-tip tip-info"><i class="ico"></i><b class="msg-txt lh18">您输入的密码错误，您还可以再输入4次。</b> </div>
+              <div class="vital"><i class="ico ico-vital"></i>请输入基金交易密码，非银行密码</div>
+            </li>
+            <li class="items-btn"><a id="sureTradeB" href="javascript:;" class="btn fl">确 认</a><a class="btnbor fl" href="javascript:;">取 消</a></li>
+          </ul>
+      
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+$(function(){
+
+$("#VerifyBankCardA").click(function(){
+$("#VerifyBankCardCont").modal({backdrop:'static', keyboard: false}); 
+})
+
+
+//带输入框的提示
+$("#infoInputId").click(function(){
+$("#infoInputCont").modal({backdrop:'static', keyboard: false}); 
+})
+
+
+$("#VerifyBankCardClose").click(function(){
+$("#VerifyBankCardCont").modal("hide"); 
+})
+
+
+//带输入框的提示
+$("#infoInputIdClose").click(function(){
+$("#infoInputCont").modal("hide"); 
+})
+
+
+
+
+
+
+
+var text =$(".text");
+$("#sureTradeB").click(function(){
+var txt=$("#sureInputText").val();
+var mytip=$("#sureMsgTip");
+mytip.show();
+if(txt==""){
+mytip.addClass("tip-error");
+mytip.find(".msg-txt").show();		
+}
+
+});
+
+text.blur(function(){
+var mytip=$(this).parents(".items-pmpt").find(".msg-tip");	
+mytip.removeClass("tip-error");
+$(this).parents(".items-pmpt").find(".msg-txt").hide();
+});
+
+text.focus(function(){
+var mytip=$(this).parents(".items-pmpt").find(".msg-tip");	
+mytip.show();
+$(this).parents(".items-pmpt").find(".msg-txt").hide();
+mytip.removeClass("tip-error");
+});
+
+})
+
+</script> 
+<script>
+$(function(){
+
+
+
+
+//银行卡验证
+
+$("#VerifyBankCardId").click(function(){
+$("#VerifyBankCardFirst").hide();
+$("#VerifyBankCardSecond").show();
+})
+
+$(".return-modified-js").click(function(){
+$(".modal").modal("hide");
+$("#VerifyBankCardFirst").show();
+$("#VerifyBankCardSecond").hide();
+});
+
+
+//成功
+
+//失败
+$("#errorId").click(function(){
+$("#errorCont").modal("show"); 
+})
+//警告
+$("#warningId").click(function(){
+$("#warningCont").modal("show"); 
+})
+//提示
+$("#infoId").click(function(){
+$("#infoCont").modal("show"); 
+})
+
+
+//关闭js
+$(".btnclose-js").click(function(){
+
+
+$(".step-js").hide();
+$(".pop-cont").each(function(){
+$(this).parents(".modal").find(".step-js").eq(0).show();	
+});
+
+});
+
+
+})
+</script>
+</body>
+</html>

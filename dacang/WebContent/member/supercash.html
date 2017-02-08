@@ -1,0 +1,667 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>超级现金宝</title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="description" content=" " />
+<meta name="keywords" content=" " />
+<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+<link href="../css/base.css" rel="stylesheet"/>
+<link href="../css/member.css" rel="stylesheet"/>
+<script src="../js/jq/jquery-1.9.1.min.js"></script>
+<script src="../js/bs/bootstrap.js"></script>
+<script src="../js/bs/stickUp.js"></script>
+<script src="../js/common/member-top.js"></script>
+<script src="../js/common/inner-bottom.js"></script>
+</head>
+<body>
+<!--头部开始-->
+<div id="top"></div>
+<!--头部结束-->
+<div class="wrap membox clearfix">
+  <div class="mem-nav fl">
+    <div class="portrait">
+      <div class="port-poto"><img src="../images/_del/men-photo.jpg"/></div>
+      <div class="port-name">散落风</div>
+    </div>
+    <div class="nav-list">
+      <ul>
+        <li><a href="myaccounts.html"><em class="abs abs-verline"></em><i class="ico ico-arrow"></i>我的账户</a></li>
+        <li class="active"><a href="supercash.html"><em class="abs abs-verline"></em><i class="ico ico-arrow"></i>超级现金宝</a></li>
+        <li><a href="generalfund.html"><em class="abs abs-verline"></em><i class="ico ico-arrow"></i>普通基金</a></li>
+        <li><a href="traderecord.html"><em class="abs abs-verline"></em><i class="ico ico-arrow"></i>交易记录</a></li>
+        <li><a href="redenvelope.html"><em class="abs abs-verline"></em><i class="ico ico-arrow"></i>我的红包</a></li>
+        <li><a href="mytask.html"><em class="abs abs-verline"></em><i class="ico ico-arrow"></i>我的任务</a></li>
+        <li><a href="invite.html"><em class="abs abs-verline"></em><i class="ico ico-arrow"></i>我的邀请</a></li>
+        <li><a href="bankcards.html"><em class="abs abs-verline"></em><i class="ico ico-arrow"></i>我的银行卡</a></li>
+        <li><a href="accountmanage.html"><em class="abs abs-verline"></em><i class="ico ico-arrow"></i>账户管理</a></li>
+      </ul>
+      <div class="text-center"><!--图片大小 宽179 高210--><img src="../images/_ad/memberAd.jpg"/></div>
+    </div>
+  </div>
+  <div class="mem-cont fr mr40">
+    <div class="mem-title">
+      <h2>超级现金宝</h2>
+      <a href="../supercash.html" class="c-blue3">更多产品 <span class="ft-songti">&gt;&gt;</span></a> </div>
+    <div class="super-box clearfix">
+      <div class="sup-l-box">
+        <h3>总资产<span class="c-gray999 fs12">（元）</span></h3>
+        <em class="sup-price ft-nums"><span class="show-numb">92752587.00</span></em>
+        <div class="sup-btn"><a class="btn btn-small fl" href="../trade/cash.html">充 值</a><a class="btnbor btnbor-small fl" href="../trade/fastcash.html">快速取现</a></div>
+      </div>
+      <div class="sup-l-line"></div>
+      <div class="sup-r-box">
+        <h3>昨日收益<span class="c-gray999 fs12">（元）</span></h3>
+        <em class="sup-income ft-nums">97309.00</em>
+        <h3 class="mt17">总收益<span class="c-gray999 fs12">（元）</span></h3>
+        <em class="sup-income ft-nums">97309.00</em></div>
+    </div>
+    <div class="horline mem-line1"></div>
+    <div class="mem-title">
+      <h2>收益走势</h2>
+    </div>
+    <div class="charts-cont"><!--大小为宽720px 高174px--> 
+      <img src="../images/_men-graph/g3.jpg"/></div>
+    <div class="horline mem-line1"></div>
+    <div class="ui-select-list large-select-list">
+      <ul class="clearfix select-js" id="uiSouYiTab">
+        <li class="active"><a href="#selGouMai" data-toggle="tab"><span>持有明细</span><i class="ui-select-list-l-line">|</i></a></li>
+        <li><a href="#selSuHui" data-toggle="tab"><span>交易记录</span><i class="ui-select-list-l-line">|</i></a></li>
+        <li><a href="#selZhuanHuan" data-toggle="tab"><span>收益结转</span></a></li>
+      </ul>
+      <div class="ui-select-list-line">
+        <div class="ui-select-list-l-orange" style="left: -1px; width: 106px;"></div>
+      </div>
+    </div>
+    <div class="tab-content">
+      <div class="tab-pane fade in active" id="selGouMai">
+        <div class="m-table">
+          <table width="100%" border="0" cellpadding="0" cellspacing="0">
+            <colgroup>
+            <col width="19%">
+            <col width="13%">
+            <col width="12%">
+            <col width="12%">
+            <col width="12%">
+            <col width="12%">
+            <col width="">
+            </colgroup>
+            <thead>
+              <tr>
+                <td><div class="tdl">基金名称</div></td>
+                <td>七日年化收益</td>
+                <td>可用余额</td>
+                <td>昨日收益</td>
+                <td>未付收益</td>
+                <td>持仓盈亏</td>
+                <td>操作</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><div class="tdl">
+                    <h3 class="one-way"> <a href="#" class="c-gray333" title="华商新常态混合">华商新常态混合华商新常态混合华商新常态混合</a></h3>
+                    <p class="one-way"><span class="c-gray999 fs12">590008</span></p>
+                    </div></td>
+                <td><span class="c-red">5.52%</span><br>
+                  <span class="fs12 c-gray666">05-08</span></td>
+                <td>2000元</td>
+                <td><b class="c-red">42.12元</b></td>
+                <td>20.12元 </td>
+                <td><b class="c-red">21.02元</b></td>
+                <td><a class="c-blue3" href="../trade/fastcash.html"  target="_blank">取现</a> <span class=" fs12 c-gray999">|</span> <a class="c-blue3" href="../trade/change.html"  target="_blank">转换</a> <span class=" fs12 c-gray999">|</span> <a class="c-blue3" href="assetscashdetail.html"  target="_blank">收益明细</a></td>
+              </tr>
+              <tr class="bg">
+                <td><div class="tdl"><a href="#" class="c-gray333" title="东方红睿元混合">东方红睿元混合</a><br>
+                    <span class="c-gray999 fs12">590008</span></div></td>
+                <td><span class="c-red">15.52%</span><br>
+                  <span class="fs12 c-gray666">15-08</span></td>
+                <td>99000元</td>
+                <td><b class="c-green">-42.12元</b></td>
+                <td>20.12元 </td>
+                <td><b class="c-green">-21.02元</b></td>
+                <td><a class="c-blue3" href="../trade/fastcash.html"  target="_blank">取现</a> <span class=" fs12 c-gray999">|</span> <a class="c-blue3" href="../trade/change.html"  target="_blank">转换</a> <span class=" fs12 c-gray999">|</span> <a class="c-blue3" href="assetscashdetail.html"  target="_blank">收益明细</a></td>
+              </tr>
+              <tr>
+                <td><div class="tdl"><a href="#" class="c-gray333" title="华商新常态混合">华商新常态混合</a><br>
+                    <span class="c-gray999 fs12">590008</span></div></td>
+                <td><span class="c-red">5.52%</span><br>
+                  <span class="fs12 c-gray666">05-08</span></td>
+                <td>2000元</td>
+                <td><b class="c-red">42.12元</b></td>
+                <td>20.12元 </td>
+                <td><b class="c-red">21.02元</b></td>
+                <td><a class="c-blue3" href="../trade/fastcash.html"  target="_blank">取现</a> <span class=" fs12 c-gray999">|</span> <a class="c-blue3" href="../trade/change.html"  target="_blank">转换</a> <span class=" fs12 c-gray999">|</span> <a class="c-blue3" href="assetscashdetail.html"  target="_blank">收益明细</a></td>
+              </tr>
+              <tr class="bg">
+                <td><div class="tdl"><a href="#" class="c-gray333" title="东方红睿元混合">东方红睿元混合</a><br>
+                    <span class="c-gray999 fs12">590008</span></div></td>
+                <td><span class="c-red">15.52%</span><br>
+                  <span class="fs12 c-gray666">15-08</span></td>
+                <td>99000元</td>
+                <td><b class="c-green">-42.12元</b></td>
+                <td>20.12元 </td>
+                <td><b class="c-green">-21.02元</b></td>
+                <td><a class="c-blue3" href="../trade/fastcash.html"  target="_blank">取现</a> <span class=" fs12 c-gray999">|</span> <a class="c-blue3" href="../trade/change.html"  target="_blank">转换</a> <span class=" fs12 c-gray999">|</span> <a class="c-blue3" href="assetscashdetail.html"  target="_blank">收益明细</a></td>
+              </tr>
+              <tr>
+                <td><div class="tdl"><a href="#" class="c-gray333" title="华商新常态混合">华商新常态混合</a><br>
+                    <span class="c-gray999 fs12">590008</span></div></td>
+                <td><span class="c-red">5.52%</span><br>
+                  <span class="fs12 c-gray666">05-08</span></td>
+                <td>2000元</td>
+                <td><b class="c-red">42.12元</b></td>
+                <td>20.12元 </td>
+                <td><b class="c-red">21.02元</b></td>
+                <td><a class="c-blue3" href="../trade/fastcash.html"  target="_blank">取现</a> <span class=" fs12 c-gray999">|</span> <a class="c-blue3" href="../trade/change.html"  target="_blank">转换</a> <span class=" fs12 c-gray999">|</span> <a class="c-blue3" href="assetscashdetail.html"  target="_blank">收益明细</a></td>
+              </tr>
+              <tr class="bg">
+                <td><div class="tdl"><a href="#" class="c-gray333" title="东方红睿元混合">东方红睿元混合</a><br>
+                    <span class="c-gray999 fs12">590008</span></div></td>
+                <td><span class="c-red">15.52%</span><br>
+                  <span class="fs12 c-gray666">15-08</span></td>
+                <td>99000元</td>
+                <td><b class="c-green">-42.12元</b></td>
+                <td>20.12元 </td>
+                <td><b class="c-green">-21.02元</b></td>
+                <td><a class="c-blue3" href="../trade/fastcash.html"  target="_blank">取现</a> <span class=" fs12 c-gray999">|</span> <a class="c-blue3" href="../trade/change.html"  target="_blank">转换</a> <span class=" fs12 c-gray999">|</span> <a class="c-blue3" href="assetscashdetail.html"  target="_blank">收益明细</a></td>
+              </tr>
+              <tr>
+                <td><div class="tdl"><a href="#" class="c-gray333" title="华商新常态混合">华商新常态混合</a><br>
+                    <span class="c-gray999 fs12">590008</span></div></td>
+                <td><span class="c-red">5.52%</span><br>
+                  <span class="fs12 c-gray666">05-08</span></td>
+                <td>2000元</td>
+                <td><b class="c-red">42.12元</b></td>
+                <td>20.12元 </td>
+                <td><b class="c-red">21.02元</b></td>
+                <td><a class="c-blue3" href="../trade/fastcash.html"  target="_blank">取现</a> <span class=" fs12 c-gray999">|</span> <a class="c-blue3" href="../trade/change.html"  target="_blank">转换</a> <span class=" fs12 c-gray999">|</span> <a class="c-blue3" href="assetscashdetail.html"  target="_blank">收益明细</a></td>
+              </tr>
+              <tr class="bg">
+                <td><div class="tdl"><a href="#" class="c-gray333" title="东方红睿元混合">东方红睿元混合</a><br>
+                    <span class="c-gray999 fs12">590008</span></div></td>
+                <td><span class="c-red">15.52%</span><br>
+                  <span class="fs12 c-gray666">15-08</span></td>
+                <td>99000元</td>
+                <td><b class="c-green">-42.12元</b></td>
+                <td>20.12元 </td>
+                <td><b class="c-green">-21.02元</b></td>
+                <td><a class="c-blue3" href="../trade/fastcash.html"  target="_blank">取现</a> <span class=" fs12 c-gray999">|</span> <a class="c-blue3" href="../trade/change.html"  target="_blank">转换</a> <span class=" fs12 c-gray999">|</span> <a class="c-blue3" href="assetscashdetail.html"  target="_blank">收益明细</a></td>
+              </tr>
+              <tr>
+                <td><div class="tdl"><a href="#" class="c-gray333" title="华商新常态混合">华商新常态混合</a><br>
+                    <span class="c-gray999 fs12">590008</span></div></td>
+                <td><span class="c-red">5.52%</span><br>
+                  <span class="fs12 c-gray666">05-08</span></td>
+                <td>2000元</td>
+                <td><b class="c-red">42.12元</b></td>
+                <td>20.12元 </td>
+                <td><b class="c-red">21.02元</b></td>
+                <td><a class="c-blue3" href="../trade/fastcash.html"  target="_blank">取现</a> <span class=" fs12 c-gray999">|</span> <a class="c-blue3" href="../trade/change.html"  target="_blank">转换</a> <span class=" fs12 c-gray999">|</span> <a class="c-blue3" href="assetscashdetail.html"  target="_blank">收益明细</a></td>
+              </tr>
+              <tr class="bg">
+                <td><div class="tdl"><a href="#" class="c-gray333" title="东方红睿元混合">东方红睿元混合</a><br>
+                    <span class="c-gray999 fs12">590008</span></div></td>
+                <td><span class="c-red">15.52%</span><br>
+                  <span class="fs12 c-gray666">15-08</span></td>
+                <td>99000元</td>
+                <td><b class="c-green">-42.12元</b></td>
+                <td>20.12元 </td>
+                <td><b class="c-green">-21.02元</b></td>
+                <td><a class="c-blue3" href="../trade/fastcash.html"  target="_blank">取现</a> <span class=" fs12 c-gray999">|</span> <a class="c-blue3" href="../trade/change.html"  target="_blank">转换</a> <span class=" fs12 c-gray999">|</span> <a class="c-blue3" href="assetscashdetail.html"  target="_blank">收益明细</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="jj-page">
+          <ul>
+            <li class="prev disabled"><a href="javascript:;"><i class="ico ico-prev"></i>上一页</a></li>
+            <li> <a href="javascript:;">1</a></li>
+            <li class="active"><a href="javascript:;">2</a></li>
+            <li><a href="javascript:;">3</a></li>
+            <li><a href="javascript:;">4</a></li>
+            <li><a href="javascript:;">5</a></li>
+            <li class="dot">...</li>
+            <li><a href="javascript:;">11</a></li>
+            <li><a href="javascript:;">12</a></li>
+            <li class="next"><a href="javascript:;"><i class="ico ico-next"></i>下一页</a></li>
+          </ul>
+          <div class="form"><span class="txt">第</span>
+            <input type="number" aria-label="页码输入框" max="100" min="1" value="1" class="input">
+            <span class="txt">页</span> <a href="javascript:;" class="btn">跳转</a> </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="selSuHui">
+        <div class="m-table">
+          <table width="100%" border="0" cellpadding="0" cellspacing="0">
+            <colgroup>
+            <col width="3%">
+            <col width="15%">
+            <col width="13%">
+            <col width="17%">
+            <col width="13%">
+            <col width="3%">
+            <col width="19%">
+            <col width="">
+            </colgroup>
+            <thead>
+              <tr>
+                <td></td>
+                <td><div class="tdl">交易时间</div></td>
+                <td><div class="tdl">交易类型</div></td>
+                <td><div class="tdl">基金名称</div></td>
+                <td><div class="tdr">金额/份额</div></td>
+                <td></td>
+                <td><div class="tdl">说明</div></td>
+                <td>状态</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td></td>
+                <td><div class="tdl">2015-05-15<br>
+                    <span class="c-gray999 fs12">14:56</span></div></td>
+                <td><div class="tdl">基金购买</div></td>
+                <td ><div class="tdl">
+                    <h3 class="one-way"><a href="#" class="c-gray333" title="东方红睿元混合">东方红睿元混合</a></h3>
+                    <p class="one-way"><span class="c-gray999 fs12">590008</span></p>
+                  </div></td>
+                <td><div class="tdr"><b class="c-orange">1000.00元</b></div></td>
+                <td></td>
+                <td><div class="tdl">建设银行<br>
+                    <span class="ft-tahoma c-gray999 fs12">尾号3163 | 支付银行卡</span></div></td>
+                <td><b class="c-ok">交易成功</b></td>
+              </tr>
+              <tr class="bg">
+                <td></td>
+                <td><div class="tdl">2015-05-15<br>
+                    <span class="c-gray999 fs12">14:56</span></div></td>
+                <td><div class="tdl">基金购买</div></td>
+                <td ><div class="tdl">
+                    <h3 class="one-way"><a href="#" class="c-gray333" title="东方红睿元混合">东方红睿元混合</a></h3>
+                    <p class="one-way"><span class="c-gray999 fs12">590008</span></p>
+                  </div></td>
+                <td><div class="tdr"><b class="c-orange">1000.00份</b></div></td>
+                <td></td>
+                <td><div class="tdl">建设银行<br>
+                    <span class="ft-tahoma c-gray999 fs12">尾号3163 | 支付银行卡</span></div></td>
+                <td><b class="c-fail">确认失败</b></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td><div class="tdl">2015-05-15<br>
+                    <span class="c-gray999 fs12">14:56</span></div></td>
+                <td><div class="tdl">基金购买</div></td>
+                <td ><div class="tdl"><a href="#" class="c-gray333" title="东方红睿元混合">东方红睿元混合</a><br>
+                    <span class="c-gray999 fs12">590008</span></div></td>
+                <td><div class="tdr"><b class="c-orange">1000.00元</b></div></td>
+                <td></td>
+                <td><div class="tdl">建设银行<br>
+                    <span class="ft-tahoma c-gray999 fs12">尾号3163 | 支付银行卡</span></div></td>
+                <td><b class="c-ok">交易成功</b></td>
+              </tr>
+              <tr class="bg">
+                <td></td>
+                <td><div class="tdl">2015-05-15<br>
+                    <span class="c-gray999 fs12">14:56</span></div></td>
+                <td><div class="tdl">基金购买</div></td>
+                <td ><div class="tdl"><a href="#" class="c-gray333" title="东方红睿元混合">东方红睿元混合</a><br>
+                    <span class="c-gray999 fs12">590008</span></div></td>
+                <td><div class="tdr"><b class="c-orange">1000.00份</b></div></td>
+                <td></td>
+                <td><div class="tdl">建设银行<br>
+                    <span class="ft-tahoma c-gray999 fs12">尾号3163 | 支付银行卡</span></div></td>
+                <td><b class="c-fail">确认失败</b></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td><div class="tdl">2015-05-15<br>
+                    <span class="c-gray999 fs12">14:56</span></div></td>
+                <td><div class="tdl">基金购买</div></td>
+                <td ><div class="tdl"><a href="#" class="c-gray333" title="东方红睿元混合">东方红睿元混合</a><br>
+                    <span class="c-gray999 fs12">590008</span></div></td>
+                <td><div class="tdr"><b class="c-orange">1000.00元</b></div></td>
+                <td></td>
+                <td><div class="tdl">建设银行<br>
+                    <span class="ft-tahoma c-gray999 fs12">尾号3163 | 支付银行卡</span></div></td>
+                <td><b class="c-ok">交易成功</b></td>
+              </tr>
+              <tr class="bg">
+                <td></td>
+                <td><div class="tdl">2015-05-15<br>
+                    <span class="c-gray999 fs12">14:56</span></div></td>
+                <td><div class="tdl">基金购买</div></td>
+                <td ><div class="tdl"><a href="#" class="c-gray333" title="东方红睿元混合">东方红睿元混合</a><br>
+                    <span class="c-gray999 fs12">590008</span></div></td>
+                <td><div class="tdr"><b class="c-orange">1000.00份</b></div></td>
+                <td></td>
+                <td><div class="tdl">建设银行<br>
+                    <span class="ft-tahoma c-gray999 fs12">尾号3163 | 支付银行卡</span></div></td>
+                <td><b class="c-fail">确认失败</b></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td><div class="tdl">2015-05-15<br>
+                    <span class="c-gray999 fs12">14:56</span></div></td>
+                <td><div class="tdl">基金购买</div></td>
+                <td ><div class="tdl"><a href="#" class="c-gray333" title="东方红睿元混合">东方红睿元混合</a><br>
+                    <span class="c-gray999 fs12">590008</span></div></td>
+                <td><div class="tdr"><b class="c-orange">1000.00元</b></div></td>
+                <td></td>
+                <td><div class="tdl">建设银行<br>
+                    <span class="ft-tahoma c-gray999 fs12">尾号3163 | 支付银行卡</span></div></td>
+                <td><b class="c-ok">交易成功</b></td>
+              </tr>
+              <tr class="bg">
+                <td></td>
+                <td><div class="tdl">2015-05-15<br>
+                    <span class="c-gray999 fs12">14:56</span></div></td>
+                <td><div class="tdl">基金购买</div></td>
+                <td ><div class="tdl"><a href="#" class="c-gray333" title="东方红睿元混合">东方红睿元混合</a><br>
+                    <span class="c-gray999 fs12">590008</span></div></td>
+                <td><div class="tdr"><b class="c-orange">1000.00份</b></div></td>
+                <td></td>
+                <td><div class="tdl">建设银行<br>
+                    <span class="ft-tahoma c-gray999 fs12">尾号3163 | 支付银行卡</span></div></td>
+                <td><b class="c-fail">确认失败</b></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td><div class="tdl">2015-05-15<br>
+                    <span class="c-gray999 fs12">14:56</span></div></td>
+                <td><div class="tdl">基金购买</div></td>
+                <td ><div class="tdl"><a href="#" class="c-gray333" title="东方红睿元混合">东方红睿元混合</a><br>
+                    <span class="c-gray999 fs12">590008</span></div></td>
+                <td><div class="tdr"><b class="c-orange">1000.00元</b></div></td>
+                <td></td>
+                <td><div class="tdl">建设银行<br>
+                    <span class="ft-tahoma c-gray999 fs12">尾号3163 | 支付银行卡</span></div></td>
+                <td><b class="c-ok">交易成功</b></td>
+              </tr>
+              <tr class="bg">
+                <td></td>
+                <td><div class="tdl">2015-05-15<br>
+                    <span class="c-gray999 fs12">14:56</span></div></td>
+                <td><div class="tdl">基金购买</div></td>
+                <td ><div class="tdl"><a href="#" class="c-gray333" title="东方红睿元混合">东方红睿元混合</a><br>
+                    <span class="c-gray999 fs12">590008</span></div></td>
+                <td><div class="tdr"><b class="c-orange">1000.00份</b></div></td>
+                <td></td>
+                <td><div class="tdl">建设银行<br>
+                    <span class="ft-tahoma c-gray999 fs12">尾号3163 | 支付银行卡</span></div></td>
+                <td><b class="c-fail">确认失败</b></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="selZhuanHuan">
+        <div class="m-table">
+          <table width="100%" border="0" cellpadding="0" cellspacing="0">
+            <colgroup>
+            <col width="5%">
+            <col width="23%">
+            <col width="16%">
+            <col width="20%">
+            <col width="8%">
+            <col width="">
+            </colgroup>
+            <thead>
+              <tr>
+                <td></td>
+                <td><div class="tdl">基金名称</div></td>
+                <td><div class="tdl">收益结转日期</div></td>
+                <td><div class="tdr">金额</div></td>
+                <td></td>
+                <td><div class="tdl">关联账户</div></td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td></td>
+                <td><div class="tdl"><a href="#" class="c-gray333" title="东方红睿元混合">东方红睿元混合</a><br>
+                    <span class="c-gray999 fs12">590008</span></div></td>
+                <td><div class="tdl">2015-05-15<br>
+                    <span class="c-gray999 fs12">14:56</span></div></td>
+                <td><div class="tdr"><b class="c-orange">1000.00元</b></div></td>
+                <td></td>
+                <td><div class="tdl">建设银行<br>
+                    <span class="ft-tahoma c-gray999 fs12">尾号3163 | 支付银行卡</span></div></td>
+              </tr>
+              <tr class="bg">
+                <td></td>
+                <td><div class="tdl"><a href="#" class="c-gray333" title="东方红睿元混合">东方红睿元混合</a><br>
+                    <span class="c-gray999 fs12">590008</span></div></td>
+                <td><div class="tdl">2015-05-15<br>
+                    <span class="c-gray999 fs12">14:56</span></div></td>
+                <td><div class="tdr"><b class="c-orange">1000.00元</b></div></td>
+                <td></td>
+                <td><div class="tdl">建设银行<br>
+                    <span class="ft-tahoma c-gray999 fs12">尾号3163 | 支付银行卡</span></div></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="horline mem-line1"></div>
+    <div class="mem-title">
+      <h2>精选货币基金</h2>
+    </div>
+    <div class="ui-select-list samll-width-sellist"> <a href="javascript:;" class="fr c-blue3">全部货币基金 <span class="ft-songti">&gt;&gt;</span></a>
+      <ul class="clearfix select-js" id="uiHotFundTab">
+        <li class="active"> <a href="#hotFund" data-toggle="tab"><span>热销精选</span></a> </li>
+        <li><a href="#LongTermFund" data-toggle="tab"><span>稳健长期</span></a></li>
+        <li><a href="#ShortTermFund" data-toggle="tab"><span>短期爆发</span></a></li>
+      </ul>
+      <div class="ui-select-list-line">
+        <div class="ui-select-list-l-orange" style="left:-1px;width:94px;"></div>
+      </div>
+    </div>
+    <div class="tab-content">
+      <div class="tab-pane fade in active" id="hotFund">
+        <div class="recommend-fund">
+          <ul>
+            <li><i class="abs abs-line-ver"></i>
+              <h3 class="h3"><a href="javascript:;" class="c-blue">易方达天天理财货币A</a></h3>
+              <div class="rec-fund-cont clearfix">
+                <div class="one">
+                  <h4 class="h4">7日年化</h4>
+                  <p class="ft-nums c-red"><span>8.0302</span><span class="fs12">%</span></p>
+                </div>
+                <div class="two">
+                  <h4 class="h4">万份收益</h4>
+                  <p class="ft-nums c-red4"><span>1.2501</span></p>
+                </div>
+                <div class="three">
+                  <h4 class="h4">起购金额</h4>
+                  <p class="ft-nums"><span>1000</span><span class="fs12">元</span></p>
+                </div>
+              </div>
+              <a href="javascript:;" class="rel-btn" target="_blank">立即购买</a> </li>
+            <li><i class="abs abs-line-ver"></i>
+              <h3 class="h3"><a href="javascript:;" class="c-blue">易方达天天理财货币A</a></h3>
+              <div class="rec-fund-cont clearfix">
+                <div class="one">
+                  <h4 class="h4">7日年化</h4>
+                  <p class="ft-nums c-red"><span>8.0302</span><span class="fs12">%</span></p>
+                </div>
+                <div class="two">
+                  <h4 class="h4">万份收益</h4>
+                  <p class="ft-nums c-red4"><span>1.2501</span></p>
+                </div>
+                <div class="three">
+                  <h4 class="h4">起购金额</h4>
+                  <p class="ft-nums"><span>1000</span><span class="fs12">元</span></p>
+                </div>
+              </div>
+              <a href="javascript:;" class="rel-btn">立即购买</a> </li>
+            <li><i class="abs abs-line-ver"></i>
+              <h3 class="h3"><a href="javascript:;" class="c-blue">易方达天天理财货币A</a></h3>
+              <div class="rec-fund-cont clearfix">
+                <div class="one">
+                  <h4 class="h4">7日年化</h4>
+                  <p class="ft-nums c-red"><span>8.0302</span><span class="fs12">%</span></p>
+                </div>
+                <div class="two">
+                  <h4 class="h4">万份收益</h4>
+                  <p class="ft-nums c-red4"><span>1.2501</span></p>
+                </div>
+                <div class="three">
+                  <h4 class="h4">起购金额</h4>
+                  <p class="ft-nums"><span>1000</span><span class="fs12">元</span></p>
+                </div>
+              </div>
+              <a href="javascript:;" class="rel-btn" target="_blank">立即购买</a> </li>
+          </ul>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="LongTermFund">
+        <div class="recommend-fund">
+          <ul>
+            <li><i class="abs abs-line-ver"></i>
+              <h3 class="h3"><a href="javascript:;" class="c-blue">信达澳银慧管家货币C</a></h3>
+              <div class="rec-fund-cont clearfix">
+                <div class="one">
+                  <h4 class="h4">7日年化</h4>
+                  <p class="ft-nums c-red"><span>8.0302</span><span class="fs12">%</span></p>
+                </div>
+                <div class="two">
+                  <h4 class="h4">万份收益</h4>
+                  <p class="ft-nums c-red4"><span>1.2501</span></p>
+                </div>
+                <div class="three">
+                  <h4 class="h4">起购金额</h4>
+                  <p class="ft-nums"><span>1000</span><span class="fs12">元</span></p>
+                </div>
+              </div>
+              <a href="javascript:;" class="rel-btn" target="_blank">立即购买</a> </li>
+            <li><i class="abs abs-line-ver"></i>
+              <h3 class="h3"><a href="javascript:;" class="c-blue">信达澳银慧管家货币C</a></h3>
+              <div class="rec-fund-cont clearfix">
+                <div class="one">
+                  <h4 class="h4">7日年化</h4>
+                  <p class="ft-nums c-red"><span>8.0302</span><span class="fs12">%</span></p>
+                </div>
+                <div class="two">
+                  <h4 class="h4">万份收益</h4>
+                  <p class="ft-nums c-red4"><span>1.2501</span></p>
+                </div>
+                <div class="three">
+                  <h4 class="h4">起购金额</h4>
+                  <p class="ft-nums"><span>1000</span><span class="fs12">元</span></p>
+                </div>
+              </div>
+              <a href="javascript:;" class="rel-btn btn-disabled">立即购买</a> </li>
+            <li><i class="abs abs-line-ver"></i>
+              <h3 class="h3"><a href="javascript:;" class="c-blue">信达澳银慧管家货币C</a></h3>
+              <div class="rec-fund-cont clearfix">
+                <div class="one">
+                  <h4 class="h4">7日年化</h4>
+                  <p class="ft-nums c-red"><span>8.0302</span><span class="fs12">%</span></p>
+                </div>
+                <div class="two">
+                  <h4 class="h4">万份收益</h4>
+                  <p class="ft-nums c-red4"><span>1.2501</span></p>
+                </div>
+                <div class="three">
+                  <h4 class="h4">起购金额</h4>
+                  <p class="ft-nums"><span>1000</span><span class="fs12">元</span></p>
+                </div>
+              </div>
+              <a href="javascript:;" class="rel-btn" target="_blank">立即购买</a> </li>
+          </ul>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="ShortTermFund">
+        <div class="recommend-fund">
+          <ul>
+            <li><i class="abs abs-line-ver"></i>
+              <h3 class="h3"><a href="javascript:;" class="c-blue">平安大华财富宝货币</a></h3>
+              <div class="rec-fund-cont clearfix">
+                <div class="one">
+                  <h4 class="h4">7日年化</h4>
+                  <p class="ft-nums c-red"><span>8.0302</span><span class="fs12">%</span></p>
+                </div>
+                <div class="two">
+                  <h4 class="h4">万份收益</h4>
+                  <p class="ft-nums c-red4"><span>1.2501</span></p>
+                </div>
+                <div class="three">
+                  <h4 class="h4">起购金额</h4>
+                  <p class="ft-nums"><span>1000</span><span class="fs12">元</span></p>
+                </div>
+              </div>
+              <a href="javascript:;" class="rel-btn" target="_blank">立即购买</a> </li>
+            <li><i class="abs abs-line-ver"></i>
+              <h3 class="h3"><a href="javascript:;" class="c-blue">平安大华财富宝货币</a></h3>
+              <div class="rec-fund-cont clearfix">
+                <div class="one">
+                  <h4 class="h4">7日年化</h4>
+                  <p class="ft-nums c-red"><span>8.0302</span><span class="fs12">%</span></p>
+                </div>
+                <div class="two">
+                  <h4 class="h4">万份收益</h4>
+                  <p class="ft-nums c-red4"><span>1.2501</span></p>
+                </div>
+                <div class="three">
+                  <h4 class="h4">起购金额</h4>
+                  <p class="ft-nums"><span>1000</span><span class="fs12">元</span></p>
+                </div>
+              </div>
+              <a href="javascript:;" class="rel-btn btn-disabled">立即购买</a> </li>
+            <li><i class="abs abs-line-ver"></i>
+              <h3 class="h3"><a href="javascript:;" class="c-blue">平安大华财富宝货币</a></h3>
+              <div class="rec-fund-cont clearfix">
+                <div class="one">
+                  <h4 class="h4">7日年化</h4>
+                  <p class="ft-nums c-red"><span>8.0302</span><span class="fs12">%</span></p>
+                </div>
+                <div class="two">
+                  <h4 class="h4">万份收益</h4>
+                  <p class="ft-nums c-red4"><span>1.2501</span></p>
+                </div>
+                <div class="three">
+                  <h4 class="h4">起购金额</h4>
+                  <p class="ft-nums"><span>1000</span><span class="fs12">元</span></p>
+                </div>
+              </div>
+              <a href="javascript:;" class="rel-btn" target="_blank">立即购买</a> </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--底部开始-->
+<div id="bottom"></div>
+<!--底部结束--> 
+<script src="../js/countUp.js"></script> 
+<script src="../js/countDiv.js"></script> 
+<script type="text/javascript">
+jQuery(function($){$(document).ready(function(){$('.nav-list').stickUp();});});
+</script> 
+<script>
+$(function(){
+/*select list*/
+$('#uiMainTab a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+$('#uiHotFundTab a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+
+var listli=$(".select-js").find("li");
+listli.click(function(){
+var sl=$(this).position().left;
+$(this).parents(".ui-select-list").find(".ui-select-list-l-orange").animate({left:sl}, "fast");  
+});
+
+
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,1220 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>基金汇-首页</title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="description" content=" " />
+<meta name="keywords" content=" " />
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+<link href="css/base.css" rel="stylesheet"/>
+<link href="css/index.css" rel="stylesheet"/>
+<link href="css/ui.css" rel="stylesheet"/>
+<script src="js/jq/jquery-1.9.1.min.js"></script>
+<script src="js/bs/bootstrap.js"></script>
+<script src="js/jq/jquery.input.js"></script>
+<script src="js/jq/jquery-ui.js"></script>
+<script src="js/base.js"></script>
+<script src="js/rc/RongIMClient-0.9.10.min.js"></script>
+<script src="js/rc/Embedded.js"></script>
+<script src="js/common/top.js"></script>
+<script src="js/common/bottom.js"></script>
+</head>
+<body>
+<!--头部开始-->
+<div id="top"></div>
+<div class="head-tab">
+  <div class="wrap clearfix">
+    <div class="new-notice"><span class="notice-tit"><i class="ico ico-notice"></i>最新公告</span>
+      <ul id="NewsScrollId">
+        <li><a href="javascript:;" class="c-gray666">震荡市现布局良机 基金看好港股机会！</a></li>
+        <li><a href="javascript:;" class="c-gray666">三类基金锁定收益。</a></li>
+        <li><a href="javascript:;" class="c-gray666">利好停不下来，4000点成政策铁底</a></li>
+        <li><a href="javascript:;" class="c-gray666">市场震荡，买打新基金！</a></li>
+        <li><a href="javascript:;" class="c-gray666">中央汇金疑出手：怒砸100亿购四大ETF 震荡市买基策略！</a></li>
+      </ul>
+    </div>
+    <div class="head-search">
+      <ul>
+        <li class="dropdown"> <a aria-expanded="true" role="button" aria-haspopup="true" data-toggle="dropdown" class="dropdown-toggle search-drop c-gray666" href="#" id="drop1"> <span class="abs abs-arrow-d"></span> <span class="dropdown-text">基金</span> </a>
+          <ul aria-labelledby="drop1" role="menu" class="dropdown-menu">
+            <li role="presentation"><a href="javascript:;">基金</a></li>
+            <li role="presentation"><a href="javascript:;">经理</a></li>
+            <li role="presentation"><a href="javascript:;">资讯</a></li>
+          </ul>
+        </li>
+        <li class="top-text top-s-js"> <i class="ico ico-search"></i>
+          <input type="text" name="" class="stxt-js input_ph" value="请输入基金代码／简称／拼音" placeholder="" tabindex="-1">
+          <div id="searchData" class="sbox sbox-js" style="display:none">
+            <table id="auto1">
+              <tbody>
+                <tr>
+                  <td width="29px" class="rel"><i class="abs abs-rank abs-top">1</i></td>
+                  <td width="55px">76<span>2</span>001</td>
+                  <td>国金通用国鑫发起</td>
+                </tr>
+                <tr>
+                  <td class="rel"><i class="abs abs-rank abs-top">2</i></td>
+                  <td>75000<span>2</span></td>
+                  <td>安信目标收益债券A</td>
+                </tr>
+                <tr>
+                  <td class="rel"><i class="abs abs-rank abs-top">3</i></td>
+                  <td>74060<span>2</span></td>
+                  <td>长安货币B</td>
+                </tr>
+                <tr>
+                  <td class="rel"><i class="abs abs-rank">4</i></td>
+                  <td>73000<span>2</span></td>
+                  <td>方正富邦红利精选股票方正富邦红利精选股票</td>
+                </tr>
+                <tr>
+                  <td class="rel"><i class="abs abs-rank">5</i></td>
+                  <td>7<span>2</span>0003</td>
+                  <td>财通保本混合发起式</td>
+                </tr>
+                <tr>
+                  <td class="rel"><i class="abs abs-rank">6</i></td>
+                  <td>7<span>2</span>000<span>2</span></td>
+                  <td>财通多策略稳健增长债券</td>
+                </tr>
+                <tr>
+                  <td class="rel"><i class="abs abs-rank">7</i></td>
+                  <td>7<span>2</span>0001</td>
+                  <td>财通价值动量混合</td>
+                </tr>
+                <tr>
+                  <td class="rel"><i class="abs abs-rank">8</i></td>
+                  <td>71050<span>2</span></td>
+                  <td>富安达现金通货币B</td>
+                </tr>
+                <tr>
+                  <td class="rel"><i class="abs abs-rank">9</i></td>
+                  <td>71050<span>2</span></td>
+                  <td>富安达现金通货币B</td>
+                </tr>
+                <tr>
+                  <td class="rel"><i class="abs abs-rank">10</i></td>
+                  <td>71050<span>2</span></td>
+                  <td>富安达现金通货币B</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!--头部结束--> 
+<!--banner开始-->
+<div class="h-slide">
+  <div class="home-banner" id="HomeScrollImg">
+    <ul>
+      <li class="curr"><a href="javascript:;" style="background:url(images/_ad/b1.png) #2c6ec7 center no-repeat;"></a></li>
+      <li><a href="javascript:;" style="background:url(images/_ad/b2.png) #5751d6 center no-repeat;"></a></li>
+      <li><a href="javascript:;" style="background:url(images/_ad/b3.png) #2675bb center no-repeat;"></a></li>
+    </ul>
+  </div>
+  <div class="h-login">
+    <div class="loginbox"> 
+      <!--未登录开始--> 
+      <!--<div class="notlog-cont">
+        <h3 class="h3 fs16">证监会核准的独立基金销售机构</h3>
+        <p class="notlog-img"><img src="images/certificate.jpg"/></p>
+        <p class="log-btn"><a href="login.html" class="logbtn1 fl" target="_blank">登 录</a><a href="register.html" class="logbtn2 fr" target="_blank">注 册</a></p>
+      </div>
+      <div class="notlog-info"><i class="abs abs-i">i</i>账户资金安全由浦发银行监管</div>--> 
+      <!--未登录结束--> 
+      <!--登录开始-->
+      <div class="log-cont">
+        <h3 class="h3 fs20">您好，欢迎来基金汇</h3>
+        <p class="s-txt">您当前使用的账号是</p>
+        <p class="b-txt ft-nums">151****2847</p>
+        <p class="log-btn"><a href="member/myaccounts.html" class="logbtn1 fl" target="_blank">我的账户</a><a href="javascript:;" class="logbtn2 fr">注  销</a></p>
+      </div>
+      <!--登录结束--> 
+      
+    </div>
+    <div class="loginbg"></div>
+  </div>
+</div>
+<!--banner结束-->
+<div class="wrap">
+  <div class="clearfix">
+    <div class="w650 fl">
+      <div class="good-fund clearfix">
+        <div class="gf-list">
+          <h3 class="h3"><i class="abs abs-vline"></i>超级现金宝</h3>
+          <ul class="dashed">
+            <li><a href="gp.html" class="c-blue">银华多利宝货币A</a></li>
+            <li><span class="fs12 c-gray666 fl">7日年化收益</span><i class="fs16 i c-red ft-nums fr">8.03%</i> </li>
+          </ul>
+          <ul>
+            <li><a href="gp.html" class="c-blue">银华多利宝货币A</a></li>
+            <li><span class="fs12 c-gray666 fl">7日年化收益</span><i class="fs16 i c-red ft-nums fr">9.63%</i> </li>
+          </ul>
+        </div>
+        <div class="gf-list">
+          <h3 class="h3"><i class="abs abs-vline"></i>本月牛基</h3>
+          <ul class="dashed">
+            <li><a href="gp.html" class="c-blue">华商新量化混合</a></li>
+            <li><span class="fs12 c-gray666 fl">近三月收益</span><i class="fs16 i c-red ft-nums fr">58.03%</i> </li>
+          </ul>
+          <ul>
+            <li><a href="gp.html" class="c-blue">华商新量化混合</a></li>
+            <li><span class="fs12 c-gray666 fl">近三月收益</span><i class="fs16 i c-red ft-nums fr">178.03%</i> </li>
+          </ul>
+        </div>
+        <div class="gf-list">
+          <h3 class="h3"><i class="abs abs-vline"></i>主题优选</h3>
+          <ul class="dashed">
+            <li><a href="gp.html" class="c-blue">华宸沪深300指数发起式LOF</a></li>
+            <li><span class="fs12 c-gray666 fl">近一年收益</span><i class="fs16 i c-red ft-nums fr">128.03%</i> </li>
+          </ul>
+          <ul>
+            <li><a href="gp.html" class="c-blue">华宸沪深300指数发起式LOF</a></li>
+            <li><span class="fs12 c-gray666 fl">近一年收益</span><i class="fs16 i c-red ft-nums fr">228.03%</i> </li>
+          </ul>
+        </div>
+        <div class="gf-list last">
+          <h3 class="h3"><i class="abs abs-vline"></i>热销爆款</h3>
+          <ul class="dashed">
+            <li><a href="gp.html" class="c-blue">工银绝对收益混合发起B</a></li>
+            <li><span class="fs12 c-gray666 fl">近一年收益</span><i class="fs16 i c-red ft-nums fr">208.03%</i> </li>
+          </ul>
+          <ul>
+            <li><a href="gp.html" class="c-blue">工银绝对收益混合发起B</a></li>
+            <li><span class="fs12 c-gray666 fl">近一年收益</span><i class="fs16 i c-red ft-nums fr">38.03%</i> </li>
+          </ul>
+        </div>
+      </div>
+      <!--图片大小320X80-->
+      <div class="special-fund"><a href="javascript:;" ><img src="images/_del/pic1.jpg" class="mr10"/></a><a href="javascript:;"><img src="images/_del/pic2.jpg"/></a><a href="javascript:;"><img src="images/_del/pic3.jpg" class="mr10 mt10"/></a><a href="javascript:;"><img src="images/_del/pic4.jpg" class="mt10"/></a></div>
+    </div>
+    <div class="w320 fr">
+      <div class="home-news">
+        <h3 class="h3"><a href="news/newsdetail.html" class="c-red" style="margin-right:26px;" target="_blank">国企改革动真格</a><a href="news/newsdetail.html" class="c-red" target="_blank">基金站上风口</a></h3>
+        <ul class="imp-news">
+          <li><a href="news/newsdetail.html" class="c-blue" target="_blank">不到半月11只分级基金上市 散户成炒作主力</a></li>
+          <li><a href="news/newsdetail.html" class="c-red" target="_blank">前四月十只主动股基收益翻番</a></li>
+          <li><a href="news/newsdetail.html" class="c-blue" target="_blank">一季度私募大佬隐形重仓股曝光</a></li>
+        </ul>
+        <ul class="rec-news">
+          <li><i class="abs abs-pont"></i><a href="news/newsdetail.html" class="c-gray333" target="_blank">震荡市现布局良机 基金看好港股机会</a></li>
+          <li><i class="abs abs-pont"></i><a href="news/newsdetail.html" class="c-gray333" target="_blank">基金持续维持高仓位 大部分的基金选择小幅减仓</a></li>
+          <li><i class="abs abs-pont"></i><a href="news/newsdetail.html" class="c-gray333" target="_blank">前四月十只主动股基收益翻番</a></li>
+          <li><i class="abs abs-pont"></i><a href="news/newsdetail.html" class="c-gray333" target="_blank">震荡市现布局良机 基金看好港股机会</a></li>
+          <li><i class="abs abs-pont"></i><a href="news/newsdetail.html" class="c-gray333" target="_blank">一季度私募大佬隐形重仓股曝光</a></li>
+          <li><i class="abs abs-pont"></i><a href="news/newsdetail.html" class="c-gray333" target="_blank">基金持续维持高仓位 大部分的基金选择小幅减仓</a></li>
+          <li><i class="abs abs-pont"></i><a href="news/newsdetail.html" class="c-gray333" target="_blank">震荡市现布局良机 基金看好港股机会</a></li>
+          <li><i class="abs abs-pont"></i><a href="news/newsdetail.html" class="c-gray333" target="_blank">一季度私募大佬隐形重仓股曝光</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="home-title clearfix mt20 rel">
+    <h3 class="h3 fl">基金类型介绍</h3>
+    <div class="ftypeidl" id="FtypeiDlIcon">
+      <dl class="ftypeicon tit-gp">
+        <i class="ico ico-gp"></i><em class="fs16">选择好,收益高</em>
+      </dl>
+      <dl class="ftypeicon tit-hh">
+        <i class="ico ico-hh"></i><em class="fs16">投资灵活，风险分散</em>
+      </dl>
+      <dl class="ftypeicon tit-zq">
+        <i class="ico ico-zq"></i><em class="fs16">收益稳，风险低</em>
+      </dl>
+      <dl class="ftypeicon tit-zs">
+        <i class="ico ico-zs"></i><em class="fs16">指数涨，就赚钱</em>
+      </dl>
+      <dl class="ftypeicon tit-hb">
+        <i class="ico ico-hb"></i><em class="fs16">10倍活期，0风险</em>
+      </dl>
+    </div>
+    <div class="ui-select-list"  id="FundTypeTab">
+      <ul class="select-js clearfix">
+        <li class="active act-js"><a href="javascript:;"><span>股票型</span><i class="ui-select-list-l-line">|</i></a></li>
+        <li class="act-js"><a href="javascript:;"><span>混合型</span><i class="ui-select-list-l-line">|</i></a></li>
+        <li class="act-js"><a href="javascript:;"><span>债券型</span><i class="ui-select-list-l-line">|</i></a></li>
+        <li class="act-js"><a href="javascript:;"><span>指数型</span><i class="ui-select-list-l-line">|</i></a></li>
+        <li class="act-js"><a href="javascript:;"><span>货币型</span></a></li>
+      </ul>
+      <div class="ui-select-list-line">
+        <div class="ui-select-list-l-orange" style="left:-2px;width:80px;"></div>
+      </div>
+    </div>
+  </div>
+  <div class="shadow-line"></div>
+  <div class="fund-type" >
+    <div class="fundtype-cont" id="FundTypeCont">
+      <div class="ft-box ft-gp">
+        <div class="fund-tj fl"> </div>
+        <div class="fund-txt fr">
+          <div class="ftype-title">
+            <h3 class="h3 fs16">股票型基金</h3>
+          </div>
+          <div class="clearfix mt20">
+            <div class="ftype-cont fl">股票型基金是指60%以上的基金资产投资于股票的基金。目前我国市面上除股票型基金外，还有债券基金与货币市场基金。债券基金是指80%以上的基金资产投资于债券的基金，在国内，投资对象主要是国债、金融债和企业债。货币市场基金是指仅投资于货币市场工具的基金。该基金资产主要投资于短期货币工具如国库券、商业票据、银行定期存单、政府短期债券、企业债券、同业存款等短期有价证券。</div>
+            <div class="ftype-feature fr mr20">
+              <ul class="ftype-ul">
+                <li>高收益</li>
+                <li>高风险</li>
+                <li class="last">千元起</li>
+              </ul>
+              <a href="javascript:;" class="btnbor">更多股票型基金 <span class="ft-songti">&gt;&gt;</span> </a> </div>
+          </div>
+        </div>
+      </div>
+      <div class="ft-box ft-hh">
+        <div class="fund-tj fl">
+          <div class="fn-name">
+            <h3 class="h3 text-ellipsis"><a href="../gp.html" class="c-blue3 ">国投瑞银美丽中国混合</a></h3>
+            <span><i class="ico ico-hot"></i></span> </div>
+          <ul class="fn-nums clearfix">
+            <li>
+              <h4 class="h4 c-gray666">近一年收益</h4>
+              <em class="em ft-nums c-red">150.02%</em></li>
+            <li>
+              <h4 class="h4 c-gray666">单位净值(06-01)</h4>
+              <em class="em ft-nums c-red">2.2501</em></li>
+          </ul>
+          <div class="fn-btn"> <span class="fl">
+            <p class="c-gray666">手续费</p>
+            <em>0.60%&nbsp;&nbsp;<del class="del c-gray999">1.50%</del><i class="c-gray666"></i></em></span> <a href="javascript:;" class="fr btnbor btnbor-orgm33">立即购买</a> </div>
+        </div>
+        <div class="fund-txt fr">
+          <div class="ftype-title">
+            <h3 class="h3 fs16">混合型基金</h3>
+          </div>
+          <div class="clearfix mt20">
+            <div class="ftype-cont fl">混合型基金是指60%以上的基金资产投资于股票的基金。目前我国市面上除股票型基金外，还有债券基金与货币市场基金。债券基金是指80%以上的基金资产投资于债券的基金，在国内，投资对象主要是国债、金融债和企业债。货币市场基金是指仅投资于货币市场工具的基金。该基金资产主要投资于短期货币工具如国库券、商业票据、银行定期存单、政府短期债券、企业债券、同业存款等短期有价证券。</div>
+            <div class="ftype-feature fr mr20">
+              <ul class="ftype-ul">
+                <li>高收益</li>
+                <li>高风险</li>
+                <li class="last">千元起</li>
+              </ul>
+              <a href="javascript:;" class="btnbor">更多混合型基金 <span class="ft-songti">&gt;&gt;</span> </a> </div>
+          </div>
+        </div>
+      </div>
+      <div class="ft-box ft-zq">
+        <div class="fund-tj fl">
+          <div class="fn-name">
+            <h3 class="h3 text-ellipsis"><a href="../gp.html" class="c-blue3 ">建信转债增强债券A</a></h3>
+            <span><i class="ico ico-hot"></i></span> </div>
+          <ul class="fn-nums clearfix">
+            <li>
+              <h4 class="h4 c-gray666">近一年收益</h4>
+              <em class="em ft-nums c-red">300.02%</em></li>
+            <li>
+              <h4 class="h4 c-gray666">单位净值(06-01)</h4>
+              <em class="em ft-nums c-red">12.2501</em></li>
+          </ul>
+          <div class="fn-btn"> <span class="fl">
+            <p class="c-gray666">手续费</p>
+            <em>0.60%&nbsp;&nbsp;<del class="del c-gray999">1.50%</del><i class="c-gray666"></i></em></span> <a href="javascript:;" class="fr btnbor btnbor-orgm33">立即购买</a> </div>
+        </div>
+        <div class="fund-txt fr">
+          <div class="ftype-title">
+            <h3 class="h3 fs16">债券型基金</h3>
+          </div>
+          <div class="clearfix mt20">
+            <div class="ftype-cont fl">债券型基金是指60%以上的基金资产投资于股票的基金。目前我国市面上除股票型基金外，还有债券基金与货币市场基金。债券基金是指80%以上的基金资产投资于债券的基金，在国内，投资对象主要是国债、金融债和企业债。货币市场基金是指仅投资于货币市场工具的基金。该基金资产主要投资于短期货币工具如国库券、商业票据、银行定期存单、政府短期债券、企业债券、同业存款等短期有价证券。</div>
+            <div class="ftype-feature fr mr20">
+              <ul class="ftype-ul">
+                <li>高收益</li>
+                <li>高风险</li>
+                <li class="last">千元起</li>
+              </ul>
+              <a href="javascript:;" class="btnbor">更多债券型基金 <span class="ft-songti">&gt;&gt;</span> </a> </div>
+          </div>
+        </div>
+      </div>
+      <div class="ft-box ft-zs">
+        <div class="fund-tj fl">
+          <div class="fn-name">
+            <h3 class="h3 text-ellipsis"><a href="../gp.html" class="c-blue3 ">嘉实基本面50指数</a></h3>
+            <span><i class="ico ico-hot"></i></span> </div>
+          <ul class="fn-nums clearfix">
+            <li>
+              <h4 class="h4 c-gray666">近一年收益</h4>
+              <em class="em ft-nums c-red">10.02%</em></li>
+            <li>
+              <h4 class="h4 c-gray666">单位净值(06-01)</h4>
+              <em class="em ft-nums c-red">2.2501</em></li>
+          </ul>
+          <div class="fn-btn"> <span class="fl">
+            <p class="c-gray666">手续费</p>
+            <em>0.60%&nbsp;&nbsp;<del class="del c-gray999">1.50%</del><i class="c-gray666"></i></em></span> <a href="javascript:;" class="fr btnbor btnbor-orgm33">立即购买</a> </div>
+        </div>
+        <div class="fund-txt fr">
+          <div class="ftype-title">
+            <h3 class="h3 fs16">指数型基金</h3>
+          </div>
+          <div class="clearfix mt20">
+            <div class="ftype-cont fl">指数型基金是指60%以上的基金资产投资于股票的基金。目前我国市面上除股票型基金外，还有债券基金与货币市场基金。债券基金是指80%以上的基金资产投资于债券的基金，在国内，投资对象主要是国债、金融债和企业债。货币市场基金是指仅投资于货币市场工具的基金。该基金资产主要投资于短期货币工具如国库券、商业票据、银行定期存单、政府短期债券、企业债券、同业存款等短期有价证券。</div>
+            <div class="ftype-feature fr mr20">
+              <ul class="ftype-ul">
+                <li>高收益</li>
+                <li>高风险</li>
+                <li class="last">千元起</li>
+              </ul>
+              <a href="javascript:;" class="btnbor">更多指数型基金 <span class="ft-songti">&gt;&gt;</span> </a> </div>
+          </div>
+        </div>
+      </div>
+      <div class="ft-box ft-hb">
+        <div class="fund-tj fl">
+          <div class="fn-name">
+            <h3 class="h3 text-ellipsis"><a href="../gp.html" class="c-blue3 ">万家日日薪货币A</a></h3>
+            <span><i class="ico ico-hot"></i></span> </div>
+          <ul class="fn-nums clearfix">
+            <li>
+              <h4 class="h4 c-gray666">近一年收益</h4>
+              <em class="em ft-nums c-red">170.02%</em></li>
+            <li>
+              <h4 class="h4 c-gray666">单位净值(06-01)</h4>
+              <em class="em ft-nums c-red">1.2501</em></li>
+          </ul>
+          <div class="fn-btn"> <span class="fl">
+            <p class="c-gray666">手续费</p>
+            <em>0.60%&nbsp;&nbsp;<del class="del c-gray999">1.50%</del><i class="c-gray666"></i></em></span> <a href="javascript:;" class="fr btnbor btnbor-orgm33">立即购买</a> </div>
+        </div>
+        <div class="fund-txt fr">
+          <div class="ftype-title">
+            <h3 class="h3 fs16">货币型基金</h3>
+          </div>
+          <div class="clearfix mt20">
+            <div class="ftype-cont fl">货币型基金是指60%以上的基金资产投资于股票的基金。目前我国市面上除股票型基金外，还有债券基金与货币市场基金。债券基金是指80%以上的基金资产投资于债券的基金，在国内，投资对象主要是国债、金融债和企业债。货币市场基金是指仅投资于货币市场工具的基金。该基金资产主要投资于短期货币工具如国库券、商业票据、银行定期存单、政府短期债券、企业债券、同业存款等短期有价证券。</div>
+            <div class="ftype-feature fr mr20">
+              <ul class="ftype-ul">
+                <li>高收益</li>
+                <li>高风险</li>
+                <li class="last">千元起</li>
+              </ul>
+              <a href="javascript:;" class="btnbor">更多货币型基金 <span class="ft-songti">&gt;&gt;</span> </a> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="home-title clearfix mt20">
+    <h3 class="h3 fl">新手&amp;稳健专区</h3>
+    <span class="span fl">我要稳稳的幸福</span></div>
+  <div class="shadow-line"></div>
+  <div class="newhand-zone clearfix">
+    <div class="nh-ad fl"><img src="images/_ad/ADhome2.jpg"/></div>
+    <div class="nh-best fl">
+      <h3 class="h3 text-ellipsis"><a href="hb.html" class="c-blue">博时现金收益货币B</a></h3>
+      <div class="bf-art"><span class="c-gray666">基金代码：</span> 520036&nbsp;&nbsp;<span class="c-gray999">|</span>&nbsp;&nbsp;<span class="c-gray666">更新时间：</span>2015.06.15</div>
+      <div class="cont clearfix">
+        <div class="nh-one fl">
+          <h4 class="h4 c-gray666">7日年化收益</h4>
+          <p class="ft-nums c-red fs22">5.02%</p>
+        </div>
+        <div class="nh-two fl">
+          <h4 class="h4 c-gray666">是活期存款的</h4>
+          <p class="c-red fs22"><span class="ft-nums">16.25</span> <span class="fs12">倍</span></p>
+        </div>
+        <div class="nh-three fl">
+          <h4 class="h4 c-gray666">7日年化收益</h4>
+          <p class="c-red fs22"><span class="ft-nums">2.2535</span> <span class="fs12">元</span></p>
+        </div>
+      </div>
+      <div class="bf-info">
+        <h4 class="h4">推荐理由：</h4>
+        <p>规模近340亿，收益更高，风险低，适合保守型<br>
+          年收益约5%&nbsp;&nbsp;<span class="c-gray999">|</span>&nbsp;&nbsp;100元起购&nbsp;&nbsp;<span class="c-gray999">|</span>&nbsp;&nbsp;0手续费</p>
+      </div>
+      <div class="bf-btn"><a class="btnbor btnbor-orgm33 fl" href="javascript:;">立即购买</a><a class="fr c-blue" href="javascript:;">更多货币基金 <span class="ft-songti">&gt;&gt;</span></a> </div>
+    </div>
+    <div class="nh-list fr mr30">
+      <ul>
+        <li>
+          <div class="title">
+            <h3 class="h3 fl text-ellipsis"><a href="hb.html" class="c-blue">博时现金收益货币B</a></h3>
+            <a href="javascript:;" class="btnbor btnbor-orgm fr">立即购买</a></div>
+          <div class="cont">
+            <div class="nh-one fl">
+              <h4 class="h4 c-gray666 fs12">7日年化收益</h4>
+              <p class="ft-nums c-red fs16">5.02%</p>
+            </div>
+            <div class="nh-two fl">
+              <h4 class="h4 c-gray666 fs12">是活期存款的</h4>
+              <p class="c-red fs16"><span class="ft-nums">16.25</span> <span class="fs12">倍</span></p>
+            </div>
+            <div class="nh-three fl">
+              <h4 class="h4 c-gray666 fs12">7日年化收益</h4>
+              <p class="c-red fs16"><span class="ft-nums">2.2535</span> <span class="fs12">元</span></p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="title">
+            <h3 class="h3 fl text-ellipsis"><a href="hb.html" class="c-blue" title="国投瑞银美丽中国国投瑞银美丽中国">国投瑞银美丽中国国投瑞银美丽中国B</a></h3>
+            <!--btnbor-disabled 为禁用状态--> 
+            <a href="javascript:;" class="btnbor btnbor-orgm fr">立即购买</a></div>
+          <div class="cont clearfix">
+            <div class="nh-one fl">
+              <h4 class="h4 c-gray666 fs12">7日年化收益</h4>
+              <p class="ft-nums c-red fs16">5.02%</p>
+            </div>
+            <div class="nh-two fl">
+              <h4 class="h4 c-gray666 fs12">是活期存款的</h4>
+              <p class="c-red fs16"><span class="ft-nums">16.25</span> <span class="fs12">倍</span></p>
+            </div>
+            <div class="nh-three fl">
+              <h4 class="h4 c-gray666 fs12">7日年化收益</h4>
+              <p class="c-red fs16"><span class="ft-nums">12.2535</span> <span class="fs12">元</span></p>
+            </div>
+          </div>
+        </li>
+        <li class="last">
+          <div class="title">
+            <h3 class="h3 fl text-ellipsis"><a href="hb.html" class="c-blue">信达澳银慧管家货币A</a></h3>
+            <a href="javascript:;" class="btnbor btnbor-orgm fr">立即购买</a></div>
+          <div class="cont">
+            <div class="nh-one fl">
+              <h4 class="h4 c-gray666 fs12">7日年化收益</h4>
+              <p class="ft-nums c-red fs16">5.02%</p>
+            </div>
+            <div class="nh-two fl">
+              <h4 class="h4 c-gray666 fs12">是活期存款的</h4>
+              <p class="c-red fs16"><span class="ft-nums">16.25</span> <span class="fs12">倍</span></p>
+            </div>
+            <div class="nh-three fl">
+              <h4 class="h4 c-gray666 fs12">7日年化收益</h4>
+              <p class="c-red fs16"><span class="ft-nums">2.2535</span> <span class="fs12">元</span></p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="home-title clearfix mt20">
+    <h3 class="h3 fl">高收益专区</h3>
+    <span class="span fl">各种好基，收益高到停不下来</span></div>
+  <div class="shadow-line"></div>
+  <div class="clearfix">
+    <div class="w320 fl mr20">
+      <div class="high-income">
+        <div class="hi-title">
+          <h2 class="h2 text-ellipsis">收益爆款</h2>
+        </div>
+        
+        <!--置空开始-->
+        <div class="empty-h1">
+          <div class="empty-default empty-bigtable">
+            <div class="emp-img"></div>
+            <div class="emp-txt">暂无数据</div>
+          </div>
+        </div>
+        <!--置空结束--> 
+        
+      </div>
+    </div>
+    <div class="w320 fl">
+      <div class="high-income">
+        <div class="hi-title">
+          <h2 class="h2 text-ellipsis">本季牛基</h2>
+        </div>
+        <div class="hi-num1">
+          <h3 class="h3 text-ellipsis"><a href="javascript:;" class="c-blue">申万证券行业指数分级</a></h3>
+          <ul class="hinum-ul">
+            <li class="one fl">
+              <h4 class="h4 c-gray666">近三月收益</h4>
+              <p class="ft-nums fs22 c-red">300.02%</p>
+            </li>
+            <li class="line fl"></li>
+            <li class="two fr">
+              <h4 class="h4 c-gray666">单位净值(06-01)</h4>
+              <p class="ft-nums fs22 c-red">1.2501</p>
+            </li>
+          </ul>
+          <div class="hinum-btn"><span class="c-gray666 fl">手续费：</span><i class="fl fs16 ft-nums">0.66%</i><del class="fl del fs16 ft-nums c-gray999">1.26%</del><a href="javascript:;" class="btnbor btnbor-orgm28 fr">立即购买</a></div>
+        </div>
+        <div class="hi-list">
+          <ul>
+            <li>
+              <h3 class="h3 fl text-ellipsis"><a class="c-blue" href="hb.html" title="富国汇利回报分级富国汇利回报分级">富国汇利回报分级富国汇利回报分级富国汇利回报分级</a></h3>
+              <a class="btnbor hi-gm btnbor-orgm fr" href="javascript:;">购买</a></li>
+            <li><span class="c-gray666 fs12 fl">近三月收益：</span><em class="ft-nums em fl c-red">170.02%</em> <span class="c-gray666 fs12 fl">手续费：</span><i class="ft-nums fl">0.62%</i><del class="del fl ft-nums c-gray999">1.22%</del> </li>
+          </ul>
+        </div>
+        <div class="hi-list">
+          <ul>
+            <li>
+              <h3 class="h3 fl text-ellipsis"><a class="c-blue" href="hb.html">天弘同利分级债券天弘同利分级债券天弘同利分级债券B</a></h3>
+              <a class="btnbor hi-gm btnbor-orgm fr" href="javascript:;">购买</a></li>
+            <li><span class="c-gray666 fs12 fl">近三月收益：</span><em class="ft-nums em fl c-red">170.02%</em><span class="c-gray666 fs12 fl">手续费：</span><i class="ft-nums fl">0.62%</i><del class="del fl ft-nums c-gray999">1.22%</del> </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="w320 fr">
+      <div class="high-income">
+        <div class="hi-title">
+          <h2 class="h2 text-ellipsis">今日热销</h2>
+        </div>
+        <div class="hi-num1">
+          <h3 class="h3 text-ellipsis"><a href="javascript:;" class="c-blue">申万证券行业指数分级</a></h3>
+          <ul class="hinum-ul">
+            <li class="one fl">
+              <h4 class="h4 c-gray666">近六月收益</h4>
+              <p class="ft-nums fs22 c-red">170.02%</p>
+            </li>
+            <li class="line fl"></li>
+            <li class="two fr">
+              <h4 class="h4 c-gray666">单位净值(06-01)</h4>
+              <p class="ft-nums fs22 c-red">1.2501</p>
+            </li>
+          </ul>
+          <div class="hinum-btn"><span class="c-gray666 fl">手续费：</span><i class="fl fs16 ft-nums">0.65%</i><del class="fl del fs16 ft-nums c-gray999">1.25%</del><a href="javascript:;" class="btnbor btnbor-orgm28 fr">立即购买</a></div>
+        </div>
+        <div class="hi-list">
+          <ul>
+            <li>
+              <h3 class="h3 fl text-ellipsis"><a class="c-blue" href="hb.html" title="富国汇利回报分级富国汇利回报分级">富国汇利回报分级富国汇利回报分级</a></h3>
+              <a class="btnbor hi-gm btnbor-orgm fr" href="javascript:;">购买</a></li>
+            <li><span class="c-gray666 fs12 fl">近六月收益：</span><em class="ft-nums em fl c-red">170.02%</em> <span class="c-gray666 fs12 fl">手续费：</span><i class="ft-nums fl">0.65%</i><del class="del fl ft-nums c-gray999">1.25%</del> </li>
+          </ul>
+        </div>
+        <div class="hi-list">
+          <ul>
+            <li>
+              <h3 class="h3 fl text-ellipsis"><a class="c-blue" href="hb.html">天弘同利分级债券B</a></h3>
+              <a class="btnbor hi-gm btnbor-orgm fr" href="javascript:;">购买</a></li>
+            <li><span class="c-gray666 fs12 fl">近六月收益：</span><em class="ft-nums em fl c-red">170.02%</em><span class="c-gray666 fs12 fl">手续费：</span><i class="ft-nums fl">0.62%</i><del class="del fl ft-nums c-gray999">1.23%</del> </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="clearfix mt20">
+    <div class="w490 fl">
+      <div class="home-title clearfix">
+        <h3 class="h3 fl">热点聚焦</h3>
+        <span class="span fl">投资方向帮您找</span> <a href="javascript:;" class="fr c-blue">更多 <span class="ft-songti">&gt;&gt;</span></a> </div>
+      <div class="shadow-line"></div>
+      <div class="clearfix">
+        <div class="hot-focus fl">
+          <div class="title"><a href="javascript:;"><img src="images/theme/h-1.jpg"/></a></div>
+          <div class="cont theme-orange">
+            <ul>
+              <li>
+                <h4 class="h4 text-ellipsis"><a target="_blank" class="c-blue3" href="javascript:;">申万证券行业指数分级A</a></h4>
+                <p><span class="c-gray666 fl">近6月收益：</span><em class="em ft-nums c-red fl fs16">170.02%</em><a class="btnbor btnbor-org fr" href="javascript:;">购买</a></p>
+              </li>
+              <li class="last">
+                <h4 class="h4 text-ellipsis"><a target="_blank" class="c-blue3" href="javascript:;">申万证券行业指数分级申万证券行业指数分级A</a></h4>
+                <p><span class="c-gray666 fl">近6月收益：</span><em class="em ft-nums c-red fl fs16">170.02%</em><a class="btnbor btnbor-org fr" href="javascript:;">购买</a></p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="hot-focus fr">
+          <div class="title"><a href="javascript:;"><img src="images/theme/h-2.jpg"/></a></div>
+          <div class="cont theme-blue">
+            <ul>
+              <li>
+                <h4 class="h4 text-ellipsis"><a target="_blank" class="c-blue3" href="javascript:;">申万证券行业指数分级A</a></h4>
+                <p><span class="c-gray666 fl">近6月收益：</span><em class="em ft-nums c-red fl fs16">170.02%</em><a class="btnbor btnbor-org fr" href="javascript:;">购买</a></p>
+              </li>
+              <li class="last">
+                <h4 class="h4 text-ellipsis"><a target="_blank" class="c-blue3" href="javascript:;">申万证券行业指数分级申万证券行业指数分级A</a></h4>
+                <p><span class="c-gray666 fl">近6月收益：</span><em class="em ft-nums c-red fl fs16">170.02%</em><a class="btnbor btnbor-org fr" href="javascript:;">购买</a></p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="hot-focus fl mt10">
+          <div class="title"><a href="javascript:;"><img src="images/theme/h-3.jpg"/></a></div>
+          <div class="cont theme-brown">
+            <ul>
+              <li>
+                <h4 class="h4 text-ellipsis"><a target="_blank" class="c-blue3" href="javascript:;">申万证券行业指数分级A</a></h4>
+                <p><span class="c-gray666 fl">近6月收益：</span><em class="em ft-nums c-red fl fs16">170.02%</em><a class="btnbor btnbor-org fr" href="javascript:;">购买</a></p>
+              </li>
+              <li class="last">
+                <h4 class="h4 text-ellipsis"><a target="_blank" class="c-blue3" href="javascript:;">申万证券行业指数分级申万证券行业指数分级A</a></h4>
+                <p><span class="c-gray666 fl">近6月收益：</span><em class="em ft-nums c-red fl fs16">170.02%</em><a class="btnbor btnbor-org fr" href="javascript:;">购买</a></p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="hot-focus fr mt10">
+          <div class="title"><a href="javascript:;"><img src="images/theme/h-4.jpg"/></a></div>
+          <div class="cont theme-green">
+            <ul>
+              <li>
+                <h4 class="h4 text-ellipsis"><a target="_blank" class="c-blue3" href="javascript:;">申万证券行业指数分级A</a></h4>
+                <p><span class="c-gray666 fl">近6月收益：</span><em class="em ft-nums c-red fl fs16">170.02%</em><a class="btnbor btnbor-org fr" href="javascript:;">购买</a></p>
+              </li>
+              <li class="last">
+                <h4 class="h4 text-ellipsis"><a target="_blank" class="c-blue3" href="javascript:;">申万证券行业指数分级申万证券行业指数分级A</a></h4>
+                <p><span class="c-gray666 fl">近6月收益：</span><em class="em ft-nums c-red fl fs16">170.02%</em><a class="btnbor btnbor-org fr" href="javascript:;">购买</a></p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w490 fr">
+      <div class="home-title clearfix">
+        <h3 class="h3 fl">收益排行榜</h3>
+        <a href="javascript:;" class="fr c-blue">更多 <span class="ft-songti">&gt;&gt;</span></a> </div>
+      <div class="shadow-line"></div>
+      <ul class="taba-title clearfix" id="TopFundTab">
+        <li class="active"><a href="#GuPiaoId" data-toggle="tab">股票型</a></li>
+        <li class="line"></li>
+        <li><a href="#HunHeId" data-toggle="tab">混合型</a></li>
+        <li class="line"></li>
+        <li><a href="#ZhaiQuanId" data-toggle="tab">债券型</a></li>
+        <li class="line"></li>
+        <li><a href="#ZhiShuId" data-toggle="tab">指数型</a></li>
+      </ul>
+      <div class="rank-box">
+        <div class="tab-content">
+          <div class="tab-pane fade in active" id="GuPiaoId"> 
+            
+            <!--置空开始-->
+            <div class="empty-h2">
+              <div class="empty-default empty-bigtable">
+                <div class="emp-img"></div>
+                <div class="emp-txt">暂无数据</div>
+              </div>
+            </div>
+            <!--置空结束--> 
+            
+          </div>
+          <div class="tab-pane fade" id="HunHeId">
+            <table width="100%" cellspacing="0" cellpadding="0" border="0" class="fb-table">
+              <thead>
+                <tr>
+                  <td width="58px">排名</td>
+                  <td width="124px">基金简称</td>
+                  <td width="62px">净值</td>
+                  <td width="72px">日增长率</td>
+                  <td width="76px">近一年收益</td>
+                  <td width="56px">操作</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td><span class="tab-tl text-ellipsis"><a class="c-gray333" href="../gp.html">长盛电子信息主题混合</a></span></td>
+                  <td><span class="c-red">2.2548</span></td>
+                  <td><span class="c-red">3.18%</span></td>
+                  <td><span class="c-red">153.18%</span></td>
+                  <td><a class="c-blue3" href="javascript:;">购买</a></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td><span class="tab-tl text-ellipsis"><a class="c-gray333" href="../gp.html">长盛电子信息主题混合</a></span></td>
+                  <td><span class="c-red">2.2548</span></td>
+                  <td><span class="c-red">3.18%</span></td>
+                  <td><span class="c-red">153.18%</span></td>
+                  <td><a class="c-blue3" href="javascript:;">购买</a></td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td><span class="tab-tl text-ellipsis"><a class="c-gray333" href="../gp.html">长盛电子信息主题混合</a></span></td>
+                  <td><span class="c-red">2.2548</span></td>
+                  <td><span class="c-red">3.18%</span></td>
+                  <td><span class="c-red">153.18%</span></td>
+                  <td><a class="c-blue3" href="javascript:;">购买</a></td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td><span class="tab-tl text-ellipsis"><a class="c-gray333" href="../gp.html">长盛电子信息主题混合</a></span></td>
+                  <td><span class="c-red">2.2548</span></td>
+                  <td><span class="c-red">3.18%</span></td>
+                  <td><span class="c-red">153.18%</span></td>
+                  <td><a class="c-blue3" href="javascript:;">购买</a></td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td><span class="tab-tl text-ellipsis"><a class="c-gray333" href="../gp.html">长盛电子信息主题混合</a></span></td>
+                  <td><span class="c-red">2.2548</span></td>
+                  <td><span class="c-red">3.18%</span></td>
+                  <td><span class="c-red">153.18%</span></td>
+                  <td><a class="c-blue3" href="javascript:;">购买</a></td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td><span class="tab-tl text-ellipsis"><a class="c-gray333" href="../gp.html">长盛电子信息主题混合</a></span></td>
+                  <td><span class="c-red">2.2548</span></td>
+                  <td><span class="c-red">3.18%</span></td>
+                  <td><span class="c-red">153.18%</span></td>
+                  <td><a class="c-blue3" href="javascript:;">购买</a></td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td><span class="tab-tl text-ellipsis"><a class="c-gray333" href="../gp.html">长盛电子信息主题混合</a></span></td>
+                  <td><span class="c-red">2.2548</span></td>
+                  <td><span class="c-red">3.18%</span></td>
+                  <td><span class="c-red">153.18%</span></td>
+                  <td><a class="c-blue3" href="javascript:;">购买</a></td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td><span class="tab-tl text-ellipsis"><a class="c-gray333" href="../gp.html">长盛电子信息主题混合</a></span></td>
+                  <td><span class="c-red">2.2548</span></td>
+                  <td><span class="c-red">3.18%</span></td>
+                  <td><span class="c-red">153.18%</span></td>
+                  <td><a class="c-blue3" href="javascript:;">购买</a></td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="rank-info">数据截止 2015-06-16</div>
+          </div>
+          <div class="tab-pane fade" id="ZhaiQuanId">
+            <table width="100%" cellspacing="0" cellpadding="0" border="0" class="fb-table">
+              <thead>
+                <tr>
+                  <td width="58px">排名</td>
+                  <td width="124px">基金简称</td>
+                  <td width="62px">净值</td>
+                  <td width="72px">日增长率</td>
+                  <td width="76px">近一年收益</td>
+                  <td width="56px">操作</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td><span class="tab-tl text-ellipsis"><a class="c-gray333" href="../gp.html">建信转债增强债券A</a></span></td>
+                  <td><span class="c-red">2.2548</span></td>
+                  <td><span class="c-red">3.18%</span></td>
+                  <td><span class="c-red">153.18%</span></td>
+                  <td><a class="c-blue3" href="javascript:;">购买</a></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td><span class="tab-tl text-ellipsis"><a class="c-gray333" href="../gp.html">建信转债增强债券A</a></span></td>
+                  <td><span class="c-red">2.2548</span></td>
+                  <td><span class="c-red">3.18%</span></td>
+                  <td><span class="c-red">153.18%</span></td>
+                  <td><a class="c-blue3" href="javascript:;">购买</a></td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td><span class="tab-tl text-ellipsis"><a class="c-gray333" href="../gp.html">建信转债增强债券A</a></span></td>
+                  <td><span class="c-red">2.2548</span></td>
+                  <td><span class="c-red">3.18%</span></td>
+                  <td><span class="c-red">153.18%</span></td>
+                  <td><a class="c-blue3" href="javascript:;">购买</a></td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td><span class="tab-tl text-ellipsis"><a class="c-gray333" href="../gp.html">建信转债增强债券A</a></span></td>
+                  <td><span class="c-red">2.2548</span></td>
+                  <td><span class="c-red">3.18%</span></td>
+                  <td><span class="c-red">153.18%</span></td>
+                  <td><a class="c-blue3" href="javascript:;">购买</a></td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td><span class="tab-tl text-ellipsis"><a class="c-gray333" href="../gp.html">建信转债增强债券A</a></span></td>
+                  <td><span class="c-red">2.2548</span></td>
+                  <td><span class="c-red">3.18%</span></td>
+                  <td><span class="c-red">153.18%</span></td>
+                  <td><a class="c-blue3" href="javascript:;">购买</a></td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td><span class="tab-tl text-ellipsis"><a class="c-gray333" href="../gp.html">建信转债增强债券A</a></span></td>
+                  <td><span class="c-red">2.2548</span></td>
+                  <td><span class="c-red">3.18%</span></td>
+                  <td><span class="c-red">153.18%</span></td>
+                  <td><a class="c-blue3" href="javascript:;">购买</a></td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td><span class="tab-tl text-ellipsis"><a class="c-gray333" href="../gp.html">建信转债增强债券A</a></span></td>
+                  <td><span class="c-red">2.2548</span></td>
+                  <td><span class="c-red">3.18%</span></td>
+                  <td><span class="c-red">153.18%</span></td>
+                  <td><a class="c-blue3" href="javascript:;">购买</a></td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td><span class="tab-tl text-ellipsis"><a class="c-gray333" href="../gp.html">建信转债增强债券A</a></span></td>
+                  <td><span class="c-red">2.2548</span></td>
+                  <td><span class="c-red">3.18%</span></td>
+                  <td><span class="c-red">153.18%</span></td>
+                  <td><a class="c-blue3" href="javascript:;">购买</a></td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="rank-info">数据截止 2015-06-16</div>
+          </div>
+          <div class="tab-pane fade" id="ZhiShuId">
+            <table width="100%" cellspacing="0" cellpadding="0" border="0" class="fb-table">
+              <thead>
+                <tr>
+                  <td width="58px">排名</td>
+                  <td width="124px">基金简称</td>
+                  <td width="62px">净值</td>
+                  <td width="72px">日增长率</td>
+                  <td width="76px">近一年收益</td>
+                  <td width="56px">操作</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td><span class="tab-tl text-ellipsis"><a class="c-gray333" href="../gp.html">富国中证银行指数分级</a></span></td>
+                  <td><span class="c-red">2.2548</span></td>
+                  <td><span class="c-red">3.18%</span></td>
+                  <td><span class="c-red">153.18%</span></td>
+                  <td><a class="c-blue3" href="javascript:;">购买</a></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td><span class="tab-tl text-ellipsis"><a class="c-gray333" href="../gp.html">富国中证银行指数分级</a></span></td>
+                  <td><span class="c-red">2.2548</span></td>
+                  <td><span class="c-red">3.18%</span></td>
+                  <td><span class="c-red">153.18%</span></td>
+                  <td><a class="c-blue3" href="javascript:;">购买</a></td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td><span class="tab-tl text-ellipsis"><a class="c-gray333" href="../gp.html">富国中证银行指数分级</a></span></td>
+                  <td><span class="c-red">2.2548</span></td>
+                  <td><span class="c-red">3.18%</span></td>
+                  <td><span class="c-red">153.18%</span></td>
+                  <td><a class="c-blue3" href="javascript:;">购买</a></td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td><span class="tab-tl text-ellipsis"><a class="c-gray333" href="../gp.html">富国中证银行指数分级</a></span></td>
+                  <td><span class="c-red">2.2548</span></td>
+                  <td><span class="c-red">3.18%</span></td>
+                  <td><span class="c-red">153.18%</span></td>
+                  <td><a class="c-blue3" href="javascript:;">购买</a></td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td><span class="tab-tl text-ellipsis"><a class="c-gray333" href="../gp.html">富国中证银行指数分级</a></span></td>
+                  <td><span class="c-red">2.2548</span></td>
+                  <td><span class="c-red">3.18%</span></td>
+                  <td><span class="c-red">153.18%</span></td>
+                  <td><a class="c-blue3" href="javascript:;">购买</a></td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td><span class="tab-tl text-ellipsis"><a class="c-gray333" href="../gp.html">富国中证银行指数分级</a></span></td>
+                  <td><span class="c-red">2.2548</span></td>
+                  <td><span class="c-red">3.18%</span></td>
+                  <td><span class="c-red">153.18%</span></td>
+                  <td><a class="c-blue3" href="javascript:;">购买</a></td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td><span class="tab-tl text-ellipsis"><a class="c-gray333" href="../gp.html">富国中证银行指数分级</a></span></td>
+                  <td><span class="c-red">2.2548</span></td>
+                  <td><span class="c-red">3.18%</span></td>
+                  <td><span class="c-red">153.18%</span></td>
+                  <td><a class="c-blue3" href="javascript:;">购买</a></td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td><span class="tab-tl text-ellipsis"><a class="c-gray333" href="../gp.html">富国中证银行指数分级</a></span></td>
+                  <td><span class="c-red">2.2548</span></td>
+                  <td><span class="c-red">3.18%</span></td>
+                  <td><span class="c-red">153.18%</span></td>
+                  <td><a class="c-blue3" href="javascript:;">购买</a></td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="rank-info">数据截止 2015-06-16</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="clearfix mt20">
+    <div class="w320 fl mr20">
+      <div class="home-title clearfix">
+        <h3 class="h3 fl">近期关键词</h3>
+      </div>
+      <ul class="key-words">
+        <li class="li-1 li-color0 kw-slide"> <a mon="ct=1&amp;c=top&amp;a=30&amp;pn=1" title="一带一路" target="_blank" href="javascript:;">一带一路</a> </li>
+        <li class="li-2 li-color1 kw-slide"> <a mon="ct=1&amp;c=top&amp;a=30&amp;pn=2" title="4500点后" target="_blank" href="javascript:;">4500点后</a> </li>
+        <li class="li-5 li-color1 kw-slide"> <a mon="ct=1&amp;c=top&amp;a=30&amp;pn=5" title="环保" target="_blank" href="javascript:;" style="top:34px;">环保</a> </li>
+        <li class="li-3 li-color1 kw-slide"> <a mon="ct=1&amp;c=top&amp;a=30&amp;pn=3" title="“ 互联网+”是什么" target="_blank" href="javascript:;">“ 互联网+”是什么</a> </li>
+        <li class="li-4 li-color0 kw-slide"> <a mon="ct=1&amp;c=top&amp;a=30&amp;pn=4" title="基金“金牛奖”" target="_blank" href="javascript:;">基金“金牛奖”</a> </li>
+      </ul>
+    </div>
+    <div class="w320 fl">
+      <div class="home-title clearfix">
+        <h3 class="h3 fl">短期理财</h3>
+        <span class="span fl">理财新去处，门槛低，0费用</span></div>
+      <div class="short-finance">
+        <ul class="sf-title clearfix" id="ShortFinaceTab">
+          <li class="first fl active"><a href="#Day7" data-toggle="tab">7天</a><i class="abs abs-orgarrow"></i></li>
+          <li class="fl"><a href="#Day14" data-toggle="tab">14天</a><i class="abs abs-orgarrow"></i></li>
+          <li class="fl"><a href="#Day30" data-toggle="tab">30天</a><i class="abs abs-orgarrow"></i></li>
+          <li class="last fr"><a href="#Day60" data-toggle="tab">60天</a><i class="abs abs-orgarrow"></i></li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane fade in active" id="Day7"> 
+            
+            <!--置空开始-->
+            <div class="empty-h3">
+              <div class="empty-default empty-stable">
+                <div class="emp-img"></div>
+                <div class="emp-txt">暂无数据</div>
+              </div>
+            </div>
+            <!--置空结束--> 
+            
+          </div>
+          <div class="tab-pane fade" id="Day14">
+            <div class="sf-cont">
+              <h3 class="h3"><a href="javascript:;" class="c-blue fs18">新华行业轮换灵活配置混合</a></h3>
+              <p class="p fs12"><span class="c-gray666">基金代码：</span>000212<span class="c-grayccc">&nbsp;&nbsp;|&nbsp;&nbsp;</span><span class="c-gray666">更新时间：</span>2015.06.15</p>
+              <div class="sf-btn"><span class="c-gray666 mr10 fl">7日年化收益</span><em class="c-red fs22 em fl ft-nums">8.02%</em><a href="javascript:;" class="btnbor btnbor-orgm33 fr">立即购买</a></div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="Day30">
+            <div class="sf-cont">
+              <h3 class="h3"><a href="javascript:;" class="c-blue fs18">富国低碳环保股票</a></h3>
+              <p class="p fs12"><span class="c-gray666">基金代码：</span>100056<span class="c-grayccc">&nbsp;&nbsp;|&nbsp;&nbsp;</span><span class="c-gray666">更新时间：</span>2015.06.15</p>
+              <div class="sf-btn"><span class="c-gray666 mr10 fl">7日年化收益</span><em class="c-red fs22 em fl ft-nums">10.02%</em><a href="javascript:;" class="btnbor btnbor-orgm33 fr">立即购买</a></div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="Day60">
+            <div class="sf-cont">
+              <h3 class="h3"><a href="javascript:;" class="c-blue fs18">银河通利</a></h3>
+              <p class="p fs12"><span class="c-gray666">基金代码：</span>161505<span class="c-grayccc">&nbsp;&nbsp;|&nbsp;&nbsp;</span><span class="c-gray666">更新时间：</span>2015.06.15</p>
+              <div class="sf-btn"><span class="c-gray666 mr10 fl">7日年化收益</span><em class="c-red fs22 em fl ft-nums">6.35%</em><a href="javascript:;" class="btnbor btnbor-orgm33 fr">立即购买</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w320 fr">
+      <div class="home-title clearfix">
+        <h3 class="h3 fl">基金筛选</h3>
+      </div>
+      <div class="home-form">
+        <dl>
+          <dt>基金类型：</dt>
+          <dd>
+            <select tabindex="10" class="select" style="width:205px;">
+              <option value="1">不限</option>
+              <option value="1">股票型</option>
+              <option value="2">货币型</option>
+              <option value="2">债券型</option>
+              <option value="2">指数型</option>
+            </select>
+          </dd>
+        </dl>
+        <dl>
+          <dt>基金公司：</dt>
+          <dd>
+            <select class="select" id="FundCompanyId" style="width:205px;">
+              <option value="">不限</option>
+              <option value="80163340">安信基金</option>
+              <option value="80000226">博时基金</option>
+              <option value="80365985">北信瑞丰</option>
+              <option value="80000236">宝盈基金</option>
+              <option value="80139382">长安基金</option>
+              <option value="80000239">长城基金</option>
+              <option value="80000227">长盛基金</option>
+              <option value="80161341">财通基金</option>
+              <option value="80000243">长信基金</option>
+              <option value="80175511">德邦基金</option>
+              <option value="80000225">大成基金</option>
+              <option value="80042861">东方基金</option>
+              <option value="80205268">东海基金</option>
+              <option value="80048161">东吴基金</option>
+              <option value="80128562">富安达基金</option>
+              <option value="80000221">富国基金</option>
+              <option value="80048088">光大保德信基金</option>
+              <option value="80000248">广发基金</option>
+              <option value="80044515">国海富兰克林基金</option>
+              <option value="80102419">国金通用基金</option>
+              <option value="80280039">国开泰富基金</option>
+              <option value="80043374">国联安基金</option>
+              <option value="80355783">国寿安保基金</option>
+              <option value="80000224">国泰基金</option>
+              <option value="80000233">国投瑞银基金</option>
+              <option value="80064225">工银瑞信基金</option>
+              <option value="80000228">华安基金</option>
+              <option value="80000250">华宝兴业基金</option>
+              <option value="80201857">华宸未来基金</option>
+              <option value="80424273">泓德基金</option>
+              <option value="80037023">华富基金</option>
+              <option value="80067635">汇丰晋信基金</option>
+              <option value="80000246">海富通基金</option>
+              <option value="80199117">华润元大基金</option>
+              <option value="80092743">华融证券</option>
+              <option value="80053204">华商基金</option>
+              <option value="80055334">华泰柏瑞基金</option>
+              <option value="80053708">汇添富基金</option>
+              <option value="80205263">红塔红土</option>
+              <option value="80000222">华夏基金</option>
+              <option value="80000251">景顺长城基金</option>
+              <option value="80000223">嘉实基金</option>
+              <option value="80384640">九泰基金</option>
+              <option value="80065990">建信基金</option>
+              <option value="80000245">金鹰基金</option>
+              <option value="80086876">金元顺安基金</option>
+              <option value="80064562">交银施罗德基金</option>
+              <option value="80036797">摩根士丹利华鑫基金</option>
+              <option value="80036797">摩根士丹利华鑫基金</option>
+              <option value="80106677">民生加银基金</option>
+              <option value="80049689">诺安基金</option>
+              <option value="80068180">诺德基金</option>
+              <option value="80000220">南方基金</option>
+              <option value="80092233">农银汇理基金</option>
+              <option value="80168726">平安大华基金</option>
+              <option value="80000230">鹏华基金</option>
+              <option value="80091787">浦银安盛基金</option>
+              <option value="80280038">前海开源基金</option>
+              <option value="80000231">融通基金</option>
+              <option value="80145102">上海东方证券资产管理</option>
+              <option value="80050229">上投摩根基金</option>
+              <option value="80045188">申万菱信基金</option>
+              <option value="80000238">泰达宏利基金</option>
+              <option value="80041198">天弘基金</option>
+              <option value="80061674">泰康资产</option>
+              <option value="80000247">泰信基金</option>
+              <option value="80000252">天治基金</option>
+              <option value="80000240">万家基金</option>
+              <option value="80147736">西部利得基金</option>
+              <option value="80066470">信诚基金</option>
+              <option value="80074234">信达澳银基金</option>
+              <option value="80000249">新华基金</option>
+              <option value="80280395">兴业基金</option>
+              <option value="80351991">鑫元基金</option>
+              <option value="80036742">兴业全球基金</option>
+              <option value="80175498">英大基金</option>
+              <option value="80000229">易方达基金</option>
+              <option value="80000237">银河基金</option>
+              <option value="80000235">银华基金</option>
+              <option value="80046522">益民基金</option>
+              <option value="80280036">圆信永丰基金</option>
+              <option value="80356155">永赢基金</option>
+              <option value="80046614">中海基金</option>
+              <option value="80351345">中加基金</option>
+              <option value="80403111">浙江浙商证券资产管理</option>
+              <option value="80065113">中欧基金</option>
+              <option value="80341238">中融基金</option>
+              <option value="80036782">招商基金</option>
+              <option value="80156777">浙商基金</option>
+              <option value="80075936">中邮创业基金</option>
+              <option value="80294346">中原英石基金</option>
+            </select>
+          </dd>
+        </dl>
+        <dl class="h-btn">
+          <dt>&nbsp;</dt>
+          <dd> <a href="market/smartfilter.html" target="_blank" class="btn fl">开始筛选</a><a href="market/smartfilter.html" target="_blank" class="c-gray666 fl">高级筛选</a> </dd>
+        </dl>
+        <div id="homeMsgTip" class="msg-tip tip-error"><i class="ico"></i><b class="msg-txt lh18">您输入的密码错误，您还可以再输入4次。</b> </div>
+      </div>
+      <div class="home-hot-search fs12"><span>热门搜索：</span><a href="javascript:;" class="c-red uline">收益排名前十</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:;" class="c-red uline">新基金发行排名</a></div>
+    </div>
+  </div>
+  <div class="mt20"><!-- 图像大小 宽1000 高90--><a href="javascript:;"><img src="images/_ad/gp-ad2.jpg"></a></div>
+  <div class="mt20"><img src="images/gj-root.jpg"></div>
+</div>
+<!--底部开始-->
+<div id="bottom"></div>
+<!--底部结束-->
+<script src="js/jq/jquery.imgsoll.js"></script> 
+<script>
+$(function(){
+//图片切换调用
+$("#HomeScrollImg").imgsoll(true);
+/*基金类型介绍*/
+fund_type_description();  
+function fund_type_description(){
+		var $controller = $("#FundTypeTab"),
+			$wrapper = $("#FundTypeCont"),
+			$ico=$("#FtypeiDlIcon");
+		$controller.find("li").click(function(){
+			var index = $(this).index();
+			var sl=$(this).position().left-2;
+			$(this).addClass("active").siblings(".active").removeClass("active");
+			$(this).parents(".ui-select-list").find(".ui-select-list-l-orange").animate({left:sl}, "fast");
+			$wrapper.animate({"scrollTop":198*index});
+			$ico.animate({"scrollTop":45*index});
+		});
+	}
+/*input*/
+$(".input_ph").inputPlaceholder();
+$(".input_bor").inputFocus();
+/*select*/
+$(".select").selectmenu();
+$("#FundCompanyId")
+      .selectmenu()
+      .selectmenu("menuWidget")
+      .addClass("overflow");
+ 
+/*tab*/
+$('#TopFundTab a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+$('#ShortFinaceTab a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+
+})
+</script> 
+
+<!--客服开始-->
+<div class="kefu-box">
+  <div class="kefu-cont">
+    <ul class="kf-sidebar">
+      <li class="its kefu rotate" id="btn-kefu"><a href="javascript:;">在线客服</a></li>
+      <li class="its hottel rotate"><a href="javascript:;">客服热线</a></li>
+      <li class="its ewm rotate"><a href="javascript:;">二维码</a></li>
+      <li class="its yijian rotate"><a href="help/feedback.html" target="_blank">意见反馈</a></li>
+      <li class="its gotop rotate" style="visibility:hidden;"><a href="javascript:;">返回顶部</a></li>
+    </ul>
+    <div class="kf-pop hottel-box hide">
+      <h3 class="h3">客服热线</h3>
+      <i class="fs18 ft-nums">4000-383-111</i><span class="fs12 c-gray666">服务时间 9:00-19:00</span> </div>
+    <div class="kf-pop ewm-box hide">
+      <h3 class="h3">APP客户端下载</h3>
+      <p><img src="images/ewm1.jpg"/></p>
+      <a class="c-blue uline fs12" href="javascript:;">手机APP下载</a>
+      <h3 class="h3">扫描关注<br>
+        微信公众号</h3>
+      <p><img src="images/ewm1.jpg"/></p>
+    </div>
+  </div>
+</div>
+<script src="js/kf-sidebar.js"></script> 
+<!--客服结束--> 
+<!--RongCloud开始--> 
+<script>
+window.RongCloudWebSDK.instantce({
+    	  'style': {
+    		  'headerColor': 'rgba(36, 150, 230, 1)',   //标题背景色
+    		  'boxColor': '#2496e6',  //消息盒子背景色
+              'bodyColor': '#e2edf7', //对话框背景色
+              'kefuMsgColor': '#fff', //客服消息背景色
+              'cusMsgColor': '#2496e6',  //客服消息背景色
+              'sendBtnColor': '#54adeb', //发送按钮背景色
+              'expressionImg': 'images/rc/expression.png',    //表情图
+              'cursorcolor': '#177dcf'    //滚动条色
+          },
+          'appKey':'pvxdm17jx8tkr',
+          'token':'Lhq4vJZumjItS4ZvS+QpTJAV8KUbDpBD1Ff52NtHB+XO1eyoKR+OmFZkEflzCQaL9pNiC0DqLlbeqVoaHA7kweJC51/BDz1a6a5I3PAgv9JkTixOHJ0JUPYtGpFITbZe',
+          'targetId':'KEFU1433216719825'
+      	});	
+
+</script> 
+<!--RongCloud结束-->
+</body>
+</html>

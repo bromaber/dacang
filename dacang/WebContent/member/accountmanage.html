@@ -1,0 +1,387 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>账户管理</title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="description" content=" " />
+<meta name="keywords" content=" " />
+<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+<link href="../css/base.css" rel="stylesheet"/>
+<link href="../css/ui.css" rel="stylesheet"/>
+<link href="../css/member.css" rel="stylesheet"/>
+<script src="../js/jq/jquery-1.9.1.min.js"></script>
+<script src="../js/bs/bootstrap.js"></script>
+<script src="../js/bs/stickUp.js"></script>
+<script src="../js/jq/jquery-ui.js"></script>
+<script src="../js/common/member-top.js"></script>
+<script src="../js/common/inner-bottom.js"></script>
+</head>
+<body>
+<!--头部开始-->
+<div id="top"></div>
+<!--头部结束-->
+<div class="wrap membox clearfix">
+  <div class="mem-nav fl">
+    <div class="portrait">
+      <div class="port-poto"><img src="../images/_del/men-photo.jpg"/></div>
+      <div class="port-name">散落风</div>
+    </div>
+    <div class="nav-list">
+      <ul>
+        <li><a href="myaccounts.html"><em class="abs abs-verline"></em><i class="ico ico-arrow"></i>我的账户</a></li>
+        <li><a href="supercash.html"><em class="abs abs-verline"></em><i class="ico ico-arrow"></i>超级现金宝</a></li>
+        <li><a href="generalfund.html"><em class="abs abs-verline"></em><i class="ico ico-arrow"></i>普通基金</a></li>
+        <li><a href="traderecord.html"><em class="abs abs-verline"></em><i class="ico ico-arrow"></i>交易记录</a></li>
+        <li><a href="redenvelope.html"><em class="abs abs-verline"></em><i class="ico ico-arrow"></i>我的红包</a></li>
+        <li><a href="mytask.html"><em class="abs abs-verline"></em><i class="ico ico-arrow"></i>我的任务</a></li>
+        <li><a href="invite.html"><em class="abs abs-verline"></em><i class="ico ico-arrow"></i>我的邀请</a></li>
+        <li><a href="bankcards.html"><em class="abs abs-verline"></em><i class="ico ico-arrow"></i>我的银行卡</a></li>
+        <li class="active"><a href="accountmanage.html"><em class="abs abs-verline"></em><i class="ico ico-arrow"></i>账户管理</a></li>
+      </ul>
+      <div class="text-center"><!--图片大小 宽179 高210--><img src="../images/_ad/memberAd.jpg"/></div>
+    </div>
+  </div>
+  <div class="mem-cont fr mr40">
+    <div class="mem-title">
+      <h2>账号信息</h2>
+    </div>
+    <dl class="acc-items">
+      <dt class="acc-ok"><i class="ico ico-ok"></i>登录账号：</dt>
+      <dd><span class="fs18 ft-nums">15158132847</span></dd>
+      <a href="javascript:;" class="btnbor" id="ModifyAccID" data-target="#ModifyAccCont" data-toggle="modal" data-backdrop="static">修 改</a>
+    </dl>
+    <dl class="acc-items">
+      <dt class="acc-ok"><i class="ico ico-ok"></i>登录密码：</dt>
+      <dd><span class="fs18">**********</span></dd>
+      <!-- 默认  
+        密码强度弱  pw-weak
+        密码强度中  pw-medium
+        密码强度高  pw-high-->
+      <dd>
+        <div class="pwbox2"><span class="pw-medium">密码强度中</span> </div>
+      </dd>
+      <a href="javascript:;" class="btnbor" id="ModifyPWID">修 改</a>
+    </dl>
+    <dl class="acc-items">
+      <dt class="acc-ok"><i class="ico ico-ok"></i>风险承受能力：</dt>
+      <dd><span class="fs18">保守型</span></dd>
+      <a href="risktest.html" class="btnbor">风险承受能力测试</a>
+    </dl>
+    <dl class="acc-items">
+      <dt class="acc-ok"><i class="ico ico-ok"></i>实名信息：</dt>
+      <dd>
+        <table border="0" cellpadding="0" cellspacing="0"  width="320px">
+          <tbody>
+            <tr>
+              <td width="60px">姓&nbsp;&nbsp;&nbsp;名：</td>
+              <td width="260px">散落风</td>
+            </tr>
+            <tr>
+              <td>身份证：</td>
+              <td>330****1212</td>
+            </tr>
+            <tr>
+              <td>手机号：</td>
+              <td>15158132847</td>
+            </tr>
+          </tbody>
+        </table>
+      </dd>
+      <a href="javascript:;" class="btnbor btnbor-disabled">无法修改</a>
+    </dl>
+    <dl class="acc-items">
+      <dt><i class="ico ico-ok"></i>其他信息：</dt>
+      <dd>
+        <table border="0" cellpadding="0" cellspacing="0" width="320px">
+          <tbody>
+            <tr>
+              <td width="60px">职&nbsp;&nbsp;&nbsp;业：</td>
+              <td width="260px">UI设计师</td>
+            </tr>
+            <tr>
+              <td>学&nbsp;&nbsp;&nbsp;历：</td>
+              <td><i class="c-gray999">请填写学历</i></td>
+            </tr>
+            <tr>
+              <td valign="top">地&nbsp;&nbsp;&nbsp;址：</td>
+              <td>浙江省杭州市江干区富春路308华成国际发展大厦21楼浙江省杭州市江干区富春路308华成国际发展大厦21楼</td>
+            </tr>
+          </tbody>
+        </table>
+      </dd>
+      <a href="javascript:;" class="btnbor" id="ModifyOtherID">修 改</a>
+    </dl>
+  </div>
+</div>
+<!--底部开始-->
+<div id="bottom"></div>
+<!--底部结束--> 
+<div id="ModifyPWCont" class="modal mem-pop fade hide">
+  <div class="pop-title"><span>修改密码</span><a href="javascript:;" class="ico ico-popclose">关闭</a></div>
+  <div class="pop-cont clearfix">
+    <div id="ModifyPWFirst">
+      <div class="pop-from"> 
+        <!--提示   tip-info 
+          成功   tip-succeed
+          出错   tip-error -->
+        <div class="items">
+          <label class="label">原密码：</label>
+          <input type="password" tabindex="9" class="text input_bor" name=" "  autocomplete="off">
+          <div class="msg-tip tip-info"> <i class="ico"></i><b class="msg-txt">请输入原始密码</b> </div>
+        </div>
+        <div class="items items-vital">
+          <label class="label">新密码：</label>
+          <input type="password" tabindex="9" class="text input_bor" name=" "  autocomplete="off">
+          <div class="vital"><i class="ico ico-vital"></i>用于交易及登录的唯一凭证！请妥善保管</div>
+          <div class="msg-tip tip-info"> <i class="ico"></i><b class="msg-txt">6-12位字符，数字、字母、标点至少包含两种</b> </div>
+        </div>
+        <!-- 默认   pw-defule
+        密码强度弱  pw-weak
+        密码强度中  pw-medium
+        密码强度高  pw-high-->
+        <div class="items items-pw">
+          <label class="label"></label>
+          <div class="pwbox"><span class="pw-defule"><!--密码强度弱--></span> </div>
+        </div>
+        <div class="items">
+          <label class="label">重复登录密码：</label>
+          <input type="password" tabindex="9" class="text input_bor" name=" "  autocomplete="off" >
+          <div class="msg-tip tip-info"> <i class="ico"></i><b class="msg-txt">请再次输入密码</b> </div>
+        </div>
+        <div class="items-btn">
+          <div class="ui-form-btn"><a class="btn" href="javascript:;" id="ModifyPWA">确 定</a><a class="btnbor closeDiv-js" href="javascript:;">取 消</a></div>
+        </div>
+      </div>
+    </div>
+    <div id="ModifyPWSecond" style="display:none">
+      <div class="pop-prompt pop-success"> <i class="abs abs-ring"></i> <i class="ico ico-prompt"></i>
+        <h4 class="h4">密码重置成功！</h4>
+        <div class="pp-btn"><a class="btn btn-single" href="javascript:;">确 认</a></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="ModifyOtherCont" class="modal mem-pop fade hide">
+  <div class="pop-title"><span>修改其他信息</span><a href="javascript:;" class="ico ico-popclose">关闭</a></div>
+  <div class="pop-cont clearfix">
+    <div class="pop-from">
+      <div class="items">
+        <label class="label">职业：</label>
+        <div class="iselect">
+          <select class="select" tabindex="10" style="width:150px">
+            <option value="1">职业A</option>
+            <option value="2">职业B</option>
+            <option value="3">职业C</option>
+          </select>
+        </div>
+      </div>
+      <div class="items">
+        <label class="label">学历：</label>
+        <div class="iselect">
+          <select class="select" tabindex="10" style="width:150px">
+            <option value="1">小学</option>
+            <option value="2">中学</option>
+            <option value="3">高中</option>
+            <option value="2">大专</option>
+            <option value="3">大学</option>
+          </select>
+        </div>
+      </div>
+      <div class="items">
+        <label class="label">地址：</label>
+        <input type="text" tabindex="9" class="text tw2 input_bor" name="" autocomplete="off">
+      </div>
+      <div class="items-btn">
+        <div class="ui-form-btn"><a class="btn" href="javascript:;">确 认</a><a class="btnbor closeDiv-js" href="javascript:;">取 消</a></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="ModifyAccCont" class="modal mem-pop fade hide">
+  <div class="pop-title"><span>修改账号</span><a href="javascript:;" class="ico ico-popclose btnclose-js">关闭</a></div>
+  <div class="pop-cont clearfix">
+    <div id="ModifyFirstStep" class="step-js">
+      <ul class="acc-sms">
+        <li><a href="javascript:;" id="ModifyFirstId2"><i class="ico ico-smsno"></i>
+          <h3 class="h3">无法接收短信</h3>
+          <span class="sms-txt">原手机号已丢失或停用，使用其他验证方式修改</span></a></li>
+        <li><a href="javascript:;" id="ModifyFirstId1"><i class="ico ico-sms"></i>
+          <h3 class="h3">可以接收短信</h3>
+          <span class="sms-txt">通过原手机号接收短信校验码的方式修改</span></a></li>
+      </ul>
+    </div>
+    <div id="ModifySecondStep" class="step-js hide">
+      <div class="pop-from">
+        <div class="items">
+          <label class="label">原账号：</label>
+          <div class="itext"><span class=" fs16 ft-nums">13758270189</span></div>
+        </div>
+        <div class="items items-checkcode">
+          <label class="label">验证码：</label>
+          <input type="text" tabindex="9" class="text tw1 input_bor" name=" " id=" " autocomplete="off" >
+          <button class="btn btn-checkcode">获取验证码</button>
+          <div class="msg-tip tip-info"> <i class="ico"></i><b class="msg-txt">请输入短信验证码</b> </div>
+        </div>
+        <div class="items-btn">
+          <div class="ui-form-btn"><a class="btn" href="javascript:;" id="SecondStepId">下一步</a><a class="btnbor btnclose-js" href="javascript:;">取 消</a></div>
+        </div>
+      </div>
+    </div>
+    <div id="ModifyThirdStep" class="step-js hide">
+      <div class="pop-from">
+        <div class="items">
+          <label class="label">银行卡号：</label>
+          <input type="text" tabindex="9" class="text input_bor" name=" "  autocomplete="off">
+          <div class="msg-tip tip-info"> <i class="ico"></i><b class="msg-txt">请输入您已绑定的银行卡号</b> </div>
+        </div>
+        <div class="items">
+          <label class="label">持卡人姓名：</label>
+          <input type="text" tabindex="9" class="text input_bor" name=" "  autocomplete="off">
+          <div class="msg-tip tip-info"> <i class="ico"></i><b class="msg-txt">请输入您的姓名</b> </div>
+        </div>
+        <div class="items">
+          <label class="label">身份证号：</label>
+          <input type="text" tabindex="9" class="text input_bor" name=" "  autocomplete="off">
+          <div class="msg-tip tip-info"> <i class="ico"></i><b class="msg-txt">请输入您的身份证号</b> </div>
+        </div>
+        <div class="items-btn">
+          <div class="ui-form-btn"><a class="btn" href="javascript:;" id="ThirdStepId">确 定</a><a class="btnbor btnclose-js" href="javascript:;">取 消</a></div>
+        </div>
+      </div>
+    </div>
+    <div id="ModifyFourthStep" class="step-js hide">
+      <div class="pop-from">
+        <div class="items">
+          <label class="label">新帐号：</label>
+          <input type="text" tabindex="9" class="text input_bor" name=" "  autocomplete="off">
+          <div class="msg-tip tip-info"> <i class="ico"></i><b class="msg-txt">请使用手机号码</b> </div>
+        </div>
+        <div class="items items-checkcode">
+          <label class="label">验证码：</label>
+          <input type="text" tabindex="9" class="text tw1 input_bor" name=" " id=" " autocomplete="off" >
+          <button class="btn btn-checkcode">获取验证码</button>
+          <div class="msg-tip tip-info"> <i class="ico"></i><b class="msg-txt">请输入短信验证码</b> </div>
+        </div>
+        <div class="items">
+          <label class="label">登录密码：</label>
+          <input type="password" tabindex="9" class="text input_bor" name=" "  autocomplete="off">
+          <div class="msg-tip tip-info"> <i class="ico"></i><b class="msg-txt">请输入密码</b> </div>
+        </div>
+        <div class="items-btn">
+          <div class="ui-form-btn"><a class="btn" href="javascript:;" id="FourthStepId">确 定</a><a class="btnbor btnclose-js" href="javascript:;">取 消</a></div>
+        </div>
+      </div>
+    </div>
+    <div id="ModifyFifthStep" class="step-js hide">
+      <div class="pop-prompt pop-success"> <i class="abs abs-ring"></i> <i class="ico ico-prompt"></i>
+        <h4 class="h4">帐号修改成功！</h4>
+        <div class="pp-btn"><a class="btn btn-single closeDiv-js" href="javascript:;">确 认</a></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--底部结束--> 
+<script type="text/javascript">
+jQuery(function($){$(document).ready(function(){$('.nav-list').stickUp();});});
+</script> 
+<script>
+$(function(){
+
+$("#ThirdStepId").click(function(){
+$("#ModifyFourthStep").show();
+$("#ModifyThirdStep").hide();
+});
+
+$("#FourthStepId").click(function(){
+$("#ModifyFifthStep").show();
+$("#ModifyFourthStep").hide();
+});
+
+$("#ModifyFirstId1").click(function(){
+$("#ModifySecondStep").show();
+$("#ModifyFirstStep").hide();
+});
+
+$("#ModifyFirstId2").click(function(){
+$("#ModifyThirdStep").show();
+$("#ModifyFirstStep").hide();
+});
+
+$("#SecondStepId").click(function(){
+$("#ModifySecondStep").hide();
+$("#ModifyFourthStep").show();
+//$(this).parents(".modal").find(".pop-title span").text("绑定成功");
+});
+
+/*$("#ModifyAccID").click(function(){
+$("#ModifyFirstStep").show();
+$("#ModifySecondStep").hide();
+$("#ModifyThirdStep").hide();
+$("#ModifyFourthStep").hide();
+$("#ModifyFifthStep").hide();
+$("#ModifyAccCont").modal("show");
+})*/
+/*关闭js*/
+$(".btnclose-js").click(function(){
+$(".step-js").hide();
+$(".pop-cont").each(function(){
+$(this).parents(".modal").find(".step-js").eq(0).show();	
+});
+$(".modal").modal("hide");
+});
+
+
+
+$(".select").selectmenu(); 
+
+$("#ModifyOtherID").click(function(){
+  $("#ModifyOtherCont").modal("show");
+})
+
+$("#ModifyPWID").click(function(){
+$("#ModifyPWFirst").show();
+$("#ModifyPWSecond").hide();
+  $("#ModifyPWCont").modal("show");
+})
+$(".ico-popclose").click(function(){
+	$(".modal").modal("hide");
+});
+
+
+/*$(".closeDiv-js").click(function(){
+	$(".modal").modal("hide");
+});*/
+
+$("#ModifyPWA").click(function(){
+$("#ModifyPWFirst").hide();
+$("#ModifyPWSecond").show();
+})
+	
+});
+</script> 
+<script>
+$(function(){
+var text =$(".text");
+text.focus(function(){
+var mytip=$(this).parent(".items").find(".msg-tip");	
+mytip.show();
+mytip.removeClass("tip-succeed");
+mytip.removeClass("tip-error");
+});
+
+text.blur(function(){
+var txt=$(this).val();
+var mytip=$(this).parent(".items").find(".msg-tip");	
+if(txt==""){
+mytip.addClass("tip-error");	
+}else{
+mytip.addClass("tip-succeed");		
+ }
+});
+});
+
+</script>
+</body>
+</html>

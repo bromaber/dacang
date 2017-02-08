@@ -1,0 +1,212 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>红包兑换</title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="description" content=" " />
+<meta name="keywords" content=" " />
+<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+<link href="../css/base.css" rel="stylesheet"/>
+<link href="../css/member.css" rel="stylesheet"/>
+<link href="../css/ui.css" rel="stylesheet"/>
+<script src="../js/jq/jquery-1.9.1.min.js"></script>
+<script src="../js/jq/jquery.input.js"></script>
+<script src="../js/bs/bootstrap.js"></script>
+<script src="../js/bs/stickUp.js"></script>
+<script src="../js/bs/icheck.js"></script>
+<script src="../js/common/member-top.js"></script>
+<script src="../js/common/inner-bottom.js"></script>
+</head>
+<body>
+<style>
+.tw1{width:138px;}
+.cash-table{border-bottom:1px dashed #ddd;padding-bottom:27px;font-size:16px;margin-top:25px;}
+.cash-table th,.cash-table td{padding:0 5px;line-height:40px;}
+.cash-table th{color:#666;font-weight:normal;width:100px;text-align:right;}
+.cash-table .vital{clear:both;height:32px;line-height:32px;padding-left:20px;position:relative;color:#666;font-size:14px;margin:0;}
+.cash-table th.vit,.cash-table td.vit{height:32px;line-height:32px;}
+.cash-form{padding:40px 0 45px 0}
+.cash-form .text{width:188px;height:40px;}
+.cash-form .items-btn .btn{width:230px;}
+.cash-form .msg-tip{}
+.cash-form .msg-tip .ico{left:321px;}
+.cash-form .msg-tip .msg-txt{left:115px;bottom:0;background:#fff;margin-top:45px;z-index:10;line-height:20px;width:280px;}
+.cash-form .items{height:64px;}
+.cash-form .items .label{width:105px;margin-right:6px;line-height:40px;height:40px;}
+.cash-form .vital{position:absolute;left:-33px;top:0;z-index:2;width:234px;margin-top:40px;}
+.cash-form .items-btn{padding-left:115px;}
+.icheck-list li{height:40px;line-height:40px;text-align:left;}
+.notbank{height:40px;line-height:40px;position:relative;padding-left:22px;font-size:12px;}
+
+
+
+</style>
+<!--头部开始-->
+<div id="top"></div>
+<!--头部结束-->
+<div class="wrap membox clearfix">
+  <div class="mem-nav fl">
+    <div class="portrait">
+      <div class="port-poto"><img src="../images/_del/men-photo.jpg"/></div>
+      <div class="port-name">散落风</div>
+    </div>
+    <div class="nav-list">
+      <ul>
+        <li><a href="myaccounts.html"><em class="abs abs-verline"></em><i class="ico ico-arrow"></i>我的账户</a></li>
+        <li><a href="supercash.html"><em class="abs abs-verline"></em><i class="ico ico-arrow"></i>超级现金宝</a></li>
+        <li><a href="generalfund.html"><em class="abs abs-verline"></em><i class="ico ico-arrow"></i>普通基金</a></li>
+        <li><a href="traderecord.html"><em class="abs abs-verline"></em><i class="ico ico-arrow"></i>交易记录</a></li>
+        <li class="active"><a href="redenvelope.html"><em class="abs abs-verline"></em><i class="ico ico-arrow"></i>我的红包</a></li>
+        <li><a href="mytask.html"><em class="abs abs-verline"></em><i class="ico ico-arrow"></i>我的任务</a></li>
+        <li><a href="invite.html"><em class="abs abs-verline"></em><i class="ico ico-arrow"></i>我的邀请</a></li>
+        <li><a href="bankcards.html"><em class="abs abs-verline"></em><i class="ico ico-arrow"></i>我的银行卡</a></li>
+        <li><a href="accountmanage.html"><em class="abs abs-verline"></em><i class="ico ico-arrow"></i>账户管理</a></li>
+      </ul>
+      <div class="text-center"><!--图片大小 宽179 高210--><img src="../images/_ad/memberAd.jpg"/></div>
+    </div>
+  </div>
+  <div class="mem-cont fr mr40 clearfix">
+    <div class="w430 fl">
+      <div class="mem-title">
+        <h2>红包余额</h2>
+      </div>
+      <div class="red-num ft-nums">52587.00</div>
+      <div class="horline mem-line"></div>
+      <div class="cash-table">
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <th>超级现金宝：</th>
+              <td>广发货币A</td>
+            </tr>
+            <tr>
+              <th style="vertical-align:top">关联银行卡：</th>
+              <td><!--<div class="notbank"><i class="ico ico-i"></i> <span class="c-gray666">您还未绑定银行卡，点击这里</span> <a href="../bindingbank.html" class="c-blue3" target="_blank">绑定银行卡</a>。</div>-->
+                
+                <div class="icheck-list">
+                  <ul>
+                    <li class="icheck-box icheck-m12">
+                      <input type="radio" class="icheck" name="check-pay" id="inputA" checked>
+                      <label for="inputA">工商银行（尾号6483）</label>
+                    </li>
+                    <li class="icheck-box icheck-m12">
+                      <input type="radio" class="icheck" name="check-pay" id="inputB">
+                      <label for="inputB">农业银行（尾号8394）</label>
+                    </li>
+                    <li class="icheck-box icheck-m12">
+                      <input type="radio" class="icheck" name="check-pay" id="inputC">
+                      <label for="inputC">建设银行（尾号5566）</label>
+                    </li>
+                    <li class="icheck-box icheck-m12">
+                      <input type="radio" class="icheck" name="check-pay" id="inputD" checked>
+                      <label for="inputD">工商银行（尾号6483）</label>
+                    </li>
+                    <li class="icheck-box icheck-m12">
+                      <input type="radio" class="icheck" name="check-pay" id="inputE">
+                      <label for="inputE">农业银行（尾号8394）</label>
+                    </li>
+                  </ul>
+                </div></td>
+            </tr>
+            <tr>
+              <th>到账日期：</th>
+              <td><span class="ft-nums">2015-12-16 16:00</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+        <div class="cash-form">
+          <div class="items items-vital">
+            <label class="label">交易密码：</label>
+            <input type="password" tabindex="9" class="text input_bor" name="" autocomplete="off" id="sureInputText">
+            <div class="msg-tip tip-info" id="sureMsgTip"><i class="ico"></i><b class="msg-txt">您输入的密码错误，您还可以再输入4次。</b> </div>
+            <div class="vital"><i class="ico ico-vital"></i>请输入基金交易密码，非银行密码</div>
+          </div>
+          <div class="items-btn">
+            <div class="ui-form-btn"><a class="btn" href="javascript:;" id="sureTradeA">确认兑换</a></div>
+          </div>
+        </div>
+     
+    </div>
+    <div class="w250 fr">
+      <div class="red-task">
+        <div class="title">
+          <h2 class="h2"><i class="fs16 c-gray666">红包任务</i></h2>
+        </div>
+        <div class="cont">
+          <ul>
+            <li class="one">
+              <div class="task-img"></div>
+              <div class="task-txt"><a href="mytask.html" class="c-gray999">绑定<br>
+                银行卡</a></div>
+            </li>
+            <li class="two">
+              <div class="task-img"></div>
+              <div class="task-txt"><a href="mytask.html" class="c-gray999">购买 <br>
+                股票型基金</a></div>
+            </li>
+            <li class="three">
+              <div class="task-img"></div>
+              <div class="task-txt"><a href="mytask.html" class="c-gray999">充值<br>
+                现金宝</a></div>
+            </li>
+            <li class="four">
+              <div class="task-img"></div>
+              <div class="task-txt"><a href="mytask.html" class="c-gray999">邀请好友 <br>
+                购买基金</a></div>
+            </li>
+          </ul>
+        </div>
+        <div class="r-t-btn"><a class="btnbor btnbor-small" href="mytask.html">更多红包 &gt;&nbsp;</a></div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--底部开始-->
+<div id="bottom"></div>
+<!--底部结束--> 
+<script>
+$(function(){
+var text =$(".text");
+$("#sureTradeA").click(function(){
+var txt=$("#sureInputText").val();
+var mytip=$("#sureMsgTip");
+mytip.show();
+if(txt==""){
+mytip.addClass("tip-error");
+mytip.find(".msg-txt").show();		
+}
+});
+
+text.blur(function(){
+var txt=$(this).val();
+var mytip=$(this).parent(".items").find(".msg-tip");	
+mytip.removeClass("tip-error");
+$(this).parent(".items").find(".msg-txt").hide();
+});
+
+text.focus(function(){
+var mytip=$(this).parent(".items").find(".msg-tip");	
+mytip.show();
+$(this).parent(".items").find(".msg-txt").hide();
+mytip.removeClass("tip-error");
+});
+
+});
+</script> 
+<script type="text/javascript">
+jQuery(function($){$(document).ready(function(){$('.nav-list').stickUp();});});
+</script> 
+<script>
+$(document).ready(function(){
+  $(".icheck").iCheck({
+    checkboxClass: 'icheckbox_square',
+    radioClass: 'iradio_square',
+    increaseArea: '30%' // optional
+  });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,279 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>基金申购</title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="description" content=" " />
+<meta name="keywords" content=" " />
+<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+<link href="../css/base.css" rel="stylesheet"/>
+<link href="../css/trade.css" rel="stylesheet"/>
+<link href="../css/ui.css" rel="stylesheet"/>
+<script src="../js/jq/jquery-1.9.1.min.js"></script>
+<script src="../js/bs/bootstrap.js"></script>
+<script src="../js/base.js"></script>
+<script src="../js/jq/jquery.input.js"></script>
+<script src="../js/bs/icheck.js"></script>
+<script src="../js/common/inner-top.js"></script>
+<script src="../js/common/inner-bottom.js"></script>
+</head>
+<body>
+
+<!--头部开始-->
+<div id="top"></div>
+<!--头部结束-->
+
+<div class="wrap">
+  <div class="crumbnav"><em class="ico ico-crumb"></em><a href="../member/myaccounts.html" target="_blank" class="c-gray666">我的账户</a><i>&gt;</i><b>基金申购</b></div>
+  <div class="mem-title">
+    <h2 class="h2">基金申购</h2>
+  </div>
+  <div class="m-cont clearfix">
+    <div class="w660 fl">
+      <h2 class="h2 cash-h2"><span class="fl">基金信息</span> <a href="javascript:;" class="c-blue2 fr">重选基金</a></h2>
+      <div class="small-table">
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <th width="111px">基金名称：</th>
+              <td width="250px">广发聚祥保本混合（270024）</td>
+              <th width="111px">基金类型：</th>
+              <td>股票型</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h2 class="h2 cash-h2 nomar">支付信息</h2>
+      <div class="pbank-padd" > 
+        <!--已绑定银行卡开始-->
+        <div class="bindbank list-radio pay-bank" id="payBankJs" >
+          <h3 class="h3 pay-h3"><span class="fl">银行卡支付</span><a href="../bindingbank.html" target="_blank" class="c-blue2 fr">＋ 添加银行卡</a></h3>
+          <dl>
+            <dt>
+              <input type="radio" class="icheck" name="check-pay" id="input-pay1">
+            </dt>
+            <dd>
+              <label for="input-pay1" >
+              <ul>
+                <li class="one"><img src="../images/bank/b3.jpg"/></li>
+                <li class="two"><span class="payspan">中国民生银行（汇付）</span>
+                  <div class="pay-tip"><i class="abs abs-arrowblue-l"></i>
+                    <h5 class="h5">尾号 6859</h5>
+                  </div>
+                </li>
+                <li class="three"><span class="payspan must-big">*</span>&nbsp;单笔限额 1w，每日限额 20w</li>
+              </ul>
+              </label>
+            </dd>
+          </dl>
+          <dl>
+            <dt>
+              <input type="radio" class="icheck" name="check-pay" id="input-pay2">
+            </dt>
+            <dd >
+              <label for="input-pay2">
+              <ul>
+                <li class="one"><img src="../images/bank/b2.jpg"/></li>
+                <li class="two"><span class="payspan">中信银行（汇付）</span>
+                  <div class="pay-tip"><i class="abs abs-arrowblue-l"></i>
+                    <h5 class="h5">尾号 6858</h5>
+                  </div>
+                </li>
+                <li class="three"><span class="payspan must-big">*</span>&nbsp;单笔限额 1w，每日限额 20w</li>
+              </ul>
+              </label>
+            </dd>
+          </dl>
+          <dl>
+            <dt>
+              <input type="radio" class="icheck" name="check-pay" id="input-pay3">
+            </dt>
+            <dd >
+              <label for="input-pay3">
+              <ul>
+                <li class="one"><img src="../images/bank/b1.jpg"/></li>
+                <li class="two"><span class="payspan">中国工商银行（汇付）</span>
+                  <div class="pay-tip"><i class="abs abs-arrowblue-l"></i>
+                    <h5 class="h5">尾号 6856</h5>
+                  </div>
+                </li>
+                <li class="three"><span class="payspan must-big">*</span>&nbsp;单笔限额1000w，每日限额 200w</li>
+              </ul>
+              </label>
+            </dd>
+          </dl>
+        </div>
+        <!--已绑定银行卡结束--> 
+        <!-- 未绑定银行卡开始-->
+        <h3 class="h3 pay-h3" style="display:none"><span class="fl">银行卡支付</span></h3>
+        <div class="notbindbank" style="display:none"><span class="c-gray999">您还未绑定银行卡，请绑定银行卡以完成购买。</span><a href="../bindingbank.html" target="_blank"><i class="ico ico-addbank"></i>添加银行卡</a></div>
+        <!-- 未绑定银行卡结束-->
+        <div class="bindbank list-radio pay-bank pay-cash" id="payCashJs">
+          <h3 class="h3 pay-h3"><span class="fl">超级现金宝余额</span><span class="fr c-red3">使用现金宝余额支付每满1000送1元红包</span></h3>
+          <dl>
+            <dt>
+              <input type="radio" class="icheck" name="check-pay" id="input-cash1" checked>
+            </dt>
+            <dd>
+              <label for="input-cash1" >
+              <ul>
+                <li class="three"><span class="payspan">南方货币A</span><em class="em fs18 ft-nums c-orange fl">10002.22</em></li>
+                <li class="two"><span class="payspan">中国民生银行（汇付）</span>
+                  <div class="pay-tip"><i class="abs abs-arrowblue-l"></i>
+                    <h5 class="h5">尾号 6859</h5>
+                  </div>
+                </li>
+                <li class="one"><img src="../images/bank/b3.jpg"/></li>
+              </ul>
+              </label>
+            </dd>
+          </dl>
+          <dl>
+            <dt>
+              <input type="radio" class="icheck" name="check-pay" id="input-pay4">
+            </dt>
+            <dd>
+              <label for="input-pay4" >
+              <ul>
+                <li class="three"><span class="payspan">南方货币A</span><em class="em fs18 ft-nums c-orange fl">10002.22</em></li>
+                <li class="two"><span class="payspan">中国民生银行（汇付）</span>
+                  <div class="pay-tip"><i class="abs abs-arrowblue-l"></i>
+                    <h5 class="h5">尾号 6859</h5>
+                  </div>
+                </li>
+                <li class="one"><img src="../images/bank/b3.jpg"/></li>
+              </ul>
+              </label>
+            </dd>
+          </dl>
+          <dl>
+            <dt>
+              <input type="radio" class="icheck" name="check-pay" id="input-pay5">
+            </dt>
+            <dd>
+              <label for="input-pay5" >
+              <ul>
+                <li class="three"><span class="payspan">广发聚祥</span><em class="em fs18 ft-nums c-orange fl">202.22</em></li>
+                <li class="two"><span class="payspan">中国民生银行（汇付）</span>
+                  <div class="pay-tip"><i class="abs abs-arrowblue-l"></i>
+                    <h5 class="h5">尾号 6859</h5>
+                  </div>
+                </li>
+                <li class="one"><img src="../images/bank/b3.jpg"/></li>
+              </ul>
+              </label>
+            </dd>
+          </dl>
+          <dl>
+            <dt>
+              <input type="radio" class="icheck" name="check-pay" id="input-pay6">
+            </dt>
+            <dd>
+              <label for="input-pay6" >
+              <ul>
+                <li class="three"><span class="payspan">富国中证军</span><em class="em fs18 ft-nums c-orange fl">9,000,002.22</em></li>
+                <li class="two"><span class="payspan">中国民生银行（汇付）</span>
+                  <div class="pay-tip"><i class="abs abs-arrowblue-l"></i>
+                    <h5 class="h5">尾号 6859</h5>
+                  </div>
+                </li>
+                <li class="one"><img src="../images/bank/b3.jpg"/></li>
+              </ul>
+              </label>
+            </dd>
+          </dl>
+        </div>
+      </div>
+      <h2 class="h2 cash-h2">购买信息</h2>
+      <div class="cash-table mt20">
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <th>申购金额：</th>
+              <td class="rel jsqtab-text"><dl class="jj-amount">
+                  <dd><b class="less" hidefocus="" href="javascript:;"><i class="abs abs-hor"></i></b>
+                    <input type="text" title="请输入购买金额" maxlength="8" value="5,000,000">
+                    <span class="unit">元</span> <a class="add" hidefocus="" href="javascript:;"><i class="abs abs-hor"></i><i class="abs abs-ver"></i></a></dd>
+                </dl>
+                <div class="msg-tip tip-error" style="display:block;"> <i class="ico"></i><b class="msg-txt">请输入您要取出的份额数</b> </div></td>
+            </tr>
+            <tr>
+              <th class="vit"></th>
+              <td class="vit"><div class="vital"><i class="ico ico-vital"></i>首次申购最低金额1000.00元</div></td>
+            </tr>
+            <tr>
+              <th>优惠费率：</th>
+              <td><span class="ft-nums c-orange fs18">0.6%</span> <span class="c-gray666">（<del class="del">1.5%</del>）</span></td>
+            </tr>
+            <tr>
+              <th>预估申购费：</th>
+              <td><span class="ft-nums c-orange fs18 fl">24.01元</span><span class="c-gray666 fl" style="display:none">（<del class="del">35.10</del>，省<b class="b ft-nums c-orange"> 6.01</b> 元）</span><span id="tipPlace">&nbsp;</span></td>
+            </tr>
+            <tr>
+              <th>确认时间：</th>
+              <td>05月19日  16:00</td>
+            </tr>
+            <tr>
+              <th></th>
+              <td><div class="icheck-box icheck-m12">
+                  <input type="checkbox" class="icheck" name="iCheck" id="inputG">
+                  <label for="inputG">我确认购买超出我风险偏好的【中等风险】基金。</label>
+                </div></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="cash-form">
+        <div class="items-btn">
+          <div class="ui-form-btn"><a class="btn" href="purchaseok.html">确  认</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="w260 fr">
+      <div class="explain">
+        <div class="title">充值帮助</div>
+        <h4 class="h4">关于付款时间</h4>
+        <p class="p">您在交易日15:00前提交的申购申请需在当日15:00前足额付款；15:00后提交的申请，系统将按下一交易日申请处理，可在下一交易日15:00前完成付款。</p>
+        <h4 class="h4">基金交易均遵循“未知价”交易原则</h4>
+        <p class="p">成功提交的业务申请，按交易生效当日收市后基金公司公布的净值成交；您所看到的基金净值，为该基金上一交易日的净值，而非成交净值，仅供参考。</p>
+        <h4 class="h4">交易成功了为什么查询不到基金份额？</h4>
+        <p class="p">15:00点前提交的申购申请，下一交易日16:00后，可查询取得的份额。15:00后提交的，顺延一日。</p>
+        <h4 class="h4">交易费用说明</h4>
+        <p class="p">你所看到的“预估申购费”是以申请当天净值计算的费用，实际产生费用以基金公司确认为准。本系统所记录的费率为参考费率，实际以基金公司公告及交易确认为准。</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--底部开始-->
+<div id="bottom"></div>
+<!--底部结束--> 
+
+<script>
+$(document).ready(function(){
+  $(".icheck").iCheck({
+    checkboxClass: 'icheckbox_square',
+    radioClass: 'iradio_square',
+    increaseArea: '30%' 
+  });
+});
+</script> 
+<script src="../js/jq/jquery-ui.js"></script> 
+<script>
+$(function(){
+   $('#tipPlace').attr("data-content","交易成功后手续费返现到红包账户");
+   $('#tipPlace').popover("show")
+   $("#payBankJs dl").click(function(){
+     $('#tipPlace').attr("data-content","现金宝支付手续费全额返还");
+	 $('#tipPlace').popover("show")
+   });
+   $("#payCashJs dl").click(function(){
+     $('#tipPlace').attr("data-content","交易成功后手续费返现到红包账户");
+	 $('#tipPlace').popover("show")
+   });
+});
+</script>
+</body>
+
+</html>

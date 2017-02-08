@@ -1,0 +1,12 @@
+交易费用         cost
+投资分红         dividends
+投资目标         thegoal
+新闻正文         newsdetail
+安全生产         safe
+销售资质         quality 
+主题落地页       theme
+帮助首页         help
+帮助列表         helplist
+帮助详细         helpdetail
+邀请微信         inviteweixin
+邀请App         inviteapp

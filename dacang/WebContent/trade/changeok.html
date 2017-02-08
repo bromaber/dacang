@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>转换信息确认</title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="description" content=" " />
+<meta name="keywords" content=" " />
+<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+<link href="../css/base.css" rel="stylesheet"/>
+<link href="../css/trade.css" rel="stylesheet"/>
+<script src="../js/jq/jquery-1.9.1.min.js"></script>
+<script src="../js/bs/bootstrap.js"></script>
+<script src="../js/jq/jquery.input.js"></script>
+<script src="../js/common/inner-top.js"></script>
+<script src="../js/common/inner-bottom.js"></script>
+</head>
+<body>
+<!--头部开始-->
+<div id="top"></div>
+<!--头部结束-->
+
+<div class="wrap">
+  <div class="crumbnav"><em class="ico ico-crumb"></em><a href="../member/myaccounts.html" target="_blank" class="c-gray666">我的账户</a><i>&gt;</i><a href="../member/assets.html" target="_blank" class="c-gray666">资产明细</a><i>&gt;</i><a href="change.html" target="_blank" class="c-gray666">基金转换</a><i>&gt;</i><b>转换信息确认</b></div>
+  <div class="mem-title">
+    <h2 class="h2">信息确认</h2>
+  </div>
+  <div class="m-cont clearfix">
+    <div class="w660 fl">
+      <div class="okinfo-title">您即将转换 <b>广发聚祥保本混合（270024）</b> ,请认真核对！</div>
+      <div class="ok-padd">
+        <div class="okinfo-cont">
+          <div class="okinfo-table">
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+              <tbody>
+                <tr>
+                  <th width="90px">转出份额：</th>
+                  <td>123122.21份</td>
+                </tr>
+                <tr>
+                  <th>转入基金：</th>
+                  <td>广发聚祥保本混合（212121）</td>
+                </tr>
+                <tr>
+                  <th>收费方式：</th>
+                  <td>前端收费</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    
+        <div class="cash-form">
+          
+          <div class="items items-vital">
+            <label class="label">交易密码：</label>
+            <input type="password" tabindex="9" class="text input_bor" name="" autocomplete="off" id="sureInputText">
+           <div class="msg-tip tip-info" id="sureMsgTip"><i class="ico"></i><b class="msg-txt lh18">您输入的密码错误，您还可以再输入4次。</b> </div>
+            <div class="vital"><i class="ico ico-vital"></i>请输入基金交易密码，非银行密码</div>
+          </div>
+          
+          <div class="items-btn">
+            <div class="ui-form-btn"><a class="btn" href="javascript:;" id="sureTradeA">确  认</a><a href="redeem.html" class="c-blue2 btn-txt">返回修改</a></div>
+          </div>
+        </div>
+      
+    </div>
+    <div class="w260 fr">
+      <div class="explain">
+        <div class="title">提示</div>
+        <h4 class="h4">什么是基金转换及其优点？</h4>
+        <p class="p">指投资者将所持有的开放式基金转换成同一基金管理公司旗下的其他开放式基金。它与赎回后重新购买最大的不同是转换及时，并且可以节省手续费。</p>
+        <h4 class="h4">基金转换有何限制？</h4>
+        <p class="p no-ind"> 1.仅限同一基金公司、同一注册登记人下基金之间的相互转换<br>
+          2.前端收费、后端收费基金不能相互转换<br>
+          3.QDII基金和非QDII基金不能相互转换<br>
+        </p>
+        <h4 class="h4">转换费用的构成：</h4>
+        <p class="p">补差费=转出基金申购费 － 转入基金申购费；（部分基金公司的基金转换不享受折扣优惠）<br>
+          例如：A基金申购费用为1.5%，B基金申购费用为1.2%，则由A转B的“补差费”为0.3%；<br>
+          A货币基金申购费用为0，B基金申购费用为1.2%，则由A转B的“补差费”为1.2%；<br>
+          2.转出基金的赎回费：按基金持有年限递减。<br>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--底部开始-->
+<div id="bottom"></div>
+<!--底部结束--> 
+<script>
+$(function(){
+var text =$(".text");
+$("#sureTradeA").click(function(){
+var txt=$("#sureInputText").val();
+var mytip=$("#sureMsgTip");
+mytip.show();
+if(txt==""){
+mytip.addClass("tip-error");
+mytip.find(".msg-txt").show();		
+}
+});
+
+text.blur(function(){
+var txt=$(this).val();
+var mytip=$(this).parent(".items").find(".msg-tip");	
+mytip.removeClass("tip-error");
+$(this).parent(".items").find(".msg-txt").hide();
+});
+
+text.focus(function(){
+var mytip=$(this).parent(".items").find(".msg-tip");	
+mytip.show();
+$(this).parent(".items").find(".msg-txt").hide();
+mytip.removeClass("tip-error");
+});
+
+});
+</script>
+
+</body>
+</html>

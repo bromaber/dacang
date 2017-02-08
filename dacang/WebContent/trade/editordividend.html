@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>修改分红方式</title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="description" content=" " />
+<meta name="keywords" content=" " />
+<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+<link href="../css/base.css" rel="stylesheet"/>
+<link href="../css/trade.css" rel="stylesheet"/>
+<script src="../js/jq/jquery-1.9.1.min.js"></script>
+<script src="../js/bs/bootstrap.js"></script>
+<script src="../js/base.js"></script>
+<script src="../js/jq/jquery.input.js"></script>
+<script src="../js/common/inner-top.js"></script>
+<script src="../js/common/inner-bottom.js"></script>
+</head>
+<body>
+<!--头部开始-->
+<div id="top"></div>
+<!--头部结束-->
+
+<div class="wrap">
+  <div class="crumbnav"><em class="ico ico-crumb"></em><a href="../member/myaccounts.html" target="_blank" class="c-gray666">我的账户</a><i>&gt;</i><a href="../member/assets.html" target="_blank" class="c-gray666">资产明细</a><i>&gt;</i><b>修改分红方式</b></div>
+  <div class="mem-title">
+    <h2 class="h2">信息确认</h2>
+  </div>
+  <div class="m-cont clearfix">
+    <div class="w660 fl">
+      <div class="okinfo-title">您即将修改 <b>广发聚祥保本混合（270024）</b>的分红方式 ,请认真核对！</div>
+      <div class="ok-padd">
+        <div class="okinfo-cont">
+          <div class="okinfo-table">
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+              <tbody>
+                <tr>
+                  <th width="90px">修改前：</th>
+                  <td>红利再投</td>
+                </tr>
+                <tr>
+                  <th>修改后：</th>
+                  <td>现金分红</td>
+                </tr>
+                <tr>
+                  <th>确认时间：</th>
+                  <td>05月19日 16:00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    
+        <div class="cash-form">
+          <div class="items items-vital">
+            <label class="label">交易密码：</label>
+            <input type="password" tabindex="9" class="text input_bor" name="" autocomplete="off" id="sureInputText">
+            <div class="msg-tip tip-info" id="sureMsgTip"><i class="ico"></i><b class="msg-txt lh18">您输入的密码错误，您还可以再输入4次。</b> </div>
+            <div class="vital"><i class="ico ico-vital"></i>请输入基金交易密码，非银行密码</div>
+          </div>
+          <div class="items-btn">
+            <div class="ui-form-btn"><a class="btn" href="javascript:;" id="sureTradeA">确  认</a><span class="ui-form-tip"><i class="ico ico-i"></i> 每天只能修改一次</span></div>
+            
+          </div>
+        </div>
+     
+    </div>
+    <div class="w260 fr">
+      <div class="explain">
+        <div class="title">提示</div>
+        <h4 class="h4">“现金分红”与“红利再投资”的区别：</h4>
+        <p class="p">红利再投资指将取得的红利直接转换成该基金份额，免所得税和申购费用；现金红利则直接将获得的红利转入您的银行卡。</p>
+        <h4 class="h4">“红利再投资”有什么优点？</h4>
+        <p class="p">市场长期向好时，采用红利再投资方式能够取得类似于复利的收益效应，且不收取申购费用，有利于资产增值。</p>
+        <h4 class="h4">关于不同银行卡购买的同只基金：</h4>
+        <p class="p">不同银行卡及不同销售机构购买的同只基金只能设立一种分红方式。</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--底部开始-->
+<div id="bottom"></div>
+<!--底部结束--> 
+<script>
+$(function(){
+var text =$(".text");
+$("#sureTradeA").click(function(){
+var txt=$("#sureInputText").val();
+var mytip=$("#sureMsgTip");
+mytip.show();
+if(txt==""){
+mytip.addClass("tip-error");
+mytip.find(".msg-txt").show();		
+}
+});
+
+text.blur(function(){
+var txt=$(this).val();
+var mytip=$(this).parent(".items").find(".msg-tip");	
+mytip.removeClass("tip-error");
+$(this).parent(".items").find(".msg-txt").hide();
+});
+
+text.focus(function(){
+var mytip=$(this).parent(".items").find(".msg-tip");	
+mytip.show();
+$(this).parent(".items").find(".msg-txt").hide();
+mytip.removeClass("tip-error");
+});
+
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,228 @@
+﻿<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>汇基金-绑定银行卡</title>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="description" content=" " />
+		<meta name="keywords" content=" " />
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+		<link href="css/base.css" rel="stylesheet" />
+		<link href="css/login.css" rel="stylesheet" />
+		<link href="css/ui.css" rel="stylesheet" />
+		<script src="js/jq/jquery-1.9.1.min.js"></script>
+		<script src="js/bs/bootstrap.js"></script>
+		<script src="js/jq/jquery.input.js"></script>
+		<script src="js/base.js"></script>
+	</head>
+
+	<body>
+		<!--头部开始-->
+		<div class="m-topbar">
+			<div class="wrap clearfix">
+				<div class="telbox rel"><i class="ico ico-stel"></i><em class="ft-nums fl">4000-383-111</em><span class="fl">（工作时间 9:00 - 19:00）</span></div>
+				<div class="top-nav">
+					<ul>
+						<li><a href="login.html" class="hi" target="_blank">请登录</a></li>
+						<li class="c-grayccc">｜</li>
+						<li><a href="register.html" class="hi" target="_blank">免费注册</a></li>
+						<li class="c-grayccc">｜</li>
+						<li><a href="javascript:;" class="aphone"><i class="ico ico-sphone"></i>手机客户端</a></li>
+						<li class="c-grayccc">｜</li>
+						<li><a href="safe/index.html" target="_blank">安全保障</a></li>
+						<li class="c-grayccc">｜</li>
+						<li><a href="help/index.html" target="_blank">帮助中心</a></li>
+						<li class="c-grayccc">｜</li>
+						<li><a href="us/index.html" target="_blank">关于我们</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="head nobor">
+			<div class="wrap clearfix">
+				<div class="logo">
+					<a href="default.html"><img src="images/logo.png" /></a>
+				</div>
+				<div class="slogan big-slogan">
+					<h2>绑定银行卡</h2>
+				</div>
+			</div>
+		</div>
+		<!--头部结束-->
+		<div class="user-box">
+			<div class="form-cont">
+				<ul class="user-title clearfix">
+					<li><i class="abs abs-line3px"></i>
+						<h2 class="h2">绑定银行卡</h2>
+					</li>
+				</ul>
+				<div class="reg-from">
+					<!-- tip-info 提示  tip-succeed 成功   tip-error 出错-->
+					<div class="bind-info"><span class="abs must-big">*</span>根据监管部门要求及更好地为您提供金融服务，投资账户需通过实名认证。请务必准确填写您的身份信息，绑定后 不可更改。您的信息将受严格保密。
+					</div>
+					<div class="items">
+						<label class="label">持卡人姓名：</label>
+						<input type="text" tabindex="9" class="text input_bor" name="" autocomplete="off">
+						<div class="msg-tip tip-info"> <i class="ico"></i><b class="msg-txt">与银行开户行姓名一致</b> </div>
+					</div>
+					<div class="items">
+						<label class="label">身份证号：</label>
+						<input type="text" tabindex="9" class="text input_bor" name=" " autocomplete="off">
+						<div class="msg-tip tip-info"> <i class="ico"></i><b class="msg-txt">与银行开户身份证号保持一致</b> </div>
+					</div>
+					<div class="items">
+						<label class="label">银行卡号：</label>
+						<input type="text" tabindex="9" class="text input_bor" name=" " id="bingCard" autocomplete="off">
+						<div class="tooltip right in" id="toolTip-js" style="display:none">
+							<div class="tooltip-arrow"></div>
+							<div class="tooltip-inner">
+								<div class="bank-box">
+									<div class="title"><span><b class="b c-blue2">合作银行</b>（请使用以下银行卡）</span></div>
+									<div class="cont">
+										<ul>
+											<li><img src="images/bank/b1.jpg" /><span>工商银行</span></li>
+											<li><img src="images/bank/b2.jpg" /><span>中信银行</span></li>
+											<li><img src="images/bank/b3.jpg" /><span>民生银行</span></li>
+											<li><img src="images/bank/b4.jpg" /><span>农业银行</span></li>
+											<li><img src="images/bank/b1.jpg" /><span>工商银行</span></li>
+											<li><img src="images/bank/b2.jpg" /><span>中信银行</span></li>
+											<li><img src="images/bank/b3.jpg" /><span>民生银行</span></li>
+											<li><img src="images/bank/b4.jpg" /><span>农业银行</span></li>
+										</ul>
+										<dl style="display:none">
+											<span class="abs must-big">*</span>
+											<dt>限额：</dt>
+											<dd>单笔上限200万</dd>
+											<dt>&nbsp;</dt>
+											<dd>每日支付限额1000万</dd>
+										</dl>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="msg-tip tip-info"> <i class="ico"></i><b class="msg-txt">暂不支持普通存折号码或信用卡号码绑定</b> </div>
+					</div>
+					<div class="items items-mobnum">
+						<label class="label">预留手机号：</label>
+						<input type="text" tabindex="9" class="text input_bor" name=" " autocomplete="off">
+						<div class="msg-tip tip-info"> <i class="ico"></i><b class="msg-txt">请与银行预留手机号保持一致</b> </div>
+					</div>
+					<div class="items-btn">
+						<div class="ui-form-btn"><a class="btn" href="javascript:;" id="bdduanxinID">下一步</a></div>
+					</div>
+				</div>
+				<div class="bind-root">
+					<div class="bind-safe"><i class="ico ico-bigsafe"></i><i class="ico ico-r"></i>
+						<h3 class="h3">安全保障</h3>
+					</div>
+					<ul>
+						<li><i class="ico ico-jiami"></i>银行级加密</li>
+						<li><i class="ico ico-renzheng"></i>开户实名认证</li>
+						<li><i class="ico ico-jinchu"></i>资金同卡进出</li>
+						<li><i class="ico ico-jiankong"></i>实时交易监控</li>
+						<li><i class="ico ico-duanxin"></i>短信实时通知</li>
+						<li><i class="ico ico-huazhuan"></i>资金同名划转</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--底部开始-->
+		<div class="wrap">
+			<div class="user-root"><span class="abs abs-user-root">基金投资需谨慎</span></div>
+			<div class="user-copy">Copyright &copy; 2015 上海慧点投资管理有限公司 版权所有 沪ICP备15029296号</div>
+		</div>
+		<!--底部结束-->
+		<!--短信验证-->
+		<div id="bdduanxinCont" class="modal fade hide">
+			<div class="pop-title"><span>填写短信验证码</span><a href="javascript:;" class="ico ico-popclose">关闭</a></div>
+			<div class="pop-zxyz not-txt-form">
+				<p class="p">已发送验证码至 <span class="c-blue2">151****8132</span> ,请在5分钟内输入</p>
+				<div class="items items-checkcode">
+					<input type="text" tabindex="9" class="text tw1 input_bor" name=" " id=" " autocomplete="off" placeholder="输入4位验证码">
+					<button class="btn btn-checkcode btn-disabled" disabled>(52)秒后重新获取</button>
+					<div class="msg-tip tip-info"> <i class="ico"></i><b class="msg-txt">请输入短信验证码</b> </div>
+				</div>
+				<div class="items-btn">
+					<div class="ui-form-btn"><a class="btn zxyza-js" href="javascript:;">确  定</a></div>
+				</div>
+			</div>
+			<div class="pop-tippad" style="display:none">
+				<div class="pop-prompt pop-success"> <i class="abs abs-ring"></i> <i class="ico ico-prompt"></i>
+					<h4 class="h4">恭喜，银行卡绑定成功！</h4>
+					<div class="pp-btn"><a class="btn btn-single" href="javascript:;" id="absd">返回我的银行卡</a></div>
+				</div>
+			</div>
+		</div>
+		<script>
+			$(function() {
+				$("#absd").click(function() {
+					var a = $("<a href='http://www.apple.com' target='_blank'>Apple</a>").get(0);
+					// var e = document.createEvent('MouseEvents');
+					//  e.initEvent( 'click', true, true );
+					//  a.dispatchEvent(e);
+				});
+				/*pop box*/
+				$("#bdduanxinID").click(function() {
+					$(".pop-zxyz").show();
+					$(".pop-tippad").hide();
+					$("#bdduanxinCont").modal("show");
+				})
+				$(".ico-popclose").click(function() {
+					$(".modal").modal("hide");
+				});
+				$(".zxyza-js").click(function() {
+					$(".pop-zxyz").hide();
+					$(".pop-tippad").show();
+					$(this).parents(".modal").find(".pop-title span").text("绑定成功");
+				});
+			});
+		</script>
+		<script>
+			$(function() {
+				var text = $(".text");
+				text.focus(function() {
+					var mytip = $(this).parent(".items").find(".msg-tip");
+					mytip.show();
+					mytip.removeClass("tip-succeed");
+					mytip.removeClass("tip-error");
+				});
+				text.blur(function() {
+					var txt = $(this).val();
+					var mytip = $(this).parent(".items").find(".msg-tip");
+					if (txt == "") {
+						mytip.addClass("tip-error");
+					} else {
+						mytip.addClass("tip-succeed");
+					}
+				});
+				var ttip = $("#toolTip-js")
+				var bdtext = $("#bingCard");
+				bdtext.focus(function() {
+					var mytip = $(this).parent(".items").find(".msg-tip");
+					ttip.show();
+					mytip.hide();
+					ttip.find("ul").show();
+					ttip.find("dl").hide();
+				});
+				bdtext.blur(function() {
+					var mytip = $(this).parent(".items").find(".msg-tip");
+					var txt1 = $(this).val();
+					if (txt1 == "") {
+						mytip.show();
+						ttip.hide();
+						//alert("asdf");
+						/*mytip.addClass("tip-error");*/
+					} else {
+						mytip.show();
+						mytip.addClass("tip-succeed");
+						ttip.show();
+						ttip.find("ul").hide();
+						ttip.find("dl").show();
+					}
+				});
+			});
+		</script>
+	</body>
+
+</html>
